@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "interactiveTransactions", "referentialIntegrity"]
+  output          = "../prisma/client"
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../prisma/type-graphql"
+}
+
+datasource db {
+  provider             = "postgresql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model Token {
+  id           String @id @unique @default(uuid())
+  refreshToken String
+  accessToken  String
+
+  owner   User   @relation(fields: [ownerId], references: [id])
+  ownerId String
+
+  createdAt DateTime @default(now())
+
+  @@index([ownerId])
+}
+
+enum Language {
+  EN
+  FR
+}
+
+model User {
+  id String @id @unique @default(uuid())
+  token String?
+
+  discordUserId String  @unique
+  avatarUrl     String?
+  username      String?
+  email         String?
+
+  lang Language @default(EN)
+
+  tokens       Token[]
+
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}

@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: project
+      PGDATA: /data/postgres
+    volumes:
+       - ./data/postgres:/data/postgres
+    ports:
+      - "5432:5432"
+  redis:
+      image: 'docker.io/bitnami/redis:latest'
+      environment:
+        # ALLOW_EMPTY_PASSWORD is recommended only for development.
+        - ALLOW_EMPTY_PASSWORD=yes
+        - REDIS_AOF_ENABLED=no
+      ports:
+        - '6379:6379'
+      volumes:
+        - './data/redis:/bitnami/redis/data'
+      command: /opt/bitnami/scripts/redis/run.sh --maxmemory-policy noeviction
