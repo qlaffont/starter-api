@@ -25,7 +25,7 @@ specifiers:
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
   bullmq: ^2.0.0
   class-validator: ^0.13.2
-  crypto-random-string: ^3.3.1
+  crypto-random-string: ^5.0.0
   date-fns: ^2.29.2
   dotenv: ^16.0.1
   env-vars-validator: ^1.1.85
@@ -81,7 +81,7 @@ dependencies:
   '@socket.io/redis-emitter': 5.0.0
   bullmq: 2.3.2
   class-validator: 0.13.2
-  crypto-random-string: 3.3.1
+  crypto-random-string: 5.0.0
   date-fns: 2.29.2
   dotenv: 16.0.1
   env-vars-validator: 1.1.85
@@ -2083,11 +2083,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /crypto-random-string/3.3.1:
-    resolution: {integrity: sha512-5j88ECEn6h17UePrLi6pn1JcLtAiANa3KExyr9y9Z5vo2mv56Gh3I4Aja/B9P9uyMwyxNHAHWv+nE72f30T5Dg==}
-    engines: {node: '>=8'}
+  /crypto-random-string/5.0.0:
+    resolution: {integrity: sha512-KWjTXWwxFd6a94m5CdRGW/t82Tr8DoBc9dNnPCAbFI1EBweN6v1tv8y4Y1m7ndkp/nkIBRxUxAzpaBnR2k3bcQ==}
+    engines: {node: '>=14.16'}
     dependencies:
-      type-fest: 0.8.1
+      type-fest: 2.19.0
     dev: false
 
   /currently-unhandled/0.4.1:
@@ -5746,6 +5746,12 @@ packages:
   /type-fest/0.8.1:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
+    dev: true
+
+  /type-fest/2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
+    dev: false
 
   /type-graphql-v2-fork/2.0.0-alpha2_i6gdilsltbmvetqwek33q4v6la:
     resolution: {integrity: sha512-15ONInWG0LKNrlrski+mMnn8XC6YORREGPxhue27yLFaT6zQBqDQJnoG7mZk/XNH2GgbbfGK07TzFV8C6AbHmA==}
