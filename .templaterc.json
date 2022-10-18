@@ -1,0 +1,20 @@
+{
+  "files": [
+    ".husky/**/*",
+    ".vscode/**/*",
+    "src/**/*",
+    ".templaterc.json",
+    ".eslintignore",
+    ".eslintrc.json",
+    ".gitignore",
+    ".node-version",
+    "commitlint.config.js",
+    "prettier.config.js",
+    "docker-compose.yml",
+    "wds.js",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "npmDependencies": true,
+  "npmScripts": true
+}
