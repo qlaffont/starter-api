@@ -23,7 +23,7 @@ specifiers:
   '@typescript-eslint/parser': 5.40.1
   bufferutil: ^4.0.6
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
-  bullmq: ^1.89.1
+  bullmq: ^2.0.0
   class-validator: ^0.13.2
   crypto-random-string: ^3.3.1
   date-fns: ^2.29.2
@@ -79,7 +79,7 @@ dependencies:
   '@sinclair/typebox': 0.24.35
   '@socket.io/redis-adapter': 7.2.0
   '@socket.io/redis-emitter': 5.0.0
-  bullmq: 1.89.1
+  bullmq: 2.3.2
   class-validator: 0.13.2
   crypto-random-string: 3.3.1
   date-fns: 2.29.2
@@ -1711,18 +1711,17 @@ packages:
     dependencies:
       node-gyp-build: 4.5.0
 
-  /bullmq/1.89.1:
-    resolution: {integrity: sha512-VpNFa1buQYDOl4yUF0PxVoCDbh/GT/JeQiaWu/8IdPVMk91RToWtsXvaZdVrfp9VAOtP+F1KJr/pFn+ewY2rnw==}
+  /bullmq/2.3.2:
+    resolution: {integrity: sha512-4Hcnv7I2i2RVsxmKi2V8Tn+OGPsOSG3UgXQRQL9fWaMJeDaOanj4g+jIOhh9R9KGbYJH1Vv+Bko4UJcCFN2NWg==}
     dependencies:
       cron-parser: 4.6.0
-      get-port: 6.1.2
       glob: 8.0.3
       ioredis: 5.2.2
       lodash: 4.17.21
       msgpackr: 1.6.2
-      semver: 7.3.7
+      semver: 7.3.8
       tslib: 2.4.0
-      uuid: 8.3.2
+      uuid: 9.0.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3137,11 +3136,6 @@ packages:
       has: 1.0.3
       has-symbols: 1.0.3
     dev: true
-
-  /get-port/6.1.2:
-    resolution: {integrity: sha512-BrGGraKm2uPqurfGVj/z97/zv8dPleC6x9JBNRTrDNtCkkRF4rPwrQXFgL7+I+q8QSdU4ntLQX2D7KIxSy8nGw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
 
   /get-stdin/4.0.1:
     resolution: {integrity: sha512-F5aQMywwJ2n85s4hJPTT9RPxGmubonuB10MNYo17/xph174n2MIR33HRguhzVag10O/npM7SPk73LMZNP+FaWw==}
@@ -5943,6 +5937,7 @@ packages:
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+    dev: true
 
   /uuid/9.0.0:
     resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
