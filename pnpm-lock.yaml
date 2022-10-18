@@ -16,7 +16,7 @@ specifiers:
   '@prisma/client': 4.4.0
   '@sinclair/typebox': ^0.24.35
   '@socket.io/redis-adapter': ^7.2.0
-  '@socket.io/redis-emitter': ^4.1.1
+  '@socket.io/redis-emitter': ^5.0.0
   '@types/graphql-fields': 1.3.4
   '@types/node': 18.11.0
   '@typescript-eslint/eslint-plugin': 5.40.1
@@ -78,7 +78,7 @@ dependencies:
   '@prisma/client': 4.4.0_prisma@4.4.0
   '@sinclair/typebox': 0.24.35
   '@socket.io/redis-adapter': 7.2.0
-  '@socket.io/redis-emitter': 4.1.1
+  '@socket.io/redis-emitter': 5.0.0
   bullmq: 1.89.1
   class-validator: 0.13.2
   crypto-random-string: 3.3.1
@@ -905,11 +905,11 @@ packages:
       - supports-color
     dev: false
 
-  /@socket.io/redis-emitter/4.1.1:
-    resolution: {integrity: sha512-N0wfcfcVJvPF1AjIlZ5efxGCz+8uY6qeCwIaRU+QUCNdqvtXQtlC/MtUJQCwVqs1MWP6Bv3TDuZGC04gIj7YuQ==}
+  /@socket.io/redis-emitter/5.0.0:
+    resolution: {integrity: sha512-95OSnwxZ5Ix0fQaf/Na4tR8Ub5Z3n1LLDS1vWifSlWYip0PlUV1/VMvDVlLtFVZ07DLalEBIsKGKTJM1urAeTg==}
     dependencies:
       debug: 4.3.4
-      notepack.io: 2.1.3
+      notepack.io: 3.0.1
       socket.io-parser: 4.0.5
     transitivePeerDependencies:
       - supports-color
@@ -4414,12 +4414,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /notepack.io/2.1.3:
-    resolution: {integrity: sha512-AgSt+cP5XMooho1Ppn8NB3FFaVWefV+qZoZncYTUSch2GAEwlYLcIIbT5YVkMlFeNHnfwOvc4HDlbvrB5BRxXA==}
-    dev: false
-
   /notepack.io/2.2.0:
     resolution: {integrity: sha512-9b5w3t5VSH6ZPosoYnyDONnUTF8o0UkBw7JLA6eBlYJWyGT1Q3vQa8Hmuj1/X6RYvHjjygBDgw6fJhe0JEojfw==}
+    dev: false
+
+  /notepack.io/3.0.1:
+    resolution: {integrity: sha512-TKC/8zH5pXIAMVQio2TvVDTtPRX+DJPHDqjRbxogtFiByHyzKmy96RA0JtCQJ+WouyyL4A10xomQzgbUT+1jCg==}
     dev: false
 
   /npm-run-path/4.0.1:
