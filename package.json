@@ -82,7 +82,7 @@
     "node-fetch": "^2.6.7",
     "node-ical": "^0.15.2",
     "pino": "^8.4.2",
-    "prisma": "4.4.0",
+    "prisma": "4.5.0",
     "redis": "^4.2.0",
     "reflect-metadata": "^0.1.13",
     "socket.io": "^4.5.1",
