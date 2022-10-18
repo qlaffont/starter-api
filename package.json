@@ -79,7 +79,7 @@
     "mercurius": "^11.0.0",
     "mercurius-upload": "^5.0.0",
     "micro": "^9.4.1",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^3.0.0",
     "node-ical": "^0.15.2",
     "pino": "^8.4.2",
     "prisma": "4.5.0",
