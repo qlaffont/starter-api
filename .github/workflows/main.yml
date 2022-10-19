@@ -21,8 +21,6 @@ jobs:
 
       - name: Install PNPM
         uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 6.0.2
 
       - name: Install deps and build (with cache)
         run: pnpm install --no-frozen-lockfile
