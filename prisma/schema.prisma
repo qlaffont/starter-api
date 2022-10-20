@@ -15,7 +15,6 @@ generator typegraphql {
 datasource db {
   provider             = "postgresql"
   url                  = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
 }
 
 model Token {
