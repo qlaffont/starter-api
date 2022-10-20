@@ -7,10 +7,6 @@ class AuthController {
   static async authorization(req: FastifyRequest, res: FastifyReply) {
     const user = req.user! as User;
 
-    if (user.isBanned || (!user.isActive && !user.isAlwaysActive && !user.isExaltyActive)) {
-      throw new Forbidden();
-    }
-
     const { accessToken, refreshToken } = await createUserToken(prisma)(user.id, {
       secret: process.env.JWT_ACCESS_SECRET!,
       refreshSecret: process.env.JWT_REFRESH_SECRET!,
