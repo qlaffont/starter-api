@@ -44,7 +44,7 @@
     "fastify-socket.io": "4.0.0",
     "gnomon": "1.5.0",
     "graphql-fields": "2.0.3",
-    "graphql-scalars": "1.19.0",
+    "graphql-scalars": "1.20.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "pino-pretty": "9.1.1",
