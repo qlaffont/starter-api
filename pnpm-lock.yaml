@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@bull-board/api': 4.6.1
-  '@bull-board/fastify': 4.6.0
+  '@bull-board/fastify': 4.6.1
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@fastify/cors': 8.1.1
@@ -112,7 +112,7 @@ optionalDependencies:
 
 devDependencies:
   '@bull-board/api': 4.6.1
-  '@bull-board/fastify': 4.6.0
+  '@bull-board/fastify': 4.6.1
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@fastify/cors': 8.1.1
@@ -163,23 +163,17 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@bull-board/api/4.6.0:
-    resolution: {integrity: sha512-CXWlZaTXnmIXx0vbikirza1Vuz/Clju8DkR+PXggVDcreoA5pz5ImnAVdNt+PKQKiVOCvA9baySjmPu3AtT+aA==}
-    dependencies:
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api/4.6.1:
     resolution: {integrity: sha512-5Z2f1/Yr0TUfLkPdX5iRNe2zF7+I/y84aUlC3uLvLNeHr0GHbfRdjcFotMnx6v83b9B6fj1grLcLBi4MnHA+vA==}
     dependencies:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify/4.6.0:
-    resolution: {integrity: sha512-iZUv9IWDHT/WXY2uyJ2GdGQp0HbkqELpeJzS0sjXnkqv+eSkYjzcG7DI0sXYRNOuA7UXAUxbEhXKb2fyChjKvw==}
+  /@bull-board/fastify/4.6.1:
+    resolution: {integrity: sha512-cZb5KDi4ZCv+oJr2jEumtML+pjQzT7OP82CG1KHbpd9P3uQarp8jNO+XdhCOtNDwfmHoCfJZQO5TvFJW1RISNg==}
     dependencies:
-      '@bull-board/api': 4.6.0
-      '@bull-board/ui': 4.6.0
+      '@bull-board/api': 4.6.1
+      '@bull-board/ui': 4.6.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
@@ -187,10 +181,10 @@ packages:
       - supports-color
     dev: true
 
-  /@bull-board/ui/4.6.0:
-    resolution: {integrity: sha512-Atv7UWGXz+Wz0OL5vy6qCGu0yqgHxSIDoM2Y9s8rNheLnDiHOvOliBC7TqvCgGt++kAS4f4Xra3PoLSSYXb3rQ==}
+  /@bull-board/ui/4.6.1:
+    resolution: {integrity: sha512-rzZwByoF4bpOuDXmv/FquVij+R6beg+pdiX2GXPvNhk1DSDYZPG2rupF+vkooOOEEE+SAESxKUg4VRYUHheUZQ==}
     dependencies:
-      '@bull-board/api': 4.6.0
+      '@bull-board/api': 4.6.1
     dev: true
 
   /@commitlint/cli/17.1.2:
