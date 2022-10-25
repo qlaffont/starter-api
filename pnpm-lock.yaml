@@ -23,7 +23,7 @@ specifiers:
   '@typescript-eslint/parser': 5.41.0
   bufferutil: ^4.0.6
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
-  bullmq: ^2.0.0
+  bullmq: ^3.0.0
   class-validator: ^0.13.2
   crypto-random-string: ^5.0.0
   date-fns: ^2.29.2
@@ -79,7 +79,7 @@ dependencies:
   '@sinclair/typebox': 0.24.35
   '@socket.io/redis-adapter': 7.2.0
   '@socket.io/redis-emitter': 5.0.0
-  bullmq: 2.3.2
+  bullmq: 3.0.0
   class-validator: 0.13.2
   crypto-random-string: 5.0.0
   date-fns: 2.29.2
@@ -1711,8 +1711,8 @@ packages:
     dependencies:
       node-gyp-build: 4.5.0
 
-  /bullmq/2.3.2:
-    resolution: {integrity: sha512-4Hcnv7I2i2RVsxmKi2V8Tn+OGPsOSG3UgXQRQL9fWaMJeDaOanj4g+jIOhh9R9KGbYJH1Vv+Bko4UJcCFN2NWg==}
+  /bullmq/3.0.0:
+    resolution: {integrity: sha512-amw+YZhEo1B47iMpaLbtKwlzZjQi5NYjLCYl8n9qkQpkDDVAVJ9d++zdOgyXX6kG7i/pMP9tr2vyj3J6IcjbTA==}
     dependencies:
       cron-parser: 4.6.0
       glob: 8.0.3
