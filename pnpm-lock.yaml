@@ -18,7 +18,7 @@ specifiers:
   '@socket.io/redis-adapter': ^7.2.0
   '@socket.io/redis-emitter': ^5.0.0
   '@types/graphql-fields': 1.3.4
-  '@types/node': 18.11.5
+  '@types/node': 18.11.6
   '@typescript-eslint/eslint-plugin': 5.41.0
   '@typescript-eslint/parser': 5.41.0
   bufferutil: ^4.0.6
@@ -118,7 +118,7 @@ devDependencies:
   '@fastify/cors': 8.1.1
   '@fastify/swagger': 8.1.0
   '@types/graphql-fields': 1.3.4
-  '@types/node': 18.11.5
+  '@types/node': 18.11.6
   '@typescript-eslint/eslint-plugin': 5.41.0_huremdigmcnkianavgfk3x6iou
   '@typescript-eslint/parser': 5.41.0_wyqvi574yv7oiwfeinomdzmc3m
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
@@ -134,7 +134,7 @@ devDependencies:
   lint-staged: 13.0.3
   pino-pretty: 9.1.1
   prettier: 2.7.1
-  typegraphql-prisma: 0.22.0_yuc6i4bkobvkoniidill6q7cje
+  typegraphql-prisma: 0.22.0_kdr3sbhgtfqbrl6tlcjybwmqou
   types-fastify-socket.io: 0.0.1
   typescript: 4.8.4
   update-template: 1.3.1
@@ -1111,13 +1111,13 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: false
 
   /@types/busboy/1.5.0:
     resolution: {integrity: sha512-ncOOhwmyFDW76c/Tuvv9MA9VGYUCn8blzyWmzYELcNGDb0WXWLSmFi7hJq25YdRBYJrmMBB5jZZwUjlJe9HCjQ==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: false
 
   /@types/component-emitter/1.2.11:
@@ -1126,7 +1126,7 @@ packages:
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: false
 
   /@types/cookie/0.4.1:
@@ -1138,7 +1138,7 @@ packages:
   /@types/cross-spawn/6.0.2:
     resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: true
 
   /@types/debug/4.1.7:
@@ -1150,7 +1150,7 @@ packages:
   /@types/express-serve-static-core/4.17.30:
     resolution: {integrity: sha512-gstzbTWro2/nFed1WXtf+TtrpwxH7Ggs4RLYTLbeVgIkUQOI3WG/JKjgeOU1zXDvezllupjrf8OPIdvTbIaVOQ==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
     dev: false
@@ -1168,7 +1168,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
 
   /@types/graphql-fields/1.3.4:
     resolution: {integrity: sha512-McLJaAaqY7lk9d9y7E61iQrj0AwcEjSb8uHlPh7KgYV+XX1MSLlSt/alhd5k2BPRE8gy/f4lnkLGb5ke3iG66Q==}
@@ -1202,8 +1202,8 @@ packages:
     resolution: {integrity: sha512-Y6S38pFr04yb13qqHf8uk1nHE3lXgQ30WZbv1mLliV9pt0NjvqdWttLcrOYLnXbOafknVYRHZGoMSpR9UwfYow==}
     dev: true
 
-  /@types/node/18.11.5:
-    resolution: {integrity: sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==}
+  /@types/node/18.11.6:
+    resolution: {integrity: sha512-j3CEDa2vd96K0AXF8Wur7UucACvnjkk8hYyQAHhUNciabZLDl9nfAEVUSwmh245OOZV15bRA3Y590Gi5jUcDJg==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1212,7 +1212,7 @@ packages:
   /@types/oauth/0.9.1:
     resolution: {integrity: sha512-a1iY62/a3yhZ7qH7cNUsxoI3U/0Fe9+RnuFrpTKr+0WVOzbKlSLojShCKe20aOD1Sppv+i8Zlq0pLDuTJnwS4A==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: false
 
   /@types/object-path/0.11.1:
@@ -1256,7 +1256,7 @@ packages:
     resolution: {integrity: sha512-z5xyF6uh8CbjAu9760KDKsH2FcDxZ2tFCsA4HIMWE6IkiYMXfVoa+4f9KX+FN0ZLsaMw1WNG2ETLA6N+/YA+cg==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
     dev: false
 
   /@typescript-eslint/eslint-plugin/5.41.0_huremdigmcnkianavgfk3x6iou:
@@ -2314,7 +2314,7 @@ packages:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.12
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -3348,7 +3348,7 @@ packages:
         optional: true
     dependencies:
       '@types/busboy': 1.5.0
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
       '@types/object-path': 0.11.1
       busboy: 1.6.0
       fs-capacitor: 6.2.0
@@ -5820,7 +5820,7 @@ packages:
       graphql: ^15.3.0
     dependencies:
       '@types/glob': 7.2.0
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
       '@types/semver': 7.3.12
       class-validator: 0.13.2
       glob: 7.2.3
@@ -5830,7 +5830,7 @@ packages:
       semver: 7.3.7
       tslib: 2.4.0
 
-  /typegraphql-prisma/0.22.0_yuc6i4bkobvkoniidill6q7cje:
+  /typegraphql-prisma/0.22.0_kdr3sbhgtfqbrl6tlcjybwmqou:
     resolution: {integrity: sha512-wzV041sXt4HSDNOl3tWZr5D/t9twu/He4S3nvSrRZaKfOheKCpbM4vD22PuQKSdh8wJKkYpqEhomIpohC36+Fg==}
     engines: {node: '>=12.4'}
     hasBin: true
@@ -5848,7 +5848,7 @@ packages:
       '@prisma/generator-helper': 4.4.0
       '@prisma/internals': 4.4.0
       '@types/graphql-fields': 1.3.4
-      '@types/node': 18.11.5
+      '@types/node': 18.11.6
       graphql-fields: 2.0.3
       graphql-scalars: 1.20.0_graphql@16.6.0
       pluralize: 8.0.0
