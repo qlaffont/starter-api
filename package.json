@@ -60,7 +60,7 @@
     "@fastify/secure-session": "^5.2.0",
     "@fastify/type-provider-typebox": "^2.3.0",
     "@gquittet/graceful-server": "^4.0.1",
-    "@graphql-tools/utils": "^8.10.0",
+    "@graphql-tools/utils": "^9.0.0",
     "@oauth-everything/passport-discord": "^1.0.2",
     "@prisma/client": "4.4.0",
     "@sinclair/typebox": "^0.25.0",
