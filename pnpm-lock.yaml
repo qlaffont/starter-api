@@ -58,7 +58,7 @@ specifiers:
   tslib: ^2.4.0
   type-graphql: ^1.1.1
   type-graphql-v2-fork: 2.0.0-alpha2
-  typegraphql-prisma: 0.22.2
+  typegraphql-prisma: 0.23.0
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.3
   unify-errors: ^1.2.22
@@ -134,7 +134,7 @@ devDependencies:
   lint-staged: 13.0.3
   pino-pretty: 9.1.1
   prettier: 2.8.0
-  typegraphql-prisma: 0.22.2_zy44klgiqwn5yoe5dvmoeqaovq
+  typegraphql-prisma: 0.23.0_zy44klgiqwn5yoe5dvmoeqaovq
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.3
   update-template: 1.3.1
@@ -5865,8 +5865,8 @@ packages:
       semver: 7.3.7
       tslib: 2.4.0
 
-  /typegraphql-prisma/0.22.2_zy44klgiqwn5yoe5dvmoeqaovq:
-    resolution: {integrity: sha512-t7FO6gknZXXtMszpyiFPVW6TYcPP4uzN8uiH4llx8M2b/US1UcWMjYNGembTGAl8v84lrHJhJfkNQkrGB+vhkw==}
+  /typegraphql-prisma/0.23.0_zy44klgiqwn5yoe5dvmoeqaovq:
+    resolution: {integrity: sha512-Y7mmYxO2S7xolW/yMhHOuewoeb887vlvaWvwUA9o0f7O1d5009DHRQnYBovAaXqYrZt8do77yMkWyB5JrPTmfg==}
     engines: {node: '>=12.4'}
     hasBin: true
     peerDependencies:
