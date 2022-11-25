@@ -78,7 +78,7 @@
     "lodash": "^4.17.21",
     "mercurius": "^11.0.0",
     "mercurius-upload": "^6.0.0",
-    "micro": "^9.4.1",
+    "micro": "^10.0.0",
     "node-fetch": "^3.0.0",
     "node-ical": "^0.15.2",
     "pino": "^8.4.2",

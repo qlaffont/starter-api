@@ -45,7 +45,7 @@ specifiers:
   lodash: ^4.17.21
   mercurius: ^11.0.0
   mercurius-upload: ^6.0.0
-  micro: ^9.4.1
+  micro: ^10.0.0
   node-fetch: ^3.0.0
   node-ical: ^0.15.2
   pino: ^8.4.2
@@ -91,7 +91,7 @@ dependencies:
   lodash: 4.17.21
   mercurius: 11.0.0_n2ne3lpykswzk5ved2ydiljixu
   mercurius-upload: 6.0.0_graphql@16.6.0
-  micro: 9.4.1
+  micro: 10.0.0
   node-fetch: 3.2.10
   node-ical: 0.15.2
   pino: 8.4.2
@@ -4255,9 +4255,9 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  /micro/9.4.1:
-    resolution: {integrity: sha512-Lpjcbp6Y9GJIfewxDfTmu9eW0rt0MGo+Gs1d3yJLFa7mhErtKkCngGhDbA/O1gqUjEwsHh+jWPg8BJ0Bx4AgFA==}
-    engines: {node: '>= 8.0.0'}
+  /micro/10.0.0:
+    resolution: {integrity: sha512-d8vqNuyRNJDaqJAbEd01R3YaMddy8LmzDX1mB3OTUj6Ep7thWtoDJ5RHmRHEpI5KVZN1Qxey95XlQp6e0HTmMA==}
+    engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
       arg: 4.1.0
