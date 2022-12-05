@@ -41,7 +41,7 @@ specifiers:
   graphql-fields: 2.0.3
   graphql-scalars: 1.20.1
   husky: 8.0.2
-  lint-staged: 13.0.4
+  lint-staged: 13.1.0
   lodash: ^4.17.21
   mercurius: ^11.0.0
   mercurius-upload: ^6.0.0
@@ -131,7 +131,7 @@ devDependencies:
   graphql-fields: 2.0.3
   graphql-scalars: 1.20.1_graphql@16.6.0
   husky: 8.0.2
-  lint-staged: 13.0.4
+  lint-staged: 13.1.0
   pino-pretty: 9.1.1
   prettier: 2.8.0
   typegraphql-prisma: 0.23.1_xgppblh4ns4dehgs5pibe4hcza
@@ -3969,8 +3969,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.0.4:
-    resolution: {integrity: sha512-HxlHCXoYRsq9QCby5wFozmZW00hMs/9e3l+/dz6Qr8Kle4UH0kJTdABAbqhzG+3pcG6QjL9kz7NgGBfph+a5dw==}
+  /lint-staged/13.1.0:
+    resolution: {integrity: sha512-pn/sR8IrcF/T0vpWLilih8jmVouMlxqXxKuAojmbiGX5n/gDnz+abdPptlj0vYnbfE0SQNl3CY/HwtM0+yfOVQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
