@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bull-board/api': 4.9.0
+  '@bull-board/api': 4.10.0
   '@bull-board/fastify': 4.9.0
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
@@ -111,7 +111,7 @@ optionalDependencies:
   utf-8-validate: 5.0.9
 
 devDependencies:
-  '@bull-board/api': 4.9.0
+  '@bull-board/api': 4.10.0
   '@bull-board/fastify': 4.9.0
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
@@ -161,6 +161,12 @@ packages:
       '@babel/helper-validator-identifier': 7.18.6
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: true
+
+  /@bull-board/api/4.10.0:
+    resolution: {integrity: sha512-iZDHQCT3gCops+vC4sXfDkJfOwC5Cz9QSIUOLIiqiA9TYEL/oI1/nmmsfxRNhMfTqn1AGOF0Sl5b+TcZXF6twQ==}
+    dependencies:
+      redis-info: 3.1.0
     dev: true
 
   /@bull-board/api/4.9.0:
