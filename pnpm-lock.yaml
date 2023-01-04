@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@bull-board/api': 4.10.1
-  '@bull-board/fastify': 4.10.0
+  '@bull-board/fastify': 4.10.1
   '@commitlint/cli': 17.4.0
   '@commitlint/config-conventional': 17.4.0
   '@fastify/cors': 8.2.0
@@ -112,7 +112,7 @@ optionalDependencies:
 
 devDependencies:
   '@bull-board/api': 4.10.1
-  '@bull-board/fastify': 4.10.0
+  '@bull-board/fastify': 4.10.1
   '@commitlint/cli': 17.4.0_@types+node@18.11.18
   '@commitlint/config-conventional': 17.4.0
   '@fastify/cors': 8.2.0
@@ -163,23 +163,17 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@bull-board/api/4.10.0:
-    resolution: {integrity: sha512-iZDHQCT3gCops+vC4sXfDkJfOwC5Cz9QSIUOLIiqiA9TYEL/oI1/nmmsfxRNhMfTqn1AGOF0Sl5b+TcZXF6twQ==}
-    dependencies:
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api/4.10.1:
     resolution: {integrity: sha512-WIYXsQ5IFXUz2cFMayjqurFNiyMriv7Ga4XyQ8ytENtkmVF91+uOVYIFNiG+j56wpGoaUSbb++cZkkCn5kvBPg==}
     dependencies:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify/4.10.0:
-    resolution: {integrity: sha512-3F50qLkq/mxpULhWgJQf8t6W7VUEXdHJhYDsM3IfT6iajfBZJMlhI+ebNlZ17qMOOxRGXNUsMUSgF28L/MQDMA==}
+  /@bull-board/fastify/4.10.1:
+    resolution: {integrity: sha512-Rg8+ZUNRec9t3OMzBFxb3ju8IJxyGuq0oRzXYIIP6cMYS/Zwz392toCQ6T+6gLxqAwN/c7HHxYY5gTxek2o1VA==}
     dependencies:
-      '@bull-board/api': 4.10.0
-      '@bull-board/ui': 4.10.0
+      '@bull-board/api': 4.10.1
+      '@bull-board/ui': 4.10.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
@@ -187,10 +181,10 @@ packages:
       - supports-color
     dev: true
 
-  /@bull-board/ui/4.10.0:
-    resolution: {integrity: sha512-n4zWpoRwxZUrnFEcWhRvMFGpdvbIAkZNC26dniE1cHZrVUu9skFTMBCZYpf3mgC2Fa6U5WneLYXnsCGt/8UK6Q==}
+  /@bull-board/ui/4.10.1:
+    resolution: {integrity: sha512-2tKqHjpMtnPIxVvL0depVUzT8FoifMc52oOdMqgzP35ttEghU2+6vNKdV1C8ARB4Wf0jBINaEgfsURWEelNhJA==}
     dependencies:
-      '@bull-board/api': 4.10.0
+      '@bull-board/api': 4.10.1
     dev: true
 
   /@commitlint/cli/17.4.0_@types+node@18.11.18:

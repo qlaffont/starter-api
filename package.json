@@ -27,7 +27,7 @@
   "license": "ISC",
   "devDependencies": {
     "@bull-board/api": "4.10.1",
-    "@bull-board/fastify": "4.10.0",
+    "@bull-board/fastify": "4.10.1",
     "@commitlint/cli": "17.4.0",
     "@commitlint/config-conventional": "17.4.0",
     "@fastify/cors": "8.2.0",
