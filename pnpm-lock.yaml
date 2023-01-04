@@ -65,7 +65,7 @@ specifiers:
   unify-fastify: ^1.2.4
   unify-mercurius: ^1.0.22
   update-template: 1.3.1
-  utf-8-validate: ^5.0.9
+  utf-8-validate: ^6.0.0
   wds: 0.13.2
 
 dependencies:
@@ -89,7 +89,7 @@ dependencies:
   fastify-auth-prisma: 1.1.28
   graphql: 16.6.0
   lodash: 4.17.21
-  mercurius: 11.0.0_n2ne3lpykswzk5ved2ydiljixu
+  mercurius: 11.0.0_dlus3ayrxws3mmnxoug6s6ljjq
   mercurius-upload: 6.0.0_graphql@16.6.0
   micro: 10.0.0
   node-fetch: 3.2.10
@@ -98,17 +98,17 @@ dependencies:
   prisma: 4.8.0
   redis: 4.2.0
   reflect-metadata: 0.1.13
-  socket.io: 4.5.1_22kvxa7zeyivx4jp72v2w3pkvy
+  socket.io: 4.5.1_bl5geyrzxc2dk5va7u7ilip3sy
   tslib: 2.4.0
   type-graphql: 1.1.1_y4roju44775djskduzf2jupeyy
   type-graphql-v2-fork: 2.0.0-alpha2_yhqzkqr7l7dnw5xfz7nm22mkoi
   unify-errors: 1.2.22
   unify-fastify: 1.2.4
-  unify-mercurius: 1.0.22_22kvxa7zeyivx4jp72v2w3pkvy
+  unify-mercurius: 1.0.22_bl5geyrzxc2dk5va7u7ilip3sy
 
 optionalDependencies:
   bufferutil: 4.0.6
-  utf-8-validate: 5.0.9
+  utf-8-validate: 6.0.0
 
 devDependencies:
   '@bull-board/api': 4.10.1
@@ -496,11 +496,11 @@ packages:
       hashlru: 2.3.0
     dev: true
 
-  /@fastify/websocket/7.0.1_22kvxa7zeyivx4jp72v2w3pkvy:
+  /@fastify/websocket/7.0.1_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-LHOUKqRr1iV4w47sVQAT5IrVPsTiuEAqOS1QgtRymJYPeVfIC65LTxg22eoR7kyYW4W84oWJk0gtsBwUGhDEVg==}
     dependencies:
       fastify-plugin: 4.2.0
-      ws: 8.8.1_22kvxa7zeyivx4jp72v2w3pkvy
+      ws: 8.8.1_bl5geyrzxc2dk5va7u7ilip3sy
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2311,7 +2311,7 @@ packages:
     resolution: {integrity: sha512-+nVFp+5z1E3HcToEnO7ZIj3g+3k9389DvWtvJZz0T6/eOCPIyyxehFcedoYrZQrp0LgQbD9pPXhpMBKMd5QURg==}
     engines: {node: '>=10.0.0'}
 
-  /engine.io/6.2.0_22kvxa7zeyivx4jp72v2w3pkvy:
+  /engine.io/6.2.0_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-4KzwW3F3bk+KlzSOY57fj/Jx6LyRQ1nbcyIadehl+AnXjKT7gDO0ORdRi/84ixvMKTym6ZKuxvbzN62HDDU1Lg==}
     engines: {node: '>=10.0.0'}
     dependencies:
@@ -2324,7 +2324,7 @@ packages:
       cors: 2.8.5
       debug: 4.3.4
       engine.io-parser: 5.0.4
-      ws: 8.2.3_22kvxa7zeyivx4jp72v2w3pkvy
+      ws: 8.2.3_bl5geyrzxc2dk5va7u7ilip3sy
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -2924,7 +2924,7 @@ packages:
       socket.io: ^4.4.0
     dependencies:
       fastify-plugin: 3.0.1
-      socket.io: 4.5.1_22kvxa7zeyivx4jp72v2w3pkvy
+      socket.io: 4.5.1_bl5geyrzxc2dk5va7u7ilip3sy
     dev: true
 
   /fastify/4.8.1:
@@ -4227,7 +4227,7 @@ packages:
       - '@types/koa'
     dev: false
 
-  /mercurius/11.0.0_n2ne3lpykswzk5ved2ydiljixu:
+  /mercurius/11.0.0_dlus3ayrxws3mmnxoug6s6ljjq:
     resolution: {integrity: sha512-7t++ALNt9agIrc2hLhGes4ZIEwQ9zAz8hUmmTQojLNhuGCLDU7NKzcxKsX7UClBJewaQCORqlepE+k11Dsq6lg==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
@@ -4235,7 +4235,7 @@ packages:
     dependencies:
       '@fastify/error': 3.0.0
       '@fastify/static': 6.5.0
-      '@fastify/websocket': 7.0.1_22kvxa7zeyivx4jp72v2w3pkvy
+      '@fastify/websocket': 7.0.1_bl5geyrzxc2dk5va7u7ilip3sy
       events.on: 1.0.1
       fastify-plugin: 4.2.0
       graphql: 16.6.0
@@ -4248,7 +4248,7 @@ packages:
       single-user-cache: 0.6.0
       tiny-lru: 8.0.2
       undici: 5.9.1
-      ws: 8.8.1_22kvxa7zeyivx4jp72v2w3pkvy
+      ws: 8.8.1_bl5geyrzxc2dk5va7u7ilip3sy
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -5372,14 +5372,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /socket.io/4.5.1_22kvxa7zeyivx4jp72v2w3pkvy:
+  /socket.io/4.5.1_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-0y9pnIso5a9i+lJmsCdtmTTgJFFSvNQKDnPQRz28mGNnxbmqYg2QPtJTLFxhymFZhAIn50eHAKzJeiNaKr+yUQ==}
     engines: {node: '>=10.0.0'}
     dependencies:
       accepts: 1.3.8
       base64id: 2.0.0
       debug: 4.3.4
-      engine.io: 6.2.0_22kvxa7zeyivx4jp72v2w3pkvy
+      engine.io: 6.2.0_bl5geyrzxc2dk5va7u7ilip3sy
       socket.io-adapter: 2.4.0
       socket.io-parser: 4.0.5
     transitivePeerDependencies:
@@ -5960,12 +5960,12 @@ packages:
       - supports-color
     dev: false
 
-  /unify-mercurius/1.0.22_22kvxa7zeyivx4jp72v2w3pkvy:
+  /unify-mercurius/1.0.22_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-ss8TDfp9EWfuxZ39mlpXDmz6vxevjshAQPBI3LVxHKkinkd6Lv+k6DqpuK3yBtyJg8o19ohbr1cD0JUzq2/LFw==}
     engines: {node: '>=10'}
     dependencies:
       graphql: 16.6.0
-      mercurius: 11.0.0_n2ne3lpykswzk5ved2ydiljixu
+      mercurius: 11.0.0_dlus3ayrxws3mmnxoug6s6ljjq
       unify-errors: 1.2.22
     transitivePeerDependencies:
       - bufferutil
@@ -6004,8 +6004,8 @@ packages:
     dependencies:
       punycode: 2.1.1
 
-  /utf-8-validate/5.0.9:
-    resolution: {integrity: sha512-Yek7dAy0v3Kl0orwMlvi7TPtiCNrdfHNd7Gcc/pLq4BLXqfAmd0J7OWMizUQnTTJsyjKn02mU7anqwfmUP4J8Q==}
+  /utf-8-validate/6.0.0:
+    resolution: {integrity: sha512-OCJuwxQsnG51swYmNloViggxNOFO/leOZpnb/vVeoastJbrzrZZU7lGsYlUcdkCl9nsBu2nkKLjpljb3Ckvb/Q==}
     engines: {node: '>=6.14.2'}
     requiresBuild: true
     dependencies:
@@ -6142,7 +6142,7 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  /ws/8.2.3_22kvxa7zeyivx4jp72v2w3pkvy:
+  /ws/8.2.3_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -6155,9 +6155,9 @@ packages:
         optional: true
     dependencies:
       bufferutil: 4.0.6
-      utf-8-validate: 5.0.9
+      utf-8-validate: 6.0.0
 
-  /ws/8.8.1_22kvxa7zeyivx4jp72v2w3pkvy:
+  /ws/8.8.1_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-bGy2JzvzkPowEJV++hF07hAD6niYSr0JzBNo/J29WsB57A2r7Wlc1UFcTR9IzrPvuNVO4B8LGqF8qcpsVOhJCA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -6170,7 +6170,7 @@ packages:
         optional: true
     dependencies:
       bufferutil: 4.0.6
-      utf-8-validate: 5.0.9
+      utf-8-validate: 6.0.0
     dev: false
 
   /xtend/4.0.2:
