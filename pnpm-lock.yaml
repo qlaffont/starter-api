@@ -50,7 +50,7 @@ specifiers:
   node-ical: ^0.15.2
   pino: ^8.4.2
   pino-pretty: 9.1.1
-  prettier: 2.8.1
+  prettier: 2.8.2
   prisma: 4.8.1
   redis: ^4.2.0
   reflect-metadata: ^0.1.13
@@ -125,7 +125,7 @@ devDependencies:
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-import: 2.26.0_m2kn7xiag5lymyarkgri27ztxm
-  eslint-plugin-prettier: 4.2.1_32m5uc2milwdw3tnkcq5del26y
+  eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
   fastify-socket.io: 4.0.0_socket.io@4.5.1
   gnomon: 1.5.0
   graphql-fields: 2.0.3
@@ -133,7 +133,7 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 13.1.0
   pino-pretty: 9.1.1
-  prettier: 2.8.1
+  prettier: 2.8.2
   typegraphql-prisma: 0.23.2_maoaduilnelh54fxnnqyl767yi
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.4
@@ -2653,7 +2653,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_32m5uc2milwdw3tnkcq5del26y:
+  /eslint-plugin-prettier/4.2.1_iu5s7nk6dw7o3tajefwfiqfmge:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2666,7 +2666,7 @@ packages:
     dependencies:
       eslint: 8.31.0
       eslint-config-prettier: 8.6.0_eslint@8.31.0
-      prettier: 2.8.1
+      prettier: 2.8.2
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -4883,8 +4883,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+  /prettier/2.8.2:
+    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
