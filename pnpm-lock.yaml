@@ -7,7 +7,7 @@ specifiers:
   '@commitlint/config-conventional': 17.4.2
   '@fastify/cors': 8.2.0
   '@fastify/passport': ^2.2.0
-  '@fastify/secure-session': ^5.2.0
+  '@fastify/secure-session': ^6.0.0
   '@fastify/swagger': 8.2.1
   '@fastify/type-provider-typebox': ^2.3.0
   '@gquittet/graceful-server': ^4.0.1
@@ -70,7 +70,7 @@ specifiers:
 
 dependencies:
   '@fastify/passport': 2.2.0
-  '@fastify/secure-session': 5.2.0
+  '@fastify/secure-session': 6.0.0
   '@fastify/type-provider-typebox': 2.3.0_srmsy6ntm7r5n5lg4zq24ijese
   '@gquittet/graceful-server': 4.0.1
   '@graphql-tools/utils': 9.0.1_graphql@16.6.0
@@ -402,8 +402,8 @@ packages:
       fast-uri: 2.1.0
     dev: false
 
-  /@fastify/cookie/7.4.0:
-    resolution: {integrity: sha512-82MUHsZJY/Wl+rG2E+bnYxSifOtNRChm2M+8xnZHnKtYmyNfLvy/37ElCtqD3KzUyTycR+GE7v7uiDD/tY4TkA==}
+  /@fastify/cookie/8.3.0:
+    resolution: {integrity: sha512-P9hY9GO11L20TnZ33XN3i0bt+3x0zaT7S0ohAzWO950E9PB2xnNhLYzPFJIGFi5AVN0yr5+/iZhWxeYvR6KCzg==}
     dependencies:
       cookie: 0.5.0
       fastify-plugin: 4.2.0
@@ -444,13 +444,13 @@ packages:
       fastify-plugin: 4.2.0
     dev: false
 
-  /@fastify/secure-session/5.2.0:
-    resolution: {integrity: sha512-oRWKdHwWUzp4rsJ3GnR8w8doE+7vllWMtohBVp77bENkhm4/OvofaO6PJLJuQvKF7XJAKiGip29dX1RsllKT7g==}
+  /@fastify/secure-session/6.0.0:
+    resolution: {integrity: sha512-Jlw9gkaKPxLO/pDQWWdD4zFIINBxgO3To/KBv3w//Kynh2pKE6fpJEmGp7PI8j9YenEo42yNcm3pPPoY/EV1LQ==}
     hasBin: true
     dependencies:
-      '@fastify/cookie': 7.4.0
-      fastify-plugin: 3.0.1
-      sodium-native: 3.4.1
+      '@fastify/cookie': 8.3.0
+      fastify-plugin: 4.2.0
+      sodium-native: 4.0.0
     dev: false
 
   /@fastify/static/6.5.0:
@@ -5479,8 +5479,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /sodium-native/3.4.1:
-    resolution: {integrity: sha512-PaNN/roiFWzVVTL6OqjzYct38NSXewdl2wz8SRB51Br/MLIJPrbM3XexhVWkq7D3UWMysfrhKVf1v1phZq6MeQ==}
+  /sodium-native/4.0.0:
+    resolution: {integrity: sha512-U5nZ0sFHtPYJncNBS5SkmBnpSDeVpWuzo//07meNVO4p0K8ybcLuQxDX4ByCeVdT/9OLGa1ayvr1pB5iMBbh0g==}
     requiresBuild: true
     dependencies:
       node-gyp-build: 4.5.0
