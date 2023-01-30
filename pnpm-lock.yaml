@@ -43,7 +43,7 @@ specifiers:
   husky: 8.0.3
   lint-staged: 13.1.0
   lodash: ^4.17.21
-  mercurius: ^11.0.0
+  mercurius: ^12.0.0
   mercurius-upload: ^6.0.0
   micro: ^10.0.0
   node-fetch: ^3.0.0
@@ -89,7 +89,7 @@ dependencies:
   fastify-auth-prisma: 1.1.28
   graphql: 16.6.0
   lodash: 4.17.21
-  mercurius: 11.0.0_dlus3ayrxws3mmnxoug6s6ljjq
+  mercurius: 12.0.0_dlus3ayrxws3mmnxoug6s6ljjq
   mercurius-upload: 6.0.0_graphql@16.6.0
   micro: 10.0.0
   node-fetch: 3.2.10
@@ -4322,10 +4322,37 @@ packages:
       p-map: 4.0.0
       readable-stream: 4.1.0
       safe-stable-stringify: 2.3.1
-      secure-json-parse: 2.5.0
+      secure-json-parse: 2.7.0
       single-user-cache: 0.6.0
       tiny-lru: 8.0.2
-      undici: 5.9.1
+      undici: 5.11.0
+      ws: 8.8.1_bl5geyrzxc2dk5va7u7ilip3sy
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /mercurius/12.0.0_dlus3ayrxws3mmnxoug6s6ljjq:
+    resolution: {integrity: sha512-ORe/0eFuUq5lFMF1c8hdEQz44MdK4A8gMbJr8US3BakHBeYbbFDWGskhHkYmaZkx2ka0NJh+iMasWiL07kAoHg==}
+    engines: {node: '>=14.19.3'}
+    peerDependencies:
+      graphql: ^16.0.0
+    dependencies:
+      '@fastify/error': 3.0.0
+      '@fastify/static': 6.5.0
+      '@fastify/websocket': 7.0.1_bl5geyrzxc2dk5va7u7ilip3sy
+      fastify-plugin: 4.2.0
+      graphql: 16.6.0
+      graphql-jit: 0.7.4_graphql@16.6.0
+      mqemitter: 5.0.0
+      p-map: 4.0.0
+      readable-stream: 4.1.0
+      safe-stable-stringify: 2.3.1
+      secure-json-parse: 2.7.0
+      single-user-cache: 0.6.0
+      tiny-lru: 10.0.1
+      undici: 5.11.0
       ws: 8.8.1_bl5geyrzxc2dk5va7u7ilip3sy
     transitivePeerDependencies:
       - bufferutil
@@ -5329,6 +5356,10 @@ packages:
   /secure-json-parse/2.5.0:
     resolution: {integrity: sha512-ZQruFgZnIWH+WyO9t5rWt4ZEGqCKPwhiw+YbzTwpmT9elgLrLcfuyUiSnwwjUiVy9r4VM3urtbNF1xmEh9IL2w==}
 
+  /secure-json-parse/2.7.0:
+    resolution: {integrity: sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==}
+    dev: false
+
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -5762,6 +5793,11 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
+  /tiny-lru/10.0.1:
+    resolution: {integrity: sha512-Vst+6kEsWvb17Zpz14sRJV/f8bUWKhqm6Dc+v08iShmIJ/WxqWytHzCTd6m88pS33rE2zpX34TRmOpAJPloNCA==}
+    engines: {node: '>=6'}
+    dev: false
+
   /tiny-lru/8.0.2:
     resolution: {integrity: sha512-ApGvZ6vVvTNdsmt676grvCkUCGwzG9IqXma5Z07xJgiC5L7akUMof5U8G2JTI9Rz/ovtVhJBlY6mNhEvtjzOIg==}
     engines: {node: '>=6'}
@@ -6027,12 +6063,6 @@ packages:
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
-    dev: true
-
-  /undici/5.9.1:
-    resolution: {integrity: sha512-6fB3a+SNnWEm4CJbgo0/CWR8RGcOCQP68SF4X0mxtYTq2VNN8T88NYrWVBAeSX+zb7bny2dx2iYhP3XHi00omg==}
-    engines: {node: '>=12.18'}
-    dev: false
 
   /unify-errors/1.2.22:
     resolution: {integrity: sha512-pzhN6j/KD/rj2i+0dXNp7FiX+6UF4IPfvTPhSYF+aB/tHj7OC1y6wjJtudZq/SF0C/wZupz4/a1p5sRO6cT4wQ==}
