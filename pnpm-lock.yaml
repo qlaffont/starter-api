@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@bull-board/api': 4.11.1
-  '@bull-board/fastify': 4.11.0
+  '@bull-board/fastify': 4.11.1
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@fastify/cors': 8.2.0
@@ -112,7 +112,7 @@ optionalDependencies:
 
 devDependencies:
   '@bull-board/api': 4.11.1
-  '@bull-board/fastify': 4.11.0
+  '@bull-board/fastify': 4.11.1
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@fastify/cors': 8.2.0
@@ -163,23 +163,17 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@bull-board/api/4.11.0:
-    resolution: {integrity: sha512-qFnG63s3BkaslsNnXYagEUcdeK9SijZTJ+I4vMU+OiZt9VlKh01X1KjNlqjF9guvWcjk+Rg8UOMm0fWwM6PK6g==}
-    dependencies:
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api/4.11.1:
     resolution: {integrity: sha512-x+CKpLKZ4yJ1CETvoX9cIOMM1ZfsXr6N9pOsRj8/lh0Mo/rbQWbfdlZR1jiALMAKu1RzJnffZcn6uKeFoXMRBQ==}
     dependencies:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify/4.11.0:
-    resolution: {integrity: sha512-G4sAFVx5kGT5T/F2gL91RjZ2+YrMHNrLWoVo/QfHMcZe3RoOP4PpbOLgLC/O67KYn3JK6t8ysGyyP035OSJ2HA==}
+  /@bull-board/fastify/4.11.1:
+    resolution: {integrity: sha512-xBTgSZKeLIwjLWsdW3vOJTubO6ZfiOKQSjtZ7n9ZUoiO4gg4m0MWfTBDgBFSgIqB5FjgdsIO6aP7QGsHI1wmng==}
     dependencies:
-      '@bull-board/api': 4.11.0
-      '@bull-board/ui': 4.11.0
+      '@bull-board/api': 4.11.1
+      '@bull-board/ui': 4.11.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
@@ -187,10 +181,10 @@ packages:
       - supports-color
     dev: true
 
-  /@bull-board/ui/4.11.0:
-    resolution: {integrity: sha512-/Yb7x/3tWxysA2jRDQ89xEPnscvfGQdf4MmDRzWH5lDkVmL8b1HvZAQxLrHcxwB6y16oorQTf/1KbRZl0rJDHg==}
+  /@bull-board/ui/4.11.1:
+    resolution: {integrity: sha512-jILv2JN8cfgtHRHYk9GNpQh3rI2zaiX6bEfa1yyFRjLKcY4g409MTOOkZvkXlN5I4mBs+V3aob8cmvS2ixESDA==}
     dependencies:
-      '@bull-board/api': 4.11.0
+      '@bull-board/api': 4.11.1
     dev: true
 
   /@commitlint/cli/17.4.2:
