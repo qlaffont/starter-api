@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bull-board/api': 4.11.0
+  '@bull-board/api': 4.11.1
   '@bull-board/fastify': 4.11.0
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
@@ -111,7 +111,7 @@ optionalDependencies:
   utf-8-validate: 6.0.0
 
 devDependencies:
-  '@bull-board/api': 4.11.0
+  '@bull-board/api': 4.11.1
   '@bull-board/fastify': 4.11.0
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
@@ -165,6 +165,12 @@ packages:
 
   /@bull-board/api/4.11.0:
     resolution: {integrity: sha512-qFnG63s3BkaslsNnXYagEUcdeK9SijZTJ+I4vMU+OiZt9VlKh01X1KjNlqjF9guvWcjk+Rg8UOMm0fWwM6PK6g==}
+    dependencies:
+      redis-info: 3.1.0
+    dev: true
+
+  /@bull-board/api/4.11.1:
+    resolution: {integrity: sha512-x+CKpLKZ4yJ1CETvoX9cIOMM1ZfsXr6N9pOsRj8/lh0Mo/rbQWbfdlZR1jiALMAKu1RzJnffZcn6uKeFoXMRBQ==}
     dependencies:
       redis-info: 3.1.0
     dev: true
