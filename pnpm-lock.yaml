@@ -55,7 +55,7 @@ specifiers:
   node-ical: ^0.15.2
   pino: ^8.4.2
   pino-pretty: 9.1.1
-  prettier: 2.8.3
+  prettier: 2.8.4
   prisma: 4.9.0
   redis: ^4.2.0
   reflect-metadata: ^0.1.13
@@ -134,7 +134,7 @@ devDependencies:
   eslint: 8.33.0
   eslint-config-prettier: 8.6.0_eslint@8.33.0
   eslint-plugin-import: 2.27.5_yzj2n2b43wonjwaifya6xmk2zy
-  eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
+  eslint-plugin-prettier: 4.2.1_qa2thblfovmfepmgrc7z2owbo4
   fastify-socket.io: 4.0.0_socket.io@4.5.1
   gnomon: 1.5.0
   graphql-fields: 2.0.3
@@ -142,7 +142,7 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 13.1.1
   pino-pretty: 9.1.1
-  prettier: 2.8.3
+  prettier: 2.8.4
   typegraphql-prisma: 0.23.4_ilbf7lozplmlzotuocfoue5tia
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.5
@@ -2680,7 +2680,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq:
+  /eslint-plugin-prettier/4.2.1_qa2thblfovmfepmgrc7z2owbo4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2693,7 +2693,7 @@ packages:
     dependencies:
       eslint: 8.33.0
       eslint-config-prettier: 8.6.0_eslint@8.33.0
-      prettier: 2.8.3
+      prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -5004,8 +5004,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -5394,6 +5394,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
 
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
@@ -5996,7 +5997,7 @@ packages:
       graphql: 16.6.0
       graphql-query-complexity: 0.11.0_graphql@16.6.0
       graphql-subscriptions: 2.0.0_graphql@16.6.0
-      semver: 7.3.7
+      semver: 7.3.8
       tslib: 2.4.0
     transitivePeerDependencies:
       - supports-color
