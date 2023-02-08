@@ -8,6 +8,7 @@ import { graphQLLoaderLoader, graphQLSchemaLoader } from '../../loaders/graphQLL
 export const loadMercurius = async (fastify: FastifyCustomInstance) => {
   const schema = await buildSchema({
     ...graphQLSchemaLoader(),
+    validate: { forbidUnknownValues: false },
     authChecker: ({ context }) => {
       return !!context.user;
     },
