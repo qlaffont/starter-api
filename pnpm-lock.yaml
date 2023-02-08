@@ -22,7 +22,7 @@ specifiers:
   '@socket.io/redis-adapter': ^8.0.0
   '@socket.io/redis-emitter': ^5.0.0
   '@types/graphql-fields': 1.3.4
-  '@types/node': 18.11.19
+  '@types/node': 18.13.0
   '@typescript-eslint/eslint-plugin': 5.51.0
   '@typescript-eslint/parser': 5.51.0
   argon2: ^0.30.3
@@ -127,7 +127,7 @@ devDependencies:
   '@fastify/swagger': 8.3.1
   '@fastify/swagger-ui': 1.3.0
   '@types/graphql-fields': 1.3.4
-  '@types/node': 18.11.19
+  '@types/node': 18.13.0
   '@typescript-eslint/eslint-plugin': 5.51.0_b635kmla6dsb4frxfihkw4m47e
   '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
@@ -143,7 +143,7 @@ devDependencies:
   lint-staged: 13.1.1
   pino-pretty: 9.1.1
   prettier: 2.8.4
-  typegraphql-prisma: 0.23.4_ilbf7lozplmlzotuocfoue5tia
+  typegraphql-prisma: 0.23.4_rrlxq47ndfu3lhzpojcybmgxry
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.5
   update-template: 1.3.1
@@ -282,15 +282,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.0
       '@commitlint/types': 17.4.0
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       chalk: 4.1.2
       cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.1.1_q6dimmvgduffavfq3obt6abtea
+      cosmiconfig-typescript-loader: 4.1.1_p7cp6dsfhdrlk7mvuxd3wodbsu
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_qqdszkrtcshgbphghj7vnvrrby
+      ts-node: 10.9.1_4bewfcp2iebiwuold25d6rgcsy
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
@@ -1145,7 +1145,7 @@ packages:
   /@types/busboy/1.5.0:
     resolution: {integrity: sha512-ncOOhwmyFDW76c/Tuvv9MA9VGYUCn8blzyWmzYELcNGDb0WXWLSmFi7hJq25YdRBYJrmMBB5jZZwUjlJe9HCjQ==}
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
     dev: false
 
   /@types/component-emitter/1.2.11:
@@ -1160,7 +1160,7 @@ packages:
   /@types/cross-spawn/6.0.2:
     resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
     dev: true
 
   /@types/debug/4.1.7:
@@ -1190,8 +1190,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
-  /@types/node/18.11.19:
-    resolution: {integrity: sha512-YUgMWAQBWLObABqrvx8qKO1enAvBUdjZOAWQ5grBAkp5LQv45jBvYKZ3oFS9iKRCQyFjqw6iuEa1vmFqtxYLZw==}
+  /@types/node/18.13.0:
+    resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -2025,7 +2025,7 @@ packages:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  /cosmiconfig-typescript-loader/4.1.1_q6dimmvgduffavfq3obt6abtea:
+  /cosmiconfig-typescript-loader/4.1.1_p7cp6dsfhdrlk7mvuxd3wodbsu:
     resolution: {integrity: sha512-9DHpa379Gp0o0Zefii35fcmuuin6q92FnLDffzdZ0l9tVd3nEobG3O+MZ06+kuBvFTSVScvNb/oHA13Nd4iipg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -2034,9 +2034,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       cosmiconfig: 8.0.0
-      ts-node: 10.9.1_qqdszkrtcshgbphghj7vnvrrby
+      ts-node: 10.9.1_4bewfcp2iebiwuold25d6rgcsy
       typescript: 4.9.5
     dev: true
 
@@ -2327,7 +2327,7 @@ packages:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.12
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -3417,7 +3417,7 @@ packages:
         optional: true
     dependencies:
       '@types/busboy': 1.5.0
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       '@types/object-path': 0.11.1
       busboy: 1.6.0
       fs-capacitor: 6.2.0
@@ -5883,7 +5883,7 @@ packages:
       code-block-writer: 11.0.3
     dev: true
 
-  /ts-node/10.9.1_qqdszkrtcshgbphghj7vnvrrby:
+  /ts-node/10.9.1_4bewfcp2iebiwuold25d6rgcsy:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -5902,7 +5902,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -6011,7 +6011,7 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typegraphql-prisma/0.23.4_ilbf7lozplmlzotuocfoue5tia:
+  /typegraphql-prisma/0.23.4_rrlxq47ndfu3lhzpojcybmgxry:
     resolution: {integrity: sha512-VbTSw/FdiF00hHRiTX2/TEzDdt0/0vNGWzpEhm+rc+iHZCfCO6AkMsVJH2f/C5L2t4BKh14l9AZi6HdS0cGy8w==}
     engines: {node: '>=12.4'}
     hasBin: true
@@ -6029,7 +6029,7 @@ packages:
       '@prisma/generator-helper': 4.9.0
       '@prisma/internals': 4.9.0
       '@types/graphql-fields': 1.3.4
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       graphql-fields: 2.0.3
       graphql-scalars: 1.20.1_graphql@16.6.0
       pluralize: 8.0.0
