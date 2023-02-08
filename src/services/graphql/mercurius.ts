@@ -1,5 +1,5 @@
 import { isDevelopmentEnv } from 'env-vars-validator';
-import { buildSchema } from 'type-graphql-v2-fork';
+import { buildSchema } from 'type-graphql';
 import mercurius from 'mercurius';
 import mercuriusUpload from 'mercurius-upload';
 import { unifyMercuriusErrorFormatter } from 'unify-mercurius';

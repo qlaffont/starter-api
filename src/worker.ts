@@ -5,7 +5,7 @@ dotenv.config();
 import { currentEnv, validateEnv } from 'env-vars-validator';
 import 'reflect-metadata';
 import pino from 'pino';
-import { QueueScheduler, Worker } from 'bullmq';
+import { Worker } from 'bullmq';
 import { PrismaClient } from '../prisma/client';
 import { handleAuthQueue } from './components/auth/authQueue';
 
@@ -49,7 +49,7 @@ global.prisma = prisma;
   try {
     logger.info(`Worker Running on ${currentEnv()} mode`);
 
-    const workers: (Worker<any, any, any> | QueueScheduler)[] = [];
+    const workers: Worker<any, any, any>[] = [];
     workers.push(...handleAuthQueue());
 
     ['SIGHUP', 'SIGBREAK', 'SIGINT', 'SIGTERM', 'uncaughtException', 'beforeExit', 'SIGUSR2'].map((code) => {

@@ -44,8 +44,6 @@ import { loadSocket } from './loaders/socketLoader';
         COOKIE_SECRET: { type: 'string', minLength: 38, maxLength: 38 },
         COOKIE_SALT: { type: 'string', minLength: 16, maxLength: 16 },
         DATABASE_URL: { type: 'string' },
-        DISCORD_OAUTH_CLIENT_ID: { type: 'string', minLength: 2 },
-        DISCORD_OAUTH_CLIENT_SECRET: { type: 'string', minLength: 2 },
         NODE_ENV: { type: 'string' },
         PORT: { type: 'integer' },
         JWT_ACCESS_TIME: { type: 'string' },
@@ -60,8 +58,6 @@ import { loadSocket } from './loaders/socketLoader';
           'COOKIE_SALT',
           'API_URL',
           'CLIENT_URL',
-          'DISCORD_OAUTH_CLIENT_ID',
-          'DISCORD_OAUTH_CLIENT_SECRET',
           'JWT_ACCESS_TIME',
           'JWT_REFRESH_TIME',
           'JWT_REFRESH_SECRET',
@@ -79,9 +75,7 @@ import { loadSocket } from './loaders/socketLoader';
   await fastify.register(fastifyAuthPrismaPlugin, {
     config: [
       { url: '/graphql', method: '*' },
-      { url: '/auth/login', method: 'GET' },
-      { url: '/auth/authorization', method: 'GET' },
-      { url: '/auth/twitch/authorization', method: 'GET' },
+      { url: '/auth/login', method: 'POST' },
       { url: '/auth/refresh', method: 'POST' },
       { url: '/live', method: 'GET' },
       { url: '/ready', method: 'GET' },
@@ -90,7 +84,6 @@ import { loadSocket } from './loaders/socketLoader';
             { url: '/documentation/*', method: '*' },
             { url: '/graphiql', method: '*' },
             { url: '/graphiql/*', method: '*' },
-            { url: '/graphql', method: '*' },
             { url: '/bull/*', method: '*' },
           ] as FastifyAuthPrismaUrlConfig[])
         : []),
@@ -139,7 +132,7 @@ import { loadSocket } from './loaders/socketLoader';
 
     const softName = pkg?.name;
 
-    fastify.register(require('@fastify/swagger'), {
+    await fastify.register(require('@fastify/swagger'), {
       mode: 'dynamic',
       exposeRoute: true,
       openapi: {
@@ -172,6 +165,14 @@ import { loadSocket } from './loaders/socketLoader';
         if (url === '/graphql') newSchema.tags = ['GraphQL'];
 
         return { schema: newSchema, url };
+      },
+    });
+
+    await fastify.register(require('@fastify/swagger-ui'), {
+      routePrefix: '/documentation',
+      uiConfig: {
+        docExpansion: 'full',
+        deepLinking: false,
       },
     });
 

@@ -1,12 +1,11 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { createUserToken, getAccessTokenFromRequest, refreshUserToken, removeUserToken } from 'fastify-auth-prisma';
-import { BadRequest, Forbidden } from 'unify-errors';
+import { BadRequest } from 'unify-errors';
 import { User } from '../../../prisma/client';
+import { CryptoUtils } from '../../services/crypto/crypto.utils';
 
 class AuthController {
-  static async authorization(req: FastifyRequest, res: FastifyReply) {
-    const user = req.user! as User;
-
+  static async loginAndGenerateToken(user: User, req: FastifyRequest) {
     const { accessToken, refreshToken } = await createUserToken(prisma)(user.id, {
       secret: process.env.JWT_ACCESS_SECRET!,
       refreshSecret: process.env.JWT_REFRESH_SECRET!,
@@ -16,10 +15,23 @@ class AuthController {
 
     req.session.set('refresh', refreshToken);
 
-    const urlToRedirect = new URL('/auth', process.env.CLIENT_URL);
-    urlToRedirect.searchParams.append('accessToken', accessToken);
+    return { access_token: accessToken };
+  }
 
-    res.redirect(urlToRedirect.toString());
+  static async login({ email, password }: { email: string; password: string }, req: FastifyRequest) {
+    const user = await prisma.user.findFirst({
+      where: { email },
+    });
+
+    if (!user) {
+      throw new BadRequest({ error: 'account_not_found' });
+    }
+
+    if (!(await CryptoUtils.compareArgonHash(password, user.password))) {
+      throw new BadRequest({ error: 'invalid_password' });
+    }
+
+    return AuthController.loginAndGenerateToken(user, req);
   }
 
   static async logout(req: FastifyRequest, res: FastifyReply) {
@@ -51,13 +63,9 @@ class AuthController {
   }
 
   static async getUserInfo(req: FastifyRequest, res: FastifyReply) {
-    const { id, avatarUrl, username, email, isBanned, isActive, isAlwaysActive, isExaltyActive } = req.connectedUser!;
+    const { id, email, firstName, lastName } = req.connectedUser!;
 
-    if (isBanned || (!isActive && !isAlwaysActive && !isExaltyActive)) {
-      throw new Forbidden();
-    }
-
-    res.send({ id, avatarUrl, username, email });
+    res.send({ id, email, firstName, lastName });
   }
 }
 

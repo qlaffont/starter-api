@@ -1,34 +1,23 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { FastifyInstance } from 'fastify';
-import fastifyPassport from '@fastify/passport';
-import { authorizeDiscordConnection, connectToDiscord, logout, refreshToken } from './authSchemas';
+import { Type } from '@sinclair/typebox';
+import { login, logout, refreshToken } from './authSchemas';
 import AuthController from './authController';
 
 export const AuthRoutes = () =>
-  async function (fastify: FastifyInstance) {
-    fastify.get(
+  async function (fastify: FastifyCustomInstance) {
+    fastify.post(
       '/login',
       {
-        preValidation: fastifyPassport.authenticate('discord', {
-          session: false,
-        }),
-        schema: connectToDiscord,
+        schema: {
+          ...login,
+          body: Type.Object({
+            email: Type.String({ format: 'email' }),
+            password: Type.String(),
+          }),
+        },
       },
-      () => {},
+      async (req) => AuthController.login({ email: req.body.email, password: req.body.password }, req),
     );
-
-    fastify.get(
-      '/authorization',
-      {
-        preValidation: fastifyPassport.authenticate('discord', {
-          failureRedirect: '/auth/login',
-          session: false,
-        }),
-        schema: authorizeDiscordConnection,
-      },
-      AuthController.authorization,
-    );
-
     fastify.post(
       '/logout',
       {
@@ -39,5 +28,5 @@ export const AuthRoutes = () =>
 
     fastify.post('/refresh', { schema: refreshToken }, AuthController.refresh);
 
-    fastify.get('/info', { schema: { hide: true } }, AuthController.getUserInfo);
+    fastify.get('/info', AuthController.getUserInfo);
   };

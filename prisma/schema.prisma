@@ -3,7 +3,7 @@
 
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["fullTextSearch", "interactiveTransactions", "referentialIntegrity"]
+  previewFeatures = ["fullTextSearch"]
   output          = "../prisma/client"
 }
 
@@ -36,18 +36,19 @@ enum Language {
 }
 
 model User {
-  id String @id @unique @default(uuid())
-  token String?
+  id String @id @default(uuid())
 
-  discordUserId String  @unique
-  avatarUrl     String?
-  username      String?
-  email         String?
+  firstName       String
+  lastName        String
+  email           String
+  /// @TypeGraphQL.omit(output: true)
+  password        String
 
-  lang Language @default(EN)
+  /// @TypeGraphQL.omit(output: true)
+  resetPasswordCode String?
 
-  tokens       Token[]
+  tokens            Token[]
 
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

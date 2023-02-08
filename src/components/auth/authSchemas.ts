@@ -1,5 +1,3 @@
-import { Type } from '@sinclair/typebox';
-
 export const authSchema = {
   security: [
     {
@@ -8,17 +6,9 @@ export const authSchema = {
   ],
 };
 
-export const connectToDiscord = {
-  description: 'Login to Discord',
+export const login = {
+  description: 'Login with email & password',
   tags: ['Auth'],
-};
-
-export const authorizeDiscordConnection = {
-  description: 'OAuth Callback Discord',
-  tags: ['Auth'],
-  querystring: Type.Object({
-    code: Type.String(),
-  }),
 };
 
 export const refreshToken = {

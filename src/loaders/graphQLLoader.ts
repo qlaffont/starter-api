@@ -1,4 +1,4 @@
-import { NonEmptyArray } from 'type-graphql-v2-fork';
+import { NonEmptyArray } from 'type-graphql';
 import { AuthResolver } from '../components/auth/authResolver';
 
 export const graphQLSchemaLoader = () => {
