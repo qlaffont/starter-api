@@ -54,7 +54,7 @@ specifiers:
   node-fetch: ^3.0.0
   node-ical: ^0.15.2
   pino: ^8.4.2
-  pino-pretty: 9.1.1
+  pino-pretty: 9.2.0
   prettier: 2.8.4
   prisma: 4.10.0
   redis: ^4.2.0
@@ -141,7 +141,7 @@ devDependencies:
   graphql-scalars: 1.20.1_graphql@16.6.0
   husky: 8.0.3
   lint-staged: 13.1.1
-  pino-pretty: 9.1.1
+  pino-pretty: 9.2.0
   prettier: 2.8.4
   typegraphql-prisma: 0.23.5_3woqk55d5xmrg23dh5qtfnstte
   types-fastify-socket.io: 0.0.1
@@ -4936,8 +4936,8 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty/9.1.1:
-    resolution: {integrity: sha512-iJrnjgR4FWQIXZkUF48oNgoRI9BpyMhaEmihonHeCnZ6F50ZHAS4YGfGBT/ZVNsPmd+hzkIPGzjKdY08+/yAXw==}
+  /pino-pretty/9.2.0:
+    resolution: {integrity: sha512-7CeszmFqrUD08+JvtYcFXowNE7duFlE1XScmR41qTMbwQOhn7gijYYrRb5udH+z8xq4+A8vN8rQNYVPCTfzmGw==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
@@ -4951,7 +4951,7 @@ packages:
       pino-abstract-transport: 1.0.0
       pump: 3.0.0
       readable-stream: 4.1.0
-      secure-json-parse: 2.5.0
+      secure-json-parse: 2.7.0
       sonic-boom: 3.2.0
       strip-json-comments: 3.1.1
     dev: true
@@ -5395,10 +5395,10 @@ packages:
 
   /secure-json-parse/2.5.0:
     resolution: {integrity: sha512-ZQruFgZnIWH+WyO9t5rWt4ZEGqCKPwhiw+YbzTwpmT9elgLrLcfuyUiSnwwjUiVy9r4VM3urtbNF1xmEh9IL2w==}
+    dev: false
 
   /secure-json-parse/2.7.0:
     resolution: {integrity: sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==}
-    dev: false
 
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}

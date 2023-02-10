@@ -58,7 +58,7 @@
     "graphql-scalars": "1.20.1",
     "husky": "8.0.3",
     "lint-staged": "13.1.1",
-    "pino-pretty": "9.1.1",
+    "pino-pretty": "9.2.0",
     "prettier": "2.8.4",
     "typegraphql-prisma": "0.23.5",
     "types-fastify-socket.io": "0.0.1",
