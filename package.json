@@ -37,8 +37,8 @@
   "devDependencies": {
     "@bull-board/api": "4.11.1",
     "@bull-board/fastify": "4.11.1",
-    "@commitlint/cli": "17.4.2",
-    "@commitlint/config-conventional": "17.4.2",
+    "@commitlint/cli": "17.4.3",
+    "@commitlint/config-conventional": "17.4.3",
     "@faker-js/faker": "^7.6.0",
     "@fastify/cors": "8.2.0",
     "@fastify/swagger": "8.3.1",
