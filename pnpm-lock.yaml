@@ -57,7 +57,7 @@ specifiers:
   mercurius-upload: ^6.0.0
   node-fetch: ^3.0.0
   pino: ^8.4.2
-  pino-pretty: 9.2.0
+  pino-pretty: 9.3.0
   prettier: 2.8.4
   prisma: 4.10.1
   prisma-field-encryption: ^1.4.1
@@ -153,7 +153,7 @@ devDependencies:
   graphql-scalars: 1.20.1_graphql@16.6.0
   husky: 8.0.3
   lint-staged: 13.1.2
-  pino-pretty: 9.2.0
+  pino-pretty: 9.3.0
   prettier: 2.8.4
   prompt-sync: 4.2.0
   tsc-alias: 1.8.2
@@ -5075,8 +5075,8 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty/9.2.0:
-    resolution: {integrity: sha512-7CeszmFqrUD08+JvtYcFXowNE7duFlE1XScmR41qTMbwQOhn7gijYYrRb5udH+z8xq4+A8vN8rQNYVPCTfzmGw==}
+  /pino-pretty/9.3.0:
+    resolution: {integrity: sha512-T3FIzVc2sQfDY6FSjhvAEOeA1sby0YKI4he4VsI+d8q3MyYnfsPT+7OI3W/99v0v3TfJN/nMJradEvJWjbjRaQ==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
