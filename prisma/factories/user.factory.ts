@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { Prisma } from '../client/index';
+import { Prisma } from '@prisma/client';
 import { CryptoUtils } from '../../src/services/crypto/crypto.utils';
 
 export const userFactory = async (

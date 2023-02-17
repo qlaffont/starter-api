@@ -2,9 +2,9 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 import { createUserToken, getAccessTokenFromRequest, refreshUserToken, removeUserToken } from 'fastify-auth-prisma';
 import { BadRequest } from 'unify-errors';
 import { faker } from '@faker-js/faker';
-import { User } from '../../../prisma/client';
+import { User } from '@prisma/client';
 import { CryptoUtils } from '../../services/crypto/crypto.utils';
-import { UserRegister } from './authType';
+import { AuthErrors, UserRegister } from './authType';
 
 class AuthController {
   static async loginAndGenerateToken(user: User, req: FastifyRequest) {
@@ -22,15 +22,15 @@ class AuthController {
 
   static async validatePassword(password: string) {
     if (!password) {
-      throw new BadRequest({ error: 'password_validation_failed' });
+      throw new BadRequest({ error: AuthErrors.password_validation_error });
     }
 
     if (password?.length < 8) {
-      throw new BadRequest({ error: 'password_validation_failed' });
+      throw new BadRequest({ error: AuthErrors.password_validation_error });
     }
 
     if (password?.length > 20) {
-      throw new BadRequest({ error: 'password_validation_failed' });
+      throw new BadRequest({ error: AuthErrors.password_validation_error });
     }
   }
 
@@ -40,7 +40,7 @@ class AuthController {
     });
 
     if (existingUser) {
-      throw new BadRequest({ error: 'user_already_exist' });
+      throw new BadRequest({ error: AuthErrors.user_already_exist });
     }
 
     await this.validatePassword(registerUser.password);
@@ -59,11 +59,11 @@ class AuthController {
     });
 
     if (!user) {
-      throw new BadRequest({ error: 'account_not_found' });
+      throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
     if (!(await CryptoUtils.compareArgonHash(password, user.password))) {
-      throw new BadRequest({ error: 'invalid_password' });
+      throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
     return AuthController.loginAndGenerateToken(user, req);
@@ -109,11 +109,11 @@ class AuthController {
     });
 
     if (!user) {
-      throw new BadRequest({ error: 'account_not_found' });
+      throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
     if (!(await CryptoUtils.compareArgonHash(oldPassword, user.password))) {
-      throw new BadRequest({ error: 'invalid_password' });
+      throw new BadRequest({ error: AuthErrors.password_error });
     }
 
     await this.validatePassword(newPassword);
@@ -134,7 +134,7 @@ class AuthController {
     });
 
     if (!user) {
-      throw new BadRequest({ error: 'account_not_found' });
+      throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
     const resetCode = faker.random.numeric(4);
@@ -147,17 +147,26 @@ class AuthController {
       },
     });
 
-    //TODO send email
-    logger.info(`[TO REMOVE] Reset Passord code ${JSON.stringify({ email, resetCode })}`);
+    await sendim.sendRawMail({
+      to: [{ email }],
+      sender: { email: 'test@test.fr' },
+      subject: 'reset password',
+      htmlContent: resetCode,
+      textContent: resetCode,
+    });
   }
 
   static async resetPassword(email: string, resetPasswordCode: string, password: string) {
     const user = await prisma.user.findFirst({
-      where: { email, resetPasswordCode },
+      where: { email },
     });
 
     if (!user) {
-      throw new BadRequest({ error: 'account_not_found' });
+      throw new BadRequest({ error: AuthErrors.account_not_found });
+    }
+
+    if (user.resetPasswordCode !== resetPasswordCode) {
+      throw new BadRequest({ error: AuthErrors.wrong_reset_code });
     }
 
     await this.validatePassword(password);

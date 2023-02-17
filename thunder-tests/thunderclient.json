@@ -1,0 +1,232 @@
+[
+  {
+    "_id": "423016c4-2c7d-4b6a-b71b-53e70985ea20",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Login",
+    "url": "http://localhost:3000/auth/login",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-02-07T15:13:32.408Z",
+    "modified": "2023-02-16T09:36:12.171Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"test@test.fr\",\n  \"password\": \"password\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "isjson",
+        "value": "true"
+      },
+      {
+        "type": "set-env-var",
+        "custom": "json.access_token",
+        "action": "setto",
+        "value": "{{token}}"
+      }
+    ]
+  },
+  {
+    "_id": "1c94d799-cf3b-4d9c-87ce-49ee53d43117",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Get info",
+    "url": "http://localhost:3000/auth/info",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-02-07T15:14:42.622Z",
+    "modified": "2023-02-07T15:15:07.983Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1097d3f7-59bf-49c1-8d6a-b442df61a91d",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Logout",
+    "url": "http://localhost:3000/auth/logout",
+    "method": "POST",
+    "sortNum": 15000,
+    "created": "2023-02-07T15:20:45.641Z",
+    "modified": "2023-02-07T15:21:16.197Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "677298c9-8e75-4c66-b70a-69c646c6da58",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Ask Reset password",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 12500,
+    "created": "2023-02-08T07:17:36.802Z",
+    "modified": "2023-02-17T10:01:07.458Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "mutation($email: String!) {\n  askResetPassword(email: $email)\n}\n",
+        "variables": "{\n  \"email\": \"quentin@flexper.fr\"\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "47daf627-f4f2-4cd1-877c-d650b6fd7291",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Reset password",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 13750,
+    "created": "2023-02-08T08:01:30.733Z",
+    "modified": "2023-02-17T10:02:23.586Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "mutation($email: String!, $resetCode: String!, $password: String!) {\n  resetPassword(email: $email, resetCode: $resetCode, password: $password)\n}\n",
+        "variables": "{\n  \"email\": \"quentin@flexper.fr\",\n  \"password\": \"password\",\n  \"resetCode\": \"4886\"\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "61b898e8-2ff2-4b05-8007-6dce73e8efba",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Change Password",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 14375,
+    "created": "2023-02-08T08:04:32.647Z",
+    "modified": "2023-02-08T08:12:53.701Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "mutation($oldPassword: String!, $newPassword: String!) {\n  changePassword(oldPassword: $oldPassword, newPassword: $newPassword)\n}\n",
+        "variables": "{\n  \"oldPassword\": \"password\",\n  \"newPassword\": \"password\"\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1f9564d9-2c30-4e16-8d45-67bb16e5d72e",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "Register User",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 5000,
+    "created": "2023-02-08T08:26:03.086Z",
+    "modified": "2023-02-08T08:28:27.385Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "mutation($userRegister: UserRegister!) {\n  registerUser(userRegister: $userRegister)\n}\n",
+        "variables": "{\n  \"userRegister\": {\n    \"firstName\": \"Quentin\",\n    \"lastName\": \"Laffont\",\n    \"password\": \"password\",\n    \"email\": \"quentin@flexper.fr\"\n  }\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "0b5860fd-3847-4c04-845e-89e30558f5b0",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "GetUserMe",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 14687.5,
+    "created": "2023-02-09T07:14:25.511Z",
+    "modified": "2023-02-09T07:15:00.271Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "{\n    getUserMe {\n        firstName\n    }\n}",
+        "variables": "{\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "625afe21-0c4a-41d6-9c39-5c1b7e27ba38",
+    "colId": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "containerId": "",
+    "name": "DeleteAccount",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 14843.8,
+    "created": "2023-02-10T08:54:45.658Z",
+    "modified": "2023-02-10T08:55:38.650Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "mutation {\n    deleteAccount\n}",
+        "variables": "{\n}"
+      }
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  }
+]

@@ -1,20 +1,24 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import 'dotenv/config';
-import { currentEnv, isDevelopmentEnv, validateEnv } from 'env-vars-validator';
+import { currentEnv, isDevelopmentEnv, isPreProductionEnv, isProductionEnv, validateEnv } from 'env-vars-validator';
 import 'reflect-metadata';
 import Fastify from 'fastify';
 import FastifyCORS from '@fastify/cors';
 import GracefulServer from '@gquittet/graceful-server';
 import { createAdapter } from '@socket.io/redis-adapter';
 import { createClient } from 'redis';
+import { Sendim } from 'sendim';
 import unifyFastifyPlugin from 'unify-fastify';
+import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
 import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
+import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 
-import { PrismaClient } from '../prisma/client';
+import { PrismaClient } from '@prisma/client';
 
 // DATABASE CONFIGURATION
 const prisma = new PrismaClient();
+prisma.$use(fieldEncryptionMiddleware());
 global.prisma = prisma;
 
 import { loadBullDebugger } from './services/bull/debugger';
@@ -34,7 +38,9 @@ import { loadSocket } from './loaders/socketLoader';
   const logger = fastify.log;
   global.logger = logger;
 
-  await fastify.register(unifyFastifyPlugin);
+  await fastify.register(unifyFastifyPlugin, {
+    hideError: isProductionEnv() || isPreProductionEnv(),
+  });
 
   try {
     validateEnv(
@@ -72,6 +78,11 @@ import { loadSocket } from './loaders/socketLoader';
     process.exit(1);
   }
 
+  //LOAD SENDIM
+  const sendim = new Sendim(logLevel as 'info');
+
+  global.sendim = sendim;
+
   await fastify.register(fastifyAuthPrismaPlugin, {
     config: [
       { url: '/graphql', method: '*' },
@@ -103,10 +114,10 @@ import { loadSocket } from './loaders/socketLoader';
 
   try {
     await prisma.$connect();
-    logger.info('Connected to database');
+    logger.info('[PRISMA] Connected to database');
     gracefulServer.setReady();
   } catch (e) {
-    logger.fatal('Impossible to connect to database', e);
+    logger.fatal('[PRISMA] Impossible to connect to database', e);
     process.exit(1);
   }
 
@@ -121,7 +132,11 @@ import { loadSocket } from './loaders/socketLoader';
     credentials: true,
   });
 
-  if (isDevelopmentEnv()) {
+  await fastify.register(fastifyRateLimit, {
+    global: false,
+  });
+
+  if (!(isProductionEnv() || isPreProductionEnv())) {
     let pkg;
 
     try {
@@ -159,7 +174,7 @@ import { loadSocket } from './loaders/socketLoader';
         const newSchema = { ...schema };
 
         // Hide debugger url to swagger
-        if (url.startsWith('/bull') || url.startsWith('/graphiql')) newSchema.hide = true;
+        if (url.startsWith('/graphiql')) newSchema.hide = true;
 
         // Hide tag for GraphQL
         if (url === '/graphql') newSchema.tags = ['GraphQL'];
@@ -223,6 +238,7 @@ import { loadSocket } from './loaders/socketLoader';
 
   fastify.ready(async () => {
     logger.info(`Server Running on ${currentEnv()} mode`);
+    logger.info(`Log Running on ${logLevel} mode`);
   });
 
   fastify.listen({ port, host: '::' }, (err) => {

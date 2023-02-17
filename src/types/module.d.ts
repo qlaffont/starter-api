@@ -14,12 +14,14 @@ import { MercuriusPlugin } from 'mercurius';
 import { socketioServer } from 'fastify-socket.io';
 import { Session } from '@fastify/secure-session';
 import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
-import { PrismaClient, User } from '../../prisma/client';
+import { PrismaClient, User } from '@prisma/client';
+import { Sendim } from 'sendim';
 
 declare global {
   namespace globalThis {
     var logger: FastifyLoggerInstance;
     var prisma: PrismaClient;
+    var sendim: Sendim;
   }
 
   interface GraphQLContext {

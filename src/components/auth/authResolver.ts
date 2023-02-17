@@ -1,4 +1,5 @@
 import { Arg, Authorized, Mutation, Query, Resolver } from 'type-graphql';
+import { RateLimitDirective } from '../../services/graphql/directives/rate-limit';
 import { User } from '../../../prisma/type-graphql/models';
 import { CurrentUser } from '../../services/graphql/user';
 import AuthController from './authController';
@@ -12,13 +13,13 @@ export class AuthResolver {
     return user;
   }
 
+  @RateLimitDirective()
   @Mutation(() => String)
   async registerUser(@Arg('userRegister', () => UserRegister) userRegister: UserRegister): Promise<string> {
     await AuthController.registerUser(userRegister);
 
     return 'OK';
   }
-
   @Authorized()
   @Mutation(() => String)
   async changePassword(
@@ -33,6 +34,7 @@ export class AuthResolver {
     return 'OK';
   }
 
+  @RateLimitDirective()
   @Mutation(() => String)
   async askResetPassword(@Arg('email', () => String) email: string): Promise<string> {
     await AuthController.askResetPassword(email);
@@ -40,6 +42,7 @@ export class AuthResolver {
     return 'OK';
   }
 
+  @RateLimitDirective()
   @Mutation(() => String)
   async resetPassword(
     @Arg('email', () => String) email: string,

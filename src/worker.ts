@@ -4,9 +4,11 @@ dotenv.config();
 
 import { currentEnv, validateEnv } from 'env-vars-validator';
 import 'reflect-metadata';
+// eslint-disable-next-line import/no-named-as-default
 import pino from 'pino';
 import { Worker } from 'bullmq';
-import { PrismaClient } from '../prisma/client';
+import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
+import { PrismaClient } from '@prisma/client';
 import { handleAuthQueue } from './components/auth/authQueue';
 
 const logLevel = process.env.LOG || 'info';
@@ -33,6 +35,7 @@ try {
 
 // DATABASE CONFIGURATION
 const prisma = new PrismaClient();
+prisma.$use(fieldEncryptionMiddleware());
 global.prisma = prisma;
 
 (async () => {

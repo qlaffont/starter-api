@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Type } from '@sinclair/typebox';
+import { isPreProductionEnv, isProductionEnv } from 'env-vars-validator';
 import { login, logout, refreshToken } from './authSchemas';
 import AuthController from './authController';
 
@@ -15,6 +16,16 @@ export const AuthRoutes = () =>
             password: Type.String(),
           }),
         },
+        ...(!(isProductionEnv() || isPreProductionEnv())
+          ? {}
+          : {
+              config: {
+                rateLimit: {
+                  max: 5,
+                  timeWindow: '1 minute',
+                },
+              },
+            }),
       },
       async (req) => AuthController.login({ email: req.body.email, password: req.body.password }, req),
     );

@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "75defbda-c753-4426-b3ee-342b08e8a390",
+    "colName": "Auth",
+    "created": "2023-02-07T15:13:32.405Z",
+    "sortNum": 10000,
+    "folders": [],
+    "settings": {
+      "headers": [],
+      "tests": []
+    }
+  }
+]
