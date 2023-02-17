@@ -6,7 +6,7 @@ overrides:
 specifiers:
   '@47ng/codec': ^1.1.0
   '@bull-board/api': 4.11.1
-  '@bull-board/fastify': 4.11.3
+  '@bull-board/fastify': 4.12.1
   '@commitlint/cli': 17.4.3
   '@commitlint/config-conventional': 17.4.3
   '@faker-js/faker': ^7.6.0
@@ -130,7 +130,7 @@ optionalDependencies:
 devDependencies:
   '@47ng/codec': 1.1.0
   '@bull-board/api': 4.11.1
-  '@bull-board/fastify': 4.11.3
+  '@bull-board/fastify': 4.12.1
   '@commitlint/cli': 17.4.3
   '@commitlint/config-conventional': 17.4.3
   '@faker-js/faker': 7.6.0
@@ -213,17 +213,17 @@ packages:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/api/4.11.3:
-    resolution: {integrity: sha512-QRKZmF6aXGTyR30uLa50cfz3k8pPFDsuqatwnja15+3eGNM33Gq7vE1HvU3P/WqPTCaulbRK2aj01H2725irJA==}
+  /@bull-board/api/4.12.1:
+    resolution: {integrity: sha512-cJk7LhphNZHwbN4yON5rYiDgob3D7cwFGrxf6LlnR1w/a6zyap1x/o74MfV/0T6NpUpvUSf7ccbj3knU6DNYVw==}
     dependencies:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify/4.11.3:
-    resolution: {integrity: sha512-KfbpKqZHta5+sPwlLDnY/uUpR/PFxciFF+arlHCbhYKH76BcV4vu/o4GUsaXlnzu28KUSf459FUich0CQ7KxBA==}
+  /@bull-board/fastify/4.12.1:
+    resolution: {integrity: sha512-MAecvp+xTePdEHm4uCooojAlj2isdznfC9XuCjjGHHNCczjm/Wx14cDhKLKwkOFp5ZLhqgtOEulT5YVfVCu+EQ==}
     dependencies:
-      '@bull-board/api': 4.11.3
-      '@bull-board/ui': 4.11.3
+      '@bull-board/api': 4.12.1
+      '@bull-board/ui': 4.12.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
@@ -231,10 +231,10 @@ packages:
       - supports-color
     dev: true
 
-  /@bull-board/ui/4.11.3:
-    resolution: {integrity: sha512-eIzF//1z8oGlQ6oShwU3j4vRYJk0mJ/dBi5eYXQYXu3Z8fpJknoJ+xOmnje5roCJAxyqsVU29kmeducAgx05uw==}
+  /@bull-board/ui/4.12.1:
+    resolution: {integrity: sha512-nNTjxitLEre+UdZjwMHwlKKGxpg3OV/Sf7dNOlhJYoRjO7aYPb63M+BfGVrYgupk3V73Q0qvl1emtsnF/qz/Wg==}
     dependencies:
-      '@bull-board/api': 4.11.3
+      '@bull-board/api': 4.12.1
     dev: true
 
   /@commitlint/cli/17.4.3:
