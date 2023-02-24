@@ -77,4 +77,5 @@ docs
 data
 prisma/client
 prisma/type-graphql
+prisma/diagram.pdf
 thunderActivity.json

@@ -9,7 +9,12 @@ generator client {
 generator typegraphql {
   provider = "typegraphql-prisma"
   output   = "../prisma/type-graphql"
-  emitOnly = "models,inputs"
+  emitOnly = "models"
+}
+generator erd {
+  provider = "prisma-erd-generator"
+  includeRelationFromFields = true
+  output = "../prisma/diagram.pdf"
 }
 
 datasource db {
