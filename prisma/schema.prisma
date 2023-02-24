@@ -11,11 +11,12 @@ generator typegraphql {
   output   = "../prisma/type-graphql"
   emitOnly = "models"
 }
-generator erd {
-  provider = "prisma-erd-generator"
-  includeRelationFromFields = true
-  output = "../prisma/diagram.pdf"
-}
+// INFO TO ENABLE ONLY ON LOCAL
+// generator erd {
+//   provider = "prisma-erd-generator"
+//   includeRelationFromFields = true
+//   output = "../prisma/diagram.pdf"
+// }
 
 datasource db {
   provider = "postgresql"
