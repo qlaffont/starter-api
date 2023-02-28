@@ -101,7 +101,7 @@
     "mercurius-upload": "^6.0.0",
     "node-fetch": "^3.0.0",
     "pino": "^8.4.2",
-    "prisma": "4.10.1",
+    "prisma": "4.11.0",
     "prisma-field-encryption": "^1.4.1",
     "rate-limiter-flexible": "^2.4.1",
     "redis": "^4.2.0",
