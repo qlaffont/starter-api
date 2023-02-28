@@ -20,7 +20,7 @@ specifiers:
   '@gquittet/graceful-server': ^4.0.1
   '@graphql-tools/schema': ^9.0.16
   '@graphql-tools/utils': ^9.0.0
-  '@mermaid-js/mermaid-cli': ^9.4.0
+  '@mermaid-js/mermaid-cli': ^10.0.0
   '@prisma/client': ^4.10.1
   '@sinclair/typebox': ^0.25.0
   '@socket.io/redis-adapter': ^8.0.0
@@ -139,7 +139,7 @@ devDependencies:
   '@fastify/cors': 8.2.0
   '@fastify/swagger': 8.3.1
   '@fastify/swagger-ui': 1.3.0
-  '@mermaid-js/mermaid-cli': 9.4.0_kmbohkrj4hclwtgngyxjjtxo3m
+  '@mermaid-js/mermaid-cli': 10.0.0_kmbohkrj4hclwtgngyxjjtxo3m
   '@types/graphql-fields': 1.3.4
   '@types/node': 18.14.2
   '@typescript-eslint/eslint-plugin': 5.54.0_6mj2wypvdnknez7kws2nfdgupi
@@ -158,7 +158,7 @@ devDependencies:
   lint-staged: 13.1.2
   pino-pretty: 9.4.0
   prettier: 2.8.4
-  prisma-erd-generator: 1.2.5_j2gmwzk55cehntxve6fp7hbdjy
+  prisma-erd-generator: 1.2.5_pnj3ffsk6vgcsahp7ttxq6lm5i
   prompt-sync: 4.2.0
   tsc-alias: 1.8.2
   typegraphql-prisma: 0.24.1_hw7uolchu63p2pfd6a2s4scwu4
@@ -578,7 +578,7 @@ packages:
     resolution: {integrity: sha512-LHOUKqRr1iV4w47sVQAT5IrVPsTiuEAqOS1QgtRymJYPeVfIC65LTxg22eoR7kyYW4W84oWJk0gtsBwUGhDEVg==}
     dependencies:
       fastify-plugin: 4.2.0
-      ws: 8.8.1_bl5geyrzxc2dk5va7u7ilip3sy
+      ws: 8.11.0_bl5geyrzxc2dk5va7u7ilip3sy
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -698,8 +698,8 @@ packages:
       - supports-color
     dev: false
 
-  /@mermaid-js/mermaid-cli/9.4.0_kmbohkrj4hclwtgngyxjjtxo3m:
-    resolution: {integrity: sha512-/Nqs8Xtasw5wvop1PPiqmSx5SUxq/yARH+0EhEHAx8MVdbZXtUnzuK+Yv6NgpD2/Fb84/N3jF08zmIiJSyT5Lg==}
+  /@mermaid-js/mermaid-cli/10.0.0_kmbohkrj4hclwtgngyxjjtxo3m:
+    resolution: {integrity: sha512-ikqNbA7x8JEpbxOjdxb2VczVUwHpPzlpo1EqkHtU7NVYqeIjz9WUyKtP6TFYF8R1MfFQl45pQKW45cdfM7PBbQ==}
     engines: {node: ^14.13 || >=16.0}
     hasBin: true
     dependencies:
@@ -5295,7 +5295,7 @@ packages:
     hasBin: true
     dev: true
 
-  /prisma-erd-generator/1.2.5_j2gmwzk55cehntxve6fp7hbdjy:
+  /prisma-erd-generator/1.2.5_pnj3ffsk6vgcsahp7ttxq6lm5i:
     resolution: {integrity: sha512-4Bjrsw4Db915qG1+oMZ4tUdXRcPAyExdraj/5qiWU6QD7m/6QLWJPVADDvqkAQVS3Y4vjWMZovD2eakKZWmZcw==}
     engines: {node: '>=14'}
     hasBin: true
@@ -5303,7 +5303,7 @@ packages:
       '@mermaid-js/mermaid-cli': ^8.14.0
       '@prisma/client': ^4.0.0
     dependencies:
-      '@mermaid-js/mermaid-cli': 9.4.0_kmbohkrj4hclwtgngyxjjtxo3m
+      '@mermaid-js/mermaid-cli': 10.0.0_kmbohkrj4hclwtgngyxjjtxo3m
       '@prisma/client': 4.10.1_prisma@4.10.1
       '@prisma/generator-helper': 4.10.0
       dotenv: 16.0.3
@@ -6726,7 +6726,6 @@ packages:
     dependencies:
       bufferutil: 4.0.6
       utf-8-validate: 6.0.0
-    dev: true
 
   /ws/8.2.3_bl5geyrzxc2dk5va7u7ilip3sy:
     resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
