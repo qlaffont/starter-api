@@ -83,6 +83,10 @@ class AuthController {
     try {
       const refreshToken = req.session.get('refresh');
 
+      if (refreshToken?.length < 0) {
+        throw new BadRequest({ error: 'refresh_not_found' });
+      }
+
       const { accessToken } = await refreshUserToken(prisma)(refreshToken, {
         secret: process.env.JWT_ACCESS_SECRET!,
         accessTokenTime: process.env.JWT_ACCESS_TIME!,
