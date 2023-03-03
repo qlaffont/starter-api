@@ -1,8 +1,8 @@
 import { InputType, Field, registerEnumType } from 'type-graphql';
-import { UserCreateInput } from '../../../prisma/type-graphql';
+import { Prisma } from '@prisma/client';
 
 @InputType()
-export class UserRegister implements Partial<UserCreateInput> {
+export class UserRegister implements Partial<Prisma.UserCreateInput> {
   @Field(() => String, {
     nullable: false,
   })
@@ -30,6 +30,7 @@ export enum AuthErrors {
   password_validation_error = 'password_validation_error',
   password_error = 'password_error',
   wrong_reset_code = 'wrong_reset_code',
+  email_not_valid = 'email_not_valid',
 }
 
 registerEnumType(AuthErrors, {

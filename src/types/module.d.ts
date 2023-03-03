@@ -14,6 +14,7 @@ import { MercuriusPlugin } from 'mercurius';
 import { socketioServer } from 'fastify-socket.io';
 import { Session } from '@fastify/secure-session';
 import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
+import { createMercuriusTestClient } from 'mercurius-integration-testing';
 import { PrismaClient, User } from '@prisma/client';
 import { Sendim } from 'sendim';
 
@@ -22,6 +23,8 @@ declare global {
     var logger: FastifyLoggerInstance;
     var prisma: PrismaClient;
     var sendim: Sendim;
+    var testServer: FastifyCustomInstance;
+    var testMercuriusClient: ReturnType<typeof createMercuriusTestClient>;
   }
 
   interface GraphQLContext {

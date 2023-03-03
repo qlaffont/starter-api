@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Type } from '@sinclair/typebox';
-import { isPreProductionEnv, isProductionEnv } from 'env-vars-validator';
-import { login, logout, refreshToken } from './authSchemas';
+import { isProductionEnv, isPreProductionEnv } from 'env-vars-validator';
+import { login, logout, refreshToken, userInfo } from './authSchemas';
 import AuthController from './authController';
 
 export const AuthRoutes = () =>
@@ -39,5 +39,5 @@ export const AuthRoutes = () =>
 
     fastify.post('/refresh', { schema: refreshToken }, AuthController.refresh);
 
-    fastify.get('/info', AuthController.getUserInfo);
+    fastify.get('/info', { schema: userInfo }, AuthController.getUserInfo);
   };

@@ -1,9 +1,9 @@
 import { Arg, Authorized, Mutation, Query, Resolver } from 'type-graphql';
 import { RateLimitDirective } from '../../services/graphql/directives/rate-limit';
-import { User } from '../../../prisma/type-graphql/models';
 import { CurrentUser } from '../../services/graphql/user';
 import AuthController from './authController';
 import { UserRegister } from './authType';
+import { User } from '@prisma/type-graphql';
 
 @Resolver(() => User)
 export class AuthResolver {
@@ -20,6 +20,7 @@ export class AuthResolver {
 
     return 'OK';
   }
+
   @Authorized()
   @Mutation(() => String)
   async changePassword(

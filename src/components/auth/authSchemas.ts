@@ -21,3 +21,9 @@ export const logout = {
   description: 'Signout',
   tags: ['Auth'],
 };
+
+export const userInfo = {
+  ...authSchema,
+  description: 'User Info',
+  tags: ['Auth'],
+};

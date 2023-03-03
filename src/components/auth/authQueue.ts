@@ -1,41 +1,36 @@
-import { Queue, Worker } from 'bullmq';
 import { subDays } from 'date-fns';
-import { AuthActions, bullRedisConfig, QUEUE } from './../../services/bull/Bull';
+import { AuthActions, createQueueMQ, createWorkerMQ, QUEUE } from './../../services/bull/Bull';
 
 export const handleAuthQueue = () => {
   logger.info('[QUEUE] Auth Queue Loaded');
 
-  const authQueue = new Queue(QUEUE.AUTH, bullRedisConfig);
+  const authQueue = createQueueMQ(QUEUE.AUTH);
 
-  authQueue.add(AuthActions.CLEAN_EXPIRED_TOKENS, undefined, { repeat: { cron: '0 3 * * *' } });
+  authQueue.add(AuthActions.CLEAN_EXPIRED_TOKENS, undefined, { repeat: { pattern: '0 3 * * *' } });
   authQueue.add(AuthActions.CLEAN_EXPIRED_TOKENS, undefined);
 
-  const worker = new Worker<
+  const worker = createWorkerMQ<
     {
       path: string;
     },
     void,
     AuthActions
-  >(
-    QUEUE.AUTH,
-    async (job) => {
-      const action = job.name;
+  >(QUEUE.AUTH, async (job) => {
+    const action = job.name;
 
-      if (action === AuthActions.CLEAN_EXPIRED_TOKENS) {
-        job.updateProgress({});
-        const tokens = await prisma.token.findMany({
-          where: {
-            createdAt: {
-              lte: subDays(new Date(), parseInt(`${process.env.JWT_REFRESH_TIME}`, 10) + 1),
-            },
+    if (action === AuthActions.CLEAN_EXPIRED_TOKENS) {
+      job.updateProgress({});
+      const tokens = await prisma.token.findMany({
+        where: {
+          createdAt: {
+            lte: subDays(new Date(), parseInt(`${process.env.JWT_REFRESH_TIME}`, 10) + 1),
           },
-        });
+        },
+      });
 
-        await Promise.all(tokens.map((t) => prisma.token.delete({ where: { id: t.id } })));
-      }
-    },
-    bullRedisConfig,
-  );
+      await Promise.all(tokens.map((t) => prisma.token.delete({ where: { id: t.id } })));
+    }
+  });
 
   worker.on('progress', (job) => logger.debug(`[AUTH] Processing job ${job.id} (${job.name})`));
   worker.on('completed', (job) => logger.debug(`[AUTH] Completed job ${job.id} (${job.name}) successfully`));

@@ -1,4 +1,4 @@
-import { Emitter } from '@socket.io/redis-emitter';
+import { Emitter } from '@socket.io/postgres-emitter';
 import { createParamDecorator } from 'type-graphql';
 
 export function Socket() {

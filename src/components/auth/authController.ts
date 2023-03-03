@@ -3,9 +3,9 @@ import { createUserToken, getAccessTokenFromRequest, refreshUserToken, removeUse
 import { BadRequest } from 'unify-errors';
 import { faker } from '@faker-js/faker';
 import { User } from '@prisma/client';
+import { validatePassword, validateEmail } from '../../services/validation/validateString';
 import { CryptoUtils } from '../../services/crypto/crypto.utils';
 import { AuthErrors, UserRegister } from './authType';
-
 class AuthController {
   static async loginAndGenerateToken(user: User, req: FastifyRequest) {
     const { accessToken, refreshToken } = await createUserToken(prisma)(user.id, {
@@ -20,20 +20,6 @@ class AuthController {
     return { access_token: accessToken };
   }
 
-  static async validatePassword(password: string) {
-    if (!password) {
-      throw new BadRequest({ error: AuthErrors.password_validation_error });
-    }
-
-    if (password?.length < 8) {
-      throw new BadRequest({ error: AuthErrors.password_validation_error });
-    }
-
-    if (password?.length > 20) {
-      throw new BadRequest({ error: AuthErrors.password_validation_error });
-    }
-  }
-
   static async registerUser(registerUser: UserRegister) {
     const existingUser = await prisma.user.findFirst({
       where: { email: registerUser.email },
@@ -43,7 +29,17 @@ class AuthController {
       throw new BadRequest({ error: AuthErrors.user_already_exist });
     }
 
-    await this.validatePassword(registerUser.password);
+    await validatePassword(registerUser.password);
+    await validateEmail(registerUser.email);
+
+    await sendim.sendTransactionalMail({
+      to: [{ email: registerUser.email, name: `${registerUser.firstName} ${registerUser.lastName}` }],
+      sender: { email: 'dev+carrefour@flexper.fr', name: 'Carrefour Energies' },
+      params: {
+        gotoapp_link: new URL('/', process.env.CLIENT_URL).toString(),
+      },
+      templateId: '2',
+    });
 
     return prisma.user.create({
       data: {
@@ -83,17 +79,16 @@ class AuthController {
     try {
       const refreshToken = req.session.get('refresh');
 
-      if (refreshToken?.length < 0) {
+      if (!refreshToken || refreshToken?.length < 0) {
         throw new BadRequest({ error: 'refresh_not_found' });
       }
-
       const { accessToken } = await refreshUserToken(prisma)(refreshToken, {
         secret: process.env.JWT_ACCESS_SECRET!,
         accessTokenTime: process.env.JWT_ACCESS_TIME!,
       });
 
       res.send({
-        accessToken,
+        access_token: accessToken,
       });
     } catch (error) {
       req.session.set('refresh', undefined);
@@ -120,7 +115,7 @@ class AuthController {
       throw new BadRequest({ error: AuthErrors.password_error });
     }
 
-    await this.validatePassword(newPassword);
+    await validatePassword(newPassword);
 
     return prisma.user.update({
       where: {
@@ -151,12 +146,13 @@ class AuthController {
       },
     });
 
-    await sendim.sendRawMail({
-      to: [{ email }],
-      sender: { email: 'test@test.fr' },
-      subject: 'reset password',
-      htmlContent: resetCode,
-      textContent: resetCode,
+    await sendim.sendTransactionalMail({
+      to: [{ email: user.email, name: `${user.firstName} ${user.lastName}` }],
+      sender: { email: 'dev+carrefour@flexper.fr', name: 'Carrefour Energies' },
+      params: {
+        code: resetCode,
+      },
+      templateId: '6',
     });
   }
 
@@ -173,7 +169,7 @@ class AuthController {
       throw new BadRequest({ error: AuthErrors.wrong_reset_code });
     }
 
-    await this.validatePassword(password);
+    await validatePassword(password);
 
     await prisma.user.update({
       where: {

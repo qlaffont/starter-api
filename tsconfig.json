@@ -17,7 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],
-      "@prisma/type-graphql": ["prisma/type-graphql/index.ts"]
+      "@prisma/type-graphql": ["prisma/type-graphql/index.ts"],
+      "@jest/utils": ["jest/index.ts"],
+      "@prisma/factories": ["prisma/factories/index.ts"],
     },
     "skipLibCheck": true,
     "lib":["ES2021"]
