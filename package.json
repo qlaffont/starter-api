@@ -9,7 +9,7 @@
     "start": "node ./dist/src/index.js",
     "start:worker": "node ./dist/src/worker.js",
     "build": "pnpm run build:prisma && pnpm run build:src",
-    "build:prisma": "(mkdir -p dist/prisma && pnpm run generate && cp -R prisma/client dist/prisma) | gnomon",
+    "build:prisma": "(mkdir -p dist/prisma && pnpm run generate) | gnomon",
     "build:src": "(mkdir -p dist && tsc && tsc-alias && echo 'build done !') | gnomon",
     "lint": "eslint src --ext .ts --fix",
     "generate": "prisma generate",
