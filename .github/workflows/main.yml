@@ -10,6 +10,21 @@ jobs:
         node: ["16.x", "18.x"]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
+
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: docker
+          POSTGRES_PASSWORD: docker
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -32,3 +47,6 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Test
+        run: cp .env.example .env && NODE="postgresql://docker:docker@localhost:5432/project" pnpm test
