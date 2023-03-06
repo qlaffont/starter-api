@@ -71,6 +71,7 @@ specifiers:
   rate-limiter-flexible: ^2.4.1
   redis: ^4.6.5
   reflect-metadata: ^0.1.13
+  regenerator-runtime: ^0.13.11
   sendim: ^1.0.3
   socket.io: ^4.5.1
   ts-jest: ^29.0.5
@@ -122,6 +123,7 @@ dependencies:
   rate-limiter-flexible: 2.4.1
   redis: 4.6.5
   reflect-metadata: 0.1.13
+  regenerator-runtime: 0.13.11
   sendim: 1.0.3
   socket.io: 4.5.1_bl5geyrzxc2dk5va7u7ilip3sy
   tslib: 2.4.0
@@ -7172,6 +7174,10 @@ packages:
 
   /reflect-metadata/0.1.13:
     resolution: {integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==}
+    dev: false
+
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
   /regexp.prototype.flags/1.4.3:
