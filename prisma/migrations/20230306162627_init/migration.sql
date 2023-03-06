@@ -41,10 +41,13 @@ CREATE UNIQUE INDEX "Token_id_key" ON "Token"("id");
 CREATE INDEX "Token_ownerId_idx" ON "Token"("ownerId");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "User_emailHash_key" ON "User"("emailHash");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "socket_io_attachments_id_key" ON "socket_io_attachments"("id");
 
 -- AddForeignKey
-ALTER TABLE "Token" ADD CONSTRAINT "Token_ownerId_fkey" FOREIGN KEY ("ownerId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Token" ADD CONSTRAINT "Token_ownerId_fkey" FOREIGN KEY ("ownerId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;

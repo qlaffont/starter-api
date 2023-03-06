@@ -28,7 +28,7 @@ model Token {
   refreshToken String
   accessToken  String
 
-  owner   User   @relation(fields: [ownerId], references: [id])
+  owner   User   @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   ownerId String
 
   createdAt DateTime @default(now())
@@ -46,7 +46,7 @@ model User {
 
   firstName       String /// @encrypted
   lastName        String /// @encrypted
-  email           String /// @encrypted
+  email           String @unique /// @encrypted
   /// @TypeGraphQL.omit(output: true)
   emailHash       String? @unique /// @encryption:hash(email)
   /// @TypeGraphQL.omit(output: true)

@@ -15,7 +15,7 @@ import {
 
 describe('Auth', () => {
   const email = 'auth@test.fr';
-  const cookieHeader = 'carrefour-ocpi-cookies';
+  const cookieHeader = 'myapp-cookies';
   let user: User;
   let accessToken: string;
   let refreshToken: string;
@@ -103,7 +103,7 @@ describe('Auth', () => {
     };
 
     afterAll(async () => {
-      await prisma.user.deleteMany({
+      await prisma.user.delete({
         where: {
           email: goodVariables.email,
         },
@@ -342,7 +342,7 @@ describe('Auth', () => {
     });
 
     afterEach(async () => {
-      await prisma.user.updateMany({
+      await prisma.user.update({
         where: { email },
         data: { password: await CryptoUtils.getArgonHash(DEFAULT_PASSWORD) },
       });
@@ -427,7 +427,7 @@ describe('Auth', () => {
     });
 
     afterEach(async () => {
-      await prisma.user.updateMany({
+      await prisma.user.update({
         where: { email },
         data: { resetPasswordCode: null },
       });
@@ -503,14 +503,14 @@ describe('Auth', () => {
 
       token = res?.access_token;
 
-      await prisma.user.updateMany({
+      await prisma.user.update({
         where: { email },
         data: { resetPasswordCode: resetCode },
       });
     });
 
     afterEach(async () => {
-      await prisma.user.updateMany({
+      await prisma.user.update({
         where: { email },
         data: { resetPasswordCode: null, password: await CryptoUtils.getArgonHash(DEFAULT_PASSWORD) },
       });
