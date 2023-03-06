@@ -48,6 +48,8 @@ model User {
   lastName        String /// @encrypted
   email           String /// @encrypted
   /// @TypeGraphQL.omit(output: true)
+  emailHash       String? @unique /// @encryption:hash(email)
+  /// @TypeGraphQL.omit(output: true)
   password        String /// @encrypted
 
   /// @TypeGraphQL.omit(output: true)
