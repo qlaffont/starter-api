@@ -21,7 +21,7 @@ const prisma = new PrismaClient();
 prisma.$use(fieldEncryptionMiddleware());
 global.prisma = prisma;
 
-import { loadBullDebugger } from './services/bull/debugger';
+// import { loadBullDebugger } from './services/bull/debugger';
 import { loadPassport } from './services/auth/passport';
 import { loadMercurius } from './services/graphql/mercurius';
 import { loadRoutes } from './loaders/RESTLoader';
@@ -56,7 +56,7 @@ export const runServer = async () => {
         JWT_REFRESH_TIME: { type: 'string' },
         JWT_ACCESS_SECRET: { type: 'string' },
         JWT_REFRESH_SECRET: { type: 'string' },
-        REDIS_URL: { type: 'string', format: 'uri' },
+        // REDIS_URL: { type: 'string', format: 'uri' },
       },
       {
         requiredProperties: [
@@ -68,7 +68,7 @@ export const runServer = async () => {
           'JWT_REFRESH_TIME',
           'JWT_REFRESH_SECRET',
           'JWT_ACCESS_SECRET',
-          'REDIS_URL',
+          // 'REDIS_URL',
           'DATABASE_URL',
         ],
       },
@@ -95,7 +95,7 @@ export const runServer = async () => {
             { url: '/documentation/*', method: '*' },
             { url: '/graphiql', method: '*' },
             { url: '/graphiql/*', method: '*' },
-            { url: '/bull/*', method: '*' },
+            // { url: '/bull/*', method: '*' },
           ] as FastifyAuthPrismaUrlConfig[])
         : []),
     ],
@@ -191,7 +191,7 @@ export const runServer = async () => {
       },
     });
 
-    loadBullDebugger(fastify);
+    // loadBullDebugger(fastify);
   }
 
   await fastify.register(require('@fastify/secure-session'), {
