@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('ts-jest').JestConfigWithTsJest} */
+require('dotenv').config();
 
 // @ts-ignore
 const { PrismaClient } = require('@prisma/client');

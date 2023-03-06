@@ -49,4 +49,4 @@ jobs:
         run: pnpm build
 
       - name: Test
-        run: cp .env.example .env && DEBUG="prisma-field-encryption:*" DEBUG_DEPTH=100 pnpm migration:up && DEBUG="prisma-field-encryption:*" DEBUG_DEPTH=100 pnpm test
+        run: cp .env.example .env && pnpm migration:up && pnpm test
