@@ -39,7 +39,7 @@
   "license": "ISC",
   "devDependencies": {
     "@47ng/codec": "^1.1.0",
-    "@bull-board/api": "4.12.1",
+    "@bull-board/api": "4.12.2",
     "@bull-board/fastify": "4.12.1",
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
