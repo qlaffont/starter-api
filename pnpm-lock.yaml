@@ -5,7 +5,7 @@ overrides:
 
 specifiers:
   '@47ng/codec': ^1.1.0
-  '@bull-board/api': 4.12.2
+  '@bull-board/api': 5.0.0
   '@bull-board/fastify': 4.12.2
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
@@ -139,7 +139,7 @@ optionalDependencies:
 
 devDependencies:
   '@47ng/codec': 1.1.0
-  '@bull-board/api': 4.12.2
+  '@bull-board/api': 5.0.0
   '@bull-board/fastify': 4.12.2
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
@@ -550,6 +550,12 @@ packages:
 
   /@bull-board/api/4.12.2:
     resolution: {integrity: sha512-efF8K1pvfEEft2ELQwCBe/a225vHufCjM2hfcyvmIG/SUX6TlKQFUFZ1+KV0wenD9wxvUVb5wxUu6on+HrZiVg==}
+    dependencies:
+      redis-info: 3.1.0
+    dev: true
+
+  /@bull-board/api/5.0.0:
+    resolution: {integrity: sha512-nOB8TUSeX8h2wgMxmPZwy0p3XqRX/DotR71M5FT5OS/bZCZIKRpEc36TIeKPimZli6voFyX+rsEqVhGenpIKUQ==}
     dependencies:
       redis-info: 3.1.0
     dev: true
