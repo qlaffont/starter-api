@@ -62,7 +62,7 @@
     "fastify-socket.io": "4.0.0",
     "gnomon": "1.5.0",
     "graphql-fields": "2.0.3",
-    "graphql-scalars": "1.20.1",
+    "graphql-scalars": "1.20.4",
     "husky": "8.0.3",
     "jest": "^29.4.3",
     "lint-staged": "13.2.0",
