@@ -63,7 +63,7 @@ specifiers:
   paginate-prisma: ^1.0.25
   pg: ^8.9.0
   pino: ^8.4.2
-  pino-pretty: 9.4.0
+  pino-pretty: 10.0.0
   prettier: 2.8.4
   prisma: 4.11.0
   prisma-erd-generator: ^1.2.5
@@ -169,7 +169,7 @@ devDependencies:
   jest: 29.4.3_@types+node@18.15.1
   lint-staged: 13.2.0
   mercurius-integration-testing: 8.0.0_7w3yjxt6uyvxmr4tm4evvpnupm
-  pino-pretty: 9.4.0
+  pino-pretty: 10.0.0
   prettier: 2.8.4
   prisma-erd-generator: 1.2.5_pnj3ffsk6vgcsahp7ttxq6lm5i
   prompt-sync: 4.2.0
@@ -6747,8 +6747,8 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty/9.4.0:
-    resolution: {integrity: sha512-NIudkNLxnl7MGj1XkvsqVyRgo6meFP82ECXF2PlOI+9ghmbGuBUUqKJ7IZPIxpJw4vhhSva0IuiDSAuGh6TV9g==}
+  /pino-pretty/10.0.0:
+    resolution: {integrity: sha512-zKFjYXBzLaLTEAN1ayKpHXtL5UeRQC7R3lvhKe7fWs7hIVEjKGG/qIXwQt9HmeUp71ogUd/YcW+LmMwRp4KT6Q==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
