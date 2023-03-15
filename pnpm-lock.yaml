@@ -79,7 +79,7 @@ specifiers:
   tsc-alias: ^1.8.2
   tslib: ^2.4.0
   type-graphql: 2.0.0-beta.1
-  typegraphql-prisma: 0.24.2
+  typegraphql-prisma: 0.24.3
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.5
   unify-errors: ^1.2.106
@@ -175,7 +175,7 @@ devDependencies:
   prompt-sync: 4.2.0
   ts-jest: 29.0.5_orzzknleilowtsz34rkaotjvzm
   tsc-alias: 1.8.2
-  typegraphql-prisma: 0.24.2_glgq2mm5wfyq4nz4elbxi5g52q
+  typegraphql-prisma: 0.24.3_glgq2mm5wfyq4nz4elbxi5g52q
   types-fastify-socket.io: 0.0.1
   typescript: 4.9.5
   update-template: 1.3.1
@@ -1293,7 +1293,7 @@ packages:
       detect-libc: 2.0.1
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
-      node-fetch: 2.6.7
+      node-fetch: 2.6.9
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
@@ -6257,6 +6257,7 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
+    dev: true
 
   /node-fetch/2.6.9:
     resolution: {integrity: sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==}
@@ -6268,7 +6269,6 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
-    dev: true
 
   /node-fetch/3.2.10:
     resolution: {integrity: sha512-MhuzNwdURnZ1Cp4XTazr69K0BTizsBroX7Zx3UgDSVcZYKF/6p0CBe4EUb/hLqmzVhl0UpYfgRljQ4yxE+iCxA==}
@@ -8112,8 +8112,8 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typegraphql-prisma/0.24.2_glgq2mm5wfyq4nz4elbxi5g52q:
-    resolution: {integrity: sha512-nOMy+FKi5pohS5moj68jini78oeXYpiLG+TT4qlt9vstbyhhj3V/KEa2WwDLj2FR3xcoufX80aoF9Vn7K7Sj0g==}
+  /typegraphql-prisma/0.24.3_glgq2mm5wfyq4nz4elbxi5g52q:
+    resolution: {integrity: sha512-J/jXWVXNkra4rvl8fD/IZpglcPeIuPg+inUCsQX/pQu2jT6qIjAmCxOo2fWlaWnzFn7Ow6gBBYpYp2Vd3rSyRw==}
     engines: {node: '>=12.4'}
     hasBin: true
     peerDependencies:
