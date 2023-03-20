@@ -34,7 +34,7 @@ specifiers:
   bufferutil: ^4.0.6
   bullMQAdapter: link:@bull-board/api/bullMQAdapter
   bullmq: ^3.0.0
-  class-validator: ^0.14.0
+  class-validator: 0.13.0
   crypto-random-string: ^5.0.0
   date-fns: ^2.29.2
   dotenv: ^16.0.1
@@ -104,7 +104,7 @@ dependencies:
   '@socket.io/postgres-emitter': 0.1.0
   argon2: 0.30.3
   bullmq: 3.0.0
-  class-validator: 0.14.0
+  class-validator: 0.13.0
   crypto-random-string: 5.0.0
   date-fns: 2.29.2
   dotenv: 16.0.1
@@ -129,7 +129,7 @@ dependencies:
   sendim: 1.0.3
   socket.io: 4.5.1_bl5geyrzxc2dk5va7u7ilip3sy
   tslib: 2.4.0
-  type-graphql: 2.0.0-beta.1_y4roju44775djskduzf2jupeyy
+  type-graphql: 2.0.0-beta.1_5xspugg2rnkhctfvf6bn24mvoi
   unify-errors: 1.2.106
   unify-fastify: 1.3.7
   unify-mercurius: 1.2.10_bl5geyrzxc2dk5va7u7ilip3sy
@@ -2081,6 +2081,7 @@ packages:
 
   /@types/validator/13.7.10:
     resolution: {integrity: sha512-t1yxFAR2n0+VO6hd/FJ9F2uezAZVWHLmpmlJzm1eX03+H7+HsuTAp7L8QJs+2pQCfWkP1+EXsGK9Z9v7o/qPVQ==}
+    dev: false
 
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
@@ -2865,12 +2866,19 @@ packages:
     resolution: {integrity: sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==}
     dev: true
 
+  /class-validator/0.13.0:
+    resolution: {integrity: sha512-PNu14GiCXGqVKrCa7VJbDkA3wgB7ORdVwiK+DexcV0Dbk3UKLeHuD2Pn/BbhiFCcIf7GqChapnpZKaGFfdfVCQ==}
+    dependencies:
+      libphonenumber-js: 1.10.15
+      validator: 13.7.0
+
   /class-validator/0.14.0:
     resolution: {integrity: sha512-ct3ltplN8I9fOwUd8GrP8UQixwff129BkEtuWDKL5W45cQuLd19xqmTLu5ge78YDm/fdje6FMt0hGOhl0lii3A==}
     dependencies:
       '@types/validator': 13.7.10
       libphonenumber-js: 1.10.15
       validator: 13.7.0
+    dev: false
 
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -8080,7 +8088,7 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /type-graphql/2.0.0-beta.1_y4roju44775djskduzf2jupeyy:
+  /type-graphql/2.0.0-beta.1_5xspugg2rnkhctfvf6bn24mvoi:
     resolution: {integrity: sha512-eafe1WJAdiCTEma43Imi1NRRgioIL1nk2FIprpQ0uvodcpIz0uoR+SZgRGu0AXof7DdcrlL3ZdRVoOiuolOQMA==}
     engines: {node: '>= 14.5.0'}
     requiresBuild: true
@@ -8091,7 +8099,7 @@ packages:
       '@types/glob': 8.0.1
       '@types/node': 18.15.3
       '@types/semver': 7.3.12
-      class-validator: 0.14.0
+      class-validator: 0.13.0
       glob: 8.0.3
       graphql: 16.6.0
       graphql-query-complexity: 0.12.0_graphql@16.6.0
@@ -8133,7 +8141,7 @@ packages:
       semver: 7.3.8
       ts-morph: 17.0.1
       tslib: 2.4.0
-      type-graphql: 2.0.0-beta.1_y4roju44775djskduzf2jupeyy
+      type-graphql: 2.0.0-beta.1_5xspugg2rnkhctfvf6bn24mvoi
     transitivePeerDependencies:
       - encoding
       - supports-color
