@@ -64,7 +64,7 @@ specifiers:
   pg: ^8.9.0
   pino: ^8.4.2
   pino-pretty: 10.0.0
-  prettier: 2.8.4
+  prettier: 2.8.5
   prisma: 4.11.0
   prisma-erd-generator: ^1.2.5
   prisma-field-encryption: ^1.4.1
@@ -160,7 +160,7 @@ devDependencies:
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
   eslint-plugin-import: 2.27.5_v7jo3sddp7aqau7pajjy572cju
-  eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
+  eslint-plugin-prettier: 4.2.1_e4jq4ivnnnwcsomlcyj2qoljy4
   fastify-socket.io: 4.0.0_socket.io@4.5.1
   gnomon: 1.5.0
   graphql-fields: 2.0.3
@@ -170,7 +170,7 @@ devDependencies:
   lint-staged: 13.2.0
   mercurius-integration-testing: 8.0.0_7w3yjxt6uyvxmr4tm4evvpnupm
   pino-pretty: 10.0.0
-  prettier: 2.8.4
+  prettier: 2.8.5
   prisma-erd-generator: 1.2.5_pnj3ffsk6vgcsahp7ttxq6lm5i
   prompt-sync: 4.2.0
   ts-jest: 29.0.5_pi72spduhmwyhgotm5jagoykm4
@@ -3804,7 +3804,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm:
+  /eslint-plugin-prettier/4.2.1_e4jq4ivnnnwcsomlcyj2qoljy4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3817,7 +3817,7 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.7.0_eslint@8.36.0
-      prettier: 2.8.4
+      prettier: 2.8.5
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -6864,8 +6864,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+  /prettier/2.8.5:
+    resolution: {integrity: sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
