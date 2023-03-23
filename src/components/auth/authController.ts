@@ -84,6 +84,7 @@ class AuthController {
       }
       const { accessToken } = await refreshUserToken(prisma)(refreshToken, {
         secret: process.env.JWT_ACCESS_SECRET!,
+        refreshSecret: process.env.JWT_REFRESH_SECRET!,
         accessTokenTime: process.env.JWT_ACCESS_TIME!,
       });
 

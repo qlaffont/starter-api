@@ -99,7 +99,7 @@
     "dotenv": "^16.0.1",
     "env-vars-validator": "^1.2.2",
     "fastify": "^4.8.1",
-    "fastify-auth-prisma": "^1.1.28",
+    "fastify-auth-prisma": "^1.1.159",
     "graphql": "^16.6.0",
     "graphql-rate-limit-directive": "^2.0.3",
     "lodash": "^4.17.21",

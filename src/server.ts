@@ -127,7 +127,17 @@ export const runServer = async () => {
 
   await fastify.register(FastifyCORS, {
     methods: ['GET', 'PUT', 'DELETE', 'POST', 'OPTIONS', 'PATCH'],
-    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
+    allowedHeaders: [
+      'Origin',
+      'X-Requested-With',
+      'Content-Type',
+      'Accept',
+      'Authorization',
+      'forest-context-url',
+      'Set-Cookie',
+      'set-cookie',
+      'Cookie',
+    ],
     origin,
     credentials: true,
   });
@@ -214,7 +224,17 @@ export const runServer = async () => {
     await fastify.register(require('fastify-socket.io'), {
       adapter: createAdapter(pool),
       cors: {
-        allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
+        allowedHeaders: [
+          'Origin',
+          'X-Requested-With',
+          'Content-Type',
+          'Accept',
+          'Authorization',
+          'forest-context-url',
+          'Set-Cookie',
+          'set-cookie',
+          'Cookie',
+        ],
         origin,
         credentials: true,
       },
