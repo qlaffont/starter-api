@@ -83,7 +83,7 @@
     "@fastify/passport": "^2.2.0",
     "@fastify/rate-limit": "^8.0.0",
     "@fastify/secure-session": "^6.0.0",
-    "@fastify/type-provider-typebox": "^2.3.0",
+    "@fastify/type-provider-typebox": "^3.0.0",
     "@gquittet/graceful-server": "^4.0.1",
     "@graphql-tools/schema": "^9.0.16",
     "@graphql-tools/utils": "^9.0.0",
