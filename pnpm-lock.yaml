@@ -14,8 +14,8 @@ dependencies:
     specifier: ^6.0.0
     version: 6.0.0
   '@fastify/type-provider-typebox':
-    specifier: ^2.3.0
-    version: 2.3.0(@sinclair/typebox@0.26.0)(fastify@4.8.1)
+    specifier: ^3.0.0
+    version: 3.0.0(fastify@4.8.1)
   '@gquittet/graceful-server':
     specifier: ^4.0.1
     version: 4.0.1
@@ -985,13 +985,12 @@ packages:
       - supports-color
     dev: true
 
-  /@fastify/type-provider-typebox@2.3.0(@sinclair/typebox@0.26.0)(fastify@4.8.1):
-    resolution: {integrity: sha512-arEH1FL6CNTgctoVw++jNPJN9DdzUe7rJlb3XJyw7rAGiT2m402P4GMFVhtDqndQzEJN37UJXVYbCR9D0AahgQ==}
+  /@fastify/type-provider-typebox@3.0.0(fastify@4.8.1):
+    resolution: {integrity: sha512-VVYY/ZcPSFElLtRYboA2bmFxoINGDqmmqJ8Ch8+2lvmc+XFCsOJ714SEOpgshC4n52KBclgQxf2O80NeEAN7gQ==}
     peerDependencies:
-      '@sinclair/typebox': ^0.24.1
       fastify: ^4.0.0
     dependencies:
-      '@sinclair/typebox': 0.26.0
+      '@sinclair/typebox': 0.26.6
       fastify: 4.8.1
     dev: false
 
@@ -1387,7 +1386,7 @@ packages:
     dependencies:
       '@fastify/error': 3.0.0
       graphql: 16.6.0
-      mercurius: 12.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
+      mercurius: 12.2.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -1815,6 +1814,10 @@ packages:
 
   /@sinclair/typebox@0.26.0:
     resolution: {integrity: sha512-tpJrwq/npjYCZ5x//33zRKlgOg8lsBKuQ7MhmItrde/URJshRwDJsJzPwGSUqVetRCDDmcUP5P3Ux1XtAU7l1g==}
+    dev: false
+
+  /@sinclair/typebox@0.26.6:
+    resolution: {integrity: sha512-7BT4sRfeCV5j/CK/+cXu05B2IxrNBhD1rR3HJ8XG3/oqZfJIA60GnNKo+N4VHA47JTg8zlXuYTLYMVxI3pwMEQ==}
     dev: false
 
   /@sinonjs/commons@2.0.0:
