@@ -29,8 +29,8 @@ dependencies:
     specifier: ^4.12.0
     version: 4.12.0(prisma@4.12.0)
   '@sinclair/typebox':
-    specifier: ^0.26.0
-    version: 0.26.0
+    specifier: ^0.27.0
+    version: 0.27.0
   '@socket.io/postgres-adapter':
     specifier: ^0.3.1
     version: 0.3.1(socket.io-adapter@2.4.0)
@@ -1812,12 +1812,12 @@ packages:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
 
-  /@sinclair/typebox@0.26.0:
-    resolution: {integrity: sha512-tpJrwq/npjYCZ5x//33zRKlgOg8lsBKuQ7MhmItrde/URJshRwDJsJzPwGSUqVetRCDDmcUP5P3Ux1XtAU7l1g==}
-    dev: false
-
   /@sinclair/typebox@0.26.6:
     resolution: {integrity: sha512-7BT4sRfeCV5j/CK/+cXu05B2IxrNBhD1rR3HJ8XG3/oqZfJIA60GnNKo+N4VHA47JTg8zlXuYTLYMVxI3pwMEQ==}
+    dev: false
+
+  /@sinclair/typebox@0.27.0:
+    resolution: {integrity: sha512-nqCvfid613HckrkVcHw/OJv7Lbkd9PTQV3U/unOsUjdsoHhx9l7sEBNzdTfXxanreHOKV4tbmokLOGMXOQm4yw==}
     dev: false
 
   /@sinonjs/commons@2.0.0:
