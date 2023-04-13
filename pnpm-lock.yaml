@@ -249,8 +249,8 @@ devDependencies:
     specifier: ^1.8.2
     version: 1.8.2
   typegraphql-prisma:
-    specifier: 0.24.5
-    version: 0.24.5(@prisma/client@4.12.0)(@types/graphql-fields@1.3.5)(@types/node@18.15.11)(graphql-fields@2.0.3)(graphql-scalars@1.21.3)(prisma@4.12.0)(tslib@2.4.0)(type-graphql@2.0.0-beta.1)
+    specifier: 0.24.6
+    version: 0.24.6(@prisma/client@4.12.0)(@types/graphql-fields@1.3.5)(@types/node@18.15.11)(graphql-fields@2.0.3)(graphql-scalars@1.21.3)(prisma@4.12.0)(tslib@2.4.0)(type-graphql@2.0.0-beta.1)
   types-fastify-socket.io:
     specifier: 0.0.1
     version: 0.0.1
@@ -773,7 +773,7 @@ packages:
     dependencies:
       '@commitlint/top-level': 17.4.0
       '@commitlint/types': 17.4.4
-      fs-extra: 11.1.0
+      fs-extra: 11.1.1
       git-raw-commits: 2.0.11
       minimist: 1.2.6
     dev: true
@@ -1749,7 +1749,7 @@ packages:
       tempy: 1.0.1
       terminal-link: 2.1.1
       tmp: 0.2.1
-      ts-pattern: 4.1.3
+      ts-pattern: 4.2.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -4411,15 +4411,6 @@ packages:
 
   /fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
-    dev: true
-
-  /fs-extra@11.1.0:
-    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
-    engines: {node: '>=14.14'}
-    dependencies:
-      graceful-fs: 4.2.10
-      jsonfile: 6.1.0
-      universalify: 2.0.0
     dev: true
 
   /fs-extra@11.1.1:
@@ -8173,10 +8164,6 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /ts-pattern@4.1.3:
-    resolution: {integrity: sha512-8beXMWTGEv1JfDjSxfNhe4uT5jKYdhmEUKzt4gZW9dmHlquq3b+IbEyA7vX9LjBfzHmvKnM4HiomAUCyaW2Pew==}
-    dev: true
-
   /ts-pattern@4.2.1:
     resolution: {integrity: sha512-lXCmHZb01QOM9HdCLvisCGUH9ATdKPON9UaUvwe007gJAhuSBhRWIAIowys5QqNxEq6odWctfMIdI96vzjnOMQ==}
     dev: true
@@ -8296,8 +8283,8 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typegraphql-prisma@0.24.5(@prisma/client@4.12.0)(@types/graphql-fields@1.3.5)(@types/node@18.15.11)(graphql-fields@2.0.3)(graphql-scalars@1.21.3)(prisma@4.12.0)(tslib@2.4.0)(type-graphql@2.0.0-beta.1):
-    resolution: {integrity: sha512-iokgTGT9QmSto8bQycTLOvzZqFErfbX7pTqrBNUSAmxcVhl5MKF9cuOzNjF/4Upm4Gx7vJxjNGsko8dQbieBCg==}
+  /typegraphql-prisma@0.24.6(@prisma/client@4.12.0)(@types/graphql-fields@1.3.5)(@types/node@18.15.11)(graphql-fields@2.0.3)(graphql-scalars@1.21.3)(prisma@4.12.0)(tslib@2.4.0)(type-graphql@2.0.0-beta.1):
+    resolution: {integrity: sha512-N0dyCTf8rqya9TeH97yVLNsSX8RB23Vb1QvXsMrfgVSrfkNGZyMCpUW/S0Fl5Kcgq0bpj9emqpbR1a7NlfYhzQ==}
     engines: {node: '>=12.4'}
     hasBin: true
     peerDependencies:
