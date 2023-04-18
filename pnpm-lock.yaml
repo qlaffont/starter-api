@@ -150,8 +150,8 @@ devDependencies:
     specifier: 5.0.1
     version: 5.0.1
   '@bull-board/fastify':
-    specifier: 5.0.0
-    version: 5.0.0
+    specifier: 5.0.1
+    version: 5.0.1
   '@commitlint/cli':
     specifier: 17.6.1
     version: 17.6.1
@@ -628,23 +628,17 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@bull-board/api@5.0.0:
-    resolution: {integrity: sha512-nOB8TUSeX8h2wgMxmPZwy0p3XqRX/DotR71M5FT5OS/bZCZIKRpEc36TIeKPimZli6voFyX+rsEqVhGenpIKUQ==}
-    dependencies:
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api@5.0.1:
     resolution: {integrity: sha512-UR3m4Ebi8ngI+6L+guLCS1tU7r+/UGEGEzBytLqwjYVSsubgzbWyGH0LMUDFHrM+bkZ7iEKOqy+a6hFErHhk2Q==}
     dependencies:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify@5.0.0:
-    resolution: {integrity: sha512-g7eLQhap9HiRjWv3NkgbVrdiG8RDUwyA3qDW2jES1dRcpWPBD9/3rxESwzuIoxa2h0OJ34VLY9hsgpu0vRyhZg==}
+  /@bull-board/fastify@5.0.1:
+    resolution: {integrity: sha512-oIWUITevYu2kwRxRe2j4rQ330jyVl86vxhQoASGBVxYOspLMtit+HI9YrdEAa6Hk2HElTCZGg5Nn3neszubPAw==}
     dependencies:
-      '@bull-board/api': 5.0.0
-      '@bull-board/ui': 5.0.0
+      '@bull-board/api': 5.0.1
+      '@bull-board/ui': 5.0.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
@@ -652,10 +646,10 @@ packages:
       - supports-color
     dev: true
 
-  /@bull-board/ui@5.0.0:
-    resolution: {integrity: sha512-WznLX8dGthUWimZDqN5Zft3Axp6SStlI244BhiQYXB7xXZRMgaihNZxh7vgpwg0Osmw/gPFvAI+NFVGc3tvj9g==}
+  /@bull-board/ui@5.0.1:
+    resolution: {integrity: sha512-eTR4+AwQ+e02GmcB5pvcq0Tkf3jPUhnLt+LxMk995sVoBZTbrIAtCgcMFK9eZcGJlBX3vEJfmrWdL2XYRiXhvA==}
     dependencies:
-      '@bull-board/api': 5.0.0
+      '@bull-board/api': 5.0.1
     dev: true
 
   /@commitlint/cli@17.6.1:
@@ -959,7 +953,7 @@ packages:
     dependencies:
       '@fastify/accept-negotiator': 1.0.0
       content-disposition: 0.5.4
-      fastify-plugin: 4.2.0
+      fastify-plugin: 4.5.0
       glob: 8.0.3
       p-limit: 3.1.0
       readable-stream: 4.1.0
@@ -1003,14 +997,14 @@ packages:
   /@fastify/view@7.1.0:
     resolution: {integrity: sha512-CLl5XnTvm1YZ3+VvXZDyA19Gejr+2jFG8dPTEO3D+lQlephSD2ukMbpgT56Insmu4ZEw+jikpXY3WBrVHFUt0g==}
     dependencies:
-      fastify-plugin: 4.2.0
+      fastify-plugin: 4.5.0
       hashlru: 2.3.0
     dev: true
 
   /@fastify/websocket@7.0.1(bufferutil@4.0.6)(utf-8-validate@6.0.0):
     resolution: {integrity: sha512-LHOUKqRr1iV4w47sVQAT5IrVPsTiuEAqOS1QgtRymJYPeVfIC65LTxg22eoR7kyYW4W84oWJk0gtsBwUGhDEVg==}
     dependencies:
-      fastify-plugin: 4.2.0
+      fastify-plugin: 4.5.0
       ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
