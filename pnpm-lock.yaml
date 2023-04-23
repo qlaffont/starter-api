@@ -147,8 +147,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0
   '@bull-board/api':
-    specifier: 5.0.1
-    version: 5.0.1
+    specifier: 5.1.1
+    version: 5.1.1
   '@bull-board/fastify':
     specifier: 5.0.1
     version: 5.0.1
@@ -630,6 +630,12 @@ packages:
 
   /@bull-board/api@5.0.1:
     resolution: {integrity: sha512-UR3m4Ebi8ngI+6L+guLCS1tU7r+/UGEGEzBytLqwjYVSsubgzbWyGH0LMUDFHrM+bkZ7iEKOqy+a6hFErHhk2Q==}
+    dependencies:
+      redis-info: 3.1.0
+    dev: true
+
+  /@bull-board/api@5.1.1:
+    resolution: {integrity: sha512-q3vr/gXGY2ubLqm9rw0V1qP44Bj24x71u1t+zEs7CpqiOJI9Rjf8OjrAI8FlzF6iNBcmI2mCAGDl4U3Kg6PjoQ==}
     dependencies:
       redis-info: 3.1.0
     dev: true
