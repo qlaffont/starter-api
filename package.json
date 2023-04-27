@@ -103,7 +103,7 @@
     "graphql": "^16.6.0",
     "graphql-rate-limit-directive": "^2.0.3",
     "lodash": "^4.17.21",
-    "mercurius": "^12.0.0",
+    "mercurius": "^13.0.0",
     "mercurius-upload": "^6.0.0",
     "node-fetch": "^3.0.0",
     "paginate-prisma": "^1.0.47",

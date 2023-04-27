@@ -74,8 +74,8 @@ dependencies:
     specifier: ^4.17.21
     version: 4.17.21
   mercurius:
-    specifier: ^12.0.0
-    version: 12.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
+    specifier: ^13.0.0
+    version: 13.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
   mercurius-upload:
     specifier: ^6.0.0
     version: 6.0.0(graphql@16.6.0)
@@ -229,7 +229,7 @@ devDependencies:
     version: 13.2.2
   mercurius-integration-testing:
     specifier: ^8.0.0
-    version: 8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.8.1)(graphql@16.6.0)(mercurius@12.0.0)(utf-8-validate@6.0.0)
+    version: 8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.8.1)(graphql@16.6.0)(mercurius@13.0.0)(utf-8-validate@6.0.0)
   pino-pretty:
     specifier: 10.0.0
     version: 10.0.0
@@ -896,7 +896,7 @@ packages:
     resolution: {integrity: sha512-P9hY9GO11L20TnZ33XN3i0bt+3x0zaT7S0ohAzWO950E9PB2xnNhLYzPFJIGFi5AVN0yr5+/iZhWxeYvR6KCzg==}
     dependencies:
       cookie: 0.5.0
-      fastify-plugin: 4.2.0
+      fastify-plugin: 4.5.0
     dev: false
 
   /@fastify/cors@8.2.1:
@@ -1003,6 +1003,15 @@ packages:
 
   /@fastify/websocket@7.0.1(bufferutil@4.0.6)(utf-8-validate@6.0.0):
     resolution: {integrity: sha512-LHOUKqRr1iV4w47sVQAT5IrVPsTiuEAqOS1QgtRymJYPeVfIC65LTxg22eoR7kyYW4W84oWJk0gtsBwUGhDEVg==}
+    dependencies:
+      fastify-plugin: 4.5.0
+      ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  /@fastify/websocket@8.0.0(bufferutil@4.0.6)(utf-8-validate@6.0.0):
+    resolution: {integrity: sha512-7NnTJVbpWkAHwuAw9tGKJP5RBOUqLhU50xP5FMlfShWvWPZeCGioy22v8noqw1KFi+Mdo5guCMmfQRGrFfIR1w==}
     dependencies:
       fastify-plugin: 4.5.0
       ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
@@ -4696,20 +4705,6 @@ packages:
     resolution: {integrity: sha512-x3VE5lUcR4XCOxPIqaO4CE+bTK8u6gVouOdpQX9+EKHr+scqtK5Pp/l8nIGqIpN1TUlkKE6jDCCycm/WtLRAwA==}
     dev: true
 
-  /graphql-jit@0.7.4(graphql@16.6.0):
-    resolution: {integrity: sha512-kWyHmsQtKMD6xcKDgf4dgPLyIZhviqA6IWGdnA0ElL9wgrIOTxf3eI4c0/U3tnoAU3t09zliVCfDkfIptzYjIA==}
-    peerDependencies:
-      graphql: '>=15'
-    dependencies:
-      '@graphql-typed-document-node/core': 3.1.2(graphql@16.6.0)
-      fast-json-stringify: 1.21.0
-      generate-function: 2.3.1
-      graphql: 16.6.0
-      json-schema: 0.4.0
-      lodash.memoize: 4.1.2
-      lodash.merge: 4.6.2
-      lodash.mergewith: 4.6.2
-
   /graphql-jit@0.8.1(graphql@16.6.0):
     resolution: {integrity: sha512-C2ytXbgve7eYTr26nxflrJxjD7Vez8aDO+o6wvQEypv4b9ndikceRi0SsA5trEhhvOB2z5Za2PQfaBDO5+02JQ==}
     peerDependencies:
@@ -4723,7 +4718,6 @@ packages:
       lodash.memoize: 4.1.2
       lodash.merge: 4.6.2
       lodash.mergewith: 4.6.2
-    dev: true
 
   /graphql-query-complexity@0.12.0(graphql@16.6.0):
     resolution: {integrity: sha512-fWEyuSL6g/+nSiIRgIipfI6UXTI7bAxrpPlCY1c0+V3pAEUo1ybaKmSBgNr1ed2r+agm1plJww8Loig9y6s2dw==}
@@ -6134,7 +6128,7 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /mercurius-integration-testing@8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.8.1)(graphql@16.6.0)(mercurius@12.0.0)(utf-8-validate@6.0.0):
+  /mercurius-integration-testing@8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.8.1)(graphql@16.6.0)(mercurius@13.0.0)(utf-8-validate@6.0.0):
     resolution: {integrity: sha512-wo/g3ipwZ9g44BvEp+VjoXzaJVviOXXHFKccgVBkURBvZnzCEj/4rAqjH+CuflmYRRvJ0GBRYTIARezJBtviMA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6150,7 +6144,7 @@ packages:
       cookie: 0.5.0
       fastify: 4.8.1
       graphql: 16.6.0
-      mercurius: 12.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
+      mercurius: 13.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
       ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
@@ -6169,32 +6163,6 @@ packages:
       - '@types/express'
       - '@types/koa'
     dev: false
-
-  /mercurius@12.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0):
-    resolution: {integrity: sha512-ORe/0eFuUq5lFMF1c8hdEQz44MdK4A8gMbJr8US3BakHBeYbbFDWGskhHkYmaZkx2ka0NJh+iMasWiL07kAoHg==}
-    engines: {node: '>=14.19.3'}
-    peerDependencies:
-      graphql: ^16.0.0
-    dependencies:
-      '@fastify/error': 3.0.0
-      '@fastify/static': 6.5.0
-      '@fastify/websocket': 7.0.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
-      fastify-plugin: 4.2.0
-      graphql: 16.6.0
-      graphql-jit: 0.7.4(graphql@16.6.0)
-      mqemitter: 5.0.0
-      p-map: 4.0.0
-      readable-stream: 4.1.0
-      safe-stable-stringify: 2.3.1
-      secure-json-parse: 2.7.0
-      single-user-cache: 0.6.0
-      tiny-lru: 10.0.1
-      undici: 5.11.0
-      ws: 8.8.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
 
   /mercurius@12.2.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0):
     resolution: {integrity: sha512-S1/j+MSJA11A0rW/TM+31qq7PTf9EQVDtq+XJQMaebtqEP5JhhUmQnTLzCh9NhHkh7YIFH72gEY03Phr3Cs8xQ==}
@@ -6221,7 +6189,32 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
-    dev: true
+
+  /mercurius@13.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0):
+    resolution: {integrity: sha512-gPJGw9qymc2JSee5lUgg5OeQLM7EtLzEWMY7dV2sMwUdh3k8iO3Y22iy6B8TnIX2atpVt2xSpWHRvfiUvH6wuQ==}
+    engines: {node: '>=14.19.3'}
+    peerDependencies:
+      graphql: ^16.0.0
+    dependencies:
+      '@fastify/error': 3.0.0
+      '@fastify/static': 6.5.0
+      '@fastify/websocket': 8.0.0(bufferutil@4.0.6)(utf-8-validate@6.0.0)
+      fastify-plugin: 4.5.0
+      graphql: 16.6.0
+      graphql-jit: 0.8.1(graphql@16.6.0)
+      mqemitter: 5.0.0
+      p-map: 4.0.0
+      readable-stream: 4.1.0
+      safe-stable-stringify: 2.3.1
+      secure-json-parse: 2.7.0
+      single-user-cache: 0.6.0
+      tiny-lru: 11.0.1
+      undici: 5.21.0
+      ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
 
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -8060,6 +8053,10 @@ packages:
     resolution: {integrity: sha512-Vst+6kEsWvb17Zpz14sRJV/f8bUWKhqm6Dc+v08iShmIJ/WxqWytHzCTd6m88pS33rE2zpX34TRmOpAJPloNCA==}
     engines: {node: '>=6'}
 
+  /tiny-lru@11.0.1:
+    resolution: {integrity: sha512-iNgFugVuQgBKrqeO/mpiTTgmBsTP0WL6yeuLfLs/Ctf0pI/ixGqIRm8sDCwMcXGe9WWvt2sGXI5mNqZbValmJg==}
+    engines: {node: '>=12'}
+
   /tiny-lru@9.0.3:
     resolution: {integrity: sha512-/i9GruRjXsnDgehxvy6iZ4AFNVxngEFbwzirhdulomMNPGPVV3ECMZOWSw0w4sRMZ9Al9m4jy08GPvRxRUGYlw==}
     engines: {node: '>=6'}
@@ -8353,18 +8350,11 @@ packages:
       through: 2.3.8
     dev: true
 
-  /undici@5.11.0:
-    resolution: {integrity: sha512-oWjWJHzFet0Ow4YZBkyiJwiK5vWqEYoH7BINzJAJOLedZ++JpAlCbUktW2GQ2DS2FpKmxD/JMtWUUWl1BtghGw==}
-    engines: {node: '>=12.18'}
-    dependencies:
-      busboy: 1.6.0
-
   /undici@5.21.0:
     resolution: {integrity: sha512-HOjK8l6a57b2ZGXOcUsI5NLfoTrfmbOl90ixJDl0AEFG4wgHNDQxtZy15/ZQp7HhjkpaGlp/eneMgtsu1dIlUA==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
-    dev: true
 
   /unify-errors@1.2.106:
     resolution: {integrity: sha512-92ps1BsqKmEPrWdtwBsZ50DxKBqWCdy8fr57sgqAIa1rUoHdmmsm1fbnewxALu52FeAtUtJdE0ouM96ttmRnWw==}
@@ -8387,7 +8377,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       graphql: 16.6.0
-      mercurius: 12.0.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
+      mercurius: 12.2.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
       unify-errors: 1.2.106
     transitivePeerDependencies:
       - bufferutil
@@ -8646,21 +8636,6 @@ packages:
 
   /ws@8.2.3(bufferutil@4.0.6)(utf-8-validate@6.0.0):
     resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dependencies:
-      bufferutil: 4.0.6
-      utf-8-validate: 6.0.0
-
-  /ws@8.8.1(bufferutil@4.0.6)(utf-8-validate@6.0.0):
-    resolution: {integrity: sha512-bGy2JzvzkPowEJV++hF07hAD6niYSr0JzBNo/J29WsB57A2r7Wlc1UFcTR9IzrPvuNVO4B8LGqF8qcpsVOhJCA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
