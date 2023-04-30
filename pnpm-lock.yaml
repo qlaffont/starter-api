@@ -147,8 +147,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0
   '@bull-board/api':
-    specifier: 5.1.1
-    version: 5.1.1
+    specifier: 5.1.2
+    version: 5.1.2(@bull-board/ui@5.1.2)
   '@bull-board/fastify':
     specifier: 5.1.1
     version: 5.1.1
@@ -634,6 +634,15 @@ packages:
       redis-info: 3.1.0
     dev: true
 
+  /@bull-board/api@5.1.2(@bull-board/ui@5.1.2):
+    resolution: {integrity: sha512-NLV88eDnOMd0XuYUNBcaYL6UdxbGYY91kP+P5Jled6CGcYmXLXv/mzAopxmgctqmP07cjC2EXN/4Oc7dyalDqA==}
+    peerDependencies:
+      '@bull-board/ui': 5.1.2
+    dependencies:
+      '@bull-board/ui': 5.1.2
+      redis-info: 3.1.0
+    dev: true
+
   /@bull-board/fastify@5.1.1:
     resolution: {integrity: sha512-UhaFKbFANRp/ZpzKc4EdElrtCjfaF2bCGg6nHTPZowYVHhYmZxiRYZJygtF0+IxWMMyO55N3xMzC9mBqPrjbxg==}
     dependencies:
@@ -650,6 +659,12 @@ packages:
     resolution: {integrity: sha512-+N/m29ZuKLIDFIC743sGE0+vtM0rNMPyidV3m3gZ5fItkrafKrZe2e83sluE7lcrM0iWj4mW4aEF20DYO2J85w==}
     dependencies:
       '@bull-board/api': 5.1.1
+    dev: true
+
+  /@bull-board/ui@5.1.2:
+    resolution: {integrity: sha512-DXXbKA4NLo5D19Vssrg4pPFaFjXVzjFN0ht4GVuoJQejy7t/RVrWzZCjdyVuSiOFTlG3SyB39zW5a95Q5EXUTg==}
+    dependencies:
+      '@bull-board/api': 5.1.2(@bull-board/ui@5.1.2)
     dev: true
 
   /@commitlint/cli@17.6.1:
