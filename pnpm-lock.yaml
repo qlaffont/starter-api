@@ -165,8 +165,8 @@ devDependencies:
     specifier: 8.2.1
     version: 8.2.1
   '@fastify/swagger':
-    specifier: 8.3.1
-    version: 8.3.1
+    specifier: 8.4.0
+    version: 8.4.0
   '@fastify/swagger-ui':
     specifier: ^1.3.0
     version: 1.3.0
@@ -964,14 +964,14 @@ packages:
       - supports-color
     dev: true
 
-  /@fastify/swagger@8.3.1:
-    resolution: {integrity: sha512-S9suS5WlRyADwobkrlcNeICkVyHFxKKdsimRsoO7h27KS86c+pE/s/8WvU793p5Ftk9QnApoilT9izJ0j3I8GA==}
+  /@fastify/swagger@8.4.0:
+    resolution: {integrity: sha512-bgTXEIW8HPfBH9ENER410aI81I2iSoHsHkVs8JJU3gzdVoq+ZVZvnwNYYSXB83K6xdTXMKTEiv8GKAimte49lw==}
     dependencies:
-      fastify-plugin: 4.2.0
+      fastify-plugin: 4.5.0
       json-schema-resolver: 2.0.0
       openapi-types: 12.0.2
       rfdc: 1.3.0
-      yaml: 2.1.3
+      yaml: 2.2.2
     transitivePeerDependencies:
       - supports-color
     dev: true
