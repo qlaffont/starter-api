@@ -50,7 +50,7 @@
     "@mermaid-js/mermaid-cli": "^10.0.0",
     "@types/graphql-fields": "1.3.5",
     "@types/jest": "^29.4.0",
-    "@types/node": "18.16.12",
+    "@types/node": "18.16.13",
     "@typescript-eslint/eslint-plugin": "5.59.6",
     "@typescript-eslint/parser": "5.59.6",
     "bullMQAdapter": "link:@bull-board/api/bullMQAdapter",
