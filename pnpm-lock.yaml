@@ -45,8 +45,8 @@ dependencies:
     specifier: ^0.30.3
     version: 0.30.3
   bullmq:
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^4.0.0
+    version: 4.0.0
   class-validator:
     specifier: ^0.14.0
     version: 0.14.0
@@ -2741,16 +2741,16 @@ packages:
     dependencies:
       node-gyp-build: 4.5.0
 
-  /bullmq@3.0.0:
-    resolution: {integrity: sha512-amw+YZhEo1B47iMpaLbtKwlzZjQi5NYjLCYl8n9qkQpkDDVAVJ9d++zdOgyXX6kG7i/pMP9tr2vyj3J6IcjbTA==}
+  /bullmq@4.0.0:
+    resolution: {integrity: sha512-t4SIOS6+/Xnd4zUQRefMdcyV2VlWJ8mTNGN4cftCnH5T4f8TKexc7F6Wp+EwmtTn6z2JvHw7U2XkIYSxPDu2YA==}
     dependencies:
       cron-parser: 4.6.0
       glob: 8.0.3
-      ioredis: 5.2.2
+      ioredis: 5.3.2
       lodash: 4.17.21
       msgpackr: 1.6.2
-      semver: 7.3.8
-      tslib: 2.4.0
+      semver: 7.5.2
+      tslib: 2.5.0
       uuid: 9.0.0
     transitivePeerDependencies:
       - supports-color
@@ -2943,11 +2943,6 @@ packages:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
     dev: true
-
-  /cluster-key-slot@1.1.0:
-    resolution: {integrity: sha512-2Nii8p3RwAPiFwsnZvukotvow2rIHM+yQ6ZcBXGHdniadkYGZYiGmkHJIbZPIV9nfv7m/U1IPMVVcAhoWFeklw==}
-    engines: {node: '>=0.10.0'}
-    dev: false
 
   /cluster-key-slot@1.1.2:
     resolution: {integrity: sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==}
@@ -4729,12 +4724,12 @@ packages:
       side-channel: 1.0.4
     dev: true
 
-  /ioredis@5.2.2:
-    resolution: {integrity: sha512-wryKc1ur8PcCmNwfcGkw5evouzpbDXxxkMkzPK8wl4xQfQf7lHe11Jotell5ikMVAtikXJEu/OJVaoV51BggRQ==}
+  /ioredis@5.3.2:
+    resolution: {integrity: sha512-1DKMMzlIHM02eBBVOFQ1+AolGjs6+xEcM4PDL7NqOS6szq7H9jSaEkIUH6/a5Hl241LzW6JLSiAbNvTQjUupUA==}
     engines: {node: '>=12.22.0'}
     dependencies:
       '@ioredis/commands': 1.2.0
-      cluster-key-slot: 1.1.0
+      cluster-key-slot: 1.1.2
       debug: 4.3.4
       denque: 2.1.0
       lodash.defaults: 4.2.0
