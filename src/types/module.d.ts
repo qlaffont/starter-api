@@ -13,7 +13,7 @@ import { fastifySwagger } from '@fastify/swagger';
 import { MercuriusPlugin } from 'mercurius';
 import { socketioServer } from 'fastify-socket.io';
 import { Session } from '@fastify/secure-session';
-import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
+import { ZodTypeProvider } from 'fastify-type-provider-zod';
 import { createMercuriusTestClient } from 'mercurius-integration-testing';
 import { PrismaClient, User } from '@prisma/client';
 import { Sendim } from 'sendim';
@@ -37,7 +37,7 @@ declare global {
     RawRequestDefaultExpression<Server>,
     RawReplyDefaultExpression<Server>,
     FastifyBaseLogger,
-    TypeBoxTypeProvider
+    ZodTypeProvider
   >;
 
   interface FastifyCustomInstance

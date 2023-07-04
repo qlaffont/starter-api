@@ -1,25 +1,6 @@
-import { Type } from '@sinclair/typebox';
 import { BadRequest } from 'unify-errors';
-import addFormats from 'ajv-formats';
-import Ajv from 'ajv';
+import z from 'zod';
 import { AuthErrors } from '../../components/auth/authType';
-
-const ajv = addFormats(new Ajv({}), [
-  'date-time',
-  'time',
-  'date',
-  'email',
-  'hostname',
-  'ipv4',
-  'ipv6',
-  'uri',
-  'uri-reference',
-  'uuid',
-  'uri-template',
-  'json-pointer',
-  'relative-json-pointer',
-  'regex',
-]);
 
 export const validatePassword = (password: string) => {
   if (!password) {
@@ -36,9 +17,9 @@ export const validatePassword = (password: string) => {
 };
 
 export const validateEmail = (email: string) => {
-  const schema = ajv.compile(Type.String({ format: 'email' }));
+  const schema = z.string().email();
 
-  if (!schema(email)) {
+  if (schema.safeParse(email).success === false) {
     throw new BadRequest({ error: AuthErrors.email_not_valid });
   }
 };

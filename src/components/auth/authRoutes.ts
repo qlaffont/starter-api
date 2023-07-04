@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { Type } from '@sinclair/typebox';
+import z from 'zod';
 import { isProductionEnv, isPreProductionEnv } from '../../services/env';
 import { login, logout, refreshToken, userInfo } from './authSchemas';
 import AuthController from './authController';
@@ -11,9 +11,9 @@ export const AuthRoutes = () =>
       {
         schema: {
           ...login,
-          body: Type.Object({
-            email: Type.String({ format: 'email' }),
-            password: Type.String(),
+          body: z.object({
+            email: z.string().email(),
+            password: z.string(),
           }),
         },
         ...(!(isProductionEnv() || isPreProductionEnv())

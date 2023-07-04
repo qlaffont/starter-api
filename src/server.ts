@@ -9,10 +9,15 @@ import { Sendim } from 'sendim';
 import unifyFastifyPlugin from 'unify-fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
-import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { createAgent } from '@forestadmin/agent';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
+import {
+  createJsonSchemaTransform,
+  serializerCompiler,
+  validatorCompiler,
+  ZodTypeProvider,
+} from 'fastify-type-provider-zod';
 
 import { PrismaClient } from '@prisma/client';
 
@@ -31,10 +36,17 @@ import { isProductionEnv, isPreProductionEnv, isDevelopmentEnv } from './service
 export const runServer = async () => {
   const logLevel = env.LOG || 'info';
   // LOAD API FRAMEWORK
-  const fastify = Fastify({
+  //
+  //@ts-ignore
+  const fastify: FastifyCustomInstance = Fastify({
     logger: { level: logLevel },
     disableRequestLogging: true,
-  }).withTypeProvider<TypeBoxTypeProvider>() as FastifyCustomInstance;
+  });
+
+  fastify.setValidatorCompiler(validatorCompiler);
+  fastify.setSerializerCompiler(serializerCompiler);
+
+  fastify.withTypeProvider<ZodTypeProvider>();
 
   const logger = fastify.log;
   global.logger = logger;
@@ -148,13 +160,22 @@ export const runServer = async () => {
       transform: ({ schema, url }) => {
         const newSchema = { ...schema };
 
-        // Hide debugger url to swagger
-        if (url.startsWith('/graphiql')) newSchema.hide = true;
-
-        // Hide tag for GraphQL
-        if (url === '/graphql') newSchema.tags = ['GraphQL'];
-
-        return { schema: newSchema, url };
+        return createJsonSchemaTransform({
+          skipList: [
+            '/documentation/',
+            '/documentation/initOAuth',
+            '/documentation/json',
+            '/documentation/uiConfig',
+            '/documentation/yaml',
+            '/documentation/*',
+            '/documentation/static/*',
+            '/graphql',
+            '/graphiql',
+            '/graphiql/main.js',
+            '/graphiql/sw.js',
+            '/graphiql/config.js',
+          ],
+        })({ schema: newSchema, url });
       },
     });
 
@@ -174,7 +195,7 @@ export const runServer = async () => {
     salt: env.COOKIE_SALT,
     cookieName: 'myapp-cookies',
     cookie: {
-      secure: false,
+      secure: true,
       httpOnly: true,
       path: '/',
     },
