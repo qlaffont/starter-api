@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import 'dotenv/config';
-import { isDevelopmentEnv, isPreProductionEnv, isProductionEnv, validateEnv } from 'env-vars-validator';
 import 'reflect-metadata';
+import { isDevelopmentEnv, isPreProductionEnv, isProductionEnv, validateEnv } from 'env-vars-validator';
 import Fastify from 'fastify';
 import FastifyCORS from '@fastify/cors';
 import GracefulServer from '@gquittet/graceful-server';

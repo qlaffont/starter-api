@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-import * as dotenv from 'dotenv';
-dotenv.config();
+import 'dotenv/config';
+import 'reflect-metadata';
 
 import { currentEnv, validateEnv } from 'env-vars-validator';
-import 'reflect-metadata';
+import Fastify from 'fastify';
 // eslint-disable-next-line import/no-named-as-default
 import pino from 'pino';
 import { Worker } from 'bullmq';
@@ -75,3 +74,22 @@ global.prisma = prisma;
     logger.fatal('Impossible to connect to Redis');
   }
 })();
+
+//Add port for cloud provider who need port to check health
+const port: number = process.env.PORT ? parseInt(process.env.PORT) : 3010;
+
+const fastify = Fastify({
+  logger: { level: logLevel },
+  disableRequestLogging: true,
+});
+
+fastify.ready(async () => {
+  logger.info(`Server Running on ${currentEnv()} mode`);
+  logger.info(`Log Running on ${logLevel} mode`);
+});
+fastify.listen({ port, host: '::' }, (err) => {
+  if (err) {
+    logger.fatal(`${err}`);
+    process.exit(1);
+  }
+});
