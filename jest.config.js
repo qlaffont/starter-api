@@ -1,16 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-require('dotenv').config();
-
-// @ts-ignore
-const { PrismaClient } = require('@prisma/client');
-const { fieldEncryptionMiddleware } = require('prisma-field-encryption');
-
-env.LOG = 'silent';
-
-const prisma = new PrismaClient();
-prisma.$use(fieldEncryptionMiddleware());
-global.prisma = prisma;
 
 module.exports = {
   preset: 'ts-jest',

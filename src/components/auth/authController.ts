@@ -137,7 +137,7 @@ class AuthController {
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
-    const resetCode = faker.random.numeric(4);
+    const resetCode = faker.string.numeric(4);
     await prisma.user.update({
       where: {
         id: user.id,

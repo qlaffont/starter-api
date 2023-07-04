@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "wds --watch ./src/index.ts | pnpm pino-pretty",
+    "dev": "pnpm migration:up && wds --watch ./src/index.ts | pnpm pino-pretty",
     "dev:worker": "wds --watch ./src/worker.ts | pnpm pino-pretty",
     "start": "node ./dist/src/index.js",
     "start:worker": "node ./dist/src/worker.js",
