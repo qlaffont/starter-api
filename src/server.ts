@@ -13,6 +13,8 @@ import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
 import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
+import { createAgent } from '@forestadmin/agent';
+import { createSqlDataSource } from '@forestadmin/datasource-sql';
 
 import { PrismaClient } from '@prisma/client';
 
@@ -56,6 +58,8 @@ export const runServer = async () => {
         JWT_REFRESH_TIME: { type: 'string' },
         JWT_ACCESS_SECRET: { type: 'string' },
         JWT_REFRESH_SECRET: { type: 'string' },
+        FOREST_ENV_SECRET: { type: 'string' },
+        FOREST_AUTH_SECRET: { type: 'string' },
         // REDIS_URL: { type: 'string', format: 'uri' },
       },
       {
@@ -216,6 +220,42 @@ export const runServer = async () => {
     pingInterval: 1000,
     pingTimeout: 60000,
   });
+
+  if (!process.env.JEST && process.env.FOREST_AUTH_SECRET && process.env.FOREST_ENV_SECRET) {
+    // TO FIX ISSUE WITH FOREST WHO USE `use` old syntax
+    await fastify.register(require('@fastify/middie'));
+
+    const url = new URL(process.env.DATABASE_URL!);
+    const connectionObject = {
+      dialect: url.protocol.split(':')[0],
+      database: url.pathname.split('/')[1],
+      username: url.username,
+      password: url.password,
+      host: url.hostname,
+      port: url.port ? parseInt(url.port, 10) : undefined,
+      schema: url.searchParams.get('schema') || undefined,
+    };
+
+    const agent = await createAgent({
+      authSecret: process.env.FOREST_AUTH_SECRET!,
+      envSecret: process.env.FOREST_ENV_SECRET!,
+      isProduction: process.env.NODE_ENV === 'production',
+      typingsPath: './typings.ts',
+      typingsMaxDepth: 5,
+      prefix: 'forest',
+      loggerLevel: logLevel === 'debug' ? 'Debug' : 'Error',
+      logger: (level, message) => {
+        if (logLevel === 'debug') {
+          logger[level.toLowerCase()](message);
+        }
+      },
+    });
+
+    //@ts-ignore
+    agent.addDataSource(createSqlDataSource(connectionObject));
+
+    await agent.mountOnFastify(fastify).start();
+  }
 
   try {
     const pool = new Pool({
