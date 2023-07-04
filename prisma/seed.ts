@@ -1,7 +1,7 @@
 import pino from 'pino';
-import 'dotenv/config';
 import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { PrismaClient } from '@prisma/client';
+import { env } from '../src/services/env';
 import { userFactory } from './factories/user.factory';
 
 const logger = pino({ level: env.LOG || 'info' });
