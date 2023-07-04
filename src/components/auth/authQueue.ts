@@ -23,7 +23,7 @@ export const handleAuthQueue = () => {
       const tokens = await prisma.token.findMany({
         where: {
           createdAt: {
-            lte: subDays(new Date(), parseInt(`${process.env.JWT_REFRESH_TIME}`, 10) + 1),
+            lte: subDays(new Date(), parseInt(`${env.JWT_REFRESH_TIME}`, 10) + 1),
           },
         },
       });

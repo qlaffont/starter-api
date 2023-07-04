@@ -17,11 +17,12 @@ import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import { createMercuriusTestClient } from 'mercurius-integration-testing';
 import { PrismaClient, User } from '@prisma/client';
 import { Sendim } from 'sendim';
-
+import { env as ENV } from '../services/env';
 declare global {
   namespace globalThis {
     var logger: FastifyLoggerInstance;
     var prisma: PrismaClient;
+    var env: typeof ENV;
     var sendim: Sendim;
     var testServer: FastifyCustomInstance;
     var testMercuriusClient: ReturnType<typeof createMercuriusTestClient>;

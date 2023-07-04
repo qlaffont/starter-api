@@ -31,8 +31,8 @@ function hashString(input: string, config) {
   }
 
   const saltKey = prompt(
-    `PRISMA_FIELD_ENCRYPTION_HASH_SALT (${process.env.PRISMA_FIELD_ENCRYPTION_HASH_SALT}) =`,
-    process.env.PRISMA_FIELD_ENCRYPTION_HASH_SALT,
+    `PRISMA_FIELD_ENCRYPTION_HASH_SALT (${env.PRISMA_FIELD_ENCRYPTION_HASH_SALT}) =`,
+    env.PRISMA_FIELD_ENCRYPTION_HASH_SALT,
   );
 
   console.log('=======================');

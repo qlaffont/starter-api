@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Type } from '@sinclair/typebox';
-import { isProductionEnv, isPreProductionEnv } from 'env-vars-validator';
+import { isProductionEnv, isPreProductionEnv } from '../../services/env';
 import { login, logout, refreshToken, userInfo } from './authSchemas';
 import AuthController from './authController';
 

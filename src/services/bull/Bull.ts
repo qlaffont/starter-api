@@ -1,6 +1,6 @@
 import { Queue, Worker } from 'bullmq';
 
-const url = new URL(process.env.REDIS_URL!);
+const url = new URL(env.REDIS_URL!);
 
 export const bullRedisConfig = {
   connection: {

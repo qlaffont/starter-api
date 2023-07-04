@@ -1,9 +1,10 @@
-import { currentEnv, isProductionEnv } from 'env-vars-validator';
 import { runServer } from './server';
+import { currentEnv, env, isProductionEnv } from './services/env';
 
 (async () => {
-  const logLevel = process.env.LOG || 'info';
-  const port: number = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+  global.env = env;
+  const logLevel = env.LOG || 'info';
+  const port: number = env.PORT ? env.PORT : 3000;
 
   const fastify = await runServer();
 

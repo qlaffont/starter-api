@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import 'dotenv/config';
 import 'reflect-metadata';
-import { isDevelopmentEnv, isPreProductionEnv, isProductionEnv, validateEnv } from 'env-vars-validator';
 import Fastify from 'fastify';
 import FastifyCORS from '@fastify/cors';
 import GracefulServer from '@gquittet/graceful-server';
@@ -28,9 +26,10 @@ import { loadPassport } from './services/auth/passport';
 import { loadMercurius } from './services/graphql/mercurius';
 import { loadRoutes } from './loaders/RESTLoader';
 import { loadSocket } from './loaders/socketLoader';
+import { isProductionEnv, isPreProductionEnv, isDevelopmentEnv } from './services/env';
 
 export const runServer = async () => {
-  const logLevel = process.env.LOG || 'info';
+  const logLevel = env.LOG || 'info';
   // LOAD API FRAMEWORK
   const fastify = Fastify({
     logger: { level: logLevel },
@@ -43,44 +42,6 @@ export const runServer = async () => {
   await fastify.register(unifyFastifyPlugin, {
     hideError: isProductionEnv() || isPreProductionEnv(),
   });
-
-  try {
-    validateEnv(
-      {
-        API_URL: { type: 'string', format: 'uri' },
-        CLIENT_URL: { type: 'string', format: 'uri' },
-        COOKIE_SECRET: { type: 'string', minLength: 38, maxLength: 38 },
-        COOKIE_SALT: { type: 'string', minLength: 16, maxLength: 16 },
-        DATABASE_URL: { type: 'string' },
-        NODE_ENV: { type: 'string' },
-        PORT: { type: 'integer' },
-        JWT_ACCESS_TIME: { type: 'string' },
-        JWT_REFRESH_TIME: { type: 'string' },
-        JWT_ACCESS_SECRET: { type: 'string' },
-        JWT_REFRESH_SECRET: { type: 'string' },
-        FOREST_ENV_SECRET: { type: 'string' },
-        FOREST_AUTH_SECRET: { type: 'string' },
-        // REDIS_URL: { type: 'string', format: 'uri' },
-      },
-      {
-        requiredProperties: [
-          'COOKIE_SECRET',
-          'COOKIE_SALT',
-          'API_URL',
-          'CLIENT_URL',
-          'JWT_ACCESS_TIME',
-          'JWT_REFRESH_TIME',
-          'JWT_REFRESH_SECRET',
-          'JWT_ACCESS_SECRET',
-          // 'REDIS_URL',
-          'DATABASE_URL',
-        ],
-      },
-    );
-  } catch (error: any) {
-    logger.fatal(error!.toString());
-    process.exit(1);
-  }
 
   //LOAD SENDIM
   const sendim = new Sendim(logLevel as 'info');
@@ -104,7 +65,7 @@ export const runServer = async () => {
         : []),
     ],
     prisma,
-    secret: process.env.JWT_ACCESS_SECRET as string,
+    secret: env.JWT_ACCESS_SECRET as string,
   });
 
   const gracefulServer = GracefulServer(fastify.server);
@@ -126,7 +87,7 @@ export const runServer = async () => {
   }
 
   // SERVER CONFIGURATION
-  const port: number = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+  const port: number = env.PORT ? env.PORT : 3000;
   const origin = isDevelopmentEnv() ? true : /(myapp\.flexper\.com)$/;
 
   await fastify.register(FastifyCORS, {
@@ -209,8 +170,8 @@ export const runServer = async () => {
   }
 
   await fastify.register(require('@fastify/secure-session'), {
-    secret: process.env.COOKIE_SECRET,
-    salt: process.env.COOKIE_SALT,
+    secret: env.COOKIE_SECRET,
+    salt: env.COOKIE_SALT,
     cookieName: 'myapp-cookies',
     cookie: {
       secure: false,
@@ -221,11 +182,11 @@ export const runServer = async () => {
     pingTimeout: 60000,
   });
 
-  if (!process.env.JEST && process.env.FOREST_AUTH_SECRET && process.env.FOREST_ENV_SECRET) {
+  if (!env.JEST && env.FOREST_AUTH_SECRET && env.FOREST_ENV_SECRET) {
     // TO FIX ISSUE WITH FOREST WHO USE `use` old syntax
     await fastify.register(require('@fastify/middie'));
 
-    const url = new URL(process.env.DATABASE_URL!);
+    const url = new URL(env.DATABASE_URL!);
     const connectionObject = {
       dialect: url.protocol.split(':')[0],
       database: url.pathname.split('/')[1],
@@ -237,9 +198,9 @@ export const runServer = async () => {
     };
 
     const agent = await createAgent({
-      authSecret: process.env.FOREST_AUTH_SECRET!,
-      envSecret: process.env.FOREST_ENV_SECRET!,
-      isProduction: process.env.NODE_ENV === 'production',
+      authSecret: env.FOREST_AUTH_SECRET!,
+      envSecret: env.FOREST_ENV_SECRET!,
+      isProduction: env.NODE_ENV === 'production',
       typingsPath: './typings.ts',
       typingsMaxDepth: 5,
       prefix: 'forest',
@@ -259,7 +220,7 @@ export const runServer = async () => {
 
   try {
     const pool = new Pool({
-      connectionString: process.env.DATABASE_URL as string,
+      connectionString: env.DATABASE_URL as string,
     });
     await fastify.register(require('fastify-socket.io'), {
       adapter: createAdapter(pool),

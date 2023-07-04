@@ -4,7 +4,7 @@ import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { PrismaClient } from '@prisma/client';
 import { userFactory } from './factories/user.factory';
 
-const logger = pino({ level: process.env.LOG || 'info' });
+const logger = pino({ level: env.LOG || 'info' });
 
 const prisma = new PrismaClient();
 

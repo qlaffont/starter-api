@@ -6,7 +6,7 @@ require('dotenv').config();
 const { PrismaClient } = require('@prisma/client');
 const { fieldEncryptionMiddleware } = require('prisma-field-encryption');
 
-process.env.LOG = 'silent';
+env.LOG = 'silent';
 
 const prisma = new PrismaClient();
 prisma.$use(fieldEncryptionMiddleware());

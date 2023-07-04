@@ -1,7 +1,9 @@
-import 'dotenv/config';
 import 'reflect-metadata';
 
-import { currentEnv, validateEnv } from 'env-vars-validator';
+// eslint-disable-next-line import/order
+import { currentEnv, env } from './services/env';
+global.env = env;
+
 import Fastify from 'fastify';
 // eslint-disable-next-line import/no-named-as-default
 import pino from 'pino';
@@ -10,27 +12,11 @@ import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { PrismaClient } from '@prisma/client';
 import { handleAuthQueue } from './components/auth/authQueue';
 
-const logLevel = process.env.LOG || 'info';
+const logLevel = env.LOG || 'info';
 
 // LOAD API FRAMEWORK
 const logger = pino({ level: logLevel });
 global.logger = logger;
-
-try {
-  validateEnv(
-    {
-      DATABASE_URL: { type: 'string' },
-      NODE_ENV: { type: 'string' },
-      REDIS_URL: { type: 'string', format: 'uri' },
-    },
-    {
-      requiredProperties: ['DATABASE_URL', 'REDIS_URL'],
-    },
-  );
-} catch (error: any) {
-  logger.fatal(error!.toString());
-  process.exit(1);
-}
 
 // DATABASE CONFIGURATION
 const prisma = new PrismaClient();
@@ -76,7 +62,7 @@ global.prisma = prisma;
 })();
 
 //Add port for cloud provider who need port to check health
-const port: number = process.env.PORT ? parseInt(process.env.PORT) : 3010;
+const port: number = env.PORT ? env.PORT : 3010;
 
 const fastify = Fastify({
   logger: { level: logLevel },

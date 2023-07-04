@@ -9,10 +9,10 @@ import { AuthErrors, UserRegister } from './authType';
 class AuthController {
   static async loginAndGenerateToken(user: User, req: FastifyRequest) {
     const { accessToken, refreshToken } = await createUserToken(prisma)(user.id, {
-      secret: process.env.JWT_ACCESS_SECRET!,
-      refreshSecret: process.env.JWT_REFRESH_SECRET!,
-      accessTokenTime: process.env.JWT_ACCESS_TIME!,
-      refreshTokenTime: process.env.JWT_REFRESH_TIME!,
+      secret: env.JWT_ACCESS_SECRET!,
+      refreshSecret: env.JWT_REFRESH_SECRET!,
+      accessTokenTime: env.JWT_ACCESS_TIME!,
+      refreshTokenTime: env.JWT_REFRESH_TIME!,
     });
 
     req.session.set('refresh', refreshToken);
@@ -36,7 +36,7 @@ class AuthController {
       to: [{ email: registerUser.email, name: `${registerUser.firstName} ${registerUser.lastName}` }],
       sender: { email: 'dev+carrefour@flexper.fr', name: 'Carrefour Energies' },
       params: {
-        gotoapp_link: new URL('/', process.env.CLIENT_URL).toString(),
+        gotoapp_link: new URL('/', env.CLIENT_URL).toString(),
       },
       templateId: '2',
     });
@@ -83,9 +83,9 @@ class AuthController {
         throw new BadRequest({ error: 'refresh_not_found' });
       }
       const { accessToken } = await refreshUserToken(prisma)(refreshToken, {
-        secret: process.env.JWT_ACCESS_SECRET!,
-        refreshSecret: process.env.JWT_REFRESH_SECRET!,
-        accessTokenTime: process.env.JWT_ACCESS_TIME!,
+        secret: env.JWT_ACCESS_SECRET!,
+        refreshSecret: env.JWT_REFRESH_SECRET!,
+        accessTokenTime: env.JWT_ACCESS_TIME!,
       });
 
       res.send({

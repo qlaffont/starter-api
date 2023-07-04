@@ -1,4 +1,3 @@
-import { isPreProductionEnv, isProductionEnv } from 'env-vars-validator';
 import { buildSchema } from 'type-graphql';
 import { mergeSchemas } from '@graphql-tools/schema';
 import mercurius from 'mercurius';
@@ -7,6 +6,7 @@ import mercuriusUpload from 'mercurius-upload';
 import { unifyMercuriusErrorFormatter } from 'unify-mercurius';
 import { graphQLLoaderLoader, graphQLSchemaLoader } from '../../loaders/graphQLLoader';
 import { GQLEnumErrors } from '../../errors/error.type';
+import { isProductionEnv, isPreProductionEnv } from '../env';
 import { rateLimitDirective } from './directives/rate-limit';
 
 export const loadMercurius = async (fastify: FastifyCustomInstance) => {
