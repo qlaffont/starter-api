@@ -12,7 +12,12 @@ import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-aut
 import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { createAgent } from '@forestadmin/agent';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
-import { createJsonSchemaTransform, ZodTypeProvider } from 'fastify-type-provider-zod';
+import {
+  jsonSchemaTransform,
+  serializerCompiler,
+  validatorCompiler,
+  ZodTypeProvider,
+} from 'fastify-type-provider-zod2';
 
 import { PrismaClient } from '@prisma/client';
 
@@ -22,8 +27,6 @@ prisma.$use(fieldEncryptionMiddleware());
 global.prisma = prisma;
 
 // import { loadBullDebugger } from './services/bull/debugger';
-import { fromZodError } from 'zod-validation-error';
-import { ZodError } from 'zod';
 import { loadPassport } from './services/auth/passport';
 import { loadMercurius } from './services/graphql/mercurius';
 import { loadRoutes } from './loaders/RESTLoader';
@@ -39,33 +42,8 @@ export const runServer = async () => {
     disableRequestLogging: true,
   });
 
-  // ? INFO : Temporate fix to support Zod format
-  // https://github.com/turkerdev/fastify-type-provider-zod/issues/52
-  const Ajv = require('ajv');
-  fastify.setValidatorCompiler(({ schema }) => {
-    const ajv = new Ajv({
-      removeAdditional: 'all',
-      useDefaults: true,
-      coerceTypes: 'array',
-    });
-
-    //@ts-ignore
-    if (schema.safeParse) {
-      return (data) => {
-        try {
-          //@ts-ignore
-          schema.parse(data);
-          return { value: data };
-        } catch (e) {
-          const validationError = fromZodError(e as ZodError);
-          //@ts-ignore
-          return { error: [{ message: validationError }] };
-        }
-      };
-    }
-
-    return ajv.compile(schema);
-  });
+  fastify.setValidatorCompiler(validatorCompiler);
+  fastify.setSerializerCompiler(serializerCompiler);
 
   fastify.withTypeProvider<ZodTypeProvider>();
 
@@ -181,22 +159,10 @@ export const runServer = async () => {
       transform: ({ schema, url }) => {
         const newSchema = { ...schema };
 
-        return createJsonSchemaTransform({
-          skipList: [
-            '/documentation/',
-            '/documentation/initOAuth',
-            '/documentation/json',
-            '/documentation/uiConfig',
-            '/documentation/yaml',
-            '/documentation/*',
-            '/documentation/static/*',
-            '/graphql',
-            '/graphiql',
-            '/graphiql/main.js',
-            '/graphiql/sw.js',
-            '/graphiql/config.js',
-          ],
-        })({ schema: newSchema, url });
+        // Hide debugger url to swagger
+        if (url.startsWith('/graphiql/')) newSchema.hide = true;
+
+        return jsonSchemaTransform({ schema: newSchema, url });
       },
     });
 
