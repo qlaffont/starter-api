@@ -26,6 +26,7 @@
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "import/order": "error",
+    "import/no-named-as-default": "off",
     "no-console":"error"
   }
 }
