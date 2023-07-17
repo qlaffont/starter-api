@@ -166,8 +166,8 @@ devDependencies:
     specifier: 5.6.1
     version: 5.6.1(@bull-board/ui@5.6.1)
   '@bull-board/fastify':
-    specifier: 5.6.0
-    version: 5.6.0
+    specifier: 5.6.1
+    version: 5.6.1
   '@commitlint/cli':
     specifier: 17.6.6
     version: 17.6.6
@@ -649,15 +649,6 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@bull-board/api@5.6.0(@bull-board/ui@5.6.0):
-    resolution: {integrity: sha512-a2O15p5oEm+/E/0I2l2nE2NKK0dkgNNTaamu+0gGyfUxWoCS3fCGX6LLEyl3jgOz0IC3GKRnwtVgbZFzk42sGQ==}
-    peerDependencies:
-      '@bull-board/ui': 5.6.0
-    dependencies:
-      '@bull-board/ui': 5.6.0
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api@5.6.1(@bull-board/ui@5.6.1):
     resolution: {integrity: sha512-iq+VpvCt7v2kYCtapDDmgHFyTyHiCbJkSeYbgIDtMIspXfsKxz0ZWKsqaY/VOCRE26jAX2asK17S2XSrANEU0A==}
     peerDependencies:
@@ -667,22 +658,16 @@ packages:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify@5.6.0:
-    resolution: {integrity: sha512-JIGSrNxRko2cc4KTcU1Pp1iROKuAZGi2aLCx87nlgjmdtK51qbBfpDCsNEEc4ZspdddBKvaTUu67/3/n+3J67w==}
+  /@bull-board/fastify@5.6.1:
+    resolution: {integrity: sha512-Gh7dWtGN13nrQ2AL+Hx+cz9hEy9IPlBYUmhP6aIpA5s1eMjQnwhAHSURt0dSaGIyp7rvU7hj1zFx4rcKHeaSXA==}
     dependencies:
-      '@bull-board/api': 5.6.0(@bull-board/ui@5.6.0)
-      '@bull-board/ui': 5.6.0
+      '@bull-board/api': 5.6.1(@bull-board/ui@5.6.1)
+      '@bull-board/ui': 5.6.1
       '@fastify/static': 6.5.0
       '@fastify/view': 7.1.0
       ejs: 3.1.8
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@bull-board/ui@5.6.0:
-    resolution: {integrity: sha512-mc9T+kijDX5ZJMJCzeKPk9uLfOtcuefdDLPqWi961EiiNKfkDex+Gh41DAfcyrNjYsAkBsphvgBgcvundHPGIw==}
-    dependencies:
-      '@bull-board/api': 5.6.0(@bull-board/ui@5.6.0)
     dev: true
 
   /@bull-board/ui@5.6.1:
