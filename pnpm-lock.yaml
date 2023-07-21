@@ -277,8 +277,8 @@ devDependencies:
     specifier: 1.3.1
     version: 1.3.1
   wds:
-    specifier: 0.17.1
-    version: 0.17.1
+    specifier: 0.17.3
+    version: 0.17.3
 
 packages:
 
@@ -9237,8 +9237,8 @@ packages:
       makeerror: 1.0.12
     dev: true
 
-  /wds@0.17.1:
-    resolution: {integrity: sha512-Uwo6PWJii2KvTjZvQOONeefX6aI9RM4s+UdBNF/zVFkH+EFA16hGXRt4ixgA4j/PBNmJHR18qWBhimJE9b41Kg==}
+  /wds@0.17.3:
+    resolution: {integrity: sha512-XqifSAR74vTa+gY5JM6h47K1VEzhfNajxrO+Fkd+NZOe8vRV+0zgxJ5FpV7Io8JiswDODYiIsmyEbJYXEAqwHA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
