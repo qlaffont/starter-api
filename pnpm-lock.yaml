@@ -247,8 +247,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.8.1)(graphql@16.6.0)(mercurius@13.0.0)(utf-8-validate@6.0.0)
   pino-pretty:
-    specifier: 10.0.1
-    version: 10.0.1
+    specifier: 10.1.0
+    version: 10.1.0
   prettier:
     specifier: 3.0.0
     version: 3.0.0
@@ -7378,8 +7378,8 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty@10.0.1:
-    resolution: {integrity: sha512-yrn00+jNpkvZX/NrPVCPIVHAfTDy3ahF0PND9tKqZk4j9s+loK8dpzrJj4dGb7i+WLuR50ussuTAiWoMWU+qeA==}
+  /pino-pretty@10.1.0:
+    resolution: {integrity: sha512-9gAgVHCVTEq0ThcjoXkOICYQgdqh1h90WSuVAnNeCrRrefJInUvMbpDfy6PlsI29Nbu9UW9CGkUHztrR1A9N+A==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
