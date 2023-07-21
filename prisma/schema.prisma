@@ -9,7 +9,7 @@ generator client {
 generator typegraphql {
   provider = "typegraphql-prisma"
   output   = "../prisma/type-graphql"
-  emitOnly = "models"
+  emitOnly = ["models"]
 }
 // INFO TO ENABLE ONLY ON LOCAL
 // generator erd {
