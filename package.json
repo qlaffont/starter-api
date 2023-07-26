@@ -40,7 +40,7 @@
   "devDependencies": {
     "@47ng/codec": "^1.1.0",
     "@bull-board/api": "5.7.1",
-    "@bull-board/fastify": "5.7.0",
+    "@bull-board/fastify": "5.7.1",
     "@commitlint/cli": "17.6.7",
     "@commitlint/config-conventional": "17.6.7",
     "@faker-js/faker": "^8.0.0",
