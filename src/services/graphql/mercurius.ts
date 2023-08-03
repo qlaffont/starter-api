@@ -40,7 +40,7 @@ export const loadMercurius = async (fastify: FastifyCustomInstance) => {
     loaders: graphQLLoaderLoader(),
     path: '/graphql',
     errorFormatter: unifyMercuriusErrorFormatter({
-      hideError: isProductionEnv() || isPreProductionEnv(),
+      disableDetails: isProductionEnv() || isPreProductionEnv(),
     }),
   });
 };

@@ -51,7 +51,7 @@ export const runServer = async () => {
   global.logger = logger;
 
   await fastify.register(unifyFastifyPlugin, {
-    hideError: isProductionEnv() || isPreProductionEnv(),
+    disableDetails: isProductionEnv() || isPreProductionEnv(),
   });
 
   //LOAD SENDIM
