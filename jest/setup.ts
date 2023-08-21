@@ -8,6 +8,7 @@ import { runServer } from '../src/server';
 
 (async () => {
   global.env = env;
+  //@ts-ignore
   env.LOG = 'silent';
 
   const prisma = new PrismaClient();
