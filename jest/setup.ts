@@ -1,9 +1,8 @@
 import 'reflect-metadata';
 // eslint-disable-next-line import/order
-import { env } from '../src/services/env';
 import { createMercuriusTestClient } from 'mercurius-integration-testing';
-import { PrismaClient } from '@prisma/client';
-import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
+import { env } from '../src/services/env';
+import { loadPrismaClient } from '../src/services/prisma/loadClient';
 import { runServer } from '../src/server';
 
 (async () => {
@@ -11,9 +10,7 @@ import { runServer } from '../src/server';
   //@ts-ignore
   env.LOG = 'silent';
 
-  const prisma = new PrismaClient();
-  prisma.$use(fieldEncryptionMiddleware());
-  global.prisma = prisma;
+  global.prisma = loadPrismaClient();
 
   global.testServer = await runServer();
   //@ts-ignore

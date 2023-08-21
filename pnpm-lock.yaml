@@ -105,8 +105,8 @@ dependencies:
     specifier: 5.1.1
     version: 5.1.1
   prisma-field-encryption:
-    specifier: ^1.4.1
-    version: 1.4.1(@prisma/client@5.0.0)
+    specifier: ^1.5.0
+    version: 1.5.0(@prisma/client@5.0.0)
   rate-limiter-flexible:
     specifier: ^2.4.1
     version: 2.4.1
@@ -1655,16 +1655,6 @@ packages:
       '@prisma/engines-version': 4.17.0-26.6b0aef69b7cdfc787f822ecd7cdc76d5f1991584
       prisma: 5.1.1
 
-  /@prisma/debug@4.10.0:
-    resolution: {integrity: sha512-rxVOZKsEyjlQCwN/pkkJO7wEdARt1yRyukSjLa+BF2QTvy2+VgtBmrfys4WDQSnj3jVWeHMpi5GeAoJjKkSKyA==}
-    dependencies:
-      '@types/debug': 4.1.7
-      debug: 4.3.4
-      strip-ansi: 6.0.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@prisma/debug@5.0.0:
     resolution: {integrity: sha512-3q/M/KqlQ01/HJXifU/zCNOHkoTWu24kGelMF/IBrRxm7njPqTTbwfnT1dh4JK+nuWM5/Dg1Lv00u2c0l7AHxg==}
     dependencies:
@@ -1673,7 +1663,6 @@ packages:
       strip-ansi: 6.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@prisma/engines-version@4.17.0-26.6b0aef69b7cdfc787f822ecd7cdc76d5f1991584:
     resolution: {integrity: sha512-HHiUF6NixsldsP3JROq07TYBLEjXFKr6PdH8H4gK/XAoTmIplOJBCgrIUMrsRAnEuGyRoRLXKXWUb943+PFoKQ==}
@@ -1712,17 +1701,6 @@ packages:
       - supports-color
     dev: true
 
-  /@prisma/generator-helper@4.10.0:
-    resolution: {integrity: sha512-NkQOfZpHUjVjqJ7NN2FymHSLkGd/E0fz5c3RkyESKvQqBy2sFBxt+aFxGsUbUy3FfwvkckC04HdQOXpisAko0A==}
-    dependencies:
-      '@prisma/debug': 4.10.0
-      '@types/cross-spawn': 6.0.2
-      chalk: 4.1.2
-      cross-spawn: 7.0.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@prisma/generator-helper@5.0.0:
     resolution: {integrity: sha512-pufQ1mhoH6WzKNtzL79HZDoW4Ql3Lf8QEKVmBoW8e3Tdb50bxpYBYue5LBqp9vNW1xd1pgZO53cNiRfLX2d4Zg==}
     dependencies:
@@ -1732,7 +1710,6 @@ packages:
       kleur: 4.1.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@prisma/get-platform@5.0.0:
     resolution: {integrity: sha512-JT/rz/jaMTggDkd9OIma50si9rPLzSFe7XSrV3mKXwtv9t+rdwx5ZhmKJd+Rz6S1vhn/291k21JLfaxOW6u8KQ==}
@@ -2104,12 +2081,6 @@ packages:
     resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
     dependencies:
       '@types/node': 18.17.5
-
-  /@types/debug@4.1.7:
-    resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
-    dependencies:
-      '@types/ms': 0.7.31
-    dev: false
 
   /@types/debug@4.1.8:
     resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
@@ -5160,8 +5131,8 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  /immer@9.0.19:
-    resolution: {integrity: sha512-eY+Y0qcsB4TZKwgQzLaE/lqYMlKhv5J9dyd2RhhtGhNo2njPXDqU9XPfcNfa3MIDsdtZt5KlkIsirlo4dHsWdQ==}
+  /immer@10.0.2:
+    resolution: {integrity: sha512-Rx3CqeqQ19sxUtYV9CU911Vhy8/721wRFnJv3REVGWUmoAcIwzifTsdmJte/MV+0/XpM35LZdQMBGkRIoLPwQA==}
     dev: false
 
   /import-fresh@3.3.0:
@@ -6141,7 +6112,6 @@ packages:
   /kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
-    dev: true
 
   /koa-bodyparser@4.4.1:
     resolution: {integrity: sha512-kBH3IYPMb+iAXnrxIhXnW+gXV8OTzCu8VPDqvcDHW9SQrbkHmqPQtiZwrltNmSq6/lpipHnT7k7PsjlVD7kK0w==}
@@ -7523,17 +7493,17 @@ packages:
       dotenv: 16.0.3
     dev: true
 
-  /prisma-field-encryption@1.4.1(@prisma/client@5.0.0):
-    resolution: {integrity: sha512-J9uOdp/biLw4Gb3Z2dmXpDYXWG6jmqn0Wnp9/ga0Adg53jP0jVeIfO6+iIIY+H07xDUZa635seYs0pTMqYzyhA==}
+  /prisma-field-encryption@1.5.0(@prisma/client@5.0.0):
+    resolution: {integrity: sha512-lPa1b+98P8roXe79fY8XZI8F7KcbtPe0znTOM71jvIjy3F9SIic8CMK9fJje/Tp3q0ah2QTtFw+pZftaD3LnfA==}
     hasBin: true
     peerDependencies:
-      '@prisma/client': ^3.8.0 || ^4
+      '@prisma/client': '>= 4.7'
     dependencies:
       '@47ng/cloak': 1.1.0
       '@prisma/client': 5.0.0(prisma@5.1.1)
-      '@prisma/generator-helper': 4.10.0
+      '@prisma/generator-helper': 5.0.0
       debug: 4.3.4
-      immer: 9.0.19
+      immer: 10.0.2
       object-path: 0.11.8
       zod: 3.21.4
     transitivePeerDependencies:

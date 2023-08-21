@@ -112,7 +112,7 @@
     "pg": "^8.9.0",
     "pino": "^8.4.2",
     "prisma": "5.1.1",
-    "prisma-field-encryption": "^1.4.1",
+    "prisma-field-encryption": "^1.5.0",
     "rate-limiter-flexible": "^2.4.1",
     "redis": "^4.6.5",
     "reflect-metadata": "^0.1.13",

@@ -1,14 +1,11 @@
 import pino from 'pino';
-import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
-import { PrismaClient } from '@prisma/client';
 import { env } from '../src/services/env';
+import { loadPrismaClient } from '../src/services/prisma/loadClient';
 import { userFactory } from './factories/user.factory';
 
 const logger = pino({ level: env.LOG || 'info' });
 
-const prisma = new PrismaClient();
-
-prisma.$use(fieldEncryptionMiddleware());
+const prisma = loadPrismaClient();
 
 async function main() {
   // ! CONFIGURATION

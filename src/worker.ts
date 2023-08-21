@@ -8,9 +8,8 @@ import Fastify from 'fastify';
 // eslint-disable-next-line import/no-named-as-default
 import pino from 'pino';
 import { Worker } from 'bullmq';
-import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
-import { PrismaClient } from '@prisma/client';
 import { handleAuthQueue } from './components/auth/authQueue';
+import { loadPrismaClient } from './services/prisma/loadClient';
 
 const logLevel = env.LOG || 'info';
 
@@ -19,9 +18,7 @@ const logger = pino({ level: logLevel });
 global.logger = logger;
 
 // DATABASE CONFIGURATION
-const prisma = new PrismaClient();
-prisma.$use(fieldEncryptionMiddleware());
-global.prisma = prisma;
+global.prisma = loadPrismaClient();
 
 (async () => {
   try {

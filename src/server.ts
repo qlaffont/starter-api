@@ -9,7 +9,6 @@ import { Sendim } from 'sendim';
 import unifyFastifyPlugin from 'unify-fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
-import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 import { createAgent } from '@forestadmin/agent';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
 import {
@@ -18,22 +17,19 @@ import {
   validatorCompiler,
   ZodTypeProvider,
 } from 'fastify-type-provider-zod2';
-
-import { PrismaClient } from '@prisma/client';
-
-// DATABASE CONFIGURATION
-const prisma = new PrismaClient();
-prisma.$use(fieldEncryptionMiddleware());
-global.prisma = prisma;
-
-// import { loadBullDebugger } from './services/bull/debugger';
+import { loadPrismaClient } from './services/prisma/loadClient';
 import { loadPassport } from './services/auth/passport';
 import { loadMercurius } from './services/graphql/mercurius';
 import { loadRoutes } from './loaders/RESTLoader';
 import { loadSocket } from './loaders/socketLoader';
 import { isProductionEnv, isPreProductionEnv, isDevelopmentEnv } from './services/env';
 
+// import { loadBullDebugger } from './services/bull/debugger';
+
 export const runServer = async () => {
+  // DATABASE CONFIGURATION
+  global.prisma = loadPrismaClient();
+
   const logLevel = env.LOG || 'info';
   // LOAD API FRAMEWORK
   //@ts-ignore
