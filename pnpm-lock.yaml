@@ -18,8 +18,8 @@ dependencies:
     specifier: ^8.0.0
     version: 8.0.0
   '@fastify/secure-session':
-    specifier: ^6.0.0
-    version: 6.0.0
+    specifier: ^7.0.0
+    version: 7.0.0
   '@forestadmin/agent':
     specifier: ^1.13.1
     version: 1.13.1
@@ -920,8 +920,8 @@ packages:
       ajv-formats: 2.1.1(ajv@8.12.0)
       fast-uri: 2.1.0
 
-  /@fastify/cookie@8.3.0:
-    resolution: {integrity: sha512-P9hY9GO11L20TnZ33XN3i0bt+3x0zaT7S0ohAzWO950E9PB2xnNhLYzPFJIGFi5AVN0yr5+/iZhWxeYvR6KCzg==}
+  /@fastify/cookie@9.0.4:
+    resolution: {integrity: sha512-behLOTH2u7fSZ6+TWeW8XUCmpEstwl8ysxzyb4QRxnKyt80O2S4yVfNbBZQcG9rktjeZXfR7LLl9xXKL4vdjlQ==}
     dependencies:
       cookie: 0.5.0
       fastify-plugin: 4.5.0
@@ -989,12 +989,12 @@ packages:
       tiny-lru: 10.0.1
     dev: false
 
-  /@fastify/secure-session@6.0.0:
-    resolution: {integrity: sha512-Jlw9gkaKPxLO/pDQWWdD4zFIINBxgO3To/KBv3w//Kynh2pKE6fpJEmGp7PI8j9YenEo42yNcm3pPPoY/EV1LQ==}
+  /@fastify/secure-session@7.0.0:
+    resolution: {integrity: sha512-iSL4E8Wq2X9isqd7iPvxLeI6nCVoMM9d+02YG7GM+UiWjqtJ2enWZsWjdN1fS3EuxzgjDy9nVwlHWjFgrs3PuA==}
     hasBin: true
     dependencies:
-      '@fastify/cookie': 8.3.0
-      fastify-plugin: 4.2.0
+      '@fastify/cookie': 9.0.4
+      fastify-plugin: 4.5.0
       sodium-native: 4.0.0
     dev: false
 
