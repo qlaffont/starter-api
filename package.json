@@ -20,7 +20,7 @@
     "prepare": "husky install",
     "postinstall": "prisma generate",
     "script:hash": "pnpm wds scripts/generate-hash.ts",
-    "update-template": "update-template https://github.com/flexper/starter-api",
+    "update-template": "update-template https://github.com/qlaffont/starter-api",
     "test": "rm -rf dist && jest --forceExit",
     "dev:test": "rm -rf dist && jest --watchAll"
   },
@@ -35,7 +35,7 @@
       "type-graphql": "2.0.0-beta.1"
     }
   },
-  "author": "Flexper",
+  "author": "qlaffont",
   "license": "ISC",
   "devDependencies": {
     "@47ng/codec": "^1.1.0",

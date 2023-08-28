@@ -34,7 +34,7 @@ class AuthController {
 
     await sendim.sendTransactionalMail({
       to: [{ email: registerUser.email, name: `${registerUser.firstName} ${registerUser.lastName}` }],
-      sender: { email: 'dev+carrefour@flexper.fr', name: 'Carrefour Energies' },
+      sender: { email: 'dev+qlaffont@qlaffont.fr', name: 'Quentin Laffont' },
       params: {
         gotoapp_link: new URL('/', env.CLIENT_URL).toString(),
       },
@@ -149,7 +149,7 @@ class AuthController {
 
     await sendim.sendTransactionalMail({
       to: [{ email: user.email, name: `${user.firstName} ${user.lastName}` }],
-      sender: { email: 'dev+carrefour@flexper.fr', name: 'Carrefour Energies' },
+      sender: { email: 'dev+qlaffont@qlaffont.fr', name: 'Qlaffont' },
       params: {
         code: resetCode,
       },

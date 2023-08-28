@@ -85,7 +85,7 @@
       "form": [],
       "graphql": {
         "query": "mutation($email: String!) {\n  askResetPassword(email: $email)\n}\n",
-        "variables": "{\n  \"email\": \"quentin@flexper.fr\"\n}"
+        "variables": "{\n  \"email\": \"quentin@qlaffont.fr\"\n}"
       }
     },
     "auth": {
@@ -112,7 +112,7 @@
       "form": [],
       "graphql": {
         "query": "mutation($email: String!, $resetCode: String!, $password: String!) {\n  resetPassword(email: $email, resetCode: $resetCode, password: $password)\n}\n",
-        "variables": "{\n  \"email\": \"quentin@flexper.fr\",\n  \"password\": \"password\",\n  \"resetCode\": \"4886\"\n}"
+        "variables": "{\n  \"email\": \"quentin@qlaffont.fr\",\n  \"password\": \"password\",\n  \"resetCode\": \"4886\"\n}"
       }
     },
     "auth": {
@@ -166,7 +166,7 @@
       "form": [],
       "graphql": {
         "query": "mutation($userRegister: UserRegister!) {\n  registerUser(userRegister: $userRegister)\n}\n",
-        "variables": "{\n  \"userRegister\": {\n    \"firstName\": \"Quentin\",\n    \"lastName\": \"Laffont\",\n    \"password\": \"password\",\n    \"email\": \"quentin@flexper.fr\"\n  }\n}"
+        "variables": "{\n  \"userRegister\": {\n    \"firstName\": \"Quentin\",\n    \"lastName\": \"Laffont\",\n    \"password\": \"password\",\n    \"email\": \"quentin@qlaffont.fr\"\n  }\n}"
       }
     },
     "auth": {

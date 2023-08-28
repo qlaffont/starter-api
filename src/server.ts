@@ -95,7 +95,7 @@ export const runServer = async () => {
 
   // SERVER CONFIGURATION
   const port: number = env.PORT ? env.PORT : 3000;
-  const origin = isDevelopmentEnv() ? true : /(myapp\.flexper\.com)$/;
+  const origin = isDevelopmentEnv() ? true : /(myapp\.qlaffont\.com)$/;
 
   await fastify.register(FastifyCORS, {
     methods: ['GET', 'PUT', 'DELETE', 'POST', 'OPTIONS', 'PATCH'],
