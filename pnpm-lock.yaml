@@ -166,8 +166,8 @@ devDependencies:
     specifier: 5.14.0
     version: 5.14.0(@bull-board/ui@5.14.0)
   '@bull-board/fastify':
-    specifier: 5.8.0
-    version: 5.8.0
+    specifier: 5.14.0
+    version: 5.14.0
   '@commitlint/cli':
     specifier: 17.8.1
     version: 17.8.1
@@ -658,37 +658,20 @@ packages:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/api@5.8.0(@bull-board/ui@5.8.0):
-    resolution: {integrity: sha512-jHJ7Mw/CHixNgIsrbUihyYVxIdlM/lzii+ZUo7E8CFEsOCjE+Um5RDr9boYghWVHuJykkLy7b+wPvbnTwmX0SA==}
-    peerDependencies:
-      '@bull-board/ui': 5.8.0
+  /@bull-board/fastify@5.14.0:
+    resolution: {integrity: sha512-MEZbfUY74wL2dc9OJZGgYABZADlohp62MP1ZMOlC+6ZF4i7X95yxTQ9DmtIV6kkva7+abJgFGNUhtKi7Mq15Fg==}
     dependencies:
-      '@bull-board/ui': 5.8.0
-      redis-info: 3.1.0
-    dev: true
-
-  /@bull-board/fastify@5.8.0:
-    resolution: {integrity: sha512-GTLOjmarDBPeQAtXsh3nN/dTd0D1YhmfyDZnB0D90TObzsh+hbzQP742mykUHNOii3sPZNq6MqwcES1dFkGEKg==}
-    dependencies:
-      '@bull-board/api': 5.8.0(@bull-board/ui@5.8.0)
-      '@bull-board/ui': 5.8.0
-      '@fastify/static': 6.5.0
-      '@fastify/view': 7.1.0
-      ejs: 3.1.8
-    transitivePeerDependencies:
-      - supports-color
+      '@bull-board/api': 5.14.0(@bull-board/ui@5.14.0)
+      '@bull-board/ui': 5.14.0
+      '@fastify/static': 6.12.0
+      '@fastify/view': 8.2.0
+      ejs: 3.1.9
     dev: true
 
   /@bull-board/ui@5.14.0:
     resolution: {integrity: sha512-quustWmLsLbqdbCQd4Mud9Eo/2BQzfJSNSiyJt9OrtYT4AXHMgGtbFUy2Ycyda7iQjC4ScKl8f+WdFs4y+KUJA==}
     dependencies:
       '@bull-board/api': 5.14.0(@bull-board/ui@5.14.0)
-    dev: true
-
-  /@bull-board/ui@5.8.0:
-    resolution: {integrity: sha512-O2imjnV7KFictoy6FsrG2y5u10Z60BIuX+nghLbhdEkZL/B4B2VUM+655d9wMIpjXocXkr2DN5ELJkUXewl9wQ==}
-    dependencies:
-      '@bull-board/api': 5.8.0(@bull-board/ui@5.8.0)
     dev: true
 
   /@commitlint/cli@17.8.1:
@@ -1008,6 +991,27 @@ packages:
       sodium-native: 4.0.0
     dev: false
 
+  /@fastify/send@2.1.0:
+    resolution: {integrity: sha512-yNYiY6sDkexoJR0D8IDy3aRP3+L4wdqCpvx5WP+VtEU58sn7USmKynBzDQex5X42Zzvw2gNzzYgP90UfWShLFA==}
+    dependencies:
+      '@lukeed/ms': 2.0.2
+      escape-html: 1.0.3
+      fast-decode-uri-component: 1.0.1
+      http-errors: 2.0.0
+      mime: 3.0.0
+    dev: true
+
+  /@fastify/static@6.12.0:
+    resolution: {integrity: sha512-KK1B84E6QD/FcQWxDI2aiUCwHxMJBI1KeCUzm1BwYpPY1b742+jeKruGHP2uOluuM6OkBPI8CIANrXcCRtC2oQ==}
+    dependencies:
+      '@fastify/accept-negotiator': 1.0.0
+      '@fastify/send': 2.1.0
+      content-disposition: 0.5.4
+      fastify-plugin: 4.5.0
+      glob: 8.0.3
+      p-limit: 3.1.0
+    dev: true
+
   /@fastify/static@6.5.0:
     resolution: {integrity: sha512-WEk6iqgejA6ivjkvbJ47A+uMci225z5lZwLXCXZS3ZYR/kYje1gzzarkKKGL6TWpBw6smkOzxA7dfEoY0347Nw==}
     dependencies:
@@ -1045,8 +1049,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fastify/view@7.1.0:
-    resolution: {integrity: sha512-CLl5XnTvm1YZ3+VvXZDyA19Gejr+2jFG8dPTEO3D+lQlephSD2ukMbpgT56Insmu4ZEw+jikpXY3WBrVHFUt0g==}
+  /@fastify/view@8.2.0:
+    resolution: {integrity: sha512-hBSiBofCnJNlPHEMZWpO1SL84eqOaqujJ1hR3jntFyZZCkweH5jMs12DKYyGesjVll7SJFRRxPUBB8kmUmneRQ==}
     dependencies:
       fastify-plugin: 4.5.0
       hashlru: 2.3.0
@@ -1523,6 +1527,11 @@ packages:
       methods: 1.1.2
       path-to-regexp: 6.2.1
     dev: false
+
+  /@lukeed/ms@2.0.2:
+    resolution: {integrity: sha512-9I2Zn6+NJLfaGoz9jN3lpwDgAYvfGeNYdbAIjJOqzs4Tpc+VU3Jqq4IofSUBKajiDS8k9fZIg18/z13mpk1bsA==}
+    engines: {node: '>=8'}
+    dev: true
 
   /@mapbox/node-pre-gyp@1.0.11:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
@@ -3585,8 +3594,8 @@ packages:
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  /ejs@3.1.8:
-    resolution: {integrity: sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ==}
+  /ejs@3.1.9:
+    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
@@ -6342,6 +6351,12 @@ packages:
     engines: {node: '>=4.0.0'}
     hasBin: true
     dev: false
+
+  /mime@3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    dev: true
 
   /mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
