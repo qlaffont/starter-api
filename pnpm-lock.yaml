@@ -178,8 +178,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.0
   '@fastify/cors':
-    specifier: 8.3.0
-    version: 8.3.0
+    specifier: 8.5.0
+    version: 8.5.0
   '@fastify/swagger':
     specifier: 8.9.0
     version: 8.9.0
@@ -920,11 +920,11 @@ packages:
       fastify-plugin: 4.5.0
     dev: false
 
-  /@fastify/cors@8.3.0:
-    resolution: {integrity: sha512-oj9xkka2Tg0MrwuKhsSUumcAkfp2YCnKxmFEusi01pjk1YrdDsuSYTHXEelWNW+ilSy/ApZq0c2SvhKrLX0H1g==}
+  /@fastify/cors@8.5.0:
+    resolution: {integrity: sha512-/oZ1QSb02XjP0IK1U0IXktEsw/dUBTxJOW7IpIeO8c/tNalw/KjoNSJv1Sf6eqoBPO+TDGkifq6ynFK3v68HFQ==}
     dependencies:
       fastify-plugin: 4.5.0
-      mnemonist: 0.39.5
+      mnemonist: 0.39.6
     dev: true
 
   /@fastify/deepmerge@1.1.0:
@@ -1559,7 +1559,6 @@ packages:
       mercurius: 12.2.0(bufferutil@4.0.6)(graphql@16.6.0)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: true
 
@@ -1579,7 +1578,6 @@ packages:
       ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: true
 
@@ -6259,7 +6257,7 @@ packages:
       graphql: ^16.0.0
     dependencies:
       '@fastify/error': 3.3.0
-      '@fastify/static': 6.5.0
+      '@fastify/static': 6.12.0
       '@fastify/websocket': 7.2.0(bufferutil@4.0.6)(utf-8-validate@6.0.0)
       fastify-plugin: 4.5.0
       graphql: 16.6.0
@@ -6275,7 +6273,6 @@ packages:
       ws: 8.12.1(bufferutil@4.0.6)(utf-8-validate@6.0.0)
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: true
 
@@ -6450,8 +6447,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mnemonist@0.39.5:
-    resolution: {integrity: sha512-FPUtkhtJ0efmEFGpU14x7jGbTB+s18LrzRL2KgoWz9YvcY3cPomz8tih01GbHwnGk/OmkOKfqd/RAQoc8Lm7DQ==}
+  /mnemonist@0.39.6:
+    resolution: {integrity: sha512-A/0v5Z59y63US00cRSLiloEIw3t5G+MiKz4BhX21FI+YBJXBOGW0ohFxTxO08dsOYlzxo87T7vGfZKYp2bcAWA==}
     dependencies:
       obliterator: 2.0.4
     dev: true
