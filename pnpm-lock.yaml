@@ -247,8 +247,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.0(@mercuriusjs/federation@1.0.1)(@mercuriusjs/gateway@1.2.0)(bufferutil@4.0.6)(fastify@4.21.0)(graphql@16.6.0)(mercurius@13.0.0)(utf-8-validate@6.0.0)
   pino-pretty:
-    specifier: 10.2.0
-    version: 10.2.0
+    specifier: 10.3.1
+    version: 10.3.1
   prettier:
     specifier: 3.0.2
     version: 3.0.2
@@ -3227,10 +3227,6 @@ packages:
     hasBin: true
     dev: false
 
-  /colorette@2.0.19:
-    resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
-    dev: true
-
   /colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
     dev: true
@@ -5014,11 +5010,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /help-me@4.0.1:
-    resolution: {integrity: sha512-PLv01Z+OhEPKj2QPYB4kjoCUkopYNPUK3EROlaPIf5bib752fZ+VCvGDAoA+FXo/OwCyLEA4D2e0mX8+Zhcplw==}
-    dependencies:
-      glob: 8.0.3
-      readable-stream: 3.6.0
+  /help-me@5.0.0:
+    resolution: {integrity: sha512-7xgomUX6ADmcYzFik0HzAxh/73YlKR9bmFzf51CZwR+b6YtzU2m0u49hQCqV6SvlqIqsaxovfwdvbnsw3b/zpg==}
     dev: true
 
   /hexoid@1.0.0:
@@ -7247,15 +7240,15 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty@10.2.0:
-    resolution: {integrity: sha512-tRvpyEmGtc2D+Lr3FulIZ+R1baggQ4S3xD2Ar93KixFEDx6SEAUP3W5aYuEw1C73d6ROrNcB2IXLteW8itlwhA==}
+  /pino-pretty@10.3.1:
+    resolution: {integrity: sha512-az8JbIYeN/1iLj2t0jR9DV48/LQ3RC6hZPpapKPkb84Q+yTidMCpgWxIT3N0flnBDilyBQ1luWNpOeJptjdp/g==}
     hasBin: true
     dependencies:
-      colorette: 2.0.19
+      colorette: 2.0.20
       dateformat: 4.6.3
       fast-copy: 3.0.0
       fast-safe-stringify: 2.1.1
-      help-me: 4.0.1
+      help-me: 5.0.0
       joycon: 3.1.1
       minimist: 1.2.6
       on-exit-leak-free: 2.1.0
