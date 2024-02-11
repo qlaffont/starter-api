@@ -79,7 +79,7 @@ dependencies:
     version: 16.6.0
   graphql-rate-limit-directive:
     specifier: ^2.0.3
-    version: 2.0.3(@graphql-tools/utils@10.0.0)(graphql@16.6.0)(rate-limiter-flexible@2.4.1)
+    version: 2.0.3(@graphql-tools/utils@10.0.0)(graphql@16.6.0)(rate-limiter-flexible@4.0.1)
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -108,8 +108,8 @@ dependencies:
     specifier: ^1.5.0
     version: 1.5.0(@prisma/client@5.0.0)
   rate-limiter-flexible:
-    specifier: ^2.4.1
-    version: 2.4.1
+    specifier: ^4.0.0
+    version: 4.0.1
   redis:
     specifier: ^4.6.5
     version: 4.6.5
@@ -4834,7 +4834,7 @@ packages:
       graphql: 16.6.0
       lodash.get: 4.4.2
 
-  /graphql-rate-limit-directive@2.0.3(@graphql-tools/utils@10.0.0)(graphql@16.6.0)(rate-limiter-flexible@2.4.1):
+  /graphql-rate-limit-directive@2.0.3(@graphql-tools/utils@10.0.0)(graphql@16.6.0)(rate-limiter-flexible@4.0.1):
     resolution: {integrity: sha512-ruDuPJ8GyjIWm3X3K4OpHEYzMIycTOP6IB+YgqSPt+Xey3MikRCPUffwf8g6q1Ajcc9kgOlOSgvieCCRrVl+Jw==}
     peerDependencies:
       '@graphql-tools/utils': ^8.0.0 || ^9.0.0
@@ -4843,7 +4843,7 @@ packages:
     dependencies:
       '@graphql-tools/utils': 10.0.0(graphql@16.6.0)
       graphql: 16.6.0
-      rate-limiter-flexible: 2.4.1
+      rate-limiter-flexible: 4.0.1
     dev: false
 
   /graphql-scalars@1.22.4(graphql@16.6.0):
@@ -7533,8 +7533,8 @@ packages:
       ipaddr.js: 1.2.0
     dev: false
 
-  /rate-limiter-flexible@2.4.1:
-    resolution: {integrity: sha512-dgH4T44TzKVO9CLArNto62hJOwlWJMLUjVVr/ii0uUzZXEXthDNr7/yefW5z/1vvHAfycc1tnuiYyNJ8CTRB3g==}
+  /rate-limiter-flexible@4.0.1:
+    resolution: {integrity: sha512-2/dGHpDFpeA0+755oUkW+EKyklqLS9lu0go9pDsbhqQjZcxfRyJ6LA4JI0+HAdZ2bemD/oOjUeZQB2lCZqXQfQ==}
     dev: false
 
   /raw-body@2.5.1:
