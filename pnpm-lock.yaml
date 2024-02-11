@@ -60,8 +60,8 @@ dependencies:
     specifier: ^5.0.0
     version: 5.0.0
   date-fns:
-    specifier: ^2.29.2
-    version: 2.29.2
+    specifier: ^3.0.0
+    version: 3.3.1
   dotenv:
     specifier: ^16.0.1
     version: 16.0.1
@@ -3432,9 +3432,8 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
-  /date-fns@2.29.2:
-    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
-    engines: {node: '>=0.11'}
+  /date-fns@3.3.1:
+    resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
     dev: false
 
   /dateformat@4.6.3:
