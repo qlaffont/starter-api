@@ -17,6 +17,7 @@ import { ZodTypeProvider } from 'fastify-type-provider-zod2';
 import { createMercuriusTestClient } from 'mercurius-integration-testing';
 import { PrismaClient, User } from '@prisma/client';
 import { Sendim } from 'sendim';
+import { Server as ServerSocketIo } from 'socket.io';
 import { env as ENV } from '../services/env';
 declare global {
   namespace globalThis {
@@ -45,7 +46,9 @@ declare global {
       fastifySensible,
       fastifySwagger,
       MercuriusPlugin,
-      socketioServer {}
+      socketioServer {
+    io: ServerSocketIo<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>;
+  }
 }
 
 declare module 'fastify' {
