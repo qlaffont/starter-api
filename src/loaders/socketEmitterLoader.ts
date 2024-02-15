@@ -1,5 +1,6 @@
 import { Emitter } from '@socket.io/postgres-emitter';
-import { Pool } from 'pg';
+import * as pg from 'pg';
+const { Pool } = pg;
 
 export const loadEmitter = async () => {
   if (!global.socketEmitter) {

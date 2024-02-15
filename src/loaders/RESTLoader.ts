@@ -1,4 +1,4 @@
-import { startCase } from 'lodash';
+import startCase from 'lodash/startCase';
 import { AuthRoutes } from '../components/auth/authRoutes';
 
 export const loadRoutes = (fastify: FastifyCustomInstance) => {

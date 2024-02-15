@@ -1,16 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ESNext",
-    "noImplicitAny": false,
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "strict": true,
-    "strictPropertyInitialization": false,
-    "allowJs": true,
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
@@ -19,7 +10,6 @@
       "@jest/utils": ["jest/index.ts"],
       "@prisma/factories": ["prisma/factories/index.ts"],
     },
-    "skipLibCheck": true,
   },
   "include": ["src/**/*", "prisma/**/*", "src/types/module.d.ts"],
 }

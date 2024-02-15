@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm migration:up && wds --watch ./src/index.ts | pnpm pino-pretty",
-    "dev:worker": "wds --watch ./src/worker.ts | pnpm pino-pretty",
-    "start": "node ./dist/src/index.js",
-    "start:worker": "node ./dist/src/worker.js",
-    "build": "pnpm run build:prisma && pnpm run build:src",
+    "dev": "pnpm migration:up && tsc --noEmit && tsx watch --tsconfig ./tsconfig.json  ./src/index.ts | pnpm pino-pretty",
+    "dev:worker": "tsc --noEmit && tsx --tsconfig ./tsconfig.json watch ./src/worker.ts | pnpm pino-pretty",
+    "start": "tsx --tsconfig ./tsconfig.json ./src/index.ts",
+    "start:worker": "tsx --tsconfig ./tsconfig.json ./src/worker.js",
+    "build": "pnpm run build:prisma && echo 'build done !'",
     "build:prisma": "(mkdir -p dist/prisma && pnpm run generate) | gnomon",
-    "build:src": "(mkdir -p dist && tsc && tsc-alias && echo 'build done !') | gnomon",
     "lint": "eslint src --ext .ts --fix",
     "generate": "prisma generate",
     "migration:up": "prisma migrate deploy",
@@ -19,16 +18,16 @@
     "migration:seed": "prisma db seed",
     "prepare": "husky install",
     "postinstall": "prisma generate",
-    "script:hash": "pnpm wds scripts/generate-hash.ts",
+    "script:hash": "pnpm tsx scripts/generate-hash.ts",
     "update-template": "update-template https://github.com/qlaffont/starter-api",
-    "test": "rm -rf dist && jest --forceExit",
+    "test": "rm -rf dist && NODE_OPTIONS=--experimental-vm-modules jest --forceExit",
     "dev:test": "rm -rf dist && jest --watchAll"
   },
   "lint-staged": {
     "*.ts": "eslint --fix"
   },
   "prisma": {
-    "seed": "wds prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts"
   },
   "pnpm": {
     "overrides": {
@@ -73,11 +72,11 @@
     "prompt-sync": "^4.2.0",
     "ts-jest": "^29.1.2",
     "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.1",
     "typegraphql-prisma": "0.27.1",
     "types-fastify-socket.io": "0.0.1",
     "typescript": "5.3.3",
-    "update-template": "1.3.1",
-    "wds": "0.19.0"
+    "update-template": "1.3.1"
   },
   "dependencies": {
     "@fastify/middie": "^8.3.0",

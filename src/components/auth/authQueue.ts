@@ -34,7 +34,7 @@ export const handleAuthQueue = () => {
 
   worker.on('progress', (job) => logger.debug(`[AUTH] Processing job ${job.id} (${job.name})`));
   worker.on('completed', (job) => logger.debug(`[AUTH] Completed job ${job.id} (${job.name}) successfully`));
-  worker.on('failed', (job, err) => logger.debug(`[AUTH] Failed job ${job.id} (${job.name}) with ${err}`));
+  worker.on('failed', (job, err) => logger.debug(`[AUTH] Failed job ${job?.id} (${job?.name}) with ${err}`));
 
   return [worker];
 };

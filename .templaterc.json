@@ -11,7 +11,6 @@
     "commitlint.config.js",
     "prettier.config.js",
     "docker-compose.yml",
-    "wds.js",
     "README.md",
     "tsconfig.json"
   ],

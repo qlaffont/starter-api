@@ -1,5 +1,5 @@
 import { User } from '@prisma/client';
-import { set } from 'lodash';
+import set from 'lodash/set';
 import { CryptoUtils } from '../../services/crypto/crypto.utils';
 import { AuthErrors, UserRegister } from './authType';
 import AuthController from './authController';

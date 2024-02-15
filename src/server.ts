@@ -4,12 +4,14 @@ import Fastify from 'fastify';
 import FastifyCORS from '@fastify/cors';
 import GracefulServer from '@gquittet/graceful-server';
 import { createAdapter } from '@socket.io/postgres-adapter';
-import { Pool } from 'pg';
+import * as pg from 'pg';
+const { Pool } = pg;
 import { Sendim } from 'sendim';
 import unifyFastifyPlugin from 'unify-fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
 import { createAgent } from '@forestadmin/agent';
+import fetch from 'node-fetch';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
 import {
   jsonSchemaTransform,
@@ -222,6 +224,7 @@ export const runServer = async () => {
     await agent.mountOnFastify(fastify).start();
   }
 
+  console.log(await (await fetch('https://google.com')).text());
   try {
     const pool = new Pool({
       connectionString: env.DATABASE_URL as string,
