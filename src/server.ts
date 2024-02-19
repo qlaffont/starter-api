@@ -11,7 +11,6 @@ import unifyFastifyPlugin from 'unify-fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
 import { fastifyAuthPrismaPlugin, FastifyAuthPrismaUrlConfig } from 'fastify-auth-prisma';
 import { createAgent } from '@forestadmin/agent';
-import fetch from 'node-fetch';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
 import {
   jsonSchemaTransform,
@@ -78,13 +77,6 @@ export const runServer = async () => {
   });
 
   const gracefulServer = GracefulServer(fastify.server);
-  gracefulServer.on(GracefulServer.SHUTTING_DOWN, (err) => {
-    if (err) {
-      logger.debug(err);
-    }
-    global.prisma.$disconnect();
-    logger.debug('Server is shutting down');
-  });
 
   try {
     await prisma.$connect();
@@ -224,13 +216,12 @@ export const runServer = async () => {
     await agent.mountOnFastify(fastify).start();
   }
 
-  console.log(await (await fetch('https://google.com')).text());
   try {
     const pool = new Pool({
       connectionString: env.DATABASE_URL as string,
     });
     await fastify.register(require('fastify-socket.io'), {
-      adapter: createAdapter(pool),
+      adapter: process.env.RUN_TEST?.length !== 0 ? undefined : createAdapter(pool),
       cors: {
         allowedHeaders: [
           'Origin',
@@ -246,6 +237,16 @@ export const runServer = async () => {
         origin,
         credentials: true,
       },
+    });
+
+    fastify.addHook('onClose', async (err) => {
+      if (err) {
+        logger.debug(err);
+      }
+      await global.prisma.$disconnect();
+      await fastify.io.close();
+      await pool.end();
+      logger.debug('Server is shutting down');
     });
   } catch (error) {
     logger.fatal('Impossible to connect to postgres');

@@ -1,7 +1,9 @@
+import { match } from 'tap';
+
 export const testIfQueryIsProtected = async (mercuriusClient, gql, variables?: object) => {
   const res = await mercuriusClient.query(gql, variables);
 
-  expect(res.errors![0].message).toContain('Access denied!');
+  match(res.errors![0].message, 'Access denied!');
 };
 
 export const testIfAccessTokenIsInvalidQuery = async (mercuriusClient, gql, variables?: object) => {
@@ -12,13 +14,13 @@ export const testIfAccessTokenIsInvalidQuery = async (mercuriusClient, gql, vari
     },
   });
 
-  expect(res.errors![0].message).toContain('Access denied!');
+  match(res.errors![0].message, 'Access denied!');
 };
 
 export const testIfMutationIsProtected = async (mercuriusClient, gql, variables) => {
   const res = await mercuriusClient.mutate(gql, variables);
 
-  expect(res.errors![0].message).toContain('Access denied!');
+  match(res.errors![0].message, 'Access denied!');
 };
 
 export const testIfAccessTokenIsInvalidMutation = async (mercuriusClient, gql, variables) => {
@@ -29,5 +31,5 @@ export const testIfAccessTokenIsInvalidMutation = async (mercuriusClient, gql, v
     },
   });
 
-  expect(res.errors![0].message).toContain('Access denied!');
+  match(res.errors![0].message, 'Access denied!');
 };

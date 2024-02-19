@@ -1,5 +1,9 @@
+import 'reflect-metadata';
+import { notEqual } from 'assert';
 import { User } from '@prisma/client';
 import set from 'lodash/set';
+import { before, after, afterEach } from '@tapjs/mocha-globals';
+import { equal, match, test, capture, not, notMatch, beforeEach } from 'tap';
 import { CryptoUtils } from '../../services/crypto/crypto.utils';
 import { AuthErrors, UserRegister } from './authType';
 import AuthController from './authController';
@@ -11,16 +15,19 @@ import {
   DEFAULT_PASSWORD,
   testIfMutationIsProtected,
   testIfAccessTokenIsInvalidMutation,
-} from '@jest/utils';
+  setupTests,
+} from '@test/utils';
 
-describe('Auth', () => {
+before(setupTests);
+
+test('Auth', async () => {
   const email = 'auth@test.fr';
   const cookieHeader = 'myapp-cookies';
   let user: User;
   let accessToken: string;
   let refreshToken: string;
 
-  beforeAll(async () => {
+  before(async () => {
     const res = await createUserAndGetAccessToken({ email });
     //@ts-ignore
     user = res[0];
@@ -30,7 +37,7 @@ describe('Auth', () => {
     refreshToken = res[2];
   });
 
-  afterAll(async () => {
+  after(async () => {
     await prisma.user.delete({
       where: {
         id: user.id,
@@ -38,19 +45,19 @@ describe('Auth', () => {
     });
   });
 
-  describe('global', () => {
-    it('should return UnAuthorized by default', async () => {
+  test('global', async () => {
+    test('should return UnAuthorized by default', async () => {
       const response = await testServer.inject({
         method: 'GET',
         url: '/this-is-a-random-url',
       });
 
-      expect(response.statusCode).toBe(401);
-      expect(JSON.parse(response.body)).toMatchObject({ error: 'Unauthorized' });
+      equal(response.statusCode, 401);
+      match(JSON.parse(response.body), { error: 'Unauthorized' });
     });
   });
 
-  describe('getUserMe', () => {
+  test('getUserMe', async () => {
     const gql = `
       {
         getUserMe {
@@ -66,27 +73,27 @@ describe('Auth', () => {
       },
     };
 
-    it('should return an access denied if no access token', async () => {
+    test('should return an access denied if no access token', async () => {
       await testIfQueryIsProtected(testMercuriusClient, gql);
     });
 
-    it('should return an access denied with wrong accessToken', async () => {
+    test('should return an access denied with wrong accessToken', async () => {
       await testIfAccessTokenIsInvalidQuery(testMercuriusClient, gql);
     });
 
-    it('should return 200 with user information', async () => {
+    test('should return 200 with user information', async () => {
       const res = await testMercuriusClient.query(gql, {
         headers: {
           authorization: `Bearer ${accessToken}`,
         },
       });
 
-      expect(res).toMatchObject(goodResponse);
-      expect(res?.errors).toBeUndefined();
+      match(res, goodResponse);
+      equal(res?.errors, undefined);
     });
   });
 
-  describe('userRegister', () => {
+  test('userRegister', async () => {
     const gql = `
       mutation($userRegister: UserRegister!) {
         registerUser(userRegister: $userRegister)
@@ -102,7 +109,7 @@ describe('Auth', () => {
       data: { registerUser: 'OK' },
     };
 
-    afterAll(async () => {
+    after(async () => {
       await prisma.user.delete({
         where: {
           email: goodVariables.email,
@@ -110,10 +117,10 @@ describe('Auth', () => {
       });
     });
 
-    afterEach(() => jest.resetAllMocks());
+    // afterEach(() => jest.resetAllMocks());
 
-    it('should create a new record in DB', async () => {
-      jest.spyOn(global.sendim, 'sendTransactionalMail');
+    test('should create a new record in DB', async () => {
+      const results = capture(global.sendim, 'sendTransactionalMail');
       const res = await testMercuriusClient.mutate(gql, {
         variables: {
           userRegister: goodVariables,
@@ -122,37 +129,37 @@ describe('Auth', () => {
 
       const record = await prisma.user.findFirst({ where: { email: goodVariables.email } });
 
-      expect(res).toMatchObject(goodResponse);
-      expect(res?.errors).toBeUndefined();
-      expect(record).not.toBeNull();
-      expect(global.sendim.sendTransactionalMail).toHaveBeenCalled();
+      match(res, goodResponse);
+      match(res?.errors, undefined);
+      not(record, null);
+      equal(results()?.length, 1);
     });
 
-    it('should not allow bad emails', async () => {
+    test('should not allow bad emails', async () => {
       const res = await testMercuriusClient.mutate(gql, {
         variables: {
           userRegister: { ...goodVariables, email: 'badmail' },
         },
       });
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: AuthErrors.email_not_valid });
+      notMatch(res, goodResponse);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: AuthErrors.email_not_valid });
     });
 
-    it('should not allow already used email', async () => {
+    test('should not allow already used email', async () => {
       const res = await testMercuriusClient.mutate(gql, {
         variables: {
           userRegister: goodVariables,
         },
       });
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: 'user_already_exist' });
+      notMatch(res, goodResponse);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: 'user_already_exist' });
     });
 
-    it('should fullfil password validation', async () =>
+    test('should fullfil password validation', async () =>
       await testPasswordValidation(
         testMercuriusClient,
         gql,
@@ -161,24 +168,24 @@ describe('Auth', () => {
       ));
   });
 
-  describe('login', () => {
+  test('login', async () => {
     const goodPayload = {
       email,
       password: DEFAULT_PASSWORD,
     };
 
-    it('should login user', async () => {
+    test('should login user', async () => {
       const response = await testServer.inject({
         method: 'POST',
         url: '/auth/login',
         payload: goodPayload,
       });
 
-      expect(response.statusCode).toBe(200);
-      expect(JSON.parse(response.body)).toHaveProperty('access_token');
+      equal(response.statusCode, 200);
+      match(Object.keys(JSON.parse(response.body)), ['access_token']);
     });
 
-    it('should not allow inexisting account', async () => {
+    test('should not allow inexisting account', async () => {
       const response = await testServer.inject({
         method: 'POST',
         url: '/auth/login',
@@ -187,15 +194,15 @@ describe('Auth', () => {
 
       const body = JSON.parse(response.body);
 
-      expect(response.statusCode).not.toBe(200);
-      expect(body).not.toHaveProperty('access_token');
-      expect(body.error).toContain('Bad Request');
-      expect(body.context).toMatchObject({
+      notEqual(response.statusCode, 200);
+      notEqual(Object.keys(JSON.parse(response.body)), ['access_token']);
+      match(body.error, 'Bad Request');
+      match(body.context, {
         error: 'account_not_found',
       });
     });
 
-    it('should not allow wrong password', async () => {
+    test('should not allow wrong password', async () => {
       const response = await testServer.inject({
         method: 'POST',
         url: '/auth/login',
@@ -204,17 +211,17 @@ describe('Auth', () => {
 
       const body = JSON.parse(response.body);
 
-      expect(response.statusCode).not.toBe(200);
-      expect(body).not.toHaveProperty('access_token');
-      expect(body.error).toContain('Bad Request');
-      expect(body.context).toMatchObject({
+      notEqual(response.statusCode, 200);
+      notEqual(Object.keys(JSON.parse(response.body)), ['access_token']);
+      match(body.error, 'Bad Request');
+      match(body.context, {
         error: 'account_not_found',
       });
     });
   });
 
-  describe('refresh', () => {
-    it('should be able to generate access token', async () => {
+  test('refresh', async () => {
+    test('should be able to generate access token', async () => {
       const cookies = testServer.encodeSecureSession(
         testServer.createSecureSession({
           refresh: refreshToken,
@@ -229,21 +236,21 @@ describe('Auth', () => {
         },
       });
 
-      expect(response.statusCode).toBe(200);
-      expect(JSON.parse(response.body)).toHaveProperty('access_token');
+      equal(response.statusCode, 200);
+      match(Object.keys(JSON.parse(response.body)), ['access_token']);
     });
 
-    it('should return a 400 if no refresh', async () => {
+    test('should return a 400 if no refresh', async () => {
       const response = await testServer.inject({
         url: '/auth/refresh',
         method: 'POST',
       });
 
-      expect(response.statusCode).toBe(400);
+      equal(response.statusCode, 400);
     });
   });
 
-  describe('logout', () => {
+  test('logout', async () => {
     let token;
     beforeEach(async () => {
       const res = await testServer.inject({
@@ -255,7 +262,7 @@ describe('Auth', () => {
       token = JSON.parse(res.body).access_token;
     });
 
-    it('should logout user', async () => {
+    test('should logout user', async () => {
       const cookies = testServer.encodeSecureSession(
         testServer.createSecureSession({
           refresh: refreshToken,
@@ -274,16 +281,16 @@ describe('Auth', () => {
 
       const record = await prisma.token.findFirst({ where: { accessToken: token } });
 
-      expect(response.statusCode).toBe(200);
-      expect(record).toBeNull();
+      equal(response.statusCode, 200);
+      equal(record, null);
 
       //@ts-ignore
       const session = testServer.decodeSecureSession(response.cookies.find((v) => v.name === cookieHeader)!.value);
 
-      expect(session!.get('refresh')).not.toBeDefined();
+      equal(session!.get('refresh'), undefined);
     });
 
-    it('requires a bearer token', async () => {
+    test('requires a bearer token', async () => {
       const response = await testServer.inject({
         method: 'POST',
         url: '/auth/logout',
@@ -291,11 +298,11 @@ describe('Auth', () => {
 
       const record = await prisma.token.findFirst({ where: { owner: { email } } });
 
-      expect(response.statusCode).not.toBe(200);
-      expect(record).not.toBeNull();
+      notEqual(response.statusCode, 200);
+      notEqual(record, null);
     });
 
-    it('requires a valid bearer token', async () => {
+    test('requires a valid bearer token', async () => {
       const response = await testServer.inject({
         method: 'POST',
         url: '/auth/logout',
@@ -306,12 +313,12 @@ describe('Auth', () => {
 
       const record = await prisma.token.findFirst({ where: { owner: { email } } });
 
-      expect(response.statusCode).not.toBe(200);
-      expect(record).not.toBeNull();
+      notEqual(response.statusCode, 200);
+      notEqual(record, null);
     });
   });
 
-  describe('changePassword', () => {
+  test('changePassword', async () => {
     const gql = `
     mutation($oldPassword: String!, $newPassword: String!) {
       changePassword(oldPassword: $oldPassword, newPassword: $newPassword)
@@ -348,15 +355,15 @@ describe('Auth', () => {
       });
     });
 
-    it('should return an access denied if no access token', async () => {
+    test('should return an access denied if no access token', async () => {
       await testIfMutationIsProtected(testMercuriusClient, gql, goodVariables);
     });
 
-    it('should return an access denied with wrong accessToken', async () => {
+    test('should return an access denied with wrong accessToken', async () => {
       await testIfAccessTokenIsInvalidMutation(testMercuriusClient, gql, goodVariables);
     });
 
-    it("should change user's password", async () => {
+    test("should change user's password", async () => {
       const beforeMutationUser = await prisma.user.findFirst({ where: { email } });
       const beforePassword = beforeMutationUser?.password;
 
@@ -370,12 +377,12 @@ describe('Auth', () => {
       const afterMutationUser = await prisma.user.findFirst({ where: { email } });
       const afterPassword = afterMutationUser?.password;
 
-      expect(res).toMatchObject(goodResponse);
-      expect(res?.errors).toBeUndefined();
-      expect(beforePassword).not.toEqual(afterPassword);
+      match(res, goodResponse);
+      equal(res?.errors, undefined);
+      notEqual(beforePassword, afterPassword);
     });
 
-    it('should not allow a wrong password', async () => {
+    test('should not allow a wrong password', async () => {
       const beforeMutationUser = await prisma.user.findFirst({ where: { email } });
       const beforePassword = beforeMutationUser?.password;
 
@@ -390,14 +397,14 @@ describe('Auth', () => {
       const afterMutationUser = await prisma.user.findFirst({ where: { email } });
       const afterPassword = afterMutationUser?.password;
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: 'password_error' });
-      expect(beforePassword).toEqual(afterPassword);
+      notMatch(res, goodResponse);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: 'password_error' });
+      equal(beforePassword, afterPassword);
     });
   });
 
-  describe('askResetPassword', () => {
+  test('askResetPassword', async () => {
     const gql = `
     mutation($email: String!) {
       askResetPassword(email: $email)
@@ -431,12 +438,10 @@ describe('Auth', () => {
         where: { email },
         data: { resetPasswordCode: null },
       });
-
-      jest.clearAllMocks();
     });
 
-    it('create a reset code', async () => {
-      jest.spyOn(global.sendim, 'sendTransactionalMail');
+    test('create a reset code', async () => {
+      const results = capture(global.sendim, 'sendTransactionalMail');
       const res = await testMercuriusClient.mutate(gql, {
         ...goodVariables,
         headers: {
@@ -446,13 +451,13 @@ describe('Auth', () => {
 
       const record = await prisma.user.findFirst({ where: { email } });
 
-      expect(res).toMatchObject(goodResponse);
-      expect(res?.errors).toBeUndefined();
-      expect(record?.resetPasswordCode).not.toBeNull();
-      expect(global.sendim.sendTransactionalMail).toHaveBeenCalled();
+      match(res, goodResponse);
+      equal(res?.errors, undefined);
+      notEqual(record?.resetPasswordCode, null);
+      equal(results().length, 1);
     });
 
-    it('should not allow an unknown account', async () => {
+    test('should not allow an unknown account', async () => {
       const badVariables = set(goodVariables, 'variables.email', 'unknown@test.com');
       const res = await testMercuriusClient.mutate(gql, {
         ...badVariables,
@@ -463,15 +468,15 @@ describe('Auth', () => {
 
       const record = await prisma.user.findFirst({ where: { email } });
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res?.errors).not.toBeUndefined();
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: 'account_not_found' });
-      expect(record?.resetPasswordCode).toBeNull();
+      notMatch(res, goodResponse);
+      notEqual(res?.errors, undefined);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: 'account_not_found' });
+      equal(record?.resetPasswordCode, null);
     });
   });
 
-  describe('resetPassword', () => {
+  test('resetPassword', async () => {
     const gql = `
     mutation($email: String!, $resetCode: String!, $password: String!) {
       resetPassword(email: $email, resetCode: $resetCode, password: $password)
@@ -516,7 +521,7 @@ describe('Auth', () => {
       });
     });
 
-    it('should reset the password', async () => {
+    test('should reset the password', async () => {
       const beforeMutationUser = await prisma.user.findFirst({ where: { email } });
 
       const res = await testMercuriusClient.mutate(gql, {
@@ -528,13 +533,13 @@ describe('Auth', () => {
 
       const afterMutationUser = await prisma.user.findFirst({ where: { email } });
 
-      expect(res).toMatchObject(goodResponse);
-      expect(res?.errors).toBeUndefined();
-      expect(afterMutationUser?.resetPasswordCode).toBeNull();
-      expect(afterMutationUser?.password).not.toEqual(beforeMutationUser?.password);
+      match(res, goodResponse);
+      equal(res?.errors, undefined);
+      equal(afterMutationUser?.resetPasswordCode, null);
+      notEqual(afterMutationUser?.password, beforeMutationUser?.password);
     });
 
-    it('should not allow a wrong reset code', async () => {
+    test('should not allow a wrong reset code', async () => {
       const beforeMutationUser = await prisma.user.findFirst({ where: { email } });
 
       const badVariables = set(goodVariables, 'variables.resetCode', '4321');
@@ -547,15 +552,15 @@ describe('Auth', () => {
 
       const afterMutationUser = await prisma.user.findFirst({ where: { email } });
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res?.errors).not.toBeUndefined();
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: 'wrong_reset_code' });
-      expect(afterMutationUser?.resetPasswordCode).not.toBeNull();
-      expect(afterMutationUser?.password).toEqual(beforeMutationUser?.password);
+      notMatch(res, goodResponse);
+      notEqual(res?.errors, undefined);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: 'wrong_reset_code' });
+      notEqual(afterMutationUser?.resetPasswordCode, null);
+      equal(afterMutationUser?.password, beforeMutationUser?.password);
     });
 
-    it('should not allow a wrong reset code', async () => {
+    test('should not allow a wrong reset code', async () => {
       const beforeMutationUser = await prisma.user.findFirst({ where: { email } });
 
       const badVariables = set(goodVariables, 'variables.email', 'unknown@test.fr');
@@ -568,12 +573,12 @@ describe('Auth', () => {
 
       const afterMutationUser = await prisma.user.findFirst({ where: { email } });
 
-      expect(res).not.toMatchObject(goodResponse);
-      expect(res?.errors).not.toBeUndefined();
-      expect(res.errors![0].message).toContain('Bad Request');
-      expect(res.errors![0].extensions).toMatchObject({ error: 'account_not_found' });
-      expect(afterMutationUser?.resetPasswordCode).not.toBeNull();
-      expect(afterMutationUser?.password).toEqual(beforeMutationUser?.password);
+      notMatch(res, goodResponse);
+      notEqual(res?.errors, undefined);
+      match(res.errors![0].message, 'Bad Request');
+      match(res.errors![0].extensions, { error: 'account_not_found' });
+      notEqual(afterMutationUser?.resetPasswordCode, null);
+      equal(afterMutationUser?.password, beforeMutationUser?.password);
     });
   });
 });

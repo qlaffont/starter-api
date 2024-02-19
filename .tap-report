@@ -1,0 +1,208 @@
+TAP version 14
+1..1
+# Subtest: src/components/auth/auth.test.ts
+    # before: setupTests
+    # Subtest: Auth
+        1..0
+    ok 1 - Auth # time=6.605ms
+    
+    # Subtest: global
+        1..0
+    ok 2 - global # time=1.651ms
+    
+    # Subtest: getUserMe
+        1..0
+    ok 3 - getUserMe # time=2.731ms
+    
+    # Subtest: userRegister
+        1..0
+    ok 4 - userRegister # time=2.152ms
+    
+    # Subtest: login
+        1..0
+    ok 5 - login # time=1.43ms
+    
+    # Subtest: refresh
+        1..0
+    ok 6 - refresh # time=0.99ms
+    
+    # Subtest: logout
+        1..0
+    ok 7 - logout # time=1.285ms
+    
+    # Subtest: changePassword
+        1..0
+    ok 8 - changePassword # time=1.252ms
+    
+    # Subtest: askResetPassword
+        1..0
+    ok 9 - askResetPassword # time=1.126ms
+    
+    # Subtest: resetPassword
+        1..0
+    ok 10 - resetPassword # time=0.96ms
+    
+    # Subtest: should return UnAuthorized by default
+        1..0
+    ok 11 - should return UnAuthorized by default # time=9.043ms
+    
+    # Subtest: should return an access denied if no access token
+        1..0
+    ok 12 - should return an access denied if no access token # time=8.412ms
+    
+    # Subtest: should return an access denied with wrong accessToken
+        1..0
+    ok 13 - should return an access denied with wrong accessToken # time=3.964ms
+    
+    # Subtest: should return 200 with user information
+        1..0
+    ok 14 - should return 200 with user information # time=5.624ms
+    
+    # Subtest: should create a new record in DB
+        1..0
+    ok 15 - should create a new record in DB # time=147.905ms
+    
+    # Subtest: should not allow bad emails
+        1..0
+    ok 16 - should not allow bad emails # time=13.386ms
+    
+    # Subtest: should not allow already used email
+        1..0
+    ok 17 - should not allow already used email # time=7.775ms
+    
+    # Subtest: should fullfil password validation
+        1..0
+    ok 18 - should fullfil password validation # time=10.718ms
+    
+    # Subtest: should login user
+        1..0
+    ok 19 - should login user # time=99.283ms
+    
+    # Subtest: should not allow inexisting account
+        1..0
+    ok 20 - should not allow inexisting account # time=6.02ms
+    
+    # Subtest: should not allow wrong password
+        1..0
+    ok 21 - should not allow wrong password # time=73.722ms
+    
+    # Subtest: should be able to generate access token
+        1..0
+    ok 22 - should be able to generate access token # time=23.203ms
+    
+    # Subtest: should return a 400 if no refresh
+        1..0
+    ok 23 - should return a 400 if no refresh # time=1.936ms
+    
+    # Subtest: should logout user
+        1..0
+    ok 24 - should logout user # time=16.194ms
+    
+    # Subtest: requires a bearer token
+        1..0
+    ok 25 - requires a bearer token # time=10.907ms
+    
+    # Subtest: requires a valid bearer token
+        1..0
+    ok 26 - requires a valid bearer token # time=21.731ms
+    
+    # Subtest: should return an access denied if no access token
+        1..0
+    ok 27 - should return an access denied if no access token # time=5.781ms
+    
+    # Subtest: should return an access denied with wrong accessToken
+        1..0
+    ok 28 - should return an access denied with wrong accessToken # time=9.329ms
+    
+    # Subtest: should change user's password
+        1..0
+    ok 29 - should change user's password # time=156.11ms
+    
+    # Subtest: should not allow a wrong password
+        1..0
+    ok 30 - should not allow a wrong password # time=89.048ms
+    
+    # Subtest: create a reset code
+        1..0
+    ok 31 - create a reset code # time=24.467ms
+    
+    # Subtest: should not allow an unknown account
+        1..0
+    ok 32 - should not allow an unknown account # time=9.245ms
+    
+    # Subtest: should reset the password
+        1..0
+    ok 33 - should reset the password # time=86.408ms
+    
+    # Subtest: should not allow a wrong reset code
+        1..0
+    ok 34 - should not allow a wrong reset code # time=12.128ms
+    
+    # Subtest: should not allow a wrong reset code
+        1..0
+    ok 35 - should not allow a wrong reset code # time=28.491ms
+    
+    ok 36 - should be equal
+    ok 37 - should match pattern
+    ok 38 - should match pattern
+    ok 39 - should match pattern
+    ok 40 - should match pattern
+    ok 41 - should be equal
+    ok 42 - should match pattern
+    ok 43 - should match pattern
+    ok 44 - should not be equal
+    ok 45 - should be equal
+    ok 46 - should not match pattern
+    ok 47 - should match pattern
+    ok 48 - should match pattern
+    ok 49 - should not match pattern
+    ok 50 - should match pattern
+    ok 51 - should match pattern
+    ok 52 - should match pattern
+    ok 53 - should match pattern
+    ok 54 - should match pattern
+    ok 55 - should match pattern
+    ok 56 - should be equal
+    ok 57 - should match pattern
+    ok 58 - should match pattern
+    ok 59 - should match pattern
+    ok 60 - should match pattern
+    ok 61 - should match pattern
+    ok 62 - should be equal
+    ok 63 - should match pattern
+    ok 64 - should be equal
+    ok 65 - should be equal
+    ok 66 - should be equal
+    ok 67 - should be equal
+    ok 68 - should match pattern
+    ok 69 - should match pattern
+    ok 70 - should match pattern
+    ok 71 - should be equal
+    ok 72 - should not match pattern
+    ok 73 - should match pattern
+    ok 74 - should match pattern
+    ok 75 - should be equal
+    ok 76 - should match pattern
+    ok 77 - should be equal
+    ok 78 - should be equal
+    ok 79 - should not match pattern
+    ok 80 - should match pattern
+    ok 81 - should match pattern
+    ok 82 - should be equal
+    ok 83 - should match pattern
+    ok 84 - should be equal
+    ok 85 - should be equal
+    ok 86 - should not match pattern
+    ok 87 - should match pattern
+    ok 88 - should match pattern
+    ok 89 - should be equal
+    ok 90 - should not match pattern
+    ok 91 - should match pattern
+    ok 92 - should match pattern
+    ok 93 - should be equal
+    1..93
+ok 1 - src/components/auth/auth.test.ts # time=5468.568ms
+
+# No coverage generated
+# { total: 93, pass: 93 }
+# time=5516.495ms

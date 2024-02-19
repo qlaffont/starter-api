@@ -16,7 +16,7 @@
     "paths": {
       "*": ["node_modules/*"],
       "@prisma/type-graphql": ["prisma/type-graphql/index.ts"],
-      "@jest/utils": ["jest/index.ts"],
+      "@test/utils": ["test-utils/index.ts"],
       "@prisma/factories": ["prisma/factories/index.ts"],
     },
     "skipLibCheck": true,
