@@ -22,5 +22,3 @@ export const setupTests = async () => {
     await global.testServer.close();
   });
 };
-
-export const setupAfterTests = async () => {};
