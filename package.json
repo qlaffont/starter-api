@@ -138,6 +138,7 @@
       "@tapjs/mocha-globals",
       "@tapjs/tsx",
       "!@tapjs/typescript"
-    ]
+    ],
+    "coverage-map": "test-utils/map.mjs"
   }
 }
