@@ -40,7 +40,7 @@ dependencies:
     version: 5.9.1(prisma@5.10.2)
   '@socket.io/postgres-adapter':
     specifier: ^0.3.1
-    version: 0.3.1(socket.io-adapter@2.5.2)
+    version: 0.3.1(socket.io-adapter@2.5.4)
   '@socket.io/postgres-emitter':
     specifier: ^0.1.0
     version: 0.1.0
@@ -64,7 +64,7 @@ dependencies:
     version: 3.3.1
   dotenv:
     specifier: ^16.4.2
-    version: 16.4.2
+    version: 16.4.5
   fastify:
     specifier: ^4.26.1
     version: 4.26.1
@@ -1832,7 +1832,7 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: false
 
-  /@socket.io/postgres-adapter@0.3.1(socket.io-adapter@2.5.2):
+  /@socket.io/postgres-adapter@0.3.1(socket.io-adapter@2.5.4):
     resolution: {integrity: sha512-8DeSln60sFSdoLL8A8p6nrXlER4lBsvMSAS+G4sqJhudQfGOjhu2AAcKyI/SIDs4p9iO63zTbR4n//ZY0VN2bg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1842,7 +1842,7 @@ packages:
       '@types/pg': 8.11.0
       debug: 4.3.4
       pg: 8.11.3
-      socket.io-adapter: 2.5.2(bufferutil@4.0.8)(utf-8-validate@6.0.3)
+      socket.io-adapter: 2.5.4(bufferutil@4.0.8)(utf-8-validate@6.0.3)
     transitivePeerDependencies:
       - pg-native
       - supports-color
@@ -3648,8 +3648,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /dotenv@16.4.2:
-    resolution: {integrity: sha512-rZSSFxke7d9nYQ5NeMIwp5PP+f8wXgKNljpOb7KtH6SKW1cEqcXAz9VSJYVLKe7Jhup/gUYOkaeSVyK8GJ+nBg==}
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
 
   /dottie@2.0.6:
@@ -7235,7 +7235,7 @@ packages:
       '@mermaid-js/mermaid-cli': 10.8.0(bufferutil@4.0.8)(typescript@5.3.3)(utf-8-validate@6.0.3)
       '@prisma/client': 5.9.1(prisma@5.10.2)
       '@prisma/generator-helper': 5.9.1
-      dotenv: 16.4.2
+      dotenv: 16.4.5
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -7941,6 +7941,17 @@ packages:
       ws: 8.11.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
     transitivePeerDependencies:
       - bufferutil
+      - utf-8-validate
+    dev: false
+
+  /socket.io-adapter@2.5.4(bufferutil@4.0.8)(utf-8-validate@6.0.3):
+    resolution: {integrity: sha512-wDNHGXGewWAjQPt3pyeYBtpWSq9cLE5UW1ZUPL/2eGK9jtse/FpXib7epSTsz0Q0m+6sg6Y4KtcFTlah1bdOVg==}
+    dependencies:
+      debug: 4.3.4
+      ws: 8.11.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
       - utf-8-validate
     dev: false
 
