@@ -25,7 +25,7 @@ dependencies:
     version: 1.37.2
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
-    version: 1.8.0(pg@8.11.3)
+    version: 1.9.1(pg@8.11.3)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
     version: 4.0.8
@@ -1091,24 +1091,24 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/datasource-sequelize@1.6.4(sequelize@6.37.0):
+  /@forestadmin/datasource-sequelize@1.6.4(sequelize@6.37.1):
     resolution: {integrity: sha512-ph8pv4emMjmOfhX/MNZpORUxfP7eYNyCihzvbwLdIBb5NR6JvcBdiOs4G+Tx4IT7BBTnC7DbolI1n9DR744QWw==}
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
     dependencies:
       '@forestadmin/datasource-toolkit': 1.32.0
-      sequelize: 6.37.0(pg@8.11.3)
+      sequelize: 6.37.1(pg@8.11.3)
     dev: false
 
-  /@forestadmin/datasource-sql@1.8.0(pg@8.11.3):
-    resolution: {integrity: sha512-rnb8ahAZ1nHh80Lm/2Gacho1J3BmWR0gDnD95BBdIwlPTkD2VMJf+I0hBJeAZDljkOo7Q5C0YSBenuKuW/6OCg==}
+  /@forestadmin/datasource-sql@1.9.1(pg@8.11.3):
+    resolution: {integrity: sha512-GP2Jn3ukgGrQmV9B09+abIyO85bb8o6h+yiipFsMM5q9bmziproMLzDB3gL0HaR4o6swzx8Tke+y/LS4/UAHVA==}
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.6.4(sequelize@6.37.0)
+      '@forestadmin/datasource-sequelize': 1.6.4(sequelize@6.37.1)
       '@forestadmin/datasource-toolkit': 1.32.0
       '@types/ssh2': 1.11.19
       pluralize: 8.0.0
-      sequelize: 6.37.0(pg@8.11.3)
-      socks: 2.7.3
+      sequelize: 6.37.1(pg@8.11.3)
+      socks: 2.8.1
       ssh2: 1.15.0
     transitivePeerDependencies:
       - ibm_db
@@ -2212,8 +2212,8 @@ packages:
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: false
 
-  /@types/node@18.19.15:
-    resolution: {integrity: sha512-AMZ2UWx+woHNfM11PyAEQmfSxi05jm9OlkxczuHeEqmvwPkYj6MWv44gbzDPefYOLysTOFyI3ziiy2ONmUZfpA==}
+  /@types/node@18.19.18:
+    resolution: {integrity: sha512-80CP7B8y4PzZF0GWx15/gVWRrB5y/bIjNI84NK3cmQJu0WZwvmj2WMA5LcofQFVfLqqCSp545+U2LsrVzX36Zg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2264,7 +2264,7 @@ packages:
   /@types/ssh2@1.11.19:
     resolution: {integrity: sha512-ydbQAqEcdNVy2t1w7dMh6eWMr+iOgtEkqM/3K9RMijMaok/ER7L8GW6PwsOypHCN++M+c8S/UR9SgMqNIFstbA==}
     dependencies:
-      '@types/node': 18.19.15
+      '@types/node': 18.19.18
     dev: false
 
   /@types/stack-utils@2.0.3:
@@ -7759,8 +7759,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /sequelize@6.37.0(pg@8.11.3):
-    resolution: {integrity: sha512-MS6j6aXqWzB3fe9FhmfpQMgVC16bBdYroJCqIqR0l9M2ko8pZdKoi/0PiNWgMyFQDXUHxXyAOG3K07CbnOhteQ==}
+  /sequelize@6.37.1(pg@8.11.3):
+    resolution: {integrity: sha512-vIKKzQ9dGp2aBOxQRD1FmUYViuQiKXSJ8yah8TsaBx4U3BokJt+Y2A0qz2C4pj08uX59qpWxRqSLEfRmVOEgQw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       ibm_db: '*'
@@ -7967,8 +7967,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /socks@2.7.3:
-    resolution: {integrity: sha512-vfuYK48HXCTFD03G/1/zkIls3Ebr2YNa4qU9gHDZdblHLiqhJrJGkY3+0Nx0JpN9qBhJbVObc1CNciT1bIZJxw==}
+  /socks@2.8.1:
+    resolution: {integrity: sha512-B6w7tkwNid7ToxjZ08rQMT8M9BJAf8DKx8Ft4NivzH0zBUfd6jldGcisJn/RLgxcX3FPNDdNQCUEMMT79b+oCQ==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
     dependencies:
       ip-address: 9.0.5
