@@ -100,7 +100,7 @@ dependencies:
     version: 8.11.3
   pino:
     specifier: ^8.18.0
-    version: 8.18.0
+    version: 8.19.0
   prisma:
     specifier: 5.10.2
     version: 5.10.2
@@ -4319,7 +4319,7 @@ packages:
       fast-json-stringify: 5.12.0
       find-my-way: 8.1.0
       light-my-request: 5.11.0
-      pino: 8.18.0
+      pino: 8.19.0
       process-warning: 3.0.0
       proxy-addr: 2.0.7
       rfdc: 1.3.1
@@ -7104,8 +7104,8 @@ packages:
   /pino-std-serializers@6.2.2:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
 
-  /pino@8.18.0:
-    resolution: {integrity: sha512-Mz/gKiRyuXu4HnpHgi1YWdHQCoWMufapzooisvFn78zl4dZciAxS+YeRkUxXl1ee/SzU80YCz1zpECCh4oC6Aw==}
+  /pino@8.19.0:
+    resolution: {integrity: sha512-oswmokxkav9bADfJ2ifrvfHUwad6MLp73Uat0IkQWY3iAw5xTRoznXbXksZs8oaOUMpmhVWD+PZogNzllWpJaA==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
@@ -7766,7 +7766,7 @@ packages:
     resolution: {integrity: sha512-k5tx4iOzM94O9R7VPN7tMFRMA00+BrF7p4ozsGTddSKnLgJzpiOqi3nE1E3J6k83Cqk2bDPtcpzNIsEe7rK3Vw==}
     engines: {node: '>=10'}
     dependencies:
-      pino: 8.18.0
+      pino: 8.19.0
     dev: false
 
   /sequelize-pool@7.1.0:
