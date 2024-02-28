@@ -22,7 +22,7 @@ dependencies:
     version: 7.1.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.38.2
+    version: 1.38.3
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.9.2(pg@8.11.3)
@@ -1050,12 +1050,12 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.38.2:
-    resolution: {integrity: sha512-HYLD3Wckz6qel2q7KNtqR/wXS81yKjozx7v2QmKQHuZ+h5tkWkD6l5qDom2oZHLu3IsWkQaf/N9mdwQMgfVxTA==}
+  /@forestadmin/agent@1.38.3:
+    resolution: {integrity: sha512-eBsfIo/Mi5iI9e69DUlRAHf9MiIShjfspKcUw8Fjm6ja79eyEh9aZfPEBxS1rUVu0qT63vYToQTNq9AsCNOq5g==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.43.2
+      '@forestadmin/datasource-customizer': 1.43.3
       '@forestadmin/datasource-toolkit': 1.32.1
       '@forestadmin/forestadmin-client': 1.25.10
       '@koa/cors': 5.0.0
@@ -1076,8 +1076,8 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.43.2:
-    resolution: {integrity: sha512-GYwC52wtERHnRA3PLNkwMO/IxDDT2r/cEmVBCpXDCHkzJg3GEPa1og6+Fm2Zd/pe+mVHAq7q8aNxnIOYcsZCsA==}
+  /@forestadmin/datasource-customizer@1.43.3:
+    resolution: {integrity: sha512-NtX7F7DrcY2QWIOxHMIEuIIs5JH9e7HowqkLFZNCEtFxdYxXPciAzEteDGcJLiasw3cUf3BZc3F3ru7Y2KbwKg==}
     dependencies:
       '@forestadmin/datasource-toolkit': 1.32.1
       antlr4: 4.13.1-patch-1
@@ -2090,7 +2090,7 @@ packages:
     resolution: {integrity: sha512-oaYtiBirUOPQGSWNGPWnzyAFJ0BP3cwvN4oWZQY+zUBwpVIGsKUkpBpSztp74drYcjavs7SKFZ4DX1V2QeN8rg==}
     dependencies:
       '@types/node': 20.11.21
-      '@types/qs': 6.9.11
+      '@types/qs': 6.9.12
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
     dev: false
@@ -2100,7 +2100,7 @@ packages:
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.17.43
-      '@types/qs': 6.9.11
+      '@types/qs': 6.9.12
       '@types/serve-static': 1.15.5
     dev: false
 
@@ -2223,8 +2223,8 @@ packages:
       pg-types: 4.0.2
     dev: false
 
-  /@types/qs@6.9.11:
-    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
+  /@types/qs@6.9.12:
+    resolution: {integrity: sha512-bZcOkJ6uWrL0Qb2NAWKa7TBU+mJHPzhx9jjLL1KHF+XpzEcR7EXHvjbHlGtR/IsP1vyPrehuS6XqkmaePy//mg==}
     dev: false
 
   /@types/range-parser@1.2.7:
