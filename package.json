@@ -41,7 +41,7 @@
     "@47ng/codec": "^1.1.0",
     "@bull-board/api": "5.14.2",
     "@bull-board/fastify": "5.14.2",
-    "@commitlint/cli": "19.0.1",
+    "@commitlint/cli": "19.0.2",
     "@commitlint/config-conventional": "19.0.0",
     "@faker-js/faker": "^8.4.1",
     "@fastify/cors": "9.0.1",
