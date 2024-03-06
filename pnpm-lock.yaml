@@ -70,7 +70,7 @@ dependencies:
     version: 4.26.2
   fastify-auth-prisma:
     specifier: ^1.2.14
-    version: 1.2.57
+    version: 1.2.58
   fastify-type-provider-zod2:
     specifier: ^1.0.0
     version: 1.0.5
@@ -3375,7 +3375,7 @@ packages:
     requiresBuild: true
     dependencies:
       buildcheck: 0.0.6
-      nan: 2.18.0
+      nan: 2.19.0
     dev: false
     optional: true
 
@@ -4246,8 +4246,8 @@ packages:
   /fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  /fastify-auth-prisma@1.2.57:
-    resolution: {integrity: sha512-vo3dHBy0as+ESh9QS4CGSANQVk1F+JZpPBeHdhCj0wnnSN99rjoX62iP72n13RWhSAlDhNYVkUQy/vZ5klOm+g==}
+  /fastify-auth-prisma@1.2.58:
+    resolution: {integrity: sha512-PWa829y6uFezZ03g8SSTRrIjlB39N0P97h5e17To2SOfZqSxGwO697DJnRxBgiMXbyZCYaLkkRdU6n5MK3zFIw==}
     engines: {node: '>=10'}
     dependencies:
       fastify: 4.26.2
@@ -6485,8 +6485,8 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: true
 
-  /nan@2.18.0:
-    resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
+  /nan@2.19.0:
+    resolution: {integrity: sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==}
     requiresBuild: true
     dev: false
     optional: true
@@ -7981,7 +7981,7 @@ packages:
       bcrypt-pbkdf: 1.0.2
     optionalDependencies:
       cpu-features: 0.0.9
-      nan: 2.18.0
+      nan: 2.19.0
     dev: false
 
   /stack-utils@2.0.6:
