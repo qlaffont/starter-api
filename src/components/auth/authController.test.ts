@@ -3,7 +3,7 @@ import { notEqual } from 'assert';
 import { User } from '@prisma/client';
 import { before, after } from '@tapjs/mocha-globals';
 import { equal, match, test, beforeEach } from 'tap';
-import { createUserAndGetAccessToken, DEFAULT_PASSWORD, setupTests } from '@test/utils';
+import { createUserAndGetAccessToken, DEFAULT_PASSWORD, setupTests } from '../../../test-utils';
 
 before(setupTests);
 
