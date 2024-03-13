@@ -94,7 +94,7 @@ dependencies:
     version: 3.3.2
   paginate-prisma:
     specifier: ^1.0.145
-    version: 1.0.165
+    version: 1.0.167
   pg:
     specifier: ^8.11.3
     version: 8.11.3
@@ -2192,8 +2192,8 @@ packages:
       '@types/koa': 2.15.0
     dev: false
 
-  /@types/lodash@4.14.202:
-    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+  /@types/lodash@4.17.0:
+    resolution: {integrity: sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==}
     dev: false
 
   /@types/mime@1.3.5:
@@ -6792,11 +6792,11 @@ packages:
     resolution: {integrity: sha512-HAKu/fG3HpHFO0AA8WE8q2g+gBJaZ9MG7fcKk+IJPLTGAD6Psw4443l+9DGRbOIh3/aXr7Phy0TjilYivJo5XQ==}
     dev: false
 
-  /paginate-prisma@1.0.165:
-    resolution: {integrity: sha512-fEDIxX6KxMeMklP7Ep1Vo+OcOPPpF+GAPERdiphTSgwPs8OlH37qLTh+8YpnVrV/2ZOM2rbHgYU9EMpMb60F1Q==}
+  /paginate-prisma@1.0.167:
+    resolution: {integrity: sha512-9KdhxTIbKqUxt7rw0/0QwWXb6C6g8mM2TPdJHAW7MODA0JS3zEyPQtMP8HtHf/0n7r6KC5vbXm04ePEQ5fbolg==}
     engines: {node: '>=10'}
     dependencies:
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.0
       class-validator: 0.14.1
       lodash: 4.17.21
     dev: false
