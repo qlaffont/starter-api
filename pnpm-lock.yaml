@@ -22,7 +22,7 @@ dependencies:
     version: 7.1.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.38.6
+    version: 1.38.7
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.9.4(pg@8.11.3)
@@ -1051,14 +1051,14 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.38.6:
-    resolution: {integrity: sha512-idOCG03i/VyHveyPqkh9NA+ov/75sFYCtr2eHgnRoMsp4h6v6J1TuDSnK3yZLxx1WNoFrLVHnuak8MUTRXZlRA==}
+  /@forestadmin/agent@1.38.7:
+    resolution: {integrity: sha512-VTt2Gz2L5+uySAyJcf+z70/8ZlYINg0cP8N5KzCWP8GoJRo60Vd4A5IPxNn2i0i/XG2FEjyPpF4UdTBJzNJFJQ==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.43.5
-      '@forestadmin/datasource-toolkit': 1.32.1
-      '@forestadmin/forestadmin-client': 1.25.11
+      '@forestadmin/datasource-customizer': 1.43.6
+      '@forestadmin/datasource-toolkit': 1.32.2
+      '@forestadmin/forestadmin-client': 1.25.12
       '@koa/cors': 5.0.0
       '@koa/router': 12.0.1
       '@types/koa__router': 12.0.4
@@ -1077,10 +1077,10 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.43.5:
-    resolution: {integrity: sha512-gxefd/sRK42vEDdQnxphsvT928ob1hFFZjBADpmWnKSIqKUlhJMVLkWwuq690BPipHTD9wHcsoJw7MO9bcE7Gg==}
+  /@forestadmin/datasource-customizer@1.43.6:
+    resolution: {integrity: sha512-Wo8stxCm3H4d4Uh0KnNUDAc+ZOuRd4NNaA4QFOQrNvdNFrpRA+nTRml2pCoQiqYy0bgD/CYeiuxYsF4gGCE5DQ==}
     dependencies:
-      '@forestadmin/datasource-toolkit': 1.32.1
+      '@forestadmin/datasource-toolkit': 1.32.2
       antlr4: 4.13.1-patch-1
       file-type: 16.5.4
       luxon: 3.4.4
@@ -1128,8 +1128,16 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/forestadmin-client@1.25.11:
-    resolution: {integrity: sha512-1LJf0wQ79AJcCdDyxqVzbI9YwVNzb23QUo3A37eTJzT4xSV2Y7rxjxniqbmVbeTiTJ0a8ckOUqq2t2ErAa1T5g==}
+  /@forestadmin/datasource-toolkit@1.32.2:
+    resolution: {integrity: sha512-JB6lbfdLiq5FwyrpW+bALCBlD5VwktIvWymGIIO4UVfZyLpqiKGT7fN6OYmYcRT3ctxSY6c/AEdbR3SG99jUrQ==}
+    dependencies:
+      luxon: 3.4.4
+      object-hash: 3.0.0
+      uuid: 9.0.1
+    dev: false
+
+  /@forestadmin/forestadmin-client@1.25.12:
+    resolution: {integrity: sha512-wPHJ9FhhwP0dc8Dyg2y4y6aImWGG2JBoNWYQ7hjszGoWiJl5ICoTLRajmVFav7I0o0MTtAWw88cQFy64UzkAeQ==}
     dependencies:
       eventsource: 2.0.2
       json-api-serializer: 2.6.6
@@ -2212,8 +2220,8 @@ packages:
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: false
 
-  /@types/node@18.19.23:
-    resolution: {integrity: sha512-wtE3d0OUfNKtZYAqZb8HAWGxxXsImJcPUAgZNw+dWFxO6s5tIwIjyKnY76tsTatsNCLJPkVYwUpq15D38ng9Aw==}
+  /@types/node@18.19.24:
+    resolution: {integrity: sha512-eghAz3gnbQbvnHqB+mgB2ZR3aH6RhdEmHGS48BnV75KceQPHqabkxKI0BbUSsqhqy2Ddhc2xD/VAR9ySZd57Lw==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2260,7 +2268,7 @@ packages:
   /@types/ssh2@1.15.0:
     resolution: {integrity: sha512-YcT8jP5F8NzWeevWvcyrrLB3zcneVjzYY9ZDSMAMboI+2zR1qYWFhwsyOFVzT7Jorn67vqxC0FRiw8YyG9P1ww==}
     dependencies:
-      '@types/node': 18.19.23
+      '@types/node': 18.19.24
     dev: false
 
   /@types/stack-utils@2.0.3:
