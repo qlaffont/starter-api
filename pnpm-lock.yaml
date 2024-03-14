@@ -121,7 +121,7 @@ dependencies:
     version: 0.14.1
   sendim:
     specifier: ^1.2.74
-    version: 1.2.89
+    version: 1.2.91
   socket.io:
     specifier: ^4.7.4
     version: 4.7.4(bufferutil@4.0.8)(utf-8-validate@6.0.3)
@@ -7659,8 +7659,8 @@ packages:
       - supports-color
     dev: false
 
-  /sendim@1.2.89:
-    resolution: {integrity: sha512-CNjLxBwS5ncgfJbk8j8L9Fku3dCjLKTrIkSYxDTxibV7h04aBpjDcMAySmeBs+pl/FWjEadGM20cr7jSVbjVDw==}
+  /sendim@1.2.91:
+    resolution: {integrity: sha512-aMYGFWhbUbpmpqcmgvRRnQV/KjRMDWPMbnCEzKh/n0ZLEuKCbiDL4YCIutpLVeBF+pSs+RR+hxOm3694a039oQ==}
     engines: {node: '>=10'}
     dependencies:
       pino: 8.19.0
