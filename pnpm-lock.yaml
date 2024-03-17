@@ -139,7 +139,7 @@ dependencies:
     version: 1.4.110
   unify-mercurius:
     specifier: ^1.3.43
-    version: 1.3.82(bufferutil@4.0.8)(utf-8-validate@6.0.3)
+    version: 1.3.85(bufferutil@4.0.8)(utf-8-validate@6.0.3)
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
@@ -8555,8 +8555,8 @@ packages:
       - supports-color
     dev: false
 
-  /unify-mercurius@1.3.82(bufferutil@4.0.8)(utf-8-validate@6.0.3):
-    resolution: {integrity: sha512-Lm+lskJttwzyqiGsBUch4bgAVyBmyC8oJlHOXOjNIuXSIxebrits3KRwFbqh4rJXiC8vMHf1xIIpBV8UfBkeSw==}
+  /unify-mercurius@1.3.85(bufferutil@4.0.8)(utf-8-validate@6.0.3):
+    resolution: {integrity: sha512-CJojD3SZhxre+aLJjXwjZS6n++SoER/7YvgaeImfUQTHVg5tTT/wiRMV9O6Kks4VllTVJqqAAi3N+H6W3AkPRQ==}
     engines: {node: '>=10'}
     dependencies:
       graphql: 16.8.1
