@@ -70,7 +70,7 @@ dependencies:
     version: 4.26.2
   fastify-auth-prisma:
     specifier: ^1.2.14
-    version: 1.2.96
+    version: 1.2.97
   fastify-type-provider-zod2:
     specifier: ^1.0.0
     version: 1.0.14
@@ -4242,8 +4242,8 @@ packages:
   /fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  /fastify-auth-prisma@1.2.96:
-    resolution: {integrity: sha512-z5OEVLy8MFHMZ/pxCqZNVBIz7ATPlHA4U2qtPIXDCiLnM9ptDZ5v2fEyvnnQjZ5cB2fi36LMRPewe1nCLzabhQ==}
+  /fastify-auth-prisma@1.2.97:
+    resolution: {integrity: sha512-Be3dkWXA51fY5eCmXC5g7vJcSKqOXC6JpFX1Sh4tdSfUFdhNUGjSvDs7zmzKV6ps9KK9WnbSv9M0eWpezvcSyQ==}
     engines: {node: '>=10'}
     dependencies:
       fastify: 4.26.2
