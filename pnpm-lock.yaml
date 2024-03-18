@@ -28,7 +28,7 @@ dependencies:
     version: 1.9.5(pg@8.11.3)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
-    version: 4.0.8
+    version: 4.0.9
   '@graphql-tools/schema':
     specifier: ^10.0.2
     version: 10.0.3(graphql@16.8.1)
@@ -1142,8 +1142,8 @@ packages:
       - supports-color
     dev: false
 
-  /@gquittet/graceful-server@4.0.8:
-    resolution: {integrity: sha512-aPZe2g1VIJq8xQ/U+XSS/FHBOkK8RGQkhKQOyAiwAx9cHLZjReX4rEKR7yVGX5IWGYgU9521XKncta1S2bd9Zw==}
+  /@gquittet/graceful-server@4.0.9:
+    resolution: {integrity: sha512-v0s6HHR30ZaX8bskkGT5vTwpxk6ltFYiWn+h+epMo5RxjbbBjkzVNvG7DSdDogqrWGxwhjoYLzUAj5RE1eydUg==}
     engines: {node: '>=14.0.0'}
     optionalDependencies:
       fsevents: 2.3.3
