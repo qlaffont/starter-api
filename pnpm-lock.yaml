@@ -73,7 +73,7 @@ dependencies:
     version: 1.2.104
   fastify-type-provider-zod2:
     specifier: ^1.0.0
-    version: 1.0.16
+    version: 1.0.17
   graphql:
     specifier: ^16.8.1
     version: 16.8.1
@@ -4283,8 +4283,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /fastify-type-provider-zod2@1.0.16:
-    resolution: {integrity: sha512-jKOHxrJtbyvt6QMeg4WhbCvZxktb3EYSgeD/ppuXTkAxpdLxCAFjUhyrikQ9r5n0yGEEBEH6LXXLbzspfJhcZA==}
+  /fastify-type-provider-zod2@1.0.17:
+    resolution: {integrity: sha512-uKpn44+PNp3cGnZR6fc0Kqv4vvn6xXKC3x2RyqihwLQNefZ6xWT0j94fVsdF8twilvcfW+6NAdUGDv/T9m7Diw==}
     engines: {node: '>=10'}
     dependencies:
       ajv: 8.12.0
