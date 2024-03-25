@@ -5,6 +5,8 @@ import set from 'lodash/set';
 import { before, after, afterEach } from '@tapjs/mocha-globals';
 import { equal, match, test, capture, not, notMatch, beforeEach } from 'tap';
 import { CryptoUtils } from '../../services/crypto/crypto.utils';
+import { AuthErrors, UserRegister } from './authType';
+import AuthController from './authController';
 import {
   createUserAndGetAccessToken,
   testIfQueryIsProtected,
@@ -14,9 +16,7 @@ import {
   testIfMutationIsProtected,
   testIfAccessTokenIsInvalidMutation,
   setupTests,
-} from '../../../test-utils';
-import { AuthErrors, UserRegister } from './authType';
-import AuthController from './authController';
+} from '@test/utils';
 
 before(setupTests);
 

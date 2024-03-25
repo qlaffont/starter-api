@@ -23,6 +23,12 @@ export class AuthResolver {
 
   @Authorized()
   @Mutation(() => String)
+  async toto(): Promise<string> {
+    return 'OK';
+  }
+
+  @Authorized()
+  @Mutation(() => String)
   async changePassword(
     @CurrentUser() user: User,
     @Arg('oldPassword', () => String)

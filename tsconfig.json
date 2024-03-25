@@ -17,6 +17,9 @@
       "*": ["node_modules/*"],
       "@prisma/type-graphql": ["prisma/type-graphql/index.ts"],
       "@prisma/factories": ["prisma/factories/index.ts"],
+      "@test/utils": [
+        "test-utils/index.ts"
+      ],
     },
     "skipLibCheck": true,
   },

@@ -3,9 +3,9 @@ import 'reflect-metadata';
 import Fastify from 'fastify';
 import FastifyCORS from '@fastify/cors';
 import GracefulServer from '@gquittet/graceful-server';
-import { createAdapter } from '@socket.io/postgres-adapter';
-import * as pg from 'pg';
-const { Pool } = pg;
+// import { createAdapter } from '@socket.io/postgres-adapter';
+// import * as pg from 'pg';
+// const { Pool } = pg;
 import { Sendim } from 'sendim';
 import unifyFastifyPlugin from 'unify-fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
@@ -216,41 +216,41 @@ export const runServer = async () => {
     await agent.mountOnFastify(fastify).start();
   }
 
-  try {
-    const pool = new Pool({
-      connectionString: env.DATABASE_URL as string,
-    });
-    await fastify.register(require('fastify-socket.io'), {
-      adapter: process.env.RUN_TEST?.length !== 0 ? undefined : createAdapter(pool),
-      cors: {
-        allowedHeaders: [
-          'Origin',
-          'X-Requested-With',
-          'Content-Type',
-          'Accept',
-          'Authorization',
-          'forest-context-url',
-          'Set-Cookie',
-          'set-cookie',
-          'Cookie',
-        ],
-        origin,
-        credentials: true,
-      },
-    });
+  // try {
+  //   const pool = new Pool({
+  //     connectionString: env.DATABASE_URL as string,
+  //   });
+  //   await fastify.register(require('fastify-socket.io'), {
+  //     adapter: process.env.RUN_TEST?.length !== 0 ? undefined : createAdapter(pool),
+  //     cors: {
+  //       allowedHeaders: [
+  //         'Origin',
+  //         'X-Requested-With',
+  //         'Content-Type',
+  //         'Accept',
+  //         'Authorization',
+  //         'forest-context-url',
+  //         'Set-Cookie',
+  //         'set-cookie',
+  //         'Cookie',
+  //       ],
+  //       origin,
+  //       credentials: true,
+  //     },
+  //   });
 
-    fastify.addHook('onClose', async (err) => {
-      if (err) {
-        logger.debug(err);
-      }
-      await global.prisma.$disconnect();
-      await fastify.io.close();
-      await pool.end();
-      logger.debug('Server is shutting down');
-    });
-  } catch (error) {
-    logger.fatal('Impossible to connect to postgres');
-  }
+  //   fastify.addHook('onClose', async (err) => {
+  //     if (err) {
+  //       logger.debug(err);
+  //     }
+  //     await global.prisma.$disconnect();
+  //     await fastify.io.close();
+  //     await pool.end();
+  //     logger.debug('Server is shutting down');
+  //   });
+  // } catch (error) {
+  //   logger.fatal('Impossible to connect to postgres');
+  // }
 
   loadSocket(fastify);
   loadPassport(fastify);

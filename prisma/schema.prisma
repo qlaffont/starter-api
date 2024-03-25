@@ -18,9 +18,14 @@ generator typegraphql {
 //   output = "../prisma/diagram.pdf"
 // }
 
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
 }
 
 model Token {
@@ -36,10 +41,10 @@ model Token {
   @@index([ownerId])
 }
 
-enum Language {
-  EN
-  FR
-}
+// enum Language {
+//   EN
+//   FR
+// }
 
 model User {
   id String @id @default(uuid())
@@ -61,8 +66,8 @@ model User {
   updatedAt DateTime @updatedAt
 }
 
-model socket_io_attachments {
-  id         BigInt    @unique @default(autoincrement())
-  created_at DateTime? @default(now()) @db.Timestamptz(6)
-  payload    Bytes?
-}
+// model socket_io_attachments {
+//   id         BigInt    @unique @default(autoincrement())
+//   created_at DateTime? @default(now()) @db.Timestamptz(6)
+//   payload    Bytes?
+// }
