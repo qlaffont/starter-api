@@ -25,7 +25,7 @@ dependencies:
     version: 1.38.7
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
-    version: 1.10.0(pg@8.11.3)
+    version: 1.11.0(pg@8.11.3)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
     version: 4.0.9
@@ -1099,8 +1099,8 @@ packages:
       sequelize: 6.37.1(pg@8.11.3)
     dev: false
 
-  /@forestadmin/datasource-sql@1.10.0(pg@8.11.3):
-    resolution: {integrity: sha512-XTAal3IbkQ2VM3iEI0c47JVAs6/Al28ZwqmGoHFaSvUaF4g4AJPxc/6zDwSSxfp+D0SST9rbzfUmQOkhmWh1Kg==}
+  /@forestadmin/datasource-sql@1.11.0(pg@8.11.3):
+    resolution: {integrity: sha512-gAXh//sdmj18Wpzd6cclbXne0YTSYsf2UFI1K8pnhn2CumZs8AtRANVUiqL8JqaOyUgWX2JhFo2Jh5lXkDGlrQ==}
     dependencies:
       '@forestadmin/datasource-sequelize': 1.7.1(sequelize@6.37.1)
       '@forestadmin/datasource-toolkit': 1.32.2
