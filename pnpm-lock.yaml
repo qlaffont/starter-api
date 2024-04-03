@@ -52,7 +52,7 @@ dependencies:
     version: 0.40.1
   bullmq:
     specifier: ^5.1.10
-    version: 5.5.0
+    version: 5.5.1
   class-validator:
     specifier: ^0.14.1
     version: 0.14.1
@@ -2953,8 +2953,8 @@ packages:
     dev: false
     optional: true
 
-  /bullmq@5.5.0:
-    resolution: {integrity: sha512-pmWnAFTJpw0NgOzEPwpwvUPnVk691bbzXt4QZGS9bM61DnaoxrQi8zzaP/nRH3PYmsUfNUdHwbxJVxa0kDZrIg==}
+  /bullmq@5.5.1:
+    resolution: {integrity: sha512-8to4uhjNmyFmwz6OeDiPsUHIX+wmkZ7MRRwG+LX/91tbv+uTTX5BwivQIuw2onBlXaNjiWEg16eyoZD3T5jX8Q==}
     dependencies:
       cron-parser: 4.9.0
       ioredis: 5.3.2
