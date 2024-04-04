@@ -25,7 +25,7 @@ dependencies:
     version: 1.38.8
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
-    version: 1.11.2(pg@8.11.5)
+    version: 1.12.3(pg@8.11.5)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
     version: 4.0.9
@@ -1090,23 +1090,23 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/datasource-sequelize@1.7.1(sequelize@6.37.1):
-    resolution: {integrity: sha512-wOsYGuze0BotxAP9Dugv8oEg/eBN0UReTinjApzuAsaTw9amC+qo413MvHDXv0hAk52QXty372hfrptfli/JBw==}
+  /@forestadmin/datasource-sequelize@1.8.0(sequelize@6.37.2):
+    resolution: {integrity: sha512-jT2CJ4OIh/sihU8XNQQlWAwZjsEAhhvYurxOvx0ew7D4s/5xT5FRKQHOC438QnmKe7Iogogl/aeYzRyAzorLzw==}
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
     dependencies:
       '@forestadmin/datasource-toolkit': 1.32.2
-      sequelize: 6.37.1(pg@8.11.5)
+      sequelize: 6.37.2(pg@8.11.5)
     dev: false
 
-  /@forestadmin/datasource-sql@1.11.2(pg@8.11.5):
-    resolution: {integrity: sha512-Y62uM0EDxlwl0b28mnaHShuZ266BN4/YQJAZ7B9Vt5xyCepipimRPH7Ww3JFS1lLQMdNEuS5C/hdW5b0P2jdNA==}
+  /@forestadmin/datasource-sql@1.12.3(pg@8.11.5):
+    resolution: {integrity: sha512-WCDiQV3wVf8blYmlAAjP8lIshgq3Kj1MSrtIy/WUyw9LjvKoxhlc/whoIEIOXVb+JsZ/tl5DepM9/HSYwF5b/Q==}
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.7.1(sequelize@6.37.1)
+      '@forestadmin/datasource-sequelize': 1.8.0(sequelize@6.37.2)
       '@forestadmin/datasource-toolkit': 1.32.2
       '@types/ssh2': 1.15.0
       pluralize: 8.0.0
-      sequelize: 6.37.1(pg@8.11.5)
+      sequelize: 6.37.2(pg@8.11.5)
       socks: 2.8.1
       ssh2: 1.15.0
     transitivePeerDependencies:
@@ -2217,8 +2217,8 @@ packages:
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: false
 
-  /@types/node@18.19.26:
-    resolution: {integrity: sha512-+wiMJsIwLOYCvUqSdKTrfkS8mpTp+MPINe6+Np4TAGFWWRWiBQ5kSq9nZGCSPkzx9mvT+uEukzpX4MOSCydcvw==}
+  /@types/node@18.19.29:
+    resolution: {integrity: sha512-5pAX7ggTmWZdhUrhRWLPf+5oM7F80bcKVCBbr0zwEkTNzTJL2CWQjznpFgHYy6GrzkYi2Yjy7DHKoynFxqPV8g==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2265,7 +2265,7 @@ packages:
   /@types/ssh2@1.15.0:
     resolution: {integrity: sha512-YcT8jP5F8NzWeevWvcyrrLB3zcneVjzYY9ZDSMAMboI+2zR1qYWFhwsyOFVzT7Jorn67vqxC0FRiw8YyG9P1ww==}
     dependencies:
-      '@types/node': 18.19.26
+      '@types/node': 18.19.29
     dev: false
 
   /@types/stack-utils@2.0.3:
@@ -7694,8 +7694,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /sequelize@6.37.1(pg@8.11.5):
-    resolution: {integrity: sha512-vIKKzQ9dGp2aBOxQRD1FmUYViuQiKXSJ8yah8TsaBx4U3BokJt+Y2A0qz2C4pj08uX59qpWxRqSLEfRmVOEgQw==}
+  /sequelize@6.37.2(pg@8.11.5):
+    resolution: {integrity: sha512-bnb7swGANONXCTrVyebpOOZssLwQrVkYX2tcC6qOIvH+P+OhsoMBi7c3GXI5bC+Z4b4tOl+kQy6yeqLCZ1YQAQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       ibm_db: '*'
