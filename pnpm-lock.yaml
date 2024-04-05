@@ -22,7 +22,7 @@ dependencies:
     version: 7.1.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.38.8
+    version: 1.38.9
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.12.3(pg@8.11.5)
@@ -1053,12 +1053,12 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.38.8:
-    resolution: {integrity: sha512-4VPXsAPOIiMmVwgwD6MQfiO6Z54NPE9xJDg7NIoeDOKUaQ3QsyEbUTKa9PYcVZwWYe8cnUSPJ5y0Xuoy0nGtgw==}
+  /@forestadmin/agent@1.38.9:
+    resolution: {integrity: sha512-/ta8yoYPMnkSls1e7XF1sUxYJPwNOqTNUtqP6EW9/lJNTuh17WfRWjG2lHzEAB2Rw0Rm4kVPOiQ+ShJ420b6ug==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.43.6
+      '@forestadmin/datasource-customizer': 1.44.0
       '@forestadmin/datasource-toolkit': 1.32.2
       '@forestadmin/forestadmin-client': 1.26.0
       '@koa/cors': 5.0.0
@@ -1079,8 +1079,8 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.43.6:
-    resolution: {integrity: sha512-Wo8stxCm3H4d4Uh0KnNUDAc+ZOuRd4NNaA4QFOQrNvdNFrpRA+nTRml2pCoQiqYy0bgD/CYeiuxYsF4gGCE5DQ==}
+  /@forestadmin/datasource-customizer@1.44.0:
+    resolution: {integrity: sha512-u8EYN15mIHm6si0rOJjg1umfXR6W5i2zLRraZQNvgr9/7ahi9IPJ9MemdgxbdsGygzdZNZqOVpShG27cbDqNsw==}
     dependencies:
       '@forestadmin/datasource-toolkit': 1.32.2
       antlr4: 4.13.1-patch-1
@@ -2096,8 +2096,8 @@ packages:
       '@types/ms': 0.7.34
     dev: false
 
-  /@types/express-serve-static-core@4.17.43:
-    resolution: {integrity: sha512-oaYtiBirUOPQGSWNGPWnzyAFJ0BP3cwvN4oWZQY+zUBwpVIGsKUkpBpSztp74drYcjavs7SKFZ4DX1V2QeN8rg==}
+  /@types/express-serve-static-core@4.19.0:
+    resolution: {integrity: sha512-bGyep3JqPCRry1wq+O5n7oiBgGWmeIJXPjXXCo8EK0u8duZGSYar7cGqd3ML2JUsLGeB7fmc06KYo9fLGWqPvQ==}
     dependencies:
       '@types/node': 20.12.4
       '@types/qs': 6.9.14
@@ -2109,9 +2109,9 @@ packages:
     resolution: {integrity: sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==}
     dependencies:
       '@types/body-parser': 1.19.5
-      '@types/express-serve-static-core': 4.17.43
+      '@types/express-serve-static-core': 4.19.0
       '@types/qs': 6.9.14
-      '@types/serve-static': 1.15.5
+      '@types/serve-static': 1.15.7
     dev: false
 
   /@types/graceful-fs@4.1.9:
@@ -2202,13 +2202,6 @@ packages:
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
     dev: false
 
-  /@types/mime@4.0.0:
-    resolution: {integrity: sha512-5eEkJZ/BLvTE3vXGKkWlyTSUVZuzj23Wj8PoyOq2lt5I3CYbiLBOPb3XmCW6QcuOibIUE6emHXHt9E/F/rCa6w==}
-    deprecated: This is a stub types definition. mime provides its own type definitions, so you do not need this installed.
-    dependencies:
-      mime: 4.0.1
-    dev: false
-
   /@types/ms@0.7.34:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: false
@@ -2254,12 +2247,12 @@ packages:
       '@types/node': 20.12.4
     dev: false
 
-  /@types/serve-static@1.15.5:
-    resolution: {integrity: sha512-PDRk21MnK70hja/YF8AHfC7yIsiQHn1rcXx7ijCFBX/k+XQJhQT/gw3xekXKJvx+5SXaMMS8oqQy09Mzvz2TuQ==}
+  /@types/serve-static@1.15.7:
+    resolution: {integrity: sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw==}
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/mime': 4.0.0
       '@types/node': 20.12.4
+      '@types/send': 0.17.4
     dev: false
 
   /@types/ssh2@1.15.0:
@@ -6383,12 +6376,6 @@ packages:
     resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
     engines: {node: '>=10.0.0'}
     hasBin: true
-
-  /mime@4.0.1:
-    resolution: {integrity: sha512-5lZ5tyrIfliMXzFtkYyekWbtRXObT9OWa8IwQ5uxTBDHucNNwniRqo0yInflj+iYi5CBa6qxadGzGarDfuEOxA==}
-    engines: {node: '>=16'}
-    hasBin: true
-    dev: false
 
   /mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
