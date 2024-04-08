@@ -22,7 +22,7 @@ dependencies:
     version: 7.1.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.38.9
+    version: 1.38.10
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.12.3(pg@8.11.5)
@@ -1053,12 +1053,12 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.38.9:
-    resolution: {integrity: sha512-/ta8yoYPMnkSls1e7XF1sUxYJPwNOqTNUtqP6EW9/lJNTuh17WfRWjG2lHzEAB2Rw0Rm4kVPOiQ+ShJ420b6ug==}
+  /@forestadmin/agent@1.38.10:
+    resolution: {integrity: sha512-aTGyRHZM87nbmxsjK2wn0fXAjmyI2sEzwDLqqsHiNy3HUvFZwBgfRBWBW3qJzVCfnWA7X/EqChY4T6M9f4wV5g==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.44.0
+      '@forestadmin/datasource-customizer': 1.44.1
       '@forestadmin/datasource-toolkit': 1.32.2
       '@forestadmin/forestadmin-client': 1.26.0
       '@koa/cors': 5.0.0
@@ -1079,8 +1079,8 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.44.0:
-    resolution: {integrity: sha512-u8EYN15mIHm6si0rOJjg1umfXR6W5i2zLRraZQNvgr9/7ahi9IPJ9MemdgxbdsGygzdZNZqOVpShG27cbDqNsw==}
+  /@forestadmin/datasource-customizer@1.44.1:
+    resolution: {integrity: sha512-0SqeLOpZDkidQq15XQfM9QViYYE2WBN3M73y2Jq2/aI1tdrSl1ExTMK06vPlC/Ds1NRWTqd2BHz3qRME2sF8gg==}
     dependencies:
       '@forestadmin/datasource-toolkit': 1.32.2
       antlr4: 4.13.1-patch-1
@@ -1527,7 +1527,7 @@ packages:
       http-errors: 2.0.0
       koa-compose: 4.1.0
       methods: 1.1.2
-      path-to-regexp: 6.2.1
+      path-to-regexp: 6.2.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2210,8 +2210,8 @@ packages:
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: false
 
-  /@types/node@18.19.29:
-    resolution: {integrity: sha512-5pAX7ggTmWZdhUrhRWLPf+5oM7F80bcKVCBbr0zwEkTNzTJL2CWQjznpFgHYy6GrzkYi2Yjy7DHKoynFxqPV8g==}
+  /@types/node@18.19.30:
+    resolution: {integrity: sha512-453z1zPuJLVDbyahaa1sSD5C2sht6ZpHp5rgJNs+H8YGqhluCXcuOUmBYsAo0Tos0cHySJ3lVUGbGgLlqIkpyg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2258,7 +2258,7 @@ packages:
   /@types/ssh2@1.15.0:
     resolution: {integrity: sha512-YcT8jP5F8NzWeevWvcyrrLB3zcneVjzYY9ZDSMAMboI+2zR1qYWFhwsyOFVzT7Jorn67vqxC0FRiw8YyG9P1ww==}
     dependencies:
-      '@types/node': 18.19.29
+      '@types/node': 18.19.30
     dev: false
 
   /@types/stack-utils@2.0.3:
@@ -6894,6 +6894,10 @@ packages:
 
   /path-to-regexp@6.2.1:
     resolution: {integrity: sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==}
+    dev: false
+
+  /path-to-regexp@6.2.2:
+    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
     dev: false
 
   /path-type@1.1.0:
