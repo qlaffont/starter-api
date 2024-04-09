@@ -25,7 +25,7 @@ dependencies:
     version: 1.38.10
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
-    version: 1.12.3(pg@8.11.5)
+    version: 1.13.0(pg@8.11.5)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
     version: 4.0.9
@@ -1099,8 +1099,8 @@ packages:
       sequelize: 6.37.2(pg@8.11.5)
     dev: false
 
-  /@forestadmin/datasource-sql@1.12.3(pg@8.11.5):
-    resolution: {integrity: sha512-WCDiQV3wVf8blYmlAAjP8lIshgq3Kj1MSrtIy/WUyw9LjvKoxhlc/whoIEIOXVb+JsZ/tl5DepM9/HSYwF5b/Q==}
+  /@forestadmin/datasource-sql@1.13.0(pg@8.11.5):
+    resolution: {integrity: sha512-QN8JNdo7/GjrlOBPBrD+A5heFr6i32gtyn4LaZQa2Z8h6xKY6fu2CZNCUQibOHGQuY38u2Raocd7d9w0j2qTKw==}
     dependencies:
       '@forestadmin/datasource-sequelize': 1.8.0(sequelize@6.37.2)
       '@forestadmin/datasource-toolkit': 1.32.2
@@ -2210,8 +2210,8 @@ packages:
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: false
 
-  /@types/node@18.19.30:
-    resolution: {integrity: sha512-453z1zPuJLVDbyahaa1sSD5C2sht6ZpHp5rgJNs+H8YGqhluCXcuOUmBYsAo0Tos0cHySJ3lVUGbGgLlqIkpyg==}
+  /@types/node@18.19.31:
+    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2262,7 +2262,7 @@ packages:
   /@types/ssh2@1.15.0:
     resolution: {integrity: sha512-YcT8jP5F8NzWeevWvcyrrLB3zcneVjzYY9ZDSMAMboI+2zR1qYWFhwsyOFVzT7Jorn67vqxC0FRiw8YyG9P1ww==}
     dependencies:
-      '@types/node': 18.19.30
+      '@types/node': 18.19.31
     dev: false
 
   /@types/stack-utils@2.0.3:
