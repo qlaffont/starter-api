@@ -94,7 +94,7 @@ dependencies:
     version: 3.3.2
   paginate-prisma:
     specifier: ^1.0.145
-    version: 1.0.207
+    version: 1.0.208
   pg:
     specifier: ^8.11.3
     version: 8.11.5
@@ -6815,8 +6815,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /paginate-prisma@1.0.207:
-    resolution: {integrity: sha512-Kg6t4OeAalltn95XurJj4bpF+/zTDvwA9sm6MYmKsSoj4yiSlheroeBobVwxaZOrv0Sv0YEX0Gw7hFVbF3rOdg==}
+  /paginate-prisma@1.0.208:
+    resolution: {integrity: sha512-Jnui1s+PLMglIkft/5HzIZPMThnAba2Mo8h9ugmuXSUgOnanHRTOei5RouCiOM7031ABGVR9+afU7Dh2WQ9lng==}
     engines: {node: '>=10'}
     dependencies:
       '@types/lodash': 4.17.0
