@@ -15,6 +15,7 @@ class AuthController {
       refreshTokenTime: env.JWT_REFRESH_TIME!,
     });
 
+    //@ts-ignore
     req.session.set('refresh', refreshToken);
 
     return { access_token: accessToken };
@@ -70,6 +71,7 @@ class AuthController {
 
     await removeUserToken(prisma)(accessToken!);
 
+    //@ts-ignore
     req.session.set('refresh', undefined);
 
     res.send();
@@ -92,6 +94,7 @@ class AuthController {
         access_token: accessToken,
       });
     } catch (error) {
+      //@ts-ignore
       req.session.set('refresh', undefined);
       throw new BadRequest();
     }
