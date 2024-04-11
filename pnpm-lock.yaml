@@ -22,7 +22,7 @@ dependencies:
     version: 7.1.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.38.10
+    version: 1.38.12
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.13.0(pg@8.11.5)
@@ -1053,14 +1053,14 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.38.10:
-    resolution: {integrity: sha512-aTGyRHZM87nbmxsjK2wn0fXAjmyI2sEzwDLqqsHiNy3HUvFZwBgfRBWBW3qJzVCfnWA7X/EqChY4T6M9f4wV5g==}
+  /@forestadmin/agent@1.38.12:
+    resolution: {integrity: sha512-g0sMl/aGt+jtR90jle2Y/r0PiTz/wi/e7Y0fxxQ5A+XpfM29dtqYlopSBVMAXm07FliQWdy5+KKGxGZn37/Wgg==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.44.1
-      '@forestadmin/datasource-toolkit': 1.32.2
-      '@forestadmin/forestadmin-client': 1.26.0
+      '@forestadmin/datasource-customizer': 1.44.2
+      '@forestadmin/datasource-toolkit': 1.32.3
+      '@forestadmin/forestadmin-client': 1.26.2
       '@koa/cors': 5.0.0
       '@koa/router': 12.0.1
       '@types/koa__router': 12.0.4
@@ -1079,10 +1079,10 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.44.1:
-    resolution: {integrity: sha512-0SqeLOpZDkidQq15XQfM9QViYYE2WBN3M73y2Jq2/aI1tdrSl1ExTMK06vPlC/Ds1NRWTqd2BHz3qRME2sF8gg==}
+  /@forestadmin/datasource-customizer@1.44.2:
+    resolution: {integrity: sha512-9PfvBrfM8spL2Z2mRuZGwNUnZXrNWbqmDnrpIeyikf6R6j0jn/vN3VgJ6K2lRIl6o4O+9G9hkeZz2GM8chlVcA==}
     dependencies:
-      '@forestadmin/datasource-toolkit': 1.32.2
+      '@forestadmin/datasource-toolkit': 1.32.3
       antlr4: 4.13.1-patch-1
       file-type: 16.5.4
       luxon: 3.4.4
@@ -1130,8 +1130,16 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/forestadmin-client@1.26.0:
-    resolution: {integrity: sha512-mc2qtrBDflYWhVDd+iPUMFhz08dhJniH3cLf9gUeDqOX+kawUCvi1KE45asxuTYdETLxLL/Jx2/TWtVFpefpyw==}
+  /@forestadmin/datasource-toolkit@1.32.3:
+    resolution: {integrity: sha512-nn46bd5rSit/tjL71+BKPez2KTzUxAPZhkSJ3dF/NxqSmD534MlS0LyqGn898m0SLKD9bIvPk8dIvxQvY1ozTg==}
+    dependencies:
+      luxon: 3.4.4
+      object-hash: 3.0.0
+      uuid: 9.0.1
+    dev: false
+
+  /@forestadmin/forestadmin-client@1.26.2:
+    resolution: {integrity: sha512-FIDt+2TGR0vcjob5zkErMhodFQeKhXiqWOzDvETskXToOW1x9wV+NBY/7npoY7uvUk4tF3Bx+ZCoerTZAEIZUg==}
     dependencies:
       eventsource: 2.0.2
       json-api-serializer: 2.6.6
