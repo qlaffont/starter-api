@@ -25,7 +25,7 @@ dependencies:
     version: 1.39.0
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
-    version: 1.13.1(pg@8.11.5)
+    version: 1.14.0(pg@8.11.5)
   '@gquittet/graceful-server':
     specifier: ^4.0.8
     version: 4.0.9
@@ -1090,20 +1090,20 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/datasource-sequelize@1.8.1(sequelize@6.37.2):
-    resolution: {integrity: sha512-FL1SvWfPAhctWmjd72kCxEm4/8LWorDIVT6jkfRKP9jiqF6iznD7CzcvRORmJPQBIBqPmhQ2ZtKMb9Mu2e8naA==}
+  /@forestadmin/datasource-sequelize@1.8.2(sequelize@6.37.2):
+    resolution: {integrity: sha512-F8bOjRkGWom+m4o6+riRydfWnREdUmliwBQDwtGeC5YL9yVxpOlrQZzbDw7XCFyJsDO5qE9ad2Pir4w/9YOi0A==}
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
     dependencies:
-      '@forestadmin/datasource-toolkit': 1.32.3
+      '@forestadmin/datasource-toolkit': 1.33.0
       sequelize: 6.37.2(pg@8.11.5)
     dev: false
 
-  /@forestadmin/datasource-sql@1.13.1(pg@8.11.5):
-    resolution: {integrity: sha512-XN/ftjEtfczKrn6PK/RaNUYquhTugZkvRcVtgZmx/ZGl9afb/GSTSDeDwEJH2BExrSW9fcnizYrjKx0042Sqrw==}
+  /@forestadmin/datasource-sql@1.14.0(pg@8.11.5):
+    resolution: {integrity: sha512-WV5dUFRMRdGOoxwQCFI//Nc4JqNjJ+PddcpO2pnkDJz8yA6Q59DS1eDCkTD1rY+7rTMfA08TQ31mIZVIKCJkkA==}
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.8.1(sequelize@6.37.2)
-      '@forestadmin/datasource-toolkit': 1.32.3
+      '@forestadmin/datasource-sequelize': 1.8.2(sequelize@6.37.2)
+      '@forestadmin/datasource-toolkit': 1.33.0
       '@types/ssh2': 1.15.0
       pluralize: 8.0.0
       sequelize: 6.37.2(pg@8.11.5)
@@ -1124,6 +1124,14 @@ packages:
 
   /@forestadmin/datasource-toolkit@1.32.3:
     resolution: {integrity: sha512-nn46bd5rSit/tjL71+BKPez2KTzUxAPZhkSJ3dF/NxqSmD534MlS0LyqGn898m0SLKD9bIvPk8dIvxQvY1ozTg==}
+    dependencies:
+      luxon: 3.4.4
+      object-hash: 3.0.0
+      uuid: 9.0.1
+    dev: false
+
+  /@forestadmin/datasource-toolkit@1.33.0:
+    resolution: {integrity: sha512-sDpWfANpLNaSz4qP0qDs9gQk0hsNsBlJqeKb0Lw2yvkw0jRPceF+x2BvkkNyNRFN/EM9RRdDvKeppq9gDVibvA==}
     dependencies:
       luxon: 3.4.4
       object-hash: 3.0.0
