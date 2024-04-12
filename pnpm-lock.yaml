@@ -19,7 +19,7 @@ dependencies:
     version: 9.1.0
   '@fastify/secure-session':
     specifier: ^7.1.0
-    version: 7.4.0
+    version: 7.5.0
   '@forestadmin/agent':
     specifier: ^1.37.2
     version: 1.39.1
@@ -975,8 +975,8 @@ packages:
       toad-cache: 3.7.0
     dev: false
 
-  /@fastify/secure-session@7.4.0:
-    resolution: {integrity: sha512-IT2D3kC1oez4CNkjOASJq4rADoQAv2guaIDJQQgrTH82sidzsrRIY7fUtxe8SprCXNnmjEZtRBAXJPgI4uf7eQ==}
+  /@fastify/secure-session@7.5.0:
+    resolution: {integrity: sha512-kgmFAq4TZ1Z9BJBKKlJln8+zBliJB4xdEa2lfbSKMKPFs1rCAgLE1x319Yn3N1yLDjK2Kop0dvmNgPedJnCbew==}
     hasBin: true
     dependencies:
       '@fastify/cookie': 9.3.1
