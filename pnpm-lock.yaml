@@ -22,7 +22,7 @@ dependencies:
     version: 7.4.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.39.0
+    version: 1.39.1
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.14.0(pg@8.11.5)
@@ -1053,14 +1053,14 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.39.0:
-    resolution: {integrity: sha512-FkkiJDbPrESwOaRGj1inp0mfGtHOcofG4DaHf77xuwPD5xZhUaMXnUDt3aMIxnPw5TxSy+AHZDXj7Bvy5d/nWA==}
+  /@forestadmin/agent@1.39.1:
+    resolution: {integrity: sha512-O7r4t6mY/LH18I46pBA3D0qrhMthxOp/wfLSXCCLTl6KkCjmKmpTEsqk43Y5EDr/I4zYDal06nKIJ90glHBTHA==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.44.2
-      '@forestadmin/datasource-toolkit': 1.32.3
-      '@forestadmin/forestadmin-client': 1.27.0
+      '@forestadmin/datasource-customizer': 1.44.3
+      '@forestadmin/datasource-toolkit': 1.33.0
+      '@forestadmin/forestadmin-client': 1.27.1
       '@koa/cors': 5.0.0
       '@koa/router': 12.0.1
       '@types/koa__router': 12.0.4
@@ -1079,10 +1079,10 @@ packages:
       - supports-color
     dev: false
 
-  /@forestadmin/datasource-customizer@1.44.2:
-    resolution: {integrity: sha512-9PfvBrfM8spL2Z2mRuZGwNUnZXrNWbqmDnrpIeyikf6R6j0jn/vN3VgJ6K2lRIl6o4O+9G9hkeZz2GM8chlVcA==}
+  /@forestadmin/datasource-customizer@1.44.3:
+    resolution: {integrity: sha512-9oMbEdwUbPiD7ZxZXFuDoAw5FX7RYXy+nqI6XPkyBaXsj6GLG3VOBZaosaA1C+katVva+yevrOCAIgZP2zzl6w==}
     dependencies:
-      '@forestadmin/datasource-toolkit': 1.32.3
+      '@forestadmin/datasource-toolkit': 1.33.0
       antlr4: 4.13.1-patch-1
       file-type: 16.5.4
       luxon: 3.4.4
@@ -1122,14 +1122,6 @@ packages:
       - tedious
     dev: false
 
-  /@forestadmin/datasource-toolkit@1.32.3:
-    resolution: {integrity: sha512-nn46bd5rSit/tjL71+BKPez2KTzUxAPZhkSJ3dF/NxqSmD534MlS0LyqGn898m0SLKD9bIvPk8dIvxQvY1ozTg==}
-    dependencies:
-      luxon: 3.4.4
-      object-hash: 3.0.0
-      uuid: 9.0.1
-    dev: false
-
   /@forestadmin/datasource-toolkit@1.33.0:
     resolution: {integrity: sha512-sDpWfANpLNaSz4qP0qDs9gQk0hsNsBlJqeKb0Lw2yvkw0jRPceF+x2BvkkNyNRFN/EM9RRdDvKeppq9gDVibvA==}
     dependencies:
@@ -1138,8 +1130,8 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@forestadmin/forestadmin-client@1.27.0:
-    resolution: {integrity: sha512-8CIaH78h4dPbvpPT+7PPuzm9ujkIfM9fZ391l3/lNKYKn7koqxU725TdlJ85fiv/7R1zE1MjBWaMBkKlhOihmQ==}
+  /@forestadmin/forestadmin-client@1.27.1:
+    resolution: {integrity: sha512-zsWg5a5QG2EspzogxppjfmMcAfOiBwL5pXkgCvr7uDvSMm4SQAslkk62u8n9z4atBleS7agl+J8nMCAx4qcrCQ==}
     dependencies:
       eventsource: 2.0.2
       json-api-serializer: 2.6.6
