@@ -133,7 +133,7 @@ dependencies:
     version: 2.0.0-beta.6(class-validator@0.14.1)(graphql-scalars@1.23.0)(graphql@16.8.1)
   unify-errors:
     specifier: ^1.2.202
-    version: 1.2.234
+    version: 1.2.236
   unify-fastify:
     specifier: ^1.4.24
     version: 1.4.209
@@ -4264,7 +4264,7 @@ packages:
       fastify: 4.26.2
       fastify-plugin: 4.5.1
       jsonwebtoken: 9.0.2
-      unify-errors: 1.2.234
+      unify-errors: 1.2.236
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -8568,8 +8568,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /unify-errors@1.2.234:
-    resolution: {integrity: sha512-hbT8fp3kcuB450Tds8WWXfxrYHi4kLFZrZToke7AkdiDvs2nkv8m9t4OZR7fagxxXQUhBEKyx7mlyICxVzQaiQ==}
+  /unify-errors@1.2.236:
+    resolution: {integrity: sha512-Az6Nl6u7GIblLp6OFa3SaJw0smxwVOsFEPjDh/bece8FP21cv9gt0qQbetJK3RU9TFa4WKcyB3VyRhcYm2riWQ==}
     engines: {node: '>=10'}
     dev: false
 
@@ -8579,7 +8579,7 @@ packages:
     dependencies:
       fastify: 4.26.2
       fastify-plugin: 4.5.1
-      unify-errors: 1.2.234
+      unify-errors: 1.2.236
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -8590,7 +8590,7 @@ packages:
     dependencies:
       graphql: 16.8.1
       mercurius: 14.0.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3)
-      unify-errors: 1.2.234
+      unify-errors: 1.2.236
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
