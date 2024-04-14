@@ -166,8 +166,8 @@ devDependencies:
     specifier: 5.15.5
     version: 5.15.5(@bull-board/ui@5.15.5)
   '@bull-board/fastify':
-    specifier: 5.15.3
-    version: 5.15.3
+    specifier: 5.15.5
+    version: 5.15.5
   '@commitlint/cli':
     specifier: 19.2.2
     version: 19.2.2(@types/node@20.12.7)(typescript@5.4.5)
@@ -645,15 +645,6 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@bull-board/api@5.15.3(@bull-board/ui@5.15.3):
-    resolution: {integrity: sha512-tlEYOI6Hp0ZGozDCtKQEFgvzTKXj+drKStHJm86s1TcUZlsnMjzR0BUxu5CW6EB3tS3MtPLJH5RQCmUq0UEiiQ==}
-    peerDependencies:
-      '@bull-board/ui': 5.15.3
-    dependencies:
-      '@bull-board/ui': 5.15.3
-      redis-info: 3.1.0
-    dev: true
-
   /@bull-board/api@5.15.5(@bull-board/ui@5.15.5):
     resolution: {integrity: sha512-s3x0f+0s4nwndBM+QSROMVKiDyE/vaaouQCsxRWOFqneLCkM+Ro2wF6fkhmFkZMjouoBbS8rCFGaIZ+8uttYtg==}
     peerDependencies:
@@ -663,20 +654,14 @@ packages:
       redis-info: 3.1.0
     dev: true
 
-  /@bull-board/fastify@5.15.3:
-    resolution: {integrity: sha512-PXl243r4YmNZ3NrpwONBwCHCiN0Nlm1t4jTJ802nM3xMgajAXDMDINvM8MRGhZnrkpOEQOGNH1P3635cqiRvXA==}
+  /@bull-board/fastify@5.15.5:
+    resolution: {integrity: sha512-gPpZqm4wizCSvPKgaOXyl4Y1wAFTzH6qk6TWPBLv+7OjMqoVVlF0h+O/n/1Pv0485mBJgtoyaxWvmwdiOxRMMg==}
     dependencies:
-      '@bull-board/api': 5.15.3(@bull-board/ui@5.15.3)
-      '@bull-board/ui': 5.15.3
+      '@bull-board/api': 5.15.5(@bull-board/ui@5.15.5)
+      '@bull-board/ui': 5.15.5
       '@fastify/static': 6.12.0
       '@fastify/view': 8.2.0
       ejs: 3.1.9
-    dev: true
-
-  /@bull-board/ui@5.15.3:
-    resolution: {integrity: sha512-wCXk+s4cSszZe0p0sYYxZPLSKafFQNPsUypTvpAh3IC2p4fr6F/wUBGb1kBMspRkFC19l5yFCD5qPHVlAR0QKw==}
-    dependencies:
-      '@bull-board/api': 5.15.3(@bull-board/ui@5.15.3)
     dev: true
 
   /@bull-board/ui@5.15.5:
@@ -4680,7 +4665,7 @@ packages:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 2.3.6
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       minipass: 7.0.4
       path-scurry: 1.10.1
 
@@ -6426,18 +6411,11 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
-  /minimatch@9.0.3:
-    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      brace-expansion: 2.0.1
-
   /minimatch@9.0.4:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
 
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
