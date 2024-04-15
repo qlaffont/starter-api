@@ -22,7 +22,7 @@ dependencies:
     version: 7.5.0
   '@forestadmin/agent':
     specifier: ^1.37.2
-    version: 1.39.1
+    version: 1.39.2
   '@forestadmin/datasource-sql':
     specifier: ^1.8.0
     version: 1.14.0(pg@8.11.5)
@@ -1053,8 +1053,8 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@forestadmin/agent@1.39.1:
-    resolution: {integrity: sha512-O7r4t6mY/LH18I46pBA3D0qrhMthxOp/wfLSXCCLTl6KkCjmKmpTEsqk43Y5EDr/I4zYDal06nKIJ90glHBTHA==}
+  /@forestadmin/agent@1.39.2:
+    resolution: {integrity: sha512-J5n/607uSLAenzVqBztJPO8qlHTHElFC4Pib0tR5YM7qHf1O28aLUsV2IEVEao/d8YksLQn8x+PHSdeIV7ylzg==}
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
@@ -3152,7 +3152,7 @@ packages:
     resolution: {integrity: sha512-m7pOT6CdLN7FuXUcpuz/8lfQ/L77x8SchHCF4G0RBTJO20Wzmhn5Sp4/5WsKy8OSpifBSUrmg83qEqaDHdyFuQ==}
     dependencies:
       inflation: 2.1.0
-      qs: 6.12.0
+      qs: 6.12.1
       raw-body: 2.5.2
       type-is: 1.6.18
     dev: false
@@ -4503,7 +4503,7 @@ packages:
       dezalgo: 1.0.4
       hexoid: 1.0.0
       once: 1.4.0
-      qs: 6.12.0
+      qs: 6.12.1
     dev: false
 
   /forwarded@0.2.0:
@@ -7346,8 +7346,8 @@ packages:
       side-channel: 1.0.6
     dev: false
 
-  /qs@6.12.0:
-    resolution: {integrity: sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==}
+  /qs@6.12.1:
+    resolution: {integrity: sha512-zWmv4RSuB9r2mYQw3zxQuHWeU+42aKi1wWig/j4ele4ygELZ7PEO6MM7rim9oAQH2A5MWfsAVf/jPvTPgCbvUQ==}
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
@@ -8161,7 +8161,7 @@ packages:
       formidable: 2.1.2
       methods: 1.1.2
       mime: 2.6.0
-      qs: 6.12.0
+      qs: 6.12.1
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
