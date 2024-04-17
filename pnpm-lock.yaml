@@ -28,7 +28,7 @@ importers:
         version: 1.39.2
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
-        version: 1.14.0(pg@8.11.5)
+        version: 1.14.1(pg@8.11.5)
       '@gquittet/graceful-server':
         specifier: ^4.0.8
         version: 4.0.9
@@ -653,8 +653,8 @@ packages:
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
 
-  '@forestadmin/datasource-sql@1.14.0':
-    resolution: {integrity: sha512-WV5dUFRMRdGOoxwQCFI//Nc4JqNjJ+PddcpO2pnkDJz8yA6Q59DS1eDCkTD1rY+7rTMfA08TQ31mIZVIKCJkkA==}
+  '@forestadmin/datasource-sql@1.14.1':
+    resolution: {integrity: sha512-q6LL3GqPYh/khVvwfSYA1Vl2plXACAAsAsNt2BjBXHvg65O/5HkZxRun+V0K4GIDOQNKjKdm1Jq9alT31n/eDw==}
 
   '@forestadmin/datasource-toolkit@1.33.0':
     resolution: {integrity: sha512-sDpWfANpLNaSz4qP0qDs9gQk0hsNsBlJqeKb0Lw2yvkw0jRPceF+x2BvkkNyNRFN/EM9RRdDvKeppq9gDVibvA==}
@@ -4154,8 +4154,8 @@ packages:
     resolution: {integrity: sha512-G9c0qlIWQSK29pR/5U2JF5dDQeqqHRragoyahj/Nx4KOOQ3CPPfzxnfqFPCSB7x5UgjOgnZ61nSxz+fjDpRlJg==}
     engines: {node: '>= 10.0.0'}
 
-  sequelize@6.37.2:
-    resolution: {integrity: sha512-bnb7swGANONXCTrVyebpOOZssLwQrVkYX2tcC6qOIvH+P+OhsoMBi7c3GXI5bC+Z4b4tOl+kQy6yeqLCZ1YQAQ==}
+  sequelize@6.37.3:
+    resolution: {integrity: sha512-V2FTqYpdZjPy3VQrZvjTPnOoLm0KudCRXfGWp48QwhyPPp2yW8z0p0sCYZd/em847Tl2dVxJJ1DR+hF+O77T7A==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       ibm_db: '*'
@@ -5430,18 +5430,18 @@ snapshots:
       object-hash: 3.0.0
       uuid: 9.0.1
 
-  '@forestadmin/datasource-sequelize@1.8.2(sequelize@6.37.2(pg@8.11.5))':
+  '@forestadmin/datasource-sequelize@1.8.2(sequelize@6.37.3(pg@8.11.5))':
     dependencies:
       '@forestadmin/datasource-toolkit': 1.33.0
-      sequelize: 6.37.2(pg@8.11.5)
+      sequelize: 6.37.3(pg@8.11.5)
 
-  '@forestadmin/datasource-sql@1.14.0(pg@8.11.5)':
+  '@forestadmin/datasource-sql@1.14.1(pg@8.11.5)':
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.8.2(sequelize@6.37.2(pg@8.11.5))
+      '@forestadmin/datasource-sequelize': 1.8.2(sequelize@6.37.3(pg@8.11.5))
       '@forestadmin/datasource-toolkit': 1.33.0
       '@types/ssh2': 1.15.0
       pluralize: 8.0.0
-      sequelize: 6.37.2(pg@8.11.5)
+      sequelize: 6.37.3(pg@8.11.5)
       socks: 2.8.3
       ssh2: 1.15.0
     transitivePeerDependencies:
@@ -9546,7 +9546,7 @@ snapshots:
 
   sequelize-pool@7.1.0: {}
 
-  sequelize@6.37.2(pg@8.11.5):
+  sequelize@6.37.3(pg@8.11.5):
     dependencies:
       '@types/debug': 4.1.12
       '@types/validator': 13.11.9
