@@ -246,7 +246,7 @@ importers:
         version: 15.2.2
       mercurius-integration-testing:
         specifier: ^8.1.1
-        version: 8.1.1(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.0.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3)
+        version: 8.2.0(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.0.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3)
       pino-pretty:
         specifier: 11.0.0
         version: 11.0.0
@@ -3316,15 +3316,15 @@ packages:
     resolution: {integrity: sha512-TNdwZs0skRlpPpCUK25StC4VH+tP5GgeY1HQOOGP+lQ2xtdkN2VtT/5tiX9k3IWpkBPV9b3LsAWXn4GGi/PrSA==}
     engines: {node: '>=0.10.0'}
 
-  mercurius-integration-testing@8.1.1:
-    resolution: {integrity: sha512-JyyKGw4pXe+Hy8huDIMjIO1B0DIJkQDXuWX9+gtAQXKlwICQrTzUAfQGtqVMFypsvV8W15TUCxZraIqt01mFGg==}
+  mercurius-integration-testing@8.2.0:
+    resolution: {integrity: sha512-ew677oij/lTiLXECZsVIZfLxIFnur9Q+rKb20kP3OJmlxFqJH0IqawDW+CfHXBFqZPi19FSEGzzde2zr0ceiDw==}
     engines: {node: '>=14'}
     peerDependencies:
       '@mercuriusjs/federation': ^1 || ^2
       '@mercuriusjs/gateway': ^1.2.0
       fastify: ^4.0.0
       graphql: '*'
-      mercurius: ^12 || ^13
+      mercurius: ^12 || ^13 || ^14
     peerDependenciesMeta:
       '@mercuriusjs/federation':
         optional: true
@@ -8711,7 +8711,7 @@ snapshots:
       redent: 1.0.0
       trim-newlines: 1.0.0
 
-  mercurius-integration-testing@8.1.1(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.0.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3):
+  mercurius-integration-testing@8.2.0(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.0.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3):
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
       cookie: 0.5.0
