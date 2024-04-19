@@ -164,8 +164,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@bull-board/api':
-        specifier: 5.15.5
-        version: 5.15.5(@bull-board/ui@5.16.0)
+        specifier: 5.16.0
+        version: 5.16.0(@bull-board/ui@5.16.0)
       '@bull-board/fastify':
         specifier: 5.16.0
         version: 5.16.0
@@ -465,11 +465,6 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
-
-  '@bull-board/api@5.15.5':
-    resolution: {integrity: sha512-s3x0f+0s4nwndBM+QSROMVKiDyE/vaaouQCsxRWOFqneLCkM+Ro2wF6fkhmFkZMjouoBbS8rCFGaIZ+8uttYtg==}
-    peerDependencies:
-      '@bull-board/ui': 5.15.5
 
   '@bull-board/api@5.16.0':
     resolution: {integrity: sha512-JnPi2M11At/4lxDP267k20AqUBZdVv+82nNMcO80dPJAEKpzbvhLqAl4H3nDSEowmzgzVVlD+/eFOMjg07h9Zg==}
@@ -5112,11 +5107,6 @@ snapshots:
       to-fast-properties: 2.0.0
 
   '@bcoe/v8-coverage@0.2.3': {}
-
-  '@bull-board/api@5.15.5(@bull-board/ui@5.16.0)':
-    dependencies:
-      '@bull-board/ui': 5.16.0
-      redis-info: 3.1.0
 
   '@bull-board/api@5.16.0(@bull-board/ui@5.16.0)':
     dependencies:
