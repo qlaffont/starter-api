@@ -124,7 +124,7 @@ importers:
         version: 0.14.1
       sendim:
         specifier: ^1.2.74
-        version: 1.2.109
+        version: 1.2.110
       socket.io:
         specifier: ^4.7.4
         version: 4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.3)
@@ -3938,7 +3938,7 @@ packages:
 
   puppeteer@19.11.1:
     resolution: {integrity: sha512-39olGaX2djYUdhaQQHDZ0T0GwEp+5f9UB9HmEP0qHfdQHIq0xGQZuAZ5TLnJIc/88SrPLpEflPC+xUqOTv3c5g==}
-    deprecated: < 21.8.0 is no longer supported
+    deprecated: < 21.9.0 is no longer supported
 
   pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
@@ -4146,8 +4146,8 @@ packages:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
 
-  sendim@1.2.109:
-    resolution: {integrity: sha512-yDZx4KH0/pGy9NT3JLMFokn+YTWcofXO4A6gBWZesWn8Amq2yEX2D900bKoq1FnGGDfIvOPoi+cChmDL1IPg6w==}
+  sendim@1.2.110:
+    resolution: {integrity: sha512-8tnQtQHQZUA2Se8F7YJvCgEQw11onEDJNQFRcXIBYSyf+oTsHVyHGnErYRssRfTqCEyJEffHdcGkTPo/dsHIgA==}
     engines: {node: '>=10'}
 
   sequelize-pool@7.1.0:
@@ -9540,7 +9540,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  sendim@1.2.109:
+  sendim@1.2.110:
     dependencies:
       pino: 8.20.0
 
