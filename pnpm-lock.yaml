@@ -49,7 +49,7 @@ importers:
         version: 0.1.0
       '@t3-oss/env-core':
         specifier: ^0.8.0
-        version: 0.8.0(typescript@5.4.5)(zod@3.23.0)
+        version: 0.8.0(typescript@5.4.5)(zod@3.23.3)
       argon2:
         specifier: ^0.40.0
         version: 0.40.1
@@ -148,10 +148,10 @@ importers:
         version: 9.0.1
       zod:
         specifier: ^3.22.4
-        version: 3.23.0
+        version: 3.23.3
       zod-validation-error:
         specifier: ^3.0.1
-        version: 3.1.0(zod@3.23.0)
+        version: 3.1.0(zod@3.23.3)
     optionalDependencies:
       bufferutil:
         specifier: ^4.0.8
@@ -3938,7 +3938,7 @@ packages:
 
   puppeteer@19.11.1:
     resolution: {integrity: sha512-39olGaX2djYUdhaQQHDZ0T0GwEp+5f9UB9HmEP0qHfdQHIq0xGQZuAZ5TLnJIc/88SrPLpEflPC+xUqOTv3c5g==}
-    deprecated: < 21.8.0 is no longer supported
+    deprecated: < 21.9.0 is no longer supported
 
   pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
@@ -4881,8 +4881,8 @@ packages:
     peerDependencies:
       zod: ^3.18.0
 
-  zod@3.23.0:
-    resolution: {integrity: sha512-OFLT+LTocvabn6q76BTwVB0hExEBS0IduTr3cqZyMqEDbOnYmcU+y0tUAYbND4uwclpBGi4I4UUBGzylWpjLGA==}
+  zod@3.23.3:
+    resolution: {integrity: sha512-tPvq1B/2Yu/dh2uAIH2/BhUlUeLIUvAjr6dpL/75I0pCYefHgjhXk1o1Kob3kTU8C7yU1j396jFHlsVWFi9ogg==}
 
 snapshots:
 
@@ -5991,9 +5991,9 @@ snapshots:
 
   '@swc/types@0.1.5': {}
 
-  '@t3-oss/env-core@0.8.0(typescript@5.4.5)(zod@3.23.0)':
+  '@t3-oss/env-core@0.8.0(typescript@5.4.5)(zod@3.23.3)':
     dependencies:
-      zod: 3.23.0
+      zod: 3.23.3
     optionalDependencies:
       typescript: 5.4.5
 
@@ -7442,9 +7442,9 @@ snapshots:
     dependencies:
       ajv: 8.12.0
       fastify: 4.26.2
-      zod: 3.23.0
-      zod-to-json-schema: 3.22.5(zod@3.23.0)
-      zod-validation-error: 3.1.0(zod@3.23.0)
+      zod: 3.23.3
+      zod-to-json-schema: 3.22.5(zod@3.23.3)
+      zod-validation-error: 3.1.0(zod@3.23.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -9255,7 +9255,7 @@ snapshots:
       debug: 4.3.4
       immer: 10.0.3
       object-path: 0.11.8
-      zod: 3.23.0
+      zod: 3.23.3
     transitivePeerDependencies:
       - supports-color
 
@@ -10284,12 +10284,12 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-to-json-schema@3.22.5(zod@3.23.0):
+  zod-to-json-schema@3.22.5(zod@3.23.3):
     dependencies:
-      zod: 3.23.0
+      zod: 3.23.3
 
-  zod-validation-error@3.1.0(zod@3.23.0):
+  zod-validation-error@3.1.0(zod@3.23.3):
     dependencies:
-      zod: 3.23.0
+      zod: 3.23.3
 
-  zod@3.23.0: {}
+  zod@3.23.3: {}
