@@ -48,8 +48,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0
       '@t3-oss/env-core':
-        specifier: ^0.8.0
-        version: 0.8.0(typescript@5.4.5)(zod@3.23.3)
+        specifier: ^0.10.0
+        version: 0.10.1(typescript@5.4.5)(zod@3.23.3)
       argon2:
         specifier: ^0.40.0
         version: 0.40.1
@@ -1080,8 +1080,8 @@ packages:
   '@swc/types@0.1.5':
     resolution: {integrity: sha512-myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==}
 
-  '@t3-oss/env-core@0.8.0':
-    resolution: {integrity: sha512-Tc1pg0KH/tJeI0Z1s/Isp1VsGDj1N03ZAYFV8GjWgMxytF/ve0Dv+opjmTapHICRv8qiB1Y/fsTjkWNMpKPRCQ==}
+  '@t3-oss/env-core@0.10.1':
+    resolution: {integrity: sha512-GcKZiCfWks5CTxhezn9k5zWX3sMDIYf6Kaxy2Gx9YEQftFcz8hDRN56hcbylyAO3t4jQnQ5ifLawINsNgCDpOg==}
     peerDependencies:
       typescript: '>=5.0.0'
       zod: ^3.0.0
@@ -5991,7 +5991,7 @@ snapshots:
 
   '@swc/types@0.1.5': {}
 
-  '@t3-oss/env-core@0.8.0(typescript@5.4.5)(zod@3.23.3)':
+  '@t3-oss/env-core@0.10.1(typescript@5.4.5)(zod@3.23.3)':
     dependencies:
       zod: 3.23.3
     optionalDependencies:
