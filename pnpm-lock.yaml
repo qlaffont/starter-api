@@ -97,7 +97,7 @@ importers:
         version: 3.3.2
       paginate-prisma:
         specifier: ^1.0.145
-        version: 1.0.214
+        version: 1.0.215
       pg:
         specifier: ^8.11.3
         version: 8.11.5
@@ -3644,8 +3644,8 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  paginate-prisma@1.0.214:
-    resolution: {integrity: sha512-HMdepvW9BX1xHGqppE6tzHrHbBL0iHBJ9y846ZO8accr5WFAMiJDyPS7/eFDC7hIpwg17MGdY7MygXQH/MeVeQ==}
+  paginate-prisma@1.0.215:
+    resolution: {integrity: sha512-MjSEuJ/sSytloAmTjws1s04B7yHN6u+uTevLB0WRBW8rIq/ShqEJXZhzbNAZyHe9h7TYmyY4vv4B8WsRCqT36Q==}
     engines: {node: '>=10'}
 
   parent-module@1.0.1:
@@ -9019,7 +9019,7 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  paginate-prisma@1.0.214:
+  paginate-prisma@1.0.215:
     dependencies:
       '@types/lodash': 4.17.0
       class-validator: 0.14.1
