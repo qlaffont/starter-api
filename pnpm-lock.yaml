@@ -25,7 +25,7 @@ importers:
         version: 7.5.1
       '@forestadmin/agent':
         specifier: ^1.37.2
-        version: 1.39.2
+        version: 1.40.0
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
         version: 1.14.1(pg@8.11.5)
@@ -645,8 +645,8 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@forestadmin/agent@1.39.2':
-    resolution: {integrity: sha512-J5n/607uSLAenzVqBztJPO8qlHTHElFC4Pib0tR5YM7qHf1O28aLUsV2IEVEao/d8YksLQn8x+PHSdeIV7ylzg==}
+  '@forestadmin/agent@1.40.0':
+    resolution: {integrity: sha512-TqwNdhAlWVjHo4jZSNM+O5e5G3kMT9BDBpT/SrWvlvLmvkoJ2kSwJpYfv7utdjhA6QNWzmatlqJqrxipC8nTSw==}
 
   '@forestadmin/datasource-customizer@1.44.3':
     resolution: {integrity: sha512-9oMbEdwUbPiD7ZxZXFuDoAw5FX7RYXy+nqI6XPkyBaXsj6GLG3VOBZaosaA1C+katVva+yevrOCAIgZP2zzl6w==}
@@ -1206,8 +1206,8 @@ packages:
   '@types/pg@8.11.0':
     resolution: {integrity: sha512-sDAlRiBNthGjNFfvt0k6mtotoVYVQ63pA8R4EMWka7crawSR60waVYR0HAgmPRs/e2YaeJTD/43OoZ3PFw80pw==}
 
-  '@types/qs@6.9.14':
-    resolution: {integrity: sha512-5khscbd3SwWMhFqylJBLQ0zIu7c1K6Vz0uBIt915BI3zV0q1nfjRQD3RqSBcPaO6PHEF4ov/t9y89fSiyThlPA==}
+  '@types/qs@6.9.15':
+    resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
@@ -3290,6 +3290,10 @@ packages:
 
   lru-cache@10.2.0:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
+    engines: {node: 14 || >=16.14}
+
+  lru-cache@10.2.2:
+    resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
     engines: {node: 14 || >=16.14}
 
   lru-cache@5.1.1:
@@ -5434,7 +5438,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@forestadmin/agent@1.39.2':
+  '@forestadmin/agent@1.40.0':
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
@@ -6103,7 +6107,7 @@ snapshots:
   '@types/express-serve-static-core@4.19.0':
     dependencies:
       '@types/node': 20.12.7
-      '@types/qs': 6.9.14
+      '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
 
@@ -6111,7 +6115,7 @@ snapshots:
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.19.0
-      '@types/qs': 6.9.14
+      '@types/qs': 6.9.15
       '@types/serve-static': 1.15.7
 
   '@types/graceful-fs@4.1.9':
@@ -6188,7 +6192,7 @@ snapshots:
       pg-protocol: 1.6.1
       pg-types: 4.0.2
 
-  '@types/qs@6.9.14': {}
+  '@types/qs@6.9.15': {}
 
   '@types/range-parser@1.2.7': {}
 
@@ -8719,6 +8723,8 @@ snapshots:
 
   lru-cache@10.2.0: {}
 
+  lru-cache@10.2.2: {}
+
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -9114,7 +9120,7 @@ snapshots:
 
   path-scurry@1.10.2:
     dependencies:
-      lru-cache: 10.2.0
+      lru-cache: 10.2.2
       minipass: 7.0.4
 
   path-to-regexp@0.1.7: {}
