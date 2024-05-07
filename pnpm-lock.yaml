@@ -165,10 +165,10 @@ importers:
         version: 1.1.0
       '@bull-board/api':
         specifier: 5.17.1
-        version: 5.17.1(@bull-board/ui@5.17.0)
+        version: 5.17.1(@bull-board/ui@5.17.1)
       '@bull-board/fastify':
-        specifier: 5.17.0
-        version: 5.17.0
+        specifier: 5.17.1
+        version: 5.17.1
       '@commitlint/cli':
         specifier: 19.3.0
         version: 19.3.0(@types/node@20.12.10)(typescript@5.4.5)
@@ -469,21 +469,16 @@ packages:
   '@braintree/sanitize-url@6.0.4':
     resolution: {integrity: sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==}
 
-  '@bull-board/api@5.17.0':
-    resolution: {integrity: sha512-qU+AiZIaYa//rkt1x7jDowtYa8u7/dLsDfEWgenZMkgvUszZ1kxJszdCtGapsDTVyPmnXgTRxpOWcR6sAYwSNQ==}
-    peerDependencies:
-      '@bull-board/ui': 5.17.0
-
   '@bull-board/api@5.17.1':
     resolution: {integrity: sha512-KQaH3z2YJxN2h+Kh4ZJ341NNEFwrsNeZAu9FtQX8h4G0nkSw3FSlgWDO6UrN0b448+co/gWTT6qZz0st2fFmPg==}
     peerDependencies:
       '@bull-board/ui': 5.17.1
 
-  '@bull-board/fastify@5.17.0':
-    resolution: {integrity: sha512-73YrPc7ERTWSOQRgBP6a7BPscWfcHd8U+Zq0auMdL/KkjPhG9GxapbfnovGZDDahJL/p/4YQb6ULu03zdtOrEA==}
+  '@bull-board/fastify@5.17.1':
+    resolution: {integrity: sha512-4Rmedd0hAbwBCYGOEGyf+PeHgQ93EjG0yawa/OGyCy/1mKY3vz0E8Rcjm0s2LpiviR8kYlK8EiqhDFsoYpVhNA==}
 
-  '@bull-board/ui@5.17.0':
-    resolution: {integrity: sha512-Vj+yWPjrjx3Iqh2N/ZBDhK2d2yJD44dfvIxm+SnXQb4ne312j117TpViInceysxGtbbAOlAW6hq6JvsDoRl7KQ==}
+  '@bull-board/ui@5.17.1':
+    resolution: {integrity: sha512-/BO4C454w7ar5ZaHfcThEY2A2SYD9YkQkBizq8o9sjglVctpnnnh37YY2iOVRZCZFXMKIe7t05Kd9/9p3IPvSw==}
 
   '@commitlint/cli@19.3.0':
     resolution: {integrity: sha512-LgYWOwuDR7BSTQ9OLZ12m7F/qhNY+NpAyPBgo4YNMkACE7lGuUnuQq1yi9hz1KA4+3VqpOYl8H1rY/LYK43v7g==}
@@ -5480,27 +5475,22 @@ snapshots:
 
   '@braintree/sanitize-url@6.0.4': {}
 
-  '@bull-board/api@5.17.0(@bull-board/ui@5.17.0)':
+  '@bull-board/api@5.17.1(@bull-board/ui@5.17.1)':
     dependencies:
-      '@bull-board/ui': 5.17.0
+      '@bull-board/ui': 5.17.1
       redis-info: 3.1.0
 
-  '@bull-board/api@5.17.1(@bull-board/ui@5.17.0)':
+  '@bull-board/fastify@5.17.1':
     dependencies:
-      '@bull-board/ui': 5.17.0
-      redis-info: 3.1.0
-
-  '@bull-board/fastify@5.17.0':
-    dependencies:
-      '@bull-board/api': 5.17.0(@bull-board/ui@5.17.0)
-      '@bull-board/ui': 5.17.0
+      '@bull-board/api': 5.17.1(@bull-board/ui@5.17.1)
+      '@bull-board/ui': 5.17.1
       '@fastify/static': 6.12.0
       '@fastify/view': 8.2.0
       ejs: 3.1.9
 
-  '@bull-board/ui@5.17.0':
+  '@bull-board/ui@5.17.1':
     dependencies:
-      '@bull-board/api': 5.17.0(@bull-board/ui@5.17.0)
+      '@bull-board/api': 5.17.1(@bull-board/ui@5.17.1)
 
   '@commitlint/cli@19.3.0(@types/node@20.12.10)(typescript@5.4.5)':
     dependencies:
