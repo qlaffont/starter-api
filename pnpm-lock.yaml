@@ -73,7 +73,7 @@ importers:
         version: 4.26.2
       fastify-auth-prisma:
         specifier: ^1.2.14
-        version: 1.2.263
+        version: 1.2.265
       fastify-type-provider-zod2:
         specifier: ^1.0.0
         version: 1.0.41
@@ -2501,8 +2501,8 @@ packages:
   fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  fastify-auth-prisma@1.2.263:
-    resolution: {integrity: sha512-KZwoFqSNjbx/9p9dV5d961/zymzfiQHmrmFeAThq6kngC59nIP261bEMc+8DgDJNnq1TLR6ZyW508HQE95iYsw==}
+  fastify-auth-prisma@1.2.265:
+    resolution: {integrity: sha512-JwhqOz8KKFkIhufKpQNmXbGw6od/hId5QHATYhQFyQop8Y+jY6/yOHvnk5zpO+5oIX5UfwuKU8XmVZfmWQkzCg==}
     engines: {node: '>=10'}
 
   fastify-plugin@3.0.1:
@@ -4485,6 +4485,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.6.1:
+    resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -5534,7 +5539,7 @@ snapshots:
   '@commitlint/is-ignored@19.2.2':
     dependencies:
       '@commitlint/types': 19.0.3
-      semver: 7.6.0
+      semver: 7.6.1
 
   '@commitlint/lint@19.2.2':
     dependencies:
@@ -8024,7 +8029,7 @@ snapshots:
 
   fast-uri@2.3.0: {}
 
-  fastify-auth-prisma@1.2.263:
+  fastify-auth-prisma@1.2.265:
     dependencies:
       fastify: 4.26.2
       fastify-plugin: 4.5.1
@@ -8677,7 +8682,7 @@ snapshots:
       '@babel/parser': 7.23.9
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.6.0
+      semver: 7.6.1
     transitivePeerDependencies:
       - supports-color
 
@@ -8969,7 +8974,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.6.0
+      semver: 7.6.1
     transitivePeerDependencies:
       - supports-color
 
@@ -9095,7 +9100,7 @@ snapshots:
       lodash.isstring: 4.0.1
       lodash.once: 4.1.1
       ms: 2.1.3
-      semver: 7.6.0
+      semver: 7.6.1
 
   jwa@1.4.1:
     dependencies:
@@ -9317,7 +9322,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.1
 
   make-error@1.3.6: {}
 
@@ -10367,6 +10372,8 @@ snapshots:
   semver@7.6.0:
     dependencies:
       lru-cache: 6.0.0
+
+  semver@7.6.1: {}
 
   send@0.18.0:
     dependencies:
