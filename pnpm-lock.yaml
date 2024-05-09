@@ -49,7 +49,7 @@ importers:
         version: 0.1.0
       '@t3-oss/env-core':
         specifier: ^0.8.0
-        version: 0.8.0(typescript@5.4.5)(zod@3.23.6)
+        version: 0.8.0(typescript@5.4.5)(zod@3.23.8)
       argon2:
         specifier: ^0.40.0
         version: 0.40.1
@@ -148,10 +148,10 @@ importers:
         version: 9.0.1
       zod:
         specifier: ^3.22.4
-        version: 3.23.6
+        version: 3.23.8
       zod-validation-error:
         specifier: ^3.0.1
-        version: 3.2.0(zod@3.23.6)
+        version: 3.2.0(zod@3.23.8)
     optionalDependencies:
       bufferutil:
         specifier: ^4.0.8
@@ -5248,8 +5248,8 @@ packages:
     peerDependencies:
       zod: ^3.18.0
 
-  zod@3.23.6:
-    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -6370,9 +6370,9 @@ snapshots:
 
   '@swc/types@0.1.5': {}
 
-  '@t3-oss/env-core@0.8.0(typescript@5.4.5)(zod@3.23.6)':
+  '@t3-oss/env-core@0.8.0(typescript@5.4.5)(zod@3.23.8)':
     dependencies:
-      zod: 3.23.6
+      zod: 3.23.8
     optionalDependencies:
       typescript: 5.4.5
 
@@ -8042,9 +8042,9 @@ snapshots:
     dependencies:
       ajv: 8.13.0
       fastify: 4.26.2
-      zod: 3.23.6
-      zod-to-json-schema: 3.23.0(zod@3.23.6)
-      zod-validation-error: 3.2.0(zod@3.23.6)
+      zod: 3.23.8
+      zod-to-json-schema: 3.23.0(zod@3.23.8)
+      zod-validation-error: 3.2.0(zod@3.23.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -10088,7 +10088,7 @@ snapshots:
       debug: 4.3.4
       immer: 10.0.3
       object-path: 0.11.8
-      zod: 3.23.6
+      zod: 3.23.8
     transitivePeerDependencies:
       - supports-color
 
@@ -11148,12 +11148,12 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-to-json-schema@3.23.0(zod@3.23.6):
+  zod-to-json-schema@3.23.0(zod@3.23.8):
     dependencies:
-      zod: 3.23.6
+      zod: 3.23.8
 
-  zod-validation-error@3.2.0(zod@3.23.6):
+  zod-validation-error@3.2.0(zod@3.23.8):
     dependencies:
-      zod: 3.23.6
+      zod: 3.23.8
 
-  zod@3.23.6: {}
+  zod@3.23.8: {}
