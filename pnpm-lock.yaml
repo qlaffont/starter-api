@@ -70,7 +70,7 @@ importers:
         version: 16.4.5
       fastify:
         specifier: ^4.26.1
-        version: 4.26.2
+        version: 4.27.0
       fastify-auth-prisma:
         specifier: ^1.2.14
         version: 1.2.268
@@ -225,7 +225,7 @@ importers:
         version: 5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)
       fastify-socket.io:
         specifier: 5.0.0
-        version: 5.0.0(fastify@4.26.2)
+        version: 5.0.0(fastify@4.27.0)
       gnomon:
         specifier: 1.5.0
         version: 1.5.0
@@ -246,7 +246,7 @@ importers:
         version: 15.2.2
       mercurius-integration-testing:
         specifier: ^8.1.1
-        version: 8.2.0(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3)
+        version: 8.2.0(bufferutil@4.0.8)(fastify@4.27.0)(graphql@16.8.1)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3)
       pino-pretty:
         specifier: 11.0.0
         version: 11.0.0
@@ -2476,11 +2476,8 @@ packages:
   fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
 
-  fast-json-stringify@5.12.0:
-    resolution: {integrity: sha512-7Nnm9UPa7SfHRbHVA1kJQrGXCRzB7LMlAAqHXQFkEQqueJm1V8owm0FsE/2Do55/4CcdhwiLQERaKomOnKQkyA==}
-
-  fast-json-stringify@5.14.1:
-    resolution: {integrity: sha512-J1Grbf0oSXV3lKsBf3itz1AvRk43qVrx3Ac10sNvi3LZaz1by4oDdYKFrJycPhS8+Gb7y8rgV/Jqw1UZVjyNvw==}
+  fast-json-stringify@5.15.1:
+    resolution: {integrity: sha512-JopGtkvvguRqrS4gHXSSA2jf4pDgOZkeBAkLO1LbzOpiOMo7/kugoR+KiWifpLpluaVeYDkAuxCJOj4Gyc6L9A==}
 
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
@@ -2517,8 +2514,8 @@ packages:
     resolution: {integrity: sha512-3wvToEpivDsmf/tng7lGKfCOgIkENELL+OYk3m8oZs9N4qnS1y7E5g2F6NATtrIAficTdav7kM433+rIczWjHQ==}
     engines: {node: '>=10'}
 
-  fastify@4.26.2:
-    resolution: {integrity: sha512-90pjTuPGrfVKtdpLeLzND5nyC4woXZN5VadiNQCicj/iJU4viNHKhsAnb7jmv1vu2IzkLXyBiCzdWuzeXgQ5Ug==}
+  fastify@4.27.0:
+    resolution: {integrity: sha512-ci9IXzbigB8dyi0mSy3faa3Bsj0xWAPb9JeT4KRzubdSb6pNhcADRUaXCBml6V1Ss/a05kbtQls5LBmhHydoTA==}
 
   fastparallel@2.4.1:
     resolution: {integrity: sha512-qUmhxPgNHmvRjZKBFUNI0oZuuH9OlSIOXmJ98lhKPxMZZ7zS/Fi0wRHOihDSz0R1YiIOjxzOY4bq65YTcdBi2Q==}
@@ -2555,8 +2552,8 @@ packages:
     resolution: {integrity: sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==}
     engines: {node: '>= 0.8'}
 
-  find-my-way@8.1.0:
-    resolution: {integrity: sha512-41QwjCGcVTODUmLLqTMeoHeiozbMXYMAE1CKFiDyi9zVZ2Vjh0yz3MF0WQZoIb+cmzP/XlbFjlF2NtJmvZHznA==}
+  find-my-way@8.2.0:
+    resolution: {integrity: sha512-HdWXgFYc6b1BJcOBDBwjqWuHJj1WYiqrxSh25qtU4DabpMFdj/gSunNBQb83t+8Zt67D7CXEzJWTkxaShMTMOA==}
     engines: {node: '>=14'}
 
   find-root@1.1.0:
@@ -3400,8 +3397,8 @@ packages:
   libphonenumber-js@1.10.55:
     resolution: {integrity: sha512-MrTg2JFLscgmTY6/oT9vopYETlgUls/FU6OaeeamGwk4LFxjIgOUML/ZSZICgR0LPYXaonVJo40lzMvaaTJlQA==}
 
-  light-my-request@5.11.1:
-    resolution: {integrity: sha512-KXAh2m6VRlkWCk2KfmHE7tLBXKh30JE0tXUJY4dNxje4oLmPKUqlUfImiEQZLphx+Z9KTQcVv4DjGnJxkVOIbA==}
+  light-my-request@5.13.0:
+    resolution: {integrity: sha512-9IjUN9ZyCS9pTG+KqTDEQo68Sui2lHsYBrfMyVUTTZ3XhH8PMZq7xO94Kr+eP9dhi/kcKsx4N41p2IXEBil1pQ==}
 
   lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
@@ -4124,10 +4121,6 @@ packages:
   pino-std-serializers@6.2.2:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
 
-  pino@8.20.0:
-    resolution: {integrity: sha512-uhIfMj5TVp+WynVASaVEJFTncTUe4dHBq6CWplu/vBgvGHhvBvQfxz+vcOrnnBQdORH3izaGEurLfNlq3YxdFQ==}
-    hasBin: true
-
   pino@9.0.0:
     resolution: {integrity: sha512-uI1ThkzTShNSwvsUM6b4ND8ANzWURk9zTELMztFkmnCQeR/4wkomJ+echHee5GMWGovoSfjwdeu80DsFIt7mbA==}
     hasBin: true
@@ -4221,9 +4214,6 @@ packages:
     resolution: {integrity: sha512-kGtcJaElNRAdAGsCNykFSZ7dBKpL14Cbs+VaQ8cECxQlRPDjBlMHNFYeYt0SKovAVy2Y65JXQwB3A5+zIQwnTg==}
     engines: {node: '>=16.13'}
     hasBin: true
-
-  process-warning@2.3.2:
-    resolution: {integrity: sha512-n9wh8tvBe5sFmsqlg+XQhaQLumwpqoAUruLwjCopgTmUBjJ/fjtBsJzKleCaIGBOMXYEhp1YfKl4d7rJ5ZKJGA==}
 
   process-warning@3.0.0:
     resolution: {integrity: sha512-mqn0kFRl0EoqhnL0GQ0veqFHyIN1yig9RHh/InzORTUiZHFRAur+aMtRkELNwGs9aNwKS6tg/An4NYBPGwvtzQ==}
@@ -4411,9 +4401,9 @@ packages:
     resolution: {integrity: sha512-I9fPXU9geO9bHOt9pHHOhOkYerIMsmVaWB0rA2AI9ERh/+x/i7MV5HKBNrg+ljO5eoPVgCcnFuRjJ9uH6I/3eg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  ret@0.2.2:
-    resolution: {integrity: sha512-M0b3YWQs7R3Z917WRQy1HHA7Ba7D8hvZg6UE5mLykJxQVE2ju0IXbGlaHPPlkY+WN7wFP+wUMXmBFA0aV6vYGQ==}
-    engines: {node: '>=4'}
+  ret@0.4.3:
+    resolution: {integrity: sha512-0f4Memo5QP7WQyUEAYUO3esD/XjOc3Zjjg5CPsAq1p8sIu0XPeMbHJemKA0BO7tV0X7+A0FoEpbmHXWxPyD3wQ==}
+    engines: {node: '>=10'}
 
   retry-as-promised@7.0.4:
     resolution: {integrity: sha512-XgmCoxKWkDofwH8WddD0w85ZfqYz+ZHlr5yo+3YUCfycWawU56T5ckWXsScsj5B8tqUcIG67DxXByo3VUgiAdA==}
@@ -4456,8 +4446,8 @@ packages:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
     engines: {node: '>= 0.4'}
 
-  safe-regex2@2.0.0:
-    resolution: {integrity: sha512-PaUSFsUaNNuKwkBijoAPHAK6/eM6VirvyPWlZ7BAQy4D+hCvh4B6lIG+nPdhbFfIbP+gTGBcrdsOaUs0F+ZBOQ==}
+  safe-regex2@3.1.0:
+    resolution: {integrity: sha512-RAAZAGbap2kBfbVhvmnTFv73NWLMvDGOITFYTZBAaY8eR+Ir4ef7Up/e7amo+y1+AH+3PtLkrt9mvcTsG9LXug==}
 
   safe-stable-stringify@2.4.3:
     resolution: {integrity: sha512-e2bDA2WJT0wxseVd4lsDP4+3ONX6HpMXQa1ZhFQ7SU+GjvORCmShbCMltrtIDfkYhVHrOcPtj+KhmDBdPdZD1g==}
@@ -4814,9 +4804,6 @@ packages:
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
-
-  thread-stream@2.4.1:
-    resolution: {integrity: sha512-d/Ex2iWd1whipbT681JmTINKw0ZwOUBZm7+Gjs64DHuX34mmw8vJL2bFAaNacaW72zYiTJxSHi5abUuOi5nsfg==}
 
   thread-stream@2.7.0:
     resolution: {integrity: sha512-qQiRWsU/wvNolI6tbbCKd9iKaTnCXsTwVxhhKM6nctPdujTyztjlbUkUTUymidWcMnZ5pWR0ej4a0tjsW021vw==}
@@ -5674,7 +5661,7 @@ snapshots:
 
   '@fastify/fast-json-stringify-compiler@4.3.0':
     dependencies:
-      fast-json-stringify: 5.12.0
+      fast-json-stringify: 5.15.1
 
   '@fastify/flash@5.1.0':
     dependencies:
@@ -7987,17 +7974,7 @@ snapshots:
 
   fast-json-stable-stringify@2.1.0: {}
 
-  fast-json-stringify@5.12.0:
-    dependencies:
-      '@fastify/merge-json-schemas': 0.1.1
-      ajv: 8.13.0
-      ajv-formats: 2.1.1(ajv@8.13.0)
-      fast-deep-equal: 3.1.3
-      fast-uri: 2.3.0
-      json-schema-ref-resolver: 1.0.1
-      rfdc: 1.3.1
-
-  fast-json-stringify@5.14.1:
+  fast-json-stringify@5.15.1:
     dependencies:
       '@fastify/merge-json-schemas': 0.1.1
       ajv: 8.13.0
@@ -8021,7 +7998,7 @@ snapshots:
 
   fastify-auth-prisma@1.2.268:
     dependencies:
-      fastify: 4.26.2
+      fastify: 4.27.0
       fastify-plugin: 4.5.1
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.1
@@ -8032,23 +8009,23 @@ snapshots:
 
   fastify-plugin@4.5.1: {}
 
-  fastify-socket.io@5.0.0(fastify@4.26.2):
+  fastify-socket.io@5.0.0(fastify@4.27.0):
     dependencies:
-      fastify: 4.26.2
+      fastify: 4.27.0
       fastify-plugin: 4.5.1
       tslib: 2.6.2
 
   fastify-type-provider-zod2@1.0.44:
     dependencies:
       ajv: 8.13.0
-      fastify: 4.26.2
+      fastify: 4.27.0
       zod: 3.23.8
       zod-to-json-schema: 3.23.0(zod@3.23.8)
       zod-validation-error: 3.2.0(zod@3.23.8)
     transitivePeerDependencies:
       - supports-color
 
-  fastify@4.26.2:
+  fastify@4.27.0:
     dependencies:
       '@fastify/ajv-compiler': 3.5.0
       '@fastify/error': 3.4.1
@@ -8056,15 +8033,15 @@ snapshots:
       abstract-logging: 2.0.1
       avvio: 8.3.0
       fast-content-type-parse: 1.1.0
-      fast-json-stringify: 5.12.0
-      find-my-way: 8.1.0
-      light-my-request: 5.11.1
-      pino: 8.20.0
+      fast-json-stringify: 5.15.1
+      find-my-way: 8.2.0
+      light-my-request: 5.13.0
+      pino: 9.0.0
       process-warning: 3.0.0
       proxy-addr: 2.0.7
       rfdc: 1.3.1
       secure-json-parse: 2.7.0
-      semver: 7.6.0
+      semver: 7.6.1
       toad-cache: 3.7.0
     transitivePeerDependencies:
       - supports-color
@@ -8121,11 +8098,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  find-my-way@8.1.0:
+  find-my-way@8.2.0:
     dependencies:
       fast-deep-equal: 3.1.3
       fast-querystring: 1.1.2
-      safe-regex2: 2.0.0
+      safe-regex2: 3.1.0
 
   find-root@1.1.0: {}
 
@@ -8357,7 +8334,7 @@ snapshots:
   graphql-jit@0.8.4(graphql@16.8.1):
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
-      fast-json-stringify: 5.14.1
+      fast-json-stringify: 5.15.1
       generate-function: 2.3.1
       graphql: 16.8.1
       lodash.memoize: 4.1.2
@@ -9181,10 +9158,10 @@ snapshots:
 
   libphonenumber-js@1.10.55: {}
 
-  light-my-request@5.11.1:
+  light-my-request@5.13.0:
     dependencies:
       cookie: 0.6.0
-      process-warning: 2.3.2
+      process-warning: 3.0.0
       set-cookie-parser: 2.6.0
 
   lilconfig@3.0.0: {}
@@ -9360,11 +9337,11 @@ snapshots:
       redent: 1.0.0
       trim-newlines: 1.0.0
 
-  mercurius-integration-testing@8.2.0(bufferutil@4.0.8)(fastify@4.26.2)(graphql@16.8.1)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3):
+  mercurius-integration-testing@8.2.0(bufferutil@4.0.8)(fastify@4.27.0)(graphql@16.8.1)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3))(utf-8-validate@6.0.3):
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
       cookie: 0.5.0
-      fastify: 4.26.2
+      fastify: 4.27.0
       graphql: 16.8.1
       mercurius: 14.1.0(bufferutil@4.0.8)(graphql@16.8.1)(utf-8-validate@6.0.3)
       ws: 8.16.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
@@ -9987,20 +9964,6 @@ snapshots:
 
   pino-std-serializers@6.2.2: {}
 
-  pino@8.20.0:
-    dependencies:
-      atomic-sleep: 1.0.0
-      fast-redact: 3.5.0
-      on-exit-leak-free: 2.1.2
-      pino-abstract-transport: 1.1.0
-      pino-std-serializers: 6.2.2
-      process-warning: 3.0.0
-      quick-format-unescaped: 4.0.4
-      real-require: 0.2.0
-      safe-stable-stringify: 2.4.3
-      sonic-boom: 3.8.1
-      thread-stream: 2.4.1
-
   pino@9.0.0:
     dependencies:
       atomic-sleep: 1.0.0
@@ -10095,8 +10058,6 @@ snapshots:
   prisma@5.13.0:
     dependencies:
       '@prisma/engines': 5.13.0
-
-  process-warning@2.3.2: {}
 
   process-warning@3.0.0: {}
 
@@ -10304,7 +10265,7 @@ snapshots:
       onetime: 5.1.2
       signal-exit: 3.0.7
 
-  ret@0.2.2: {}
+  ret@0.4.3: {}
 
   retry-as-promised@7.0.4: {}
 
@@ -10345,9 +10306,9 @@ snapshots:
       es-errors: 1.3.0
       is-regex: 1.1.4
 
-  safe-regex2@2.0.0:
+  safe-regex2@3.1.0:
     dependencies:
-      ret: 0.2.2
+      ret: 0.4.3
 
   safe-stable-stringify@2.4.3: {}
 
@@ -10732,10 +10693,6 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  thread-stream@2.4.1:
-    dependencies:
-      real-require: 0.2.0
-
   thread-stream@2.7.0:
     dependencies:
       real-require: 0.2.0
@@ -10922,7 +10879,7 @@ snapshots:
 
   unify-fastify@1.5.26:
     dependencies:
-      fastify: 4.26.2
+      fastify: 4.27.0
       fastify-plugin: 4.5.1
       unify-errors: 1.3.1
     transitivePeerDependencies:
