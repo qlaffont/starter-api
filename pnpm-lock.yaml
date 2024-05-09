@@ -73,7 +73,7 @@ importers:
         version: 4.27.0
       fastify-auth-prisma:
         specifier: ^1.2.14
-        version: 1.2.268
+        version: 1.2.270
       fastify-type-provider-zod2:
         specifier: ^1.0.0
         version: 1.0.44
@@ -2495,8 +2495,8 @@ packages:
   fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  fastify-auth-prisma@1.2.268:
-    resolution: {integrity: sha512-KhK/SHtefUYWeO2z4Jw5NlSv/E+BEJ+F3Jmeg+6/jRWPzA8jrLKbf5g4o7AKjdsGlNcuww0xbxhs3l9ohPTpGQ==}
+  fastify-auth-prisma@1.2.270:
+    resolution: {integrity: sha512-EI/iYQhmpceoDrF3hgyEkzqmye229vj7qxen2kDSPqqoQiVMtLwTC8Fq1ihne9o/FctPkverGzvAI6OiTWPYDg==}
     engines: {node: '>=10'}
 
   fastify-plugin@3.0.1:
@@ -4474,6 +4474,11 @@ packages:
 
   semver@7.6.1:
     resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.6.2:
+    resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -7996,7 +8001,7 @@ snapshots:
 
   fast-uri@2.3.0: {}
 
-  fastify-auth-prisma@1.2.268:
+  fastify-auth-prisma@1.2.270:
     dependencies:
       fastify: 4.27.0
       fastify-plugin: 4.5.1
@@ -8649,7 +8654,7 @@ snapshots:
       '@babel/parser': 7.23.9
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.6.1
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
@@ -9067,7 +9072,7 @@ snapshots:
       lodash.isstring: 4.0.1
       lodash.once: 4.1.1
       ms: 2.1.3
-      semver: 7.6.1
+      semver: 7.6.2
 
   jwa@1.4.1:
     dependencies:
@@ -9289,7 +9294,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.1
+      semver: 7.6.2
 
   make-error@1.3.6: {}
 
@@ -10325,6 +10330,8 @@ snapshots:
       lru-cache: 6.0.0
 
   semver@7.6.1: {}
+
+  semver@7.6.2: {}
 
   send@0.18.0:
     dependencies:
