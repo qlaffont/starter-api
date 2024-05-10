@@ -73,7 +73,7 @@ importers:
         version: 4.27.0
       fastify-auth-prisma:
         specifier: ^1.2.14
-        version: 1.2.272
+        version: 1.2.274
       fastify-type-provider-zod2:
         specifier: ^1.0.0
         version: 1.0.44
@@ -2495,8 +2495,8 @@ packages:
   fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  fastify-auth-prisma@1.2.272:
-    resolution: {integrity: sha512-sUGJWVbBCDoffqjERUW7hixL6XP4LFbs87xHBp4eU4NIjOi9hVCa54ItOnj3bfBjdiUiK4d2rkjUtA7PN7ox3w==}
+  fastify-auth-prisma@1.2.274:
+    resolution: {integrity: sha512-azA2NU0mkzLJ7DH/Eone2Ey6BqHEBUo2rBeC4v9YQGyGziihiTWb6S+m0OCZ3T4zAGQxrJpt5ASsYRfQPz/UfQ==}
     engines: {node: '>=10'}
 
   fastify-plugin@3.0.1:
@@ -5528,7 +5528,7 @@ snapshots:
   '@commitlint/is-ignored@19.2.2':
     dependencies:
       '@commitlint/types': 19.0.3
-      semver: 7.6.1
+      semver: 7.6.2
 
   '@commitlint/lint@19.2.2':
     dependencies:
@@ -8001,7 +8001,7 @@ snapshots:
 
   fast-uri@2.3.0: {}
 
-  fastify-auth-prisma@1.2.272:
+  fastify-auth-prisma@1.2.274:
     dependencies:
       fastify: 4.27.0
       fastify-plugin: 4.5.1
@@ -8946,7 +8946,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.6.1
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
