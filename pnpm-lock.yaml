@@ -151,7 +151,7 @@ importers:
         version: 3.23.8
       zod-validation-error:
         specifier: ^3.0.1
-        version: 3.2.0(zod@3.23.8)
+        version: 3.3.0(zod@3.23.8)
     optionalDependencies:
       bufferutil:
         specifier: ^4.0.8
@@ -5238,8 +5238,8 @@ packages:
     peerDependencies:
       zod: ^3.23.3
 
-  zod-validation-error@3.2.0:
-    resolution: {integrity: sha512-cYlPR6zuyrgmu2wRTdumEAJGuwI7eHVHGT+VyneAQxmRAKtGRL1/7pjz4wfLhz4J05f5qoSZc3rGacswgyTjjw==}
+  zod-validation-error@3.3.0:
+    resolution: {integrity: sha512-Syib9oumw1NTqEv4LT0e6U83Td9aVRk9iTXPUQr1otyV1PuXQKOvOwhMNqZIq5hluzHP2pMgnOmHEo7kPdI2mw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       zod: ^3.18.0
@@ -8030,7 +8030,7 @@ snapshots:
       fastify: 4.27.0
       zod: 3.23.8
       zod-to-json-schema: 3.23.0(zod@3.23.8)
-      zod-validation-error: 3.2.0(zod@3.23.8)
+      zod-validation-error: 3.3.0(zod@3.23.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -11122,7 +11122,7 @@ snapshots:
     dependencies:
       zod: 3.23.8
 
-  zod-validation-error@3.2.0(zod@3.23.8):
+  zod-validation-error@3.3.0(zod@3.23.8):
     dependencies:
       zod: 3.23.8
 
