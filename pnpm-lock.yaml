@@ -55,7 +55,7 @@ importers:
         version: 0.40.1
       bullmq:
         specifier: ^5.1.10
-        version: 5.7.8
+        version: 5.7.9
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
@@ -1605,8 +1605,8 @@ packages:
     resolution: {integrity: sha512-8f9ZJCUXyT1M35Jx7MkBgmBMo3oHTTBIPLiY9xyL0pl3T5RwcPEY8cUHr5LBNfu/fk6c2T4DJZuVM/8ZZT2D2A==}
     engines: {node: '>=10.0.0'}
 
-  bullmq@5.7.8:
-    resolution: {integrity: sha512-F/Haeu6AVHkFrfeaU/kLOjhfrH6x3CaKAZlQQ+76fa8l3kfI9oaUHeFMW+1mYVz0NtYPF7PNTWFq4ylAHYcCgA==}
+  bullmq@5.7.9:
+    resolution: {integrity: sha512-ZTDIT6gM5XXeqBKqW6/Sbq1tdEzx0HXpx29ffejMcIXiG0wVBlOAEyp5dVHnjRyB2Nz9pZlQmhmJC9a1l+o0ug==}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
@@ -3763,8 +3763,8 @@ packages:
     resolution: {integrity: sha512-SdzXp4kD/Qf8agZ9+iTu6eql0m3kWm1A2y1hkpTeVNENutaB0BwHlSvAIaMxwntmRUAUjon2V4L8Z/njd0Ct8A==}
     hasBin: true
 
-  msgpackr@1.10.1:
-    resolution: {integrity: sha512-r5VRLv9qouXuLiIBrLpl2d5ZvPt8svdQTl5/vMvE4nzDMyEX4sgW5yWhuBBj5UmgwOTWj8CIdSXn5sAfsHAWIQ==}
+  msgpackr@1.10.2:
+    resolution: {integrity: sha512-L60rsPynBvNE+8BWipKKZ9jHcSGbtyJYIwjRq0VrIvQ08cRjntGXJYW/tmciZ2IHWIY8WEW32Qa2xbh5+SKBZA==}
 
   mylas@2.1.13:
     resolution: {integrity: sha512-+MrqnJRtxdF+xngFfUUkIMQrUUL0KsxbADUkn23Z/4ibGg192Q+z+CQyiYwvWTsYjJygmMR8+w3ZDa98Zh6ESg==}
@@ -6990,13 +6990,13 @@ snapshots:
   buildcheck@0.0.6:
     optional: true
 
-  bullmq@5.7.8:
+  bullmq@5.7.9:
     dependencies:
       cron-parser: 4.9.0
       ioredis: 5.4.1
-      msgpackr: 1.10.1
+      msgpackr: 1.10.2
       node-abort-controller: 3.1.1
-      semver: 7.6.0
+      semver: 7.6.2
       tslib: 2.6.2
       uuid: 9.0.1
     transitivePeerDependencies:
@@ -9623,7 +9623,7 @@ snapshots:
       '@msgpackr-extract/msgpackr-extract-win32-x64': 3.0.2
     optional: true
 
-  msgpackr@1.10.1:
+  msgpackr@1.10.2:
     optionalDependencies:
       msgpackr-extract: 3.0.2
 
@@ -10365,7 +10365,7 @@ snapshots:
       moment-timezone: 0.5.45
       pg-connection-string: 2.6.4
       retry-as-promised: 7.0.4
-      semver: 7.6.0
+      semver: 7.6.2
       sequelize-pool: 7.1.0
       toposort-class: 1.0.1
       uuid: 8.3.2
@@ -10644,7 +10644,7 @@ snapshots:
       methods: 1.1.2
       mime: 2.6.0
       qs: 6.12.1
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
