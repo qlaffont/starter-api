@@ -25,7 +25,7 @@ importers:
         version: 7.5.1
       '@forestadmin/agent':
         specifier: ^1.37.2
-        version: 1.40.0
+        version: 1.40.1
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
         version: 1.14.1(pg@8.11.5)
@@ -648,8 +648,8 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@forestadmin/agent@1.40.0':
-    resolution: {integrity: sha512-TqwNdhAlWVjHo4jZSNM+O5e5G3kMT9BDBpT/SrWvlvLmvkoJ2kSwJpYfv7utdjhA6QNWzmatlqJqrxipC8nTSw==}
+  '@forestadmin/agent@1.40.1':
+    resolution: {integrity: sha512-r0SCa9vkbhOaksG83jCwLLnty/no1Oma8JDgabFs01bwdqf+ftxJBfescneiC5y22/W48H0vxEzLHCQng99KTA==}
 
   '@forestadmin/datasource-customizer@1.44.3':
     resolution: {integrity: sha512-9oMbEdwUbPiD7ZxZXFuDoAw5FX7RYXy+nqI6XPkyBaXsj6GLG3VOBZaosaA1C+katVva+yevrOCAIgZP2zzl6w==}
@@ -665,8 +665,8 @@ packages:
   '@forestadmin/datasource-toolkit@1.33.0':
     resolution: {integrity: sha512-sDpWfANpLNaSz4qP0qDs9gQk0hsNsBlJqeKb0Lw2yvkw0jRPceF+x2BvkkNyNRFN/EM9RRdDvKeppq9gDVibvA==}
 
-  '@forestadmin/forestadmin-client@1.27.1':
-    resolution: {integrity: sha512-zsWg5a5QG2EspzogxppjfmMcAfOiBwL5pXkgCvr7uDvSMm4SQAslkk62u8n9z4atBleS7agl+J8nMCAx4qcrCQ==}
+  '@forestadmin/forestadmin-client@1.27.2':
+    resolution: {integrity: sha512-pbtcAp2FzycZTPGm8XkvEWkjAe5+yYkDCq6Z1zUYDwI5HxGK58G0T1DIHA1+50+655vkxo7iW44Q3o4sOIozSg==}
 
   '@gquittet/graceful-server@4.0.9':
     resolution: {integrity: sha512-v0s6HHR30ZaX8bskkGT5vTwpxk6ltFYiWn+h+epMo5RxjbbBjkzVNvG7DSdDogqrWGxwhjoYLzUAj5RE1eydUg==}
@@ -5768,13 +5768,13 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@forestadmin/agent@1.40.0':
+  '@forestadmin/agent@1.40.1':
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
       '@forestadmin/datasource-customizer': 1.44.3
       '@forestadmin/datasource-toolkit': 1.33.0
-      '@forestadmin/forestadmin-client': 1.27.1
+      '@forestadmin/forestadmin-client': 1.27.2
       '@koa/cors': 5.0.0
       '@koa/router': 12.0.1
       '@types/koa__router': 12.0.4
@@ -5833,7 +5833,7 @@ snapshots:
       object-hash: 3.0.0
       uuid: 9.0.1
 
-  '@forestadmin/forestadmin-client@1.27.1':
+  '@forestadmin/forestadmin-client@1.27.2':
     dependencies:
       eventsource: 2.0.2
       json-api-serializer: 2.6.6
