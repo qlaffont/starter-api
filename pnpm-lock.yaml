@@ -124,7 +124,7 @@ importers:
         version: 0.14.1
       sendim:
         specifier: ^1.2.74
-        version: 1.2.119
+        version: 1.2.120
       socket.io:
         specifier: ^4.7.4
         version: 4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -2928,6 +2928,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -4503,8 +4504,8 @@ packages:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
 
-  sendim@1.2.119:
-    resolution: {integrity: sha512-eoTfgDj0kVFgqHWF2BmxAO/aU1KCf6ddzamHjvphZ/7qMn45yQuNQ+q/kI9uK1gAw9d4q9tYHMNWerU6tJz4XA==}
+  sendim@1.2.120:
+    resolution: {integrity: sha512-77JL28svwaLxXMEEIdZicxZ4M1C6Qv62toogSuSIklAzODCLWDFc8fBBzrof9SjQVxo+loZ22IIuA24S4nIbvg==}
     engines: {node: '>=10'}
 
   sequelize-pool@7.1.0:
@@ -10386,7 +10387,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  sendim@1.2.119:
+  sendim@1.2.120:
     dependencies:
       pino: 9.1.0
 
