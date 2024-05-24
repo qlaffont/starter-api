@@ -164,8 +164,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@bull-board/api':
-        specifier: 5.17.1
-        version: 5.17.1(@bull-board/ui@5.17.1)
+        specifier: 5.18.3
+        version: 5.18.3(@bull-board/ui@5.17.1)
       '@bull-board/fastify':
         specifier: 5.17.1
         version: 5.17.1
@@ -473,6 +473,11 @@ packages:
     resolution: {integrity: sha512-KQaH3z2YJxN2h+Kh4ZJ341NNEFwrsNeZAu9FtQX8h4G0nkSw3FSlgWDO6UrN0b448+co/gWTT6qZz0st2fFmPg==}
     peerDependencies:
       '@bull-board/ui': 5.17.1
+
+  '@bull-board/api@5.18.3':
+    resolution: {integrity: sha512-TuP/au5qWzW2RCBLFovpPWGJuC0wHDp5wvcTRSedseH7gLtUUBqYAFQbZR0l3Asbnrqnijoey87/1LAsGSAYAQ==}
+    peerDependencies:
+      '@bull-board/ui': 5.18.3
 
   '@bull-board/fastify@5.17.1':
     resolution: {integrity: sha512-4Rmedd0hAbwBCYGOEGyf+PeHgQ93EjG0yawa/OGyCy/1mKY3vz0E8Rcjm0s2LpiviR8kYlK8EiqhDFsoYpVhNA==}
@@ -5496,6 +5501,11 @@ snapshots:
   '@braintree/sanitize-url@6.0.4': {}
 
   '@bull-board/api@5.17.1(@bull-board/ui@5.17.1)':
+    dependencies:
+      '@bull-board/ui': 5.17.1
+      redis-info: 3.1.0
+
+  '@bull-board/api@5.18.3(@bull-board/ui@5.17.1)':
     dependencies:
       '@bull-board/ui': 5.17.1
       redis-info: 3.1.0
