@@ -165,10 +165,10 @@ importers:
         version: 1.1.0
       '@bull-board/api':
         specifier: 5.18.3
-        version: 5.18.3(@bull-board/ui@5.17.1)
+        version: 5.18.3(@bull-board/ui@5.18.3)
       '@bull-board/fastify':
-        specifier: 5.17.1
-        version: 5.17.1
+        specifier: 5.18.3
+        version: 5.18.3
       '@commitlint/cli':
         specifier: 19.3.0
         version: 19.3.0(@types/node@20.12.12)(typescript@5.4.5)
@@ -469,21 +469,16 @@ packages:
   '@braintree/sanitize-url@6.0.4':
     resolution: {integrity: sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==}
 
-  '@bull-board/api@5.17.1':
-    resolution: {integrity: sha512-KQaH3z2YJxN2h+Kh4ZJ341NNEFwrsNeZAu9FtQX8h4G0nkSw3FSlgWDO6UrN0b448+co/gWTT6qZz0st2fFmPg==}
-    peerDependencies:
-      '@bull-board/ui': 5.17.1
-
   '@bull-board/api@5.18.3':
     resolution: {integrity: sha512-TuP/au5qWzW2RCBLFovpPWGJuC0wHDp5wvcTRSedseH7gLtUUBqYAFQbZR0l3Asbnrqnijoey87/1LAsGSAYAQ==}
     peerDependencies:
       '@bull-board/ui': 5.18.3
 
-  '@bull-board/fastify@5.17.1':
-    resolution: {integrity: sha512-4Rmedd0hAbwBCYGOEGyf+PeHgQ93EjG0yawa/OGyCy/1mKY3vz0E8Rcjm0s2LpiviR8kYlK8EiqhDFsoYpVhNA==}
+  '@bull-board/fastify@5.18.3':
+    resolution: {integrity: sha512-ImcLPaeDhHSI5yNZETlRWHbB17gFxdohQsgHUuyxZFnskzn+PprCWhxdhynupNFLXE4QKWAqw/UK3akMykwXjg==}
 
-  '@bull-board/ui@5.17.1':
-    resolution: {integrity: sha512-/BO4C454w7ar5ZaHfcThEY2A2SYD9YkQkBizq8o9sjglVctpnnnh37YY2iOVRZCZFXMKIe7t05Kd9/9p3IPvSw==}
+  '@bull-board/ui@5.18.3':
+    resolution: {integrity: sha512-cy46YzbcHxDdR24462ZLI74R4N6WVRNSZKqk3T900kKt2uR2QbAiwlOpCCdxciGWFLe4Avk1J/Bf7ygB27a2kw==}
 
   '@commitlint/cli@19.3.0':
     resolution: {integrity: sha512-LgYWOwuDR7BSTQ9OLZ12m7F/qhNY+NpAyPBgo4YNMkACE7lGuUnuQq1yi9hz1KA4+3VqpOYl8H1rY/LYK43v7g==}
@@ -2222,8 +2217,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  ejs@3.1.9:
-    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
+  ejs@3.1.10:
+    resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
     hasBin: true
 
@@ -5500,27 +5495,22 @@ snapshots:
 
   '@braintree/sanitize-url@6.0.4': {}
 
-  '@bull-board/api@5.17.1(@bull-board/ui@5.17.1)':
+  '@bull-board/api@5.18.3(@bull-board/ui@5.18.3)':
     dependencies:
-      '@bull-board/ui': 5.17.1
+      '@bull-board/ui': 5.18.3
       redis-info: 3.1.0
 
-  '@bull-board/api@5.18.3(@bull-board/ui@5.17.1)':
+  '@bull-board/fastify@5.18.3':
     dependencies:
-      '@bull-board/ui': 5.17.1
-      redis-info: 3.1.0
-
-  '@bull-board/fastify@5.17.1':
-    dependencies:
-      '@bull-board/api': 5.17.1(@bull-board/ui@5.17.1)
-      '@bull-board/ui': 5.17.1
+      '@bull-board/api': 5.18.3(@bull-board/ui@5.18.3)
+      '@bull-board/ui': 5.18.3
       '@fastify/static': 6.12.0
       '@fastify/view': 8.2.0
-      ejs: 3.1.9
+      ejs: 3.1.10
 
-  '@bull-board/ui@5.17.1':
+  '@bull-board/ui@5.18.3':
     dependencies:
-      '@bull-board/api': 5.17.1(@bull-board/ui@5.17.1)
+      '@bull-board/api': 5.18.3(@bull-board/ui@5.18.3)
 
   '@commitlint/cli@19.3.0(@types/node@20.12.12)(typescript@5.4.5)':
     dependencies:
@@ -7628,7 +7618,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  ejs@3.1.9:
+  ejs@3.1.10:
     dependencies:
       jake: 10.8.7
 
