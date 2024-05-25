@@ -73,7 +73,7 @@ importers:
         version: 4.27.0
       fastify-auth-prisma:
         specifier: ^1.2.14
-        version: 1.2.308
+        version: 1.2.309
       fastify-type-provider-zod2:
         specifier: ^1.0.0
         version: 1.0.52
@@ -2496,8 +2496,8 @@ packages:
   fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
 
-  fastify-auth-prisma@1.2.308:
-    resolution: {integrity: sha512-KhRhzpEuf9pESteko0NFAP7m/5PINfLxlwlMdLm9ofIgScFi6yswyObs0p4ToYYw+901D0zAlFTovh037q71ow==}
+  fastify-auth-prisma@1.2.309:
+    resolution: {integrity: sha512-JnY4cJroA+XaYnt8NToZ+HptpPbW7LBl4RoGnMKorkodTIsfpoxMNmLiyUZX07KEfJsf6/Dqbpp1E7YWw3NOpg==}
     engines: {node: '>=10'}
 
   fastify-plugin@3.0.1:
@@ -2719,10 +2719,12 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -4436,6 +4438,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   robust-predicates@3.0.2:
@@ -8022,7 +8025,7 @@ snapshots:
 
   fast-uri@2.3.0: {}
 
-  fastify-auth-prisma@1.2.308:
+  fastify-auth-prisma@1.2.309:
     dependencies:
       fastify: 4.27.0
       fastify-plugin: 4.5.1
