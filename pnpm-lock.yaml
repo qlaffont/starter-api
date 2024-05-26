@@ -30,8 +30,8 @@ importers:
         specifier: ^1.8.0
         version: 1.14.1(pg@8.11.5)
       '@gquittet/graceful-server':
-        specifier: ^4.0.8
-        version: 4.0.9
+        specifier: ^5.0.0
+        version: 5.0.2
       '@graphql-tools/schema':
         specifier: ^10.0.2
         version: 10.0.3(graphql@16.8.1)
@@ -668,9 +668,9 @@ packages:
   '@forestadmin/forestadmin-client@1.27.2':
     resolution: {integrity: sha512-pbtcAp2FzycZTPGm8XkvEWkjAe5+yYkDCq6Z1zUYDwI5HxGK58G0T1DIHA1+50+655vkxo7iW44Q3o4sOIozSg==}
 
-  '@gquittet/graceful-server@4.0.9':
-    resolution: {integrity: sha512-v0s6HHR30ZaX8bskkGT5vTwpxk6ltFYiWn+h+epMo5RxjbbBjkzVNvG7DSdDogqrWGxwhjoYLzUAj5RE1eydUg==}
-    engines: {node: '>=14.0.0'}
+  '@gquittet/graceful-server@5.0.2':
+    resolution: {integrity: sha512-wH5VKX6H28hzwR+JBPCEDpMYtmI8PuklohoVtBbpD++ZlgC2uW5YTQ78j+Fwql+GPI5hIymGZFf8mP64+M1NRg==}
+    engines: {node: '>=18.0.0'}
 
   '@graphql-tools/merge@9.0.3':
     resolution: {integrity: sha512-FeKv9lKLMwqDu0pQjPpF59GY3HReUkWXKsMIuMuJQOKh9BETu7zPEFUELvcw8w+lwZkl4ileJsHXC9+AnsT2Lw==}
@@ -5873,7 +5873,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gquittet/graceful-server@4.0.9':
+  '@gquittet/graceful-server@5.0.2':
     optionalDependencies:
       fsevents: 2.3.3
 

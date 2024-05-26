@@ -86,7 +86,7 @@
     "@fastify/secure-session": "^7.1.0",
     "@forestadmin/agent": "^1.37.2",
     "@forestadmin/datasource-sql": "^1.8.0",
-    "@gquittet/graceful-server": "^4.0.8",
+    "@gquittet/graceful-server": "^5.0.0",
     "@graphql-tools/schema": "^10.0.2",
     "@graphql-tools/utils": "^10.0.13",
     "@prisma/client": "^5.9.1",
