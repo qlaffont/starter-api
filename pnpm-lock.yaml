@@ -171,7 +171,7 @@ importers:
         version: 5.19.2
       '@commitlint/cli':
         specifier: 19.3.0
-        version: 19.3.0(@types/node@20.14.1)(typescript@5.4.5)
+        version: 19.3.0(@types/node@20.14.2)(typescript@5.4.5)
       '@commitlint/config-conventional':
         specifier: 19.2.2
         version: 19.2.2
@@ -197,8 +197,8 @@ importers:
         specifier: ^29.5.12
         version: 29.5.12
       '@types/node':
-        specifier: 20.14.1
-        version: 20.14.1
+        specifier: 20.14.2
+        version: 20.14.2
       '@typescript-eslint/eslint-plugin':
         specifier: 7.11.0
         version: 7.11.0(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -240,7 +240,7 @@ importers:
         version: 9.0.11
       jest:
         specifier: ^29.7.0
-        version: 29.7.0(@types/node@20.14.1)
+        version: 29.7.0(@types/node@20.14.2)
       lint-staged:
         specifier: 15.2.5
         version: 15.2.5
@@ -261,13 +261,13 @@ importers:
         version: 4.2.0
       ts-jest:
         specifier: ^29.1.2
-        version: 29.1.4(@babel/core@7.23.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.23.9))(jest@29.7.0(@types/node@20.14.1))(typescript@5.4.5)
+        version: 29.1.4(@babel/core@7.23.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.23.9))(jest@29.7.0(@types/node@20.14.2))(typescript@5.4.5)
       tsc-alias:
         specifier: ^1.8.8
         version: 1.8.10
       typegraphql-prisma:
         specifier: 0.27.2
-        version: 0.27.2(@prisma/client@5.14.0(prisma@5.14.0))(@types/graphql-fields@1.3.9)(@types/node@20.14.1)(graphql-fields@2.0.3)(graphql-scalars@1.23.0(graphql@16.8.1))(prisma@5.14.0)(tslib@2.6.2)(type-graphql@2.0.0-rc.1(class-validator@0.14.1)(graphql-scalars@1.23.0(graphql@16.8.1))(graphql@16.8.1))
+        version: 0.27.2(@prisma/client@5.14.0(prisma@5.14.0))(@types/graphql-fields@1.3.9)(@types/node@20.14.2)(graphql-fields@2.0.3)(graphql-scalars@1.23.0(graphql@16.8.1))(prisma@5.14.0)(tslib@2.6.2)(type-graphql@2.0.0-rc.1(class-validator@0.14.1)(graphql-scalars@1.23.0(graphql@16.8.1))(graphql@16.8.1))
       types-fastify-socket.io:
         specifier: 0.0.1
         version: 0.0.1
@@ -1212,8 +1212,8 @@ packages:
   '@types/node@18.19.31':
     resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
 
-  '@types/node@20.14.1':
-    resolution: {integrity: sha512-T2MzSGEu+ysB/FkWfqmhV3PLyQlowdptmmgD20C6QxsS8Fmv5SjpZ1ayXaEC0S21/h5UJ9iA6W/5vSNU5l00OA==}
+  '@types/node@20.14.2':
+    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
 
   '@types/pg@8.11.0':
     resolution: {integrity: sha512-sDAlRiBNthGjNFfvt0k6mtotoVYVQ63pA8R4EMWka7crawSR60waVYR0HAgmPRs/e2YaeJTD/43OoZ3PFw80pw==}
@@ -5525,11 +5525,11 @@ snapshots:
     dependencies:
       '@bull-board/api': 5.19.2(@bull-board/ui@5.19.2)
 
-  '@commitlint/cli@19.3.0(@types/node@20.14.1)(typescript@5.4.5)':
+  '@commitlint/cli@19.3.0(@types/node@20.14.2)(typescript@5.4.5)':
     dependencies:
       '@commitlint/format': 19.3.0
       '@commitlint/lint': 19.2.2
-      '@commitlint/load': 19.2.0(@types/node@20.14.1)(typescript@5.4.5)
+      '@commitlint/load': 19.2.0(@types/node@20.14.2)(typescript@5.4.5)
       '@commitlint/read': 19.2.1
       '@commitlint/types': 19.0.3
       execa: 8.0.1
@@ -5576,7 +5576,7 @@ snapshots:
       '@commitlint/rules': 19.0.3
       '@commitlint/types': 19.0.3
 
-  '@commitlint/load@19.2.0(@types/node@20.14.1)(typescript@5.4.5)':
+  '@commitlint/load@19.2.0(@types/node@20.14.2)(typescript@5.4.5)':
     dependencies:
       '@commitlint/config-validator': 19.0.3
       '@commitlint/execute-rule': 19.0.0
@@ -5584,7 +5584,7 @@ snapshots:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.4.5)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.14.1)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.14.2)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -5960,7 +5960,7 @@ snapshots:
   '@jest/console@29.7.0':
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       jest-message-util: 29.7.0
       jest-util: 29.7.0
@@ -5973,14 +5973,14 @@ snapshots:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       ci-info: 3.9.0
       exit: 0.1.2
       graceful-fs: 4.2.11
       jest-changed-files: 29.7.0
-      jest-config: 29.7.0(@types/node@20.14.1)
+      jest-config: 29.7.0(@types/node@20.14.2)
       jest-haste-map: 29.7.0
       jest-message-util: 29.7.0
       jest-regex-util: 29.6.3
@@ -6005,7 +6005,7 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       jest-mock: 29.7.0
 
   '@jest/expect-utils@29.7.0':
@@ -6023,7 +6023,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       jest-message-util: 29.7.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
@@ -6045,7 +6045,7 @@ snapshots:
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.22
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -6115,7 +6115,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
@@ -6418,7 +6418,7 @@ snapshots:
 
   '@types/accepts@1.3.7':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -6444,17 +6444,17 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/content-disposition@0.5.8': {}
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/cookie@0.4.1': {}
 
@@ -6463,11 +6463,11 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/express': 4.17.21
       '@types/keygrip': 1.0.6
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/cors@2.8.17':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/d3-scale-chromatic@3.0.3': {}
 
@@ -6483,7 +6483,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.0':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -6497,7 +6497,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/graphql-fields@1.3.9':
     dependencies:
@@ -6539,7 +6539,7 @@ snapshots:
       '@types/http-errors': 2.0.4
       '@types/keygrip': 1.0.6
       '@types/koa-compose': 3.2.8
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/koa__router@12.0.4':
     dependencies:
@@ -6561,13 +6561,13 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.14.1':
+  '@types/node@20.14.2':
     dependencies:
       undici-types: 5.26.5
 
   '@types/pg@8.11.0':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       pg-protocol: 1.6.1
       pg-types: 4.0.2
 
@@ -6580,12 +6580,12 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       '@types/send': 0.17.4
 
   '@types/ssh2@1.15.0':
@@ -6606,7 +6606,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.11.0(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
@@ -7265,9 +7265,9 @@ snapshots:
     dependencies:
       layout-base: 1.0.2
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@20.14.1)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@20.14.2)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       cosmiconfig: 9.0.0(typescript@5.4.5)
       jiti: 1.21.0
       typescript: 5.4.5
@@ -7294,13 +7294,13 @@ snapshots:
       nan: 2.19.0
     optional: true
 
-  create-jest@29.7.0(@types/node@20.14.1):
+  create-jest@29.7.0(@types/node@20.14.2):
     dependencies:
       '@jest/types': 29.6.3
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.14.1)
+      jest-config: 29.7.0(@types/node@20.14.2)
       jest-util: 29.7.0
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -7670,7 +7670,7 @@ snapshots:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.17
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -8753,7 +8753,7 @@ snapshots:
       '@jest/expect': 29.7.0
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       co: 4.6.0
       dedent: 1.5.1
@@ -8773,16 +8773,16 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  jest-cli@29.7.0(@types/node@20.14.1):
+  jest-cli@29.7.0(@types/node@20.14.2):
     dependencies:
       '@jest/core': 29.7.0
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@20.14.1)
+      create-jest: 29.7.0(@types/node@20.14.2)
       exit: 0.1.2
       import-local: 3.1.0
-      jest-config: 29.7.0(@types/node@20.14.1)
+      jest-config: 29.7.0(@types/node@20.14.2)
       jest-util: 29.7.0
       jest-validate: 29.7.0
       yargs: 17.7.2
@@ -8792,7 +8792,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-config@29.7.0(@types/node@20.14.1):
+  jest-config@29.7.0(@types/node@20.14.2):
     dependencies:
       '@babel/core': 7.23.9
       '@jest/test-sequencer': 29.7.0
@@ -8817,7 +8817,7 @@ snapshots:
       slash: 3.0.0
       strip-json-comments: 3.1.1
     optionalDependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -8846,7 +8846,7 @@ snapshots:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -8856,7 +8856,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -8895,7 +8895,7 @@ snapshots:
   jest-mock@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       jest-util: 29.7.0
 
   jest-pnp-resolver@1.2.3(jest-resolve@29.7.0):
@@ -8930,7 +8930,7 @@ snapshots:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       emittery: 0.13.1
       graceful-fs: 4.2.11
@@ -8958,7 +8958,7 @@ snapshots:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       cjs-module-lexer: 1.2.3
       collect-v8-coverage: 1.0.2
@@ -9004,7 +9004,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -9023,7 +9023,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.13.1
@@ -9032,17 +9032,17 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@29.7.0(@types/node@20.14.1):
+  jest@29.7.0(@types/node@20.14.2):
     dependencies:
       '@jest/core': 29.7.0
       '@jest/types': 29.6.3
       import-local: 3.1.0
-      jest-cli: 29.7.0(@types/node@20.14.1)
+      jest-cli: 29.7.0(@types/node@20.14.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -10794,11 +10794,11 @@ snapshots:
 
   ts-dedent@2.2.0: {}
 
-  ts-jest@29.1.4(@babel/core@7.23.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.23.9))(jest@29.7.0(@types/node@20.14.1))(typescript@5.4.5):
+  ts-jest@29.1.4(@babel/core@7.23.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.23.9))(jest@29.7.0(@types/node@20.14.2))(typescript@5.4.5):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 29.7.0(@types/node@20.14.1)
+      jest: 29.7.0(@types/node@20.14.2)
       jest-util: 29.7.0
       json5: 2.2.3
       lodash.memoize: 4.1.2
@@ -10858,7 +10858,7 @@ snapshots:
   type-graphql@2.0.0-rc.1(class-validator@0.14.1)(graphql-scalars@1.23.0(graphql@16.8.1))(graphql@16.8.1):
     dependencies:
       '@graphql-yoga/subscription': 5.0.0
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       '@types/semver': 7.5.8
       graphql: 16.8.1
       graphql-query-complexity: 0.12.0(graphql@16.8.1)
@@ -10900,13 +10900,13 @@ snapshots:
       for-each: 0.3.3
       is-typed-array: 1.1.13
 
-  typegraphql-prisma@0.27.2(@prisma/client@5.14.0(prisma@5.14.0))(@types/graphql-fields@1.3.9)(@types/node@20.14.1)(graphql-fields@2.0.3)(graphql-scalars@1.23.0(graphql@16.8.1))(prisma@5.14.0)(tslib@2.6.2)(type-graphql@2.0.0-rc.1(class-validator@0.14.1)(graphql-scalars@1.23.0(graphql@16.8.1))(graphql@16.8.1)):
+  typegraphql-prisma@0.27.2(@prisma/client@5.14.0(prisma@5.14.0))(@types/graphql-fields@1.3.9)(@types/node@20.14.2)(graphql-fields@2.0.3)(graphql-scalars@1.23.0(graphql@16.8.1))(prisma@5.14.0)(tslib@2.6.2)(type-graphql@2.0.0-rc.1(class-validator@0.14.1)(graphql-scalars@1.23.0(graphql@16.8.1))(graphql@16.8.1)):
     dependencies:
       '@prisma/client': 5.14.0(prisma@5.14.0)
       '@prisma/generator-helper': 5.9.1
       '@prisma/internals': 5.9.1
       '@types/graphql-fields': 1.3.9
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
       graphql-fields: 2.0.3
       graphql-scalars: 1.23.0(graphql@16.8.1)
       pluralize: 8.0.0
@@ -11073,7 +11073,7 @@ snapshots:
 
   wkx@0.5.0:
     dependencies:
-      '@types/node': 20.14.1
+      '@types/node': 20.14.2
 
   wrap-ansi@7.0.0:
     dependencies:
