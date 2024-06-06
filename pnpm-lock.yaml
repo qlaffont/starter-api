@@ -28,7 +28,7 @@ importers:
         version: 1.40.1
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
-        version: 1.14.1(pg@8.11.5)
+        version: 1.14.1(pg@8.12.0)
       '@gquittet/graceful-server':
         specifier: ^4.0.8
         version: 4.0.9
@@ -100,7 +100,7 @@ importers:
         version: 1.0.244
       pg:
         specifier: ^8.11.3
-        version: 8.11.5
+        version: 8.12.0
       pino:
         specifier: ^9.0.0
         version: 9.1.0
@@ -4104,8 +4104,8 @@ packages:
     resolution: {integrity: sha512-cRL3JpS3lKMGsKaWndugWQoLOCoP+Cic8oseVcbr0qhPzYD5DWXK+RZ9LY9wxRf7RQia4SCwQlXk0q6FCPrVng==}
     engines: {node: '>=10'}
 
-  pg@8.11.5:
-    resolution: {integrity: sha512-jqgNHSKL5cbDjFlHyYsCXmQDrfIX/3RsNwYqpd4N0Kt8niLuNoRNH+aazv6cOd43gPh9Y4DjQCtb+X0MH0Hvnw==}
+  pg@8.12.0:
+    resolution: {integrity: sha512-A+LHUSnwnxrnL/tZ+OLfqR1SxLN3c/pgDztZ47Rpbsd4jUytsTtwQo/TLPRzPJMp/1pbhYVhH9cuSZLAajNfjQ==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
       pg-native: '>=3.0.1'
@@ -5839,18 +5839,18 @@ snapshots:
       object-hash: 3.0.0
       uuid: 9.0.1
 
-  '@forestadmin/datasource-sequelize@1.8.2(sequelize@6.37.3(pg@8.11.5))':
+  '@forestadmin/datasource-sequelize@1.8.2(sequelize@6.37.3(pg@8.12.0))':
     dependencies:
       '@forestadmin/datasource-toolkit': 1.33.0
-      sequelize: 6.37.3(pg@8.11.5)
+      sequelize: 6.37.3(pg@8.12.0)
 
-  '@forestadmin/datasource-sql@1.14.1(pg@8.11.5)':
+  '@forestadmin/datasource-sql@1.14.1(pg@8.12.0)':
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.8.2(sequelize@6.37.3(pg@8.11.5))
+      '@forestadmin/datasource-sequelize': 1.8.2(sequelize@6.37.3(pg@8.12.0))
       '@forestadmin/datasource-toolkit': 1.33.0
       '@types/ssh2': 1.15.0
       pluralize: 8.0.0
-      sequelize: 6.37.3(pg@8.11.5)
+      sequelize: 6.37.3(pg@8.12.0)
       socks: 2.8.3
       ssh2: 1.15.0
     transitivePeerDependencies:
@@ -6332,7 +6332,7 @@ snapshots:
       '@msgpack/msgpack': 2.8.0
       '@types/pg': 8.11.0
       debug: 4.3.4
-      pg: 8.11.5
+      pg: 8.12.0
       socket.io-adapter: 2.5.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)
     transitivePeerDependencies:
       - pg-native
@@ -9952,9 +9952,9 @@ snapshots:
 
   pg-numeric@1.0.2: {}
 
-  pg-pool@3.6.2(pg@8.11.5):
+  pg-pool@3.6.2(pg@8.12.0):
     dependencies:
-      pg: 8.11.5
+      pg: 8.12.0
 
   pg-protocol@1.6.1: {}
 
@@ -9976,10 +9976,10 @@ snapshots:
       postgres-interval: 3.0.0
       postgres-range: 1.1.4
 
-  pg@8.11.5:
+  pg@8.12.0:
     dependencies:
       pg-connection-string: 2.6.4
-      pg-pool: 3.6.2(pg@8.11.5)
+      pg-pool: 3.6.2(pg@8.12.0)
       pg-protocol: 1.6.1
       pg-types: 2.2.0
       pgpass: 1.0.5
@@ -10418,7 +10418,7 @@ snapshots:
 
   sequelize-pool@7.1.0: {}
 
-  sequelize@6.37.3(pg@8.11.5):
+  sequelize@6.37.3(pg@8.12.0):
     dependencies:
       '@types/debug': 4.1.12
       '@types/validator': 13.11.9
@@ -10437,7 +10437,7 @@ snapshots:
       validator: 13.11.0
       wkx: 0.5.0
     optionalDependencies:
-      pg: 8.11.5
+      pg: 8.12.0
     transitivePeerDependencies:
       - supports-color
 
