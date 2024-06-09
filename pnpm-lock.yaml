@@ -76,7 +76,7 @@ importers:
         version: 1.2.358
       fastify-type-provider-zod2:
         specifier: ^1.0.0
-        version: 1.0.61
+        version: 1.0.62
       graphql:
         specifier: ^16.8.1
         version: 16.8.1
@@ -1371,9 +1371,6 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
-  ajv@8.15.0:
-    resolution: {integrity: sha512-15BTtQUOsSrmHCy+B4VnAiJAJxJ8IFgu6fcjFQF3jQYZ78nLSQthlFg4ehp+NLIyfvFgOlxNsjKIEhydtFPVHQ==}
-
   ajv@8.16.0:
     resolution: {integrity: sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw==}
 
@@ -2523,8 +2520,8 @@ packages:
     peerDependencies:
       fastify: 4.x.x
 
-  fastify-type-provider-zod2@1.0.61:
-    resolution: {integrity: sha512-CLfFvuVgpPn3/GOVcXhZYIR/R0fu+59P8HzeMYI5UvhxHAsttgMmeGkL9M9ijBZdbdnCYYcx1OzmRyQP+5eHGw==}
+  fastify-type-provider-zod2@1.0.62:
+    resolution: {integrity: sha512-U9Okouy9WV+K7ZkZlUiDwN2nMTliexS+qmPiGXv94s2nPks2qOYLgbzrZsB+pYX7oJx8VkIeK+uKK5ECgZwArQ==}
     engines: {node: '>=10'}
 
   fastify@4.27.0:
@@ -5674,8 +5671,8 @@ snapshots:
 
   '@fastify/ajv-compiler@3.5.0':
     dependencies:
-      ajv: 8.15.0
-      ajv-formats: 2.1.1(ajv@8.15.0)
+      ajv: 8.16.0
+      ajv-formats: 2.1.1(ajv@8.16.0)
       fast-uri: 2.3.0
 
   '@fastify/busboy@2.1.1': {}
@@ -6723,13 +6720,13 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ajv-formats@2.1.1(ajv@8.15.0):
+  ajv-formats@2.1.1(ajv@8.16.0):
     optionalDependencies:
-      ajv: 8.15.0
+      ajv: 8.16.0
 
-  ajv-formats@3.0.1(ajv@8.15.0):
+  ajv-formats@3.0.1(ajv@8.16.0):
     optionalDependencies:
-      ajv: 8.15.0
+      ajv: 8.16.0
 
   ajv@6.12.6:
     dependencies:
@@ -6737,13 +6734,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  ajv@8.15.0:
-    dependencies:
-      fast-deep-equal: 3.1.3
-      fast-uri: 2.3.0
-      json-schema-traverse: 1.0.0
-      require-from-string: 2.0.2
 
   ajv@8.16.0:
     dependencies:
@@ -8025,8 +8015,8 @@ snapshots:
   fast-json-stringify@5.15.1:
     dependencies:
       '@fastify/merge-json-schemas': 0.1.1
-      ajv: 8.15.0
-      ajv-formats: 3.0.1(ajv@8.15.0)
+      ajv: 8.16.0
+      ajv-formats: 3.0.1(ajv@8.16.0)
       fast-deep-equal: 3.1.3
       fast-uri: 2.3.0
       json-schema-ref-resolver: 1.0.1
@@ -8063,7 +8053,7 @@ snapshots:
       fastify-plugin: 4.5.1
       tslib: 2.6.3
 
-  fastify-type-provider-zod2@1.0.61:
+  fastify-type-provider-zod2@1.0.62:
     dependencies:
       ajv: 8.16.0
       fastify: 4.27.0
