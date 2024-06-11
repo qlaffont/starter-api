@@ -76,7 +76,7 @@ importers:
         version: 1.2.365
       fastify-type-provider-zod2:
         specifier: ^1.0.0
-        version: 1.0.63
+        version: 1.0.64
       graphql:
         specifier: ^16.8.1
         version: 16.8.1
@@ -2522,8 +2522,8 @@ packages:
     peerDependencies:
       fastify: 4.x.x
 
-  fastify-type-provider-zod2@1.0.63:
-    resolution: {integrity: sha512-7uYB2EFY/qnrONUtPQ67arhLRvJE9Eda7gvQPZvZfk/Th3a2XMRpQwRG/oZR2aHsTXDSnmOnmgbw1UYJKGX7Vg==}
+  fastify-type-provider-zod2@1.0.64:
+    resolution: {integrity: sha512-VZC1myRtNvHzREUE3n8DCcFYKI/PbvktgIdF/KI8Z9ISsQWfRj5a4tdec0vcQ1lvbyQLmSQLhbV7p+BY/IkoyA==}
     engines: {node: '>=10'}
 
   fastify@4.27.0:
@@ -8046,7 +8046,7 @@ snapshots:
       fastify-plugin: 4.5.1
       tslib: 2.6.3
 
-  fastify-type-provider-zod2@1.0.63:
+  fastify-type-provider-zod2@1.0.64:
     dependencies:
       ajv: 8.16.0
       fastify: 4.27.0
