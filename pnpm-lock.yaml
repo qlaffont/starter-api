@@ -16,7 +16,7 @@ importers:
         version: 8.3.1
       '@fastify/passport':
         specifier: ^2.4.0
-        version: 2.4.0
+        version: 2.5.0
       '@fastify/rate-limit':
         specifier: ^9.1.0
         version: 9.1.0
@@ -605,8 +605,8 @@ packages:
   '@fastify/fast-json-stringify-compiler@4.3.0':
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
 
-  '@fastify/flash@5.1.0':
-    resolution: {integrity: sha512-8/MwOWkky0RsSgSVRcpoY8Q+lGj+vx/QF60E0Opp+92KtLFWldr6eWUL+gpGJNmQiodsKCr0osjKIjySuUuM/g==}
+  '@fastify/flash@5.2.0':
+    resolution: {integrity: sha512-mVPXZmX8PgNHWhqasN5He/Cz68YSxXuZ732Uqd8HZ8Rjtkhk8aqNU6v54NFmxzACNI4dLtXP4yj1BogdaySyRw==}
 
   '@fastify/merge-json-schemas@0.1.1':
     resolution: {integrity: sha512-fERDVz7topgNjtXsJTTW1JKLy0rhuLRcquYqNR9rF7OcVpCa2OVW49ZPDIhaRRCaUuvVxI+N416xUoF76HNSXA==}
@@ -614,8 +614,8 @@ packages:
   '@fastify/middie@8.3.1':
     resolution: {integrity: sha512-qrQ8U3iCdjNum3+omnIvAyz21ifFx+Pp5jYW7PJJ7b9ueKTCPXsH6vEvaZQrjEZvOpTnWte+CswfBODWD0NqYQ==}
 
-  '@fastify/passport@2.4.0':
-    resolution: {integrity: sha512-ad/Bg8mi9qrB2jqx63+t6rwUr4KtJzAUj7P+OIObq8zX/LhPz8OyHg8Ou9oyevSo3vZHA8YFmZvLExP4Xwmlhw==}
+  '@fastify/passport@2.5.0':
+    resolution: {integrity: sha512-C7FFT4XMjjDFQDDDNZYfciDpCC/BcEy+PBI0RgSJTrRtrDhvDxbQXCiFV6ls5wnGFfz+fIkUYfYzRP2HPv+pBw==}
 
   '@fastify/rate-limit@9.1.0':
     resolution: {integrity: sha512-h5dZWCkuZXN0PxwqaFQLxeln8/LNwQwH9popywmDCFdKfgpi4b/HoMH1lluy6P+30CG9yzzpSpwTCIPNB9T1JA==}
@@ -5693,7 +5693,7 @@ snapshots:
     dependencies:
       fast-json-stringify: 5.15.1
 
-  '@fastify/flash@5.1.0':
+  '@fastify/flash@5.2.0':
     dependencies:
       fastify-plugin: 4.5.1
 
@@ -5708,9 +5708,9 @@ snapshots:
       path-to-regexp: 6.2.2
       reusify: 1.0.4
 
-  '@fastify/passport@2.4.0':
+  '@fastify/passport@2.5.0':
     dependencies:
-      '@fastify/flash': 5.1.0
+      '@fastify/flash': 5.2.0
       fastify-plugin: 4.5.1
 
   '@fastify/rate-limit@9.1.0':
