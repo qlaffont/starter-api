@@ -103,7 +103,7 @@ importers:
         version: 8.12.0
       pino:
         specifier: ^9.0.0
-        version: 9.1.0
+        version: 9.2.0
       prisma:
         specifier: 5.15.0
         version: 5.15.0
@@ -4137,8 +4137,8 @@ packages:
   pino-std-serializers@7.0.0:
     resolution: {integrity: sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==}
 
-  pino@9.1.0:
-    resolution: {integrity: sha512-qUcgfrlyOtjwhNLdbhoL7NR4NkHjzykAPw0V2QLFbvu/zss29h4NkRnibyFzBrNCbzCOY3WZ9hhKSwfOkNggYA==}
+  pino@9.2.0:
+    resolution: {integrity: sha512-g3/hpwfujK5a4oVbaefoJxezLzsDgLcNJeITvC6yrfwYeT9la+edCK42j5QpEQSQCZgTKapXvnQIdgZwvRaZug==}
     hasBin: true
 
   pirates@4.0.6:
@@ -4822,8 +4822,8 @@ packages:
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
-  thread-stream@3.0.0:
-    resolution: {integrity: sha512-oUIFjxaUT6knhPtWgDMc29zF1FcSl0yXpapkyrQrCGEfYA2HUZXCilUtKyYIv6HkCyqSPAMkY+EG0GbyIrNDQg==}
+  thread-stream@3.1.0:
+    resolution: {integrity: sha512-OqyPZ9u96VohAyMfJykzmivOrY2wfMSf3C5TtFJVgN+Hm6aj+voFhlK+kZEIv2FBh1X6Xp3DlnCOfEQ3B2J86A==}
 
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
@@ -8059,7 +8059,7 @@ snapshots:
       fast-json-stringify: 5.16.0
       find-my-way: 8.2.0
       light-my-request: 5.13.0
-      pino: 9.1.0
+      pino: 9.2.0
       process-warning: 3.0.0
       proxy-addr: 2.0.7
       rfdc: 1.4.1
@@ -9981,7 +9981,7 @@ snapshots:
 
   pino-std-serializers@7.0.0: {}
 
-  pino@9.1.0:
+  pino@9.2.0:
     dependencies:
       atomic-sleep: 1.0.0
       fast-redact: 3.5.0
@@ -9993,7 +9993,7 @@ snapshots:
       real-require: 0.2.0
       safe-stable-stringify: 2.4.3
       sonic-boom: 4.0.1
-      thread-stream: 3.0.0
+      thread-stream: 3.1.0
 
   pirates@4.0.6: {}
 
@@ -10365,7 +10365,7 @@ snapshots:
 
   sendim@1.2.130:
     dependencies:
-      pino: 9.1.0
+      pino: 9.2.0
 
   sequelize-pool@7.1.0: {}
 
@@ -10708,7 +10708,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  thread-stream@3.0.0:
+  thread-stream@3.1.0:
     dependencies:
       real-require: 0.2.0
 
