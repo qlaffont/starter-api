@@ -76,7 +76,7 @@ importers:
         version: 1.2.384
       fastify-type-provider-zod2:
         specifier: ^1.0.0
-        version: 1.0.67
+        version: 1.0.69
       graphql:
         specifier: ^16.8.1
         version: 16.8.2
@@ -2523,8 +2523,8 @@ packages:
     peerDependencies:
       fastify: 4.x.x
 
-  fastify-type-provider-zod2@1.0.67:
-    resolution: {integrity: sha512-s90oumtw8PndTfbILLFsNdsGYAkBU1ELzBFBBUMfOyjYojDosMiznlVKN4QSoKhSBXqrKRVSJfNDfXVShv/gzg==}
+  fastify-type-provider-zod2@1.0.69:
+    resolution: {integrity: sha512-Phd1MuTdsoj+Le/4pUUEnGzUI297JAVBA4p+vUaYJMaBM6VBWKBJhdKdazAEy7KL8JEHSAYwYeRs/IsL7X52nw==}
     engines: {node: '>=10'}
 
   fastify@4.28.0:
@@ -5253,8 +5253,8 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
 
-  zod-to-json-schema@3.23.0:
-    resolution: {integrity: sha512-az0uJ243PxsRIa2x1WmNE/pnuA05gUq/JB8Lwe1EDCCL/Fz9MgjYQ0fPlyc2Tcv6aF2ZA7WM5TWaRZVEFaAIag==}
+  zod-to-json-schema@3.23.1:
+    resolution: {integrity: sha512-oT9INvydob1XV0v1d2IadrR74rLtDInLvDFfAa1CG0Pmg/vxATk7I2gSelfj271mbzeM4Da0uuDQE/Nkj3DWNw==}
     peerDependencies:
       zod: ^3.23.3
 
@@ -8040,12 +8040,12 @@ snapshots:
       fastify-plugin: 4.5.1
       tslib: 2.6.3
 
-  fastify-type-provider-zod2@1.0.67:
+  fastify-type-provider-zod2@1.0.69:
     dependencies:
       ajv: 8.16.0
       fastify: 4.28.0
       zod: 3.23.8
-      zod-to-json-schema: 3.23.0(zod@3.23.8)
+      zod-to-json-schema: 3.23.1(zod@3.23.8)
       zod-validation-error: 3.3.0(zod@3.23.8)
 
   fastify@4.28.0:
@@ -11123,7 +11123,7 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-to-json-schema@3.23.0(zod@3.23.8):
+  zod-to-json-schema@3.23.1(zod@3.23.8):
     dependencies:
       zod: 3.23.8
 
