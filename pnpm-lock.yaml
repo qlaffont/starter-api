@@ -139,7 +139,7 @@ importers:
         version: 1.3.28
       unify-fastify:
         specifier: ^1.4.24
-        version: 1.5.193
+        version: 1.5.194
       unify-mercurius:
         specifier: ^1.3.43
         version: 1.3.194(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -5031,8 +5031,8 @@ packages:
     resolution: {integrity: sha512-vefmpo+0PsY3vh8fbkL4AD3WEdAG6MEOmix5VqspX6BqIIA0bfUkZvEhp+4hfMZqKUbicD5VRjjf4iAKIG4c/Q==}
     engines: {node: '>=10'}
 
-  unify-fastify@1.5.193:
-    resolution: {integrity: sha512-Urvs1bn2BUsbAQeaAmLp66H0lOCWgxjpEnrF6vrXZDJ6Uly0A5CakxJIqHlZ7wN4M/NDFvXtrUl+u0FLPn/22g==}
+  unify-fastify@1.5.194:
+    resolution: {integrity: sha512-SRewC8X2HU0DY6Uvt02nNFhBg+W3VjJFgEkRvkBJQYmVEzYC2ZQGJQ+jlDNtIjRaA6nTLDK6fG6HYXKpaEQB2Q==}
     engines: {node: '>=10'}
 
   unify-mercurius@1.3.194:
@@ -10915,7 +10915,7 @@ snapshots:
 
   unify-errors@1.3.28: {}
 
-  unify-fastify@1.5.193:
+  unify-fastify@1.5.194:
     dependencies:
       fastify: 4.28.0
       fastify-plugin: 4.5.1
