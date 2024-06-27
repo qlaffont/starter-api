@@ -97,7 +97,7 @@ importers:
         version: 3.3.2
       paginate-prisma:
         specifier: ^1.0.145
-        version: 1.0.260
+        version: 1.0.261
       pg:
         specifier: ^8.11.3
         version: 8.12.0
@@ -1199,8 +1199,8 @@ packages:
   '@types/koa__router@12.0.4':
     resolution: {integrity: sha512-Y7YBbSmfXZpa/m5UGGzb7XadJIRBRnwNY9cdAojZGp65Cpe5MAP3mOZE7e3bImt8dfKS4UFcR16SLH8L/z7PBw==}
 
-  '@types/lodash@4.17.5':
-    resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
+  '@types/lodash@4.17.6':
+    resolution: {integrity: sha512-OpXEVoCKSS3lQqjx9GGGOapBeuW5eUboYHRlHP9urXPX25IKZ6AnP5ZRxtVf63iieUbsHxLn8NQ5Nlftc6yzAA==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -3997,8 +3997,8 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  paginate-prisma@1.0.260:
-    resolution: {integrity: sha512-DneVnpaapXToD8RqDq6Sfk+amY8w9eWtxGl8ADdTt3uRQ7ACT05VEA8tXL205Ufc30L6zOVi72K0+Ia4m2j4hA==}
+  paginate-prisma@1.0.261:
+    resolution: {integrity: sha512-KGMBh2/HPhHmek05oUzAgfKNRgiHzCuI0D/ZsolROAh2t161ZYDhN1rCyuDjBceM9+lPadf1oumTKb/KjdNeZw==}
     engines: {node: '>=10'}
 
   parent-module@1.0.1:
@@ -6547,7 +6547,7 @@ snapshots:
     dependencies:
       '@types/koa': 2.15.0
 
-  '@types/lodash@4.17.5': {}
+  '@types/lodash@4.17.6': {}
 
   '@types/mdast@3.0.15':
     dependencies:
@@ -9856,9 +9856,9 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  paginate-prisma@1.0.260:
+  paginate-prisma@1.0.261:
     dependencies:
-      '@types/lodash': 4.17.5
+      '@types/lodash': 4.17.6
       class-validator: 0.14.1
       lodash: 4.17.21
 
