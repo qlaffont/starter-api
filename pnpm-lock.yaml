@@ -70,7 +70,7 @@ importers:
         version: 16.4.5
       fastify:
         specifier: ^4.26.1
-        version: 4.28.0
+        version: 4.28.1
       fastify-auth-prisma:
         specifier: ^1.2.14
         version: 1.2.416
@@ -225,7 +225,7 @@ importers:
         version: 5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2)
       fastify-socket.io:
         specifier: 5.0.0
-        version: 5.0.0(fastify@4.28.0)
+        version: 5.0.0(fastify@4.28.1)
       gnomon:
         specifier: 1.5.0
         version: 1.5.0
@@ -246,7 +246,7 @@ importers:
         version: 15.2.7
       mercurius-integration-testing:
         specifier: ^8.1.1
-        version: 8.2.0(bufferutil@4.0.8)(fastify@4.28.0)(graphql@16.9.0)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4))(utf-8-validate@6.0.4)
+        version: 8.2.0(bufferutil@4.0.8)(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4))(utf-8-validate@6.0.4)
       pino-pretty:
         specifier: 11.2.1
         version: 11.2.1
@@ -582,8 +582,8 @@ packages:
     resolution: {integrity: sha512-OIHZrb2ImZ7XG85HXOONLcJWGosv7sIvM2ifAPQVhg9Lv7qdmMBNVaai4QTdyuaqbKM5eO6sLSQOYI7wEQeCJQ==}
     engines: {node: '>=14'}
 
-  '@fastify/ajv-compiler@3.5.0':
-    resolution: {integrity: sha512-ebbEtlI7dxXF5ziNdr05mOY8NnDiPB1XvAlLHctRt/Rc+C3LCOVW5imUVX+mhvUhnNzmPBHewUkOFgGlCxgdAA==}
+  '@fastify/ajv-compiler@3.6.0':
+    resolution: {integrity: sha512-LwdXQJjmMD+GwLOkP7TVC68qa+pSSogeWWmznRJ/coyTcfe9qA05AHFSe1eZFwK6q+xVRpChnvFUkf1iYaSZsQ==}
 
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
@@ -2496,8 +2496,8 @@ packages:
   fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
 
-  fast-json-stringify@5.16.0:
-    resolution: {integrity: sha512-A4bg6E15QrkuVO3f0SwIASgzMzR6XC4qTyTqhf3hYXy0iazbAdZKwkE+ox4WgzKyzM6ygvbdq3r134UjOaaAnA==}
+  fast-json-stringify@5.16.1:
+    resolution: {integrity: sha512-KAdnLvy1yu/XrRtP+LJnxbBGrhN+xXu+gt3EUvZhYGKCr3lFHq/7UFJHHFgmJKoqlh6B40bZLEv7w46B0mqn1g==}
 
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
@@ -2534,8 +2534,8 @@ packages:
     resolution: {integrity: sha512-47OnzTBVhvvK1J+7zMv0aURu/M6wrDsRf//1ov4glRn9ghqejf2zptczziQikw5NsN7BsylYntx0UeddbA03TQ==}
     engines: {node: '>=10'}
 
-  fastify@4.28.0:
-    resolution: {integrity: sha512-HhW7UHW07YlqH5qpS0af8d2Gl/o98DhJ8ZDQWHRNDnzeOhZvtreWsX8xanjGgXmkYerGbo8ax/n40Dpwqkot8Q==}
+  fastify@4.28.1:
+    resolution: {integrity: sha512-kFWUtpNr4i7t5vY2EJPCN2KgMVpuqfU4NjnJNCgiNB900oiDeYqaNDRcAfeBbOF5hGixixxcKnOU4KN9z6QncQ==}
 
   fastparallel@2.4.1:
     resolution: {integrity: sha512-qUmhxPgNHmvRjZKBFUNI0oZuuH9OlSIOXmJ98lhKPxMZZ7zS/Fi0wRHOihDSz0R1YiIOjxzOY4bq65YTcdBi2Q==}
@@ -5676,7 +5676,7 @@ snapshots:
 
   '@fastify/accept-negotiator@1.1.0': {}
 
-  '@fastify/ajv-compiler@3.5.0':
+  '@fastify/ajv-compiler@3.6.0':
     dependencies:
       ajv: 8.16.0
       ajv-formats: 2.1.1(ajv@8.16.0)
@@ -5705,7 +5705,7 @@ snapshots:
 
   '@fastify/fast-json-stringify-compiler@4.3.0':
     dependencies:
-      fast-json-stringify: 5.16.0
+      fast-json-stringify: 5.16.1
 
   '@fastify/flash@5.2.0':
     dependencies:
@@ -8021,7 +8021,7 @@ snapshots:
 
   fast-json-stable-stringify@2.1.0: {}
 
-  fast-json-stringify@5.16.0:
+  fast-json-stringify@5.16.1:
     dependencies:
       '@fastify/merge-json-schemas': 0.1.1
       ajv: 8.16.0
@@ -8045,7 +8045,7 @@ snapshots:
 
   fastify-auth-prisma@1.2.416:
     dependencies:
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-plugin: 4.5.1
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.28
@@ -8054,29 +8054,29 @@ snapshots:
 
   fastify-plugin@4.5.1: {}
 
-  fastify-socket.io@5.0.0(fastify@4.28.0):
+  fastify-socket.io@5.0.0(fastify@4.28.1):
     dependencies:
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-plugin: 4.5.1
       tslib: 2.6.3
 
   fastify-type-provider-zod2@1.0.73:
     dependencies:
       ajv: 8.16.0
-      fastify: 4.28.0
+      fastify: 4.28.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.1(zod@3.23.8)
       zod-validation-error: 3.3.0(zod@3.23.8)
 
-  fastify@4.28.0:
+  fastify@4.28.1:
     dependencies:
-      '@fastify/ajv-compiler': 3.5.0
+      '@fastify/ajv-compiler': 3.6.0
       '@fastify/error': 3.4.1
       '@fastify/fast-json-stringify-compiler': 4.3.0
       abstract-logging: 2.0.1
       avvio: 8.3.2
       fast-content-type-parse: 1.1.0
-      fast-json-stringify: 5.16.0
+      fast-json-stringify: 5.16.1
       find-my-way: 8.2.0
       light-my-request: 5.13.0
       pino: 9.2.0
@@ -8371,7 +8371,7 @@ snapshots:
   graphql-jit@0.8.4(graphql@16.9.0):
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
-      fast-json-stringify: 5.16.0
+      fast-json-stringify: 5.16.1
       generate-function: 2.3.1
       graphql: 16.9.0
       lodash.memoize: 4.1.2
@@ -9374,11 +9374,11 @@ snapshots:
       redent: 1.0.0
       trim-newlines: 1.0.0
 
-  mercurius-integration-testing@8.2.0(bufferutil@4.0.8)(fastify@4.28.0)(graphql@16.9.0)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4))(utf-8-validate@6.0.4):
+  mercurius-integration-testing@8.2.0(bufferutil@4.0.8)(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4))(utf-8-validate@6.0.4):
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       cookie: 0.5.0
-      fastify: 4.28.0
+      fastify: 4.28.1
       graphql: 16.9.0
       mercurius: 14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4)
       ws: 8.16.0(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -10917,7 +10917,7 @@ snapshots:
 
   unify-fastify@1.5.202:
     dependencies:
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-plugin: 4.5.1
       unify-errors: 1.3.28
 
