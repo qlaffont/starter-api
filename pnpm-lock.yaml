@@ -28,7 +28,7 @@ importers:
         version: 1.41.1
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
-        version: 1.14.2(pg@8.12.0)
+        version: 1.14.3(pg@8.12.0)
       '@gquittet/graceful-server':
         specifier: ^4.0.8
         version: 4.0.9
@@ -659,8 +659,8 @@ packages:
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
 
-  '@forestadmin/datasource-sql@1.14.2':
-    resolution: {integrity: sha512-HfHIerLl6/PT0QiOPHQPcaUDAeqsaXKhY0Osn2fxzawYsuGREYbOUW+79kCJf9/TfrChVgEuCc8QL+W2Mo/AOw==}
+  '@forestadmin/datasource-sql@1.14.3':
+    resolution: {integrity: sha512-m8FmN/jI8SEJBGf/qijydXsSaejF2qFufubqldN4QZKglqjGH7aYrWnQp5oSlFdVL68oT2RTemwi2/bqjLa38A==}
 
   '@forestadmin/datasource-toolkit@1.34.0':
     resolution: {integrity: sha512-ua5QjL1yhqdlaaUTbBKZJvmVueaZsNBIZBTLtK7G0aVEdXpmRqcehd+/enBN4MxICqF7j60vuVsDbWzrHj2ZRw==}
@@ -1214,8 +1214,8 @@ packages:
   '@types/node@14.18.63':
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
 
-  '@types/node@18.19.36':
-    resolution: {integrity: sha512-tX1BNmYSWEvViftB26VLNxT6mEr37M7+ldUtq7rlKnv4/2fKYsJIOmqJAjT6h1DNuwQjIKgw3VJ/Dtw3yiTIQw==}
+  '@types/node@18.19.39':
+    resolution: {integrity: sha512-nPwTRDKUctxw3di5b4TfT3I0sWDiWoPQCZjXhvdkINntwr8lcoVCKsTgnXeRubKIlfnV+eN/HYk6Jb40tbcEAQ==}
 
   '@types/node@20.14.9':
     resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
@@ -5844,7 +5844,7 @@ snapshots:
       '@forestadmin/datasource-toolkit': 1.34.0
       sequelize: 6.37.3(pg@8.12.0)
 
-  '@forestadmin/datasource-sql@1.14.2(pg@8.12.0)':
+  '@forestadmin/datasource-sql@1.14.3(pg@8.12.0)':
     dependencies:
       '@forestadmin/datasource-sequelize': 1.8.3(sequelize@6.37.3(pg@8.12.0))
       '@forestadmin/datasource-toolkit': 1.34.0
@@ -6559,7 +6559,7 @@ snapshots:
 
   '@types/node@14.18.63': {}
 
-  '@types/node@18.19.36':
+  '@types/node@18.19.39':
     dependencies:
       undici-types: 5.26.5
 
@@ -6592,7 +6592,7 @@ snapshots:
 
   '@types/ssh2@1.15.0':
     dependencies:
-      '@types/node': 18.19.36
+      '@types/node': 18.19.39
 
   '@types/stack-utils@2.0.3': {}
 
@@ -7993,7 +7993,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
