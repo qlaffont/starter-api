@@ -142,7 +142,7 @@ importers:
         version: 1.5.206
       unify-mercurius:
         specifier: ^1.3.43
-        version: 1.3.202(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+        version: 1.3.204(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -5035,8 +5035,8 @@ packages:
     resolution: {integrity: sha512-2dKIFD1B+w47lTI7lzRYUvGYvCh2zILvPEJmUoC/oJNIG6e4s+MoJ3OxIsDNjI3wLsYFiBIJQIeuNZznmd+nZQ==}
     engines: {node: '>=10'}
 
-  unify-mercurius@1.3.202:
-    resolution: {integrity: sha512-waFSZFPnjGHQd07X8Ns717hM7GNzp8hl94k6TiqbNcc8v76LYksUf0sXYtz24su7NSMLEvkXIMNDyBieWMZsgA==}
+  unify-mercurius@1.3.204:
+    resolution: {integrity: sha512-/iivjBckGjj2tqCznWNRpxPO6QkfigIwRceg5aqPSDJ37TX8sErN7AAodhfe8k5gmtqaDX23CyUfQhZvXnOvpw==}
     engines: {node: '>=10'}
 
   unist-util-stringify-position@3.0.3:
@@ -10921,7 +10921,7 @@ snapshots:
       fastify-plugin: 4.5.1
       unify-errors: 1.3.31
 
-  unify-mercurius@1.3.202(bufferutil@4.0.8)(utf-8-validate@6.0.4):
+  unify-mercurius@1.3.204(bufferutil@4.0.8)(utf-8-validate@6.0.4):
     dependencies:
       graphql: 16.9.0
       mercurius: 14.1.0(bufferutil@4.0.8)(graphql@16.9.0)(utf-8-validate@6.0.4)
