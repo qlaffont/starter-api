@@ -25,7 +25,7 @@ importers:
         version: 7.5.1
       '@forestadmin/agent':
         specifier: ^1.37.2
-        version: 1.41.3
+        version: 1.41.4
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
         version: 1.14.4(pg@8.12.0)
@@ -648,11 +648,11 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@forestadmin/agent@1.41.3':
-    resolution: {integrity: sha512-nqvkESZ07lp+EWBb+WoT32lry+CYBcWaQiYV6k2tKJGPi4YVqrrr73D6wYXS2kN+nimX6k181EMyaqu+gnDUNg==}
+  '@forestadmin/agent@1.41.4':
+    resolution: {integrity: sha512-CbLV9Q7u/4O2DETNFig2b6UOVWxLIiELpO91bDC9CLgdTDNwFjdK39mH98b2rZnUPP1o02dfR7VWvIfERPoPpQ==}
 
-  '@forestadmin/datasource-customizer@1.45.2':
-    resolution: {integrity: sha512-QnjG8xZq4lAyDNSaJmf0E17Hl4rwxM92+KeR7vOPU/bQbHMrtsFwi/l8dIc9kSfbDWbk8ABKMCwywTOphwMdww==}
+  '@forestadmin/datasource-customizer@1.45.3':
+    resolution: {integrity: sha512-FI/YK4ykWaNPzERFCa1Ia0l6+7sKDjzsfJRmOvFXKfxwS/1x7e3aVYyFRPsvtXaDXYWN4IbtTSxTczTIc68QzQ==}
 
   '@forestadmin/datasource-sequelize@1.8.4':
     resolution: {integrity: sha512-VdE9aBY7uyjOqZGhVRLiC2yfw6DIV7HZXDn11fS+EMYtBuw+vEU66gjytTLJDatkhxGuw97tf2nrLOWO7D2hQA==}
@@ -5806,11 +5806,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@forestadmin/agent@1.41.3':
+  '@forestadmin/agent@1.41.4':
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.45.2
+      '@forestadmin/datasource-customizer': 1.45.3
       '@forestadmin/datasource-toolkit': 1.34.1
       '@forestadmin/forestadmin-client': 1.27.4
       '@koa/cors': 5.0.0
@@ -5830,7 +5830,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@forestadmin/datasource-customizer@1.45.2':
+  '@forestadmin/datasource-customizer@1.45.3':
     dependencies:
       '@forestadmin/datasource-toolkit': 1.34.1
       antlr4: 4.13.1-patch-1
