@@ -37,7 +37,7 @@ importers:
         version: 10.0.4(graphql@16.9.0)
       '@graphql-tools/utils':
         specifier: ^10.0.13
-        version: 10.3.0(graphql@16.9.0)
+        version: 10.3.2(graphql@16.9.0)
       '@prisma/client':
         specifier: ^5.9.1
         version: 5.16.2(prisma@5.16.2)
@@ -82,7 +82,7 @@ importers:
         version: 16.9.0
       graphql-rate-limit-directive:
         specifier: ^2.0.5
-        version: 2.0.5(@graphql-tools/utils@10.3.0(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@5.0.3)
+        version: 2.0.5(@graphql-tools/utils@10.3.2(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@5.0.3)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -684,8 +684,8 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@10.3.0':
-    resolution: {integrity: sha512-HFJo2F62Y6AUQsIj1hMbcRr0wKS6nwWd2QsdnOEwK+Y4gW/N8tiHCk1gqgGtPk16GrTmpjm4AAbfv/AEzulcOw==}
+  '@graphql-tools/utils@10.3.2':
+    resolution: {integrity: sha512-iaqOHS4f90KNADBHqVsRBjKpM6iSvsUg1q5GhWMK03loYLaDzftrEwcsl0OkSSnRhJvAsT7q4q3r3YzRoV0v1g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -5894,19 +5894,19 @@ snapshots:
 
   '@graphql-tools/merge@9.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.3.0(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
 
   '@graphql-tools/schema@10.0.4(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.3.0(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
 
-  '@graphql-tools/utils@10.3.0(graphql@16.9.0)':
+  '@graphql-tools/utils@10.3.2(graphql@16.9.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       cross-inspect: 1.0.0
@@ -8398,9 +8398,9 @@ snapshots:
       graphql: 16.9.0
       lodash.get: 4.4.2
 
-  graphql-rate-limit-directive@2.0.5(@graphql-tools/utils@10.3.0(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@5.0.3):
+  graphql-rate-limit-directive@2.0.5(@graphql-tools/utils@10.3.2(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@5.0.3):
     dependencies:
-      '@graphql-tools/utils': 10.3.0(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@16.9.0)
       graphql: 16.9.0
       rate-limiter-flexible: 5.0.3
 
