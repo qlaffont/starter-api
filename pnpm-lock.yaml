@@ -55,7 +55,7 @@ importers:
         version: 0.40.3
       bullmq:
         specifier: ^5.1.10
-        version: 5.8.7
+        version: 5.9.0
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
@@ -1614,8 +1614,8 @@ packages:
     resolution: {integrity: sha512-8f9ZJCUXyT1M35Jx7MkBgmBMo3oHTTBIPLiY9xyL0pl3T5RwcPEY8cUHr5LBNfu/fk6c2T4DJZuVM/8ZZT2D2A==}
     engines: {node: '>=10.0.0'}
 
-  bullmq@5.8.7:
-    resolution: {integrity: sha512-IdAgB9WvJHRAcZtamRLj6fbjMyuIogEa1cjOTWM1pkVoHUOpO34q6FzNMX1R8VOeUhkvkOkWcxI5ENgFLh+TVA==}
+  bullmq@5.9.0:
+    resolution: {integrity: sha512-xRBuObxHQYUQFF6Eps0cRAz1e/31p+TjcB96B5W9DGxidH8cwC1iETQ80pOa6dcaLBnsgMPAy4NQpf7etxRb8A==}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
@@ -3795,8 +3795,8 @@ packages:
     resolution: {integrity: sha512-P0efT1C9jIdVRefqjzOQ9Xml57zpOXnIuS+csaB4MdZbTdmGDLo8XhzBG1N7aO11gKDDkJvBLULeFTo46wwreA==}
     hasBin: true
 
-  msgpackr@1.10.2:
-    resolution: {integrity: sha512-L60rsPynBvNE+8BWipKKZ9jHcSGbtyJYIwjRq0VrIvQ08cRjntGXJYW/tmciZ2IHWIY8WEW32Qa2xbh5+SKBZA==}
+  msgpackr@1.11.0:
+    resolution: {integrity: sha512-I8qXuuALqJe5laEBYoFykChhSXLikZmUhccjGsPuSJ/7uPip2TJ7lwdIQwWSAi0jGZDXv4WOP8Qg65QZRuXxXw==}
 
   mylas@2.1.13:
     resolution: {integrity: sha512-+MrqnJRtxdF+xngFfUUkIMQrUUL0KsxbADUkn23Z/4ibGg192Q+z+CQyiYwvWTsYjJygmMR8+w3ZDa98Zh6ESg==}
@@ -7033,11 +7033,11 @@ snapshots:
   buildcheck@0.0.6:
     optional: true
 
-  bullmq@5.8.7:
+  bullmq@5.9.0:
     dependencies:
       cron-parser: 4.9.0
       ioredis: 5.4.1
-      msgpackr: 1.10.2
+      msgpackr: 1.11.0
       node-abort-controller: 3.1.1
       semver: 7.6.2
       tslib: 2.6.3
@@ -7996,7 +7996,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -9671,7 +9671,7 @@ snapshots:
       '@msgpackr-extract/msgpackr-extract-win32-x64': 3.0.3
     optional: true
 
-  msgpackr@1.10.2:
+  msgpackr@1.11.0:
     optionalDependencies:
       msgpackr-extract: 3.0.3
 
