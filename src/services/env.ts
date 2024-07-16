@@ -56,4 +56,4 @@ export const isTestEnv = () => currentEnv() === Environment.TEST;
 export const isDeployedEnv = () =>
   Object.values(Environment)
     .filter((v) => v !== Environment.TEST && v !== Environment.DEVELOPMENT)
-    .indexOf(currentEnv() as Environment) !== -1;
+    .indexOf(currentEnv() as Environment.STAGING) !== -1;
