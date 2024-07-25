@@ -42,8 +42,8 @@ importers:
         specifier: ^5.9.1
         version: 5.17.0(prisma@5.16.2)
       '@socket.io/postgres-adapter':
-        specifier: ^0.3.1
-        version: 0.3.1(socket.io-adapter@2.5.5(bufferutil@4.0.8)(utf-8-validate@6.0.4))
+        specifier: ^0.4.0
+        version: 0.4.0(socket.io-adapter@2.5.5(bufferutil@4.0.8)(utf-8-validate@6.0.4))
       '@socket.io/postgres-emitter':
         specifier: ^0.1.0
         version: 0.1.0
@@ -994,11 +994,11 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
-  '@socket.io/postgres-adapter@0.3.1':
-    resolution: {integrity: sha512-8DeSln60sFSdoLL8A8p6nrXlER4lBsvMSAS+G4sqJhudQfGOjhu2AAcKyI/SIDs4p9iO63zTbR4n//ZY0VN2bg==}
+  '@socket.io/postgres-adapter@0.4.0':
+    resolution: {integrity: sha512-FJQslCIchoT4oMHk0D8HeSi9nhAOE8/snId65zI10ykZsk3MQJnUH45+Jqd75IuQhtxxwrvNxqHmzLJEPw9PnA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
-      socket.io-adapter: ^2.4.0
+      socket.io-adapter: ^2.5.4
 
   '@socket.io/postgres-emitter@0.1.0':
     resolution: {integrity: sha512-14dPh2+mDRfIfZgTHi2BaxFpLRki1dBMwwPjtmJRlN+nIU4X5UyHGLHgsw2pevKt7hqc95q0DpL4dLQMxA1IwA==}
@@ -4282,7 +4282,7 @@ packages:
 
   puppeteer@19.11.1:
     resolution: {integrity: sha512-39olGaX2djYUdhaQQHDZ0T0GwEp+5f9UB9HmEP0qHfdQHIq0xGQZuAZ5TLnJIc/88SrPLpEflPC+xUqOTv3c5g==}
-    deprecated: < 22.6.4 is no longer supported
+    deprecated: < 22.8.2 is no longer supported
 
   pure-rand@6.1.0:
     resolution: {integrity: sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA==}
@@ -6315,7 +6315,7 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@socket.io/postgres-adapter@0.3.1(socket.io-adapter@2.5.5(bufferutil@4.0.8)(utf-8-validate@6.0.4))':
+  '@socket.io/postgres-adapter@0.4.0(socket.io-adapter@2.5.5(bufferutil@4.0.8)(utf-8-validate@6.0.4))':
     dependencies:
       '@msgpack/msgpack': 2.8.0
       '@types/pg': 8.11.6
