@@ -124,7 +124,7 @@ importers:
         version: 0.14.1
       sendim:
         specifier: ^1.2.74
-        version: 1.2.153
+        version: 1.2.155
       socket.io:
         specifier: ^4.7.4
         version: 4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -4489,8 +4489,8 @@ packages:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
 
-  sendim@1.2.153:
-    resolution: {integrity: sha512-1JD8M3pvc3+CYwQUNG5yP+48mtFLKQYc3cFy0hgKJf0QcIIohiP1EUwAopgyfQ5HG8KosWJ9k14zmJ1CirRy0g==}
+  sendim@1.2.155:
+    resolution: {integrity: sha512-OrtRtzwdLlVe159+1E32RnZYy+vKTVcq6HCnIm/TYhI9gSnX74Iy0E+hOKZGdPwEet2/KwSFyxKGz5y9rSSeZA==}
     engines: {node: '>=10'}
 
   sequelize-pool@7.1.0:
@@ -10350,7 +10350,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  sendim@1.2.153:
+  sendim@1.2.155:
     dependencies:
       pino: 9.3.2
 
