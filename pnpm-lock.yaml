@@ -97,7 +97,7 @@ importers:
         version: 3.3.2
       paginate-prisma:
         specifier: ^1.0.145
-        version: 1.0.273
+        version: 1.0.274
       pg:
         specifier: ^8.11.3
         version: 8.12.0
@@ -4011,8 +4011,8 @@ packages:
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
 
-  paginate-prisma@1.0.273:
-    resolution: {integrity: sha512-XR24Gq8URhDNRBjyBG4cqLMPpAnl5N0JJDOv+/yM46W/WdNcDumM3Yvj+kXn63DLrhXb/O1KrPQ3a2gCrSABsQ==}
+  paginate-prisma@1.0.274:
+    resolution: {integrity: sha512-C+2vVMqFb4WXuQqFY9mLftCUstYcMIcdFhgbg8COuL1gmD8TFdyUKu0ihFPoN5KN2nLJoj7k3hUKL/cvwS5igA==}
     engines: {node: '>=10'}
 
   parent-module@1.0.1:
@@ -9899,7 +9899,7 @@ snapshots:
 
   package-json-from-dist@1.0.0: {}
 
-  paginate-prisma@1.0.273:
+  paginate-prisma@1.0.274:
     dependencies:
       '@types/lodash': 4.17.7
       class-validator: 0.14.1
