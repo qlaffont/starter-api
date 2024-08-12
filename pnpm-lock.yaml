@@ -224,8 +224,8 @@ importers:
         specifier: 5.2.1
         version: 5.2.1(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)
       fastify-socket.io:
-        specifier: 5.0.0
-        version: 5.0.0(fastify@4.28.1)
+        specifier: 5.1.0
+        version: 5.1.0(fastify@4.28.1)(socket.io@4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4))
       gnomon:
         specifier: 1.5.0
         version: 1.5.0
@@ -2530,10 +2530,11 @@ packages:
   fastify-plugin@4.5.1:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
 
-  fastify-socket.io@5.0.0:
-    resolution: {integrity: sha512-BQKGLVSsLn9s4IXLWjwZRGTNuFbXt5bPY2qeXJUFYFtu/0BxLqcE2WMOrWUZdFWy12kuEvXC76ObsilQKeSfqg==}
+  fastify-socket.io@5.1.0:
+    resolution: {integrity: sha512-GC1gjrxBGeTbMWV779XHF4uw3AtgKwSQJ9MnjGiMp91ZBuPXEdBYa7NnAMDEl3oZPgK9JO4BlNncTV+UAN+1kg==}
     peerDependencies:
       fastify: 4.x.x
+      socket.io: '>=4'
 
   fastify-type-provider-zod2@1.0.98:
     resolution: {integrity: sha512-qRdXcvJJMoupPeHPvW2YLI43WC/shskaWuCGlE3f1sRHTXFVcPK1K2oN5qk+hU/opBkxg2AlRsLDG92UiDFmsw==}
@@ -8068,10 +8069,11 @@ snapshots:
 
   fastify-plugin@4.5.1: {}
 
-  fastify-socket.io@5.0.0(fastify@4.28.1):
+  fastify-socket.io@5.1.0(fastify@4.28.1)(socket.io@4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)):
     dependencies:
       fastify: 4.28.1
       fastify-plugin: 4.5.1
+      socket.io: 4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       tslib: 2.6.3
 
   fastify-type-provider-zod2@1.0.98:
