@@ -55,7 +55,7 @@ importers:
         version: 0.40.3
       bullmq:
         specifier: ^5.1.10
-        version: 5.12.5
+        version: 5.12.6
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
@@ -1590,8 +1590,8 @@ packages:
     resolution: {integrity: sha512-8f9ZJCUXyT1M35Jx7MkBgmBMo3oHTTBIPLiY9xyL0pl3T5RwcPEY8cUHr5LBNfu/fk6c2T4DJZuVM/8ZZT2D2A==}
     engines: {node: '>=10.0.0'}
 
-  bullmq@5.12.5:
-    resolution: {integrity: sha512-lchCvFuPdaIbq01qnyS7MOt2piPeCDHzCqIxNAQEgDSzZ+Eb4RBboUUMgmW90UtMjV46mEqsWY9B1l/7/C13SA==}
+  bullmq@5.12.6:
+    resolution: {integrity: sha512-MFww2rvhmUWe5kx3UGOGV3vh9HeKPX9v5VyhNGUGTduWrJ/KH0ETpoUwWyD8tq/QzQEIWkrUpSIiu3EyvZDXfA==}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
@@ -7010,7 +7010,7 @@ snapshots:
   buildcheck@0.0.6:
     optional: true
 
-  bullmq@5.12.5:
+  bullmq@5.12.6:
     dependencies:
       cron-parser: 4.9.0
       ioredis: 5.4.1
@@ -8006,7 +8006,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
