@@ -76,7 +76,7 @@ importers:
         version: 1.2.444
       fastify-type-provider-zod2:
         specifier: ^1.0.0
-        version: 1.0.101
+        version: 1.0.102
       graphql:
         specifier: ^16.8.1
         version: 16.9.0
@@ -2536,8 +2536,8 @@ packages:
       fastify: 4.x.x
       socket.io: '>=4'
 
-  fastify-type-provider-zod2@1.0.101:
-    resolution: {integrity: sha512-io1I9iCTfE4Pl5if7Si1ik5nNVJeEKHbdmcNpapBmj5A3so9bM627VycklCnFdSGysuh2aro0vM5v99QQW/kVA==}
+  fastify-type-provider-zod2@1.0.102:
+    resolution: {integrity: sha512-5m5zkAEuaXEIJt6pjgOeZyQd0MZ1Squ0rbdpwPtmZpbKnS69FAHagvLHuKoxM9IIe/CeV35A6mjGOfe7YyuqgQ==}
     engines: {node: '>=10'}
 
   fastify@4.28.1:
@@ -8079,7 +8079,7 @@ snapshots:
       socket.io: 4.7.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       tslib: 2.6.3
 
-  fastify-type-provider-zod2@1.0.101:
+  fastify-type-provider-zod2@1.0.102:
     dependencies:
       ajv: 8.17.1
       fastify: 4.28.1
