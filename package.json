@@ -93,7 +93,7 @@
     "@socket.io/postgres-adapter": "^0.4.0",
     "@socket.io/postgres-emitter": "^0.1.0",
     "@t3-oss/env-core": "^0.8.0",
-    "argon2": "^0.40.0",
+    "argon2": "^0.41.0",
     "bullmq": "^5.1.10",
     "class-validator": "^0.14.1",
     "crypto-random-string": "^5.0.0",
