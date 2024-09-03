@@ -28,7 +28,7 @@ importers:
         version: 1.41.10
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
-        version: 1.14.13(pg@8.12.0)
+        version: 1.14.14(pg@8.12.0)
       '@gquittet/graceful-server':
         specifier: ^4.0.8
         version: 4.0.9
@@ -647,13 +647,13 @@ packages:
   '@forestadmin/datasource-customizer@1.47.0':
     resolution: {integrity: sha512-ES5zZdd1yhDYVsJq+vjlSQmWR2l9BqjObkwbUwjaEABQGbjORJhsVcylbKfXu3IFaK9iD9mJDYXvUexTyPtuTg==}
 
-  '@forestadmin/datasource-sequelize@1.9.0':
-    resolution: {integrity: sha512-70AVw3VefKMY5WYy8mmn7bXeArO6aHAAqKbh3b8YSE4fppv7CInpbmq9ZzVEGkBgwLj4rOw01Vv+my3wV7t68g==}
+  '@forestadmin/datasource-sequelize@1.9.1':
+    resolution: {integrity: sha512-IVjY8ZuYUQ5mVjIYAp6yjcjeMNkahfNCTeN9HJuiGTkU4LUUfhaCMeIvUpXD1dstdNxjWBde2QR323Pk2uhy7w==}
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
 
-  '@forestadmin/datasource-sql@1.14.13':
-    resolution: {integrity: sha512-4vmfkYA/BhgurVQoLgzAZDL9hpYg9VCjoLiLNwBfhRmJanCc638qKrKKJw5iOIqfwJX8GS9jXcbR1yVFKPeIgQ==}
+  '@forestadmin/datasource-sql@1.14.14':
+    resolution: {integrity: sha512-2OfHSdewWrOs9zBPMYUxwLeDoKxXU3Oojgjb/hmWxuXss4f+Ymqfn1xovnJKUcJ5YBsx9/nfAAXiVHMR3xGCRw==}
 
   '@forestadmin/datasource-toolkit@1.34.4':
     resolution: {integrity: sha512-71PWbxn4B5L16J4r46NHu5uegoKBYyLWPDp8o37rQyKqQH1yZtgQQuvadiyQIO0xbc3WvL3rGKGNUquenjXHtQ==}
@@ -1220,8 +1220,8 @@ packages:
   '@types/node@14.18.63':
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
 
-  '@types/node@18.19.47':
-    resolution: {integrity: sha512-1f7dB3BL/bpd9tnDJrrHb66Y+cVrhxSOTGorRNdHwYTUlTay3HuTDPKo9a/4vX9pMQkhYBcAbL4jQdNlhCFP9A==}
+  '@types/node@18.19.48':
+    resolution: {integrity: sha512-7WevbG4ekUcRQSZzOwxWgi5dZmTak7FaxXDoW7xVxPBmKx1rTzfmRLkeCgJzcbBnOV2dkhAPc8cCeT6agocpjg==}
 
   '@types/node@20.16.3':
     resolution: {integrity: sha512-/wdGiWRkMOm53gAsSyFMXFZHbVg7C6CbkrzHNpaHoYfsUWPg7m6ZRKtvQjgvQ9i8WT540a3ydRlRQbxjY30XxQ==}
@@ -5899,14 +5899,14 @@ snapshots:
       object-hash: 3.0.0
       uuid: 9.0.1
 
-  '@forestadmin/datasource-sequelize@1.9.0(sequelize@6.37.3(pg@8.12.0))':
+  '@forestadmin/datasource-sequelize@1.9.1(sequelize@6.37.3(pg@8.12.0))':
     dependencies:
       '@forestadmin/datasource-toolkit': 1.34.4
       sequelize: 6.37.3(pg@8.12.0)
 
-  '@forestadmin/datasource-sql@1.14.13(pg@8.12.0)':
+  '@forestadmin/datasource-sql@1.14.14(pg@8.12.0)':
     dependencies:
-      '@forestadmin/datasource-sequelize': 1.9.0(sequelize@6.37.3(pg@8.12.0))
+      '@forestadmin/datasource-sequelize': 1.9.1(sequelize@6.37.3(pg@8.12.0))
       '@forestadmin/datasource-toolkit': 1.34.4
       '@types/ssh2': 1.15.1
       pluralize: 8.0.0
@@ -6635,7 +6635,7 @@ snapshots:
 
   '@types/node@14.18.63': {}
 
-  '@types/node@18.19.47':
+  '@types/node@18.19.48':
     dependencies:
       undici-types: 5.26.5
 
@@ -6668,7 +6668,7 @@ snapshots:
 
   '@types/ssh2@1.15.1':
     dependencies:
-      '@types/node': 18.19.47
+      '@types/node': 18.19.48
 
   '@types/stack-utils@2.0.3': {}
 
@@ -8106,7 +8106,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
