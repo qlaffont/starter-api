@@ -25,7 +25,7 @@ importers:
         version: 7.5.1
       '@forestadmin/agent':
         specifier: ^1.37.2
-        version: 1.41.10
+        version: 1.41.11
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
         version: 1.14.14(pg@8.12.0)
@@ -641,11 +641,11 @@ packages:
   '@fastify/websocket@10.0.1':
     resolution: {integrity: sha512-8/pQIxTPRD8U94aILTeJ+2O3el/r19+Ej5z1O1mXlqplsUH7KzCjAI0sgd5DM/NoPjAi5qLFNIjgM5+9/rGSNw==}
 
-  '@forestadmin/agent@1.41.10':
-    resolution: {integrity: sha512-RSew2tyKKpjbSvFSeTmbDBJXzJPC/pnPYLQiLRnoYfIZfo9eDy62ag+8iMOw1PeRZTYtpbrupLe5yc+u5nIChw==}
+  '@forestadmin/agent@1.41.11':
+    resolution: {integrity: sha512-80bxBkdo+QPHmBfZ0igMZ0lxYtGBDLK7NsKaeByMevtvuWoxOSlxCKgyurt1E+zXZfPNIFAnX1/pJvKrAslyJA==}
 
-  '@forestadmin/datasource-customizer@1.47.0':
-    resolution: {integrity: sha512-ES5zZdd1yhDYVsJq+vjlSQmWR2l9BqjObkwbUwjaEABQGbjORJhsVcylbKfXu3IFaK9iD9mJDYXvUexTyPtuTg==}
+  '@forestadmin/datasource-customizer@1.47.1':
+    resolution: {integrity: sha512-hHs7vAo2KUago/LoW/GydCImQ7bg1X4iG1DVmv9zrui1FaCbagKI2IXPdJR68NS+pX3c/UkM7LIhZG90uB7WPw==}
 
   '@forestadmin/datasource-sequelize@1.9.1':
     resolution: {integrity: sha512-IVjY8ZuYUQ5mVjIYAp6yjcjeMNkahfNCTeN9HJuiGTkU4LUUfhaCMeIvUpXD1dstdNxjWBde2QR323Pk2uhy7w==}
@@ -658,8 +658,11 @@ packages:
   '@forestadmin/datasource-toolkit@1.34.4':
     resolution: {integrity: sha512-71PWbxn4B5L16J4r46NHu5uegoKBYyLWPDp8o37rQyKqQH1yZtgQQuvadiyQIO0xbc3WvL3rGKGNUquenjXHtQ==}
 
-  '@forestadmin/forestadmin-client@1.27.7':
-    resolution: {integrity: sha512-6A7LwGmlnQLDaPUr/XqjjvSAwlT9nZ17F9SVGWhBqx/mvgW6XRqYN0Jgh2IBl8sgNTx98zfquOgI5H6YGsPnhQ==}
+  '@forestadmin/datasource-toolkit@1.34.5':
+    resolution: {integrity: sha512-CDwNjSvfzbZ0iXE+3Ac1ugtVRiWqYeoIUZoxjqjoUO6Poc3EiHyRRob8mwU8BR37W5hoqDRlo5bi9Co8hPHKVw==}
+
+  '@forestadmin/forestadmin-client@1.27.8':
+    resolution: {integrity: sha512-IM/pgIbU/pim5+UOmeirZbVmK+GWFsjv6NybEqdBAuUjgr1t0YNACEhn/YVImrexYS87KpelCv/MfQnmT1cfdA==}
 
   '@gquittet/graceful-server@4.0.9':
     resolution: {integrity: sha512-v0s6HHR30ZaX8bskkGT5vTwpxk6ltFYiWn+h+epMo5RxjbbBjkzVNvG7DSdDogqrWGxwhjoYLzUAj5RE1eydUg==}
@@ -2120,6 +2123,15 @@ packages:
 
   debug@4.3.6:
     resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.3.7:
+    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -5398,7 +5410,7 @@ snapshots:
       '@babel/traverse': 7.24.8
       '@babel/types': 7.24.9
       convert-source-map: 2.0.0
-      debug: 4.3.6
+      debug: 4.3.7
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -5572,7 +5584,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.7
       '@babel/parser': 7.24.8
       '@babel/types': 7.24.9
-      debug: 4.3.6
+      debug: 4.3.7
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -5876,13 +5888,13 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@forestadmin/agent@1.41.10':
+  '@forestadmin/agent@1.41.11':
     dependencies:
       '@fast-csv/format': 4.3.5
       '@fastify/express': 1.1.0
-      '@forestadmin/datasource-customizer': 1.47.0
-      '@forestadmin/datasource-toolkit': 1.34.4
-      '@forestadmin/forestadmin-client': 1.27.7
+      '@forestadmin/datasource-customizer': 1.47.1
+      '@forestadmin/datasource-toolkit': 1.34.5
+      '@forestadmin/forestadmin-client': 1.27.8
       '@koa/cors': 5.0.0
       '@koa/router': 12.0.1
       '@types/koa__router': 12.0.4
@@ -5900,9 +5912,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@forestadmin/datasource-customizer@1.47.0':
+  '@forestadmin/datasource-customizer@1.47.1':
     dependencies:
-      '@forestadmin/datasource-toolkit': 1.34.4
+      '@forestadmin/datasource-toolkit': 1.34.5
       antlr4: 4.13.2
       file-type: 16.5.4
       luxon: 3.5.0
@@ -5941,7 +5953,13 @@ snapshots:
       object-hash: 3.0.0
       uuid: 9.0.1
 
-  '@forestadmin/forestadmin-client@1.27.7':
+  '@forestadmin/datasource-toolkit@1.34.5':
+    dependencies:
+      luxon: 3.5.0
+      object-hash: 3.0.0
+      uuid: 9.0.1
+
+  '@forestadmin/forestadmin-client@1.27.8':
     dependencies:
       eventsource: 2.0.2
       json-api-serializer: 2.6.6
@@ -6219,7 +6237,7 @@ snapshots:
 
   '@koa/router@12.0.1':
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
       http-errors: 2.0.0
       koa-compose: 4.1.0
       methods: 1.1.2
@@ -6755,7 +6773,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.18.0
       '@typescript-eslint/visitor-keys': 7.18.0
-      debug: 4.3.6
+      debug: 4.3.5
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -6810,7 +6828,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -7637,6 +7655,10 @@ snapshots:
   debug@4.3.6:
     dependencies:
       ms: 2.1.2
+
+  debug@4.3.7:
+    dependencies:
+      ms: 2.1.3
 
   decamelize@1.2.0: {}
 
@@ -8594,7 +8616,7 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.6
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -8835,7 +8857,7 @@ snapshots:
 
   istanbul-lib-source-maps@4.0.1:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
       istanbul-lib-coverage: 3.2.2
       source-map: 0.6.1
     transitivePeerDependencies:
@@ -9300,7 +9322,7 @@ snapshots:
       content-disposition: 0.5.4
       content-type: 1.0.5
       cookies: 0.9.1
-      debug: 4.3.6
+      debug: 4.3.7
       delegates: 1.0.0
       depd: 2.0.0
       destroy: 1.2.0
@@ -9697,7 +9719,7 @@ snapshots:
   micromark@3.2.0:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.3.6
+      debug: 4.3.7
       decode-named-character-reference: 1.0.2
       micromark-core-commonmark: 1.1.0
       micromark-factory-space: 1.1.0
@@ -10817,7 +10839,7 @@ snapshots:
     dependencies:
       component-emitter: 1.3.1
       cookiejar: 2.1.4
-      debug: 4.3.6
+      debug: 4.3.7
       fast-safe-stringify: 2.1.1
       form-data: 4.0.0
       formidable: 2.1.2
