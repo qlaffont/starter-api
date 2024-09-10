@@ -55,7 +55,7 @@ importers:
         version: 0.41.1
       bullmq:
         specifier: ^5.1.10
-        version: 5.12.14
+        version: 5.12.15
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
@@ -1615,8 +1615,8 @@ packages:
     resolution: {integrity: sha512-8f9ZJCUXyT1M35Jx7MkBgmBMo3oHTTBIPLiY9xyL0pl3T5RwcPEY8cUHr5LBNfu/fk6c2T4DJZuVM/8ZZT2D2A==}
     engines: {node: '>=10.0.0'}
 
-  bullmq@5.12.14:
-    resolution: {integrity: sha512-mcSQHq9EY+DKtAP6XSmkP+0f1ifFithcpLTwo8WmUauArE9dxk45Gae3Fls1Nwf0Er9MoaDhPcglfe6LV/XCOg==}
+  bullmq@5.12.15:
+    resolution: {integrity: sha512-hUSLsHHLWeHmg/qN6t6ncR/JxCEULySEAEijspy3m1Tr+zW+RQuK215nEho+rjGeob1Ow+2XDvlI81MDotfX4g==}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
@@ -7119,7 +7119,7 @@ snapshots:
   buildcheck@0.0.6:
     optional: true
 
-  bullmq@5.12.14:
+  bullmq@5.12.15:
     dependencies:
       cron-parser: 4.9.0
       ioredis: 5.4.1
@@ -8678,7 +8678,7 @@ snapshots:
     dependencies:
       '@ioredis/commands': 1.2.0
       cluster-key-slot: 1.1.2
-      debug: 4.3.6
+      debug: 4.3.7
       denque: 2.1.0
       lodash.defaults: 4.2.0
       lodash.isarguments: 3.1.0
