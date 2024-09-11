@@ -28,7 +28,7 @@ importers:
         version: 1.41.11
       '@forestadmin/datasource-sql':
         specifier: ^1.8.0
-        version: 1.14.17(pg@8.12.0)
+        version: 1.14.18(pg@8.12.0)
       '@gquittet/graceful-server':
         specifier: ^4.0.8
         version: 4.0.9
@@ -676,8 +676,8 @@ packages:
     peerDependencies:
       sequelize: '>= 6.12.0 < 7'
 
-  '@forestadmin/datasource-sql@1.14.17':
-    resolution: {integrity: sha512-yz5YwoVQPg1cb8zJivfV9nSJqBHy2g3AJKiTIOpnnxZzjjklU1Dv19sUUzrLa5hxJguh4t0GEjmP7I39j6DdjA==}
+  '@forestadmin/datasource-sql@1.14.18':
+    resolution: {integrity: sha512-JWqeYoH8S/knP5ACk/eBKZQlDqCrJDD/7fSj9T/28lMvT0dPBYDutrioZbXWCQhfNawsTwWDoGS3krPRCVdX+w==}
 
   '@forestadmin/datasource-toolkit@1.34.5':
     resolution: {integrity: sha512-CDwNjSvfzbZ0iXE+3Ac1ugtVRiWqYeoIUZoxjqjoUO6Poc3EiHyRRob8mwU8BR37W5hoqDRlo5bi9Co8hPHKVw==}
@@ -6087,7 +6087,7 @@ snapshots:
       '@forestadmin/datasource-toolkit': 1.34.5
       sequelize: 6.37.3(pg@8.12.0)
 
-  '@forestadmin/datasource-sql@1.14.17(pg@8.12.0)':
+  '@forestadmin/datasource-sql@1.14.18(pg@8.12.0)':
     dependencies:
       '@forestadmin/datasource-sequelize': 1.9.2(sequelize@6.37.3(pg@8.12.0))
       '@forestadmin/datasource-toolkit': 1.34.5
@@ -8348,7 +8348,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.7
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
