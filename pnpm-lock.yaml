@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@fastify/middie':
-        specifier: ^8.3.0
-        version: 8.3.3
+        specifier: ^9.0.0
+        version: 9.0.1
       '@fastify/passport':
         specifier: ^2.4.0
         version: 2.5.0
@@ -618,6 +618,9 @@ packages:
   '@fastify/error@3.4.1':
     resolution: {integrity: sha512-wWSvph+29GR783IhmvdwWnN4bUxTD01Vm5Xad4i7i1VuAOItLvbPAb69sb0IQ2N57yprvhNIwAP5B6xfKTmjmQ==}
 
+  '@fastify/error@4.0.0':
+    resolution: {integrity: sha512-OO/SA8As24JtT1usTUTKgGH7uLvhfwZPwlptRi2Dp5P4KKmJI3gvsZ8MIHnNwDs4sLf/aai5LzTyl66xr7qMxA==}
+
   '@fastify/express@1.1.0':
     resolution: {integrity: sha512-hUqLYC3PTFwa/lwtuhtNeOrYuejyneG7A7ewO+2BM99lyasPK9ZAH1zyhBv6f5+3TU3nWpRh0pENLU70dw06gQ==}
     engines: {node: '>=10.0.0'}
@@ -631,8 +634,8 @@ packages:
   '@fastify/merge-json-schemas@0.1.1':
     resolution: {integrity: sha512-fERDVz7topgNjtXsJTTW1JKLy0rhuLRcquYqNR9rF7OcVpCa2OVW49ZPDIhaRRCaUuvVxI+N416xUoF76HNSXA==}
 
-  '@fastify/middie@8.3.3':
-    resolution: {integrity: sha512-+WHavMQr9CNTZoy2cjoDxoWp76kZ3JKjAtZj5sXNlxX5XBzHig0TeCPfPc+1+NQmliXtndT3PFwAjrQHE/6wnQ==}
+  '@fastify/middie@9.0.1':
+    resolution: {integrity: sha512-NCOu4sTSuON0n3iFPhvDbpQoi9RPHHF1GEbKF3vFlYNIgKUu/OY2jzPIdtVZmx9itqbg1h2FrvsP495uN4xxpg==}
 
   '@fastify/passport@2.5.0':
     resolution: {integrity: sha512-C7FFT4XMjjDFQDDDNZYfciDpCC/BcEy+PBI0RgSJTrRtrDhvDxbQXCiFV6ls5wnGFfz+fIkUYfYzRP2HPv+pBw==}
@@ -4239,6 +4242,10 @@ packages:
   path-to-regexp@6.3.0:
     resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
 
+  path-to-regexp@8.1.0:
+    resolution: {integrity: sha512-Bqn3vc8CMHty6zuD+tG23s6v2kwxslHEhTj4eYaVKGIEB+YX/2wd0/rgXLFD9G9id9KCtbVy/3ZgmvZjpa0UdQ==}
+    engines: {node: '>=16'}
+
   path-type@1.1.0:
     resolution: {integrity: sha512-S4eENJz1pkiQn9Znv33Q+deTOKmbl+jj1Fl+qiP/vYezj+S8x+J3Uo0ISrx/QoEvIlOaDWJhPaRd1flJ9HXZqg==}
     engines: {node: '>=0.10.0'}
@@ -5962,6 +5969,8 @@ snapshots:
 
   '@fastify/error@3.4.1': {}
 
+  '@fastify/error@4.0.0': {}
+
   '@fastify/express@1.1.0':
     dependencies:
       express: 4.21.0
@@ -5981,11 +5990,11 @@ snapshots:
     dependencies:
       fast-deep-equal: 3.1.3
 
-  '@fastify/middie@8.3.3':
+  '@fastify/middie@9.0.1':
     dependencies:
-      '@fastify/error': 3.4.1
-      fastify-plugin: 4.5.1
-      path-to-regexp: 6.3.0
+      '@fastify/error': 4.0.0
+      fastify-plugin: 5.0.0
+      path-to-regexp: 8.1.0
       reusify: 1.0.4
 
   '@fastify/passport@2.5.0':
@@ -10355,6 +10364,8 @@ snapshots:
   path-to-regexp@0.1.10: {}
 
   path-to-regexp@6.3.0: {}
+
+  path-to-regexp@8.1.0: {}
 
   path-type@1.1.0:
     dependencies:
