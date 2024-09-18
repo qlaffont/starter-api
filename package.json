@@ -81,7 +81,7 @@
   },
   "dependencies": {
     "@fastify/middie": "^9.0.0",
-    "@fastify/passport": "^2.4.0",
+    "@fastify/passport": "^3.0.0",
     "@fastify/rate-limit": "^9.1.0",
     "@fastify/secure-session": "^7.1.0",
     "@forestadmin/agent": "^1.37.2",

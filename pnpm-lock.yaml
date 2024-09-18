@@ -15,8 +15,8 @@ importers:
         specifier: ^9.0.0
         version: 9.0.1
       '@fastify/passport':
-        specifier: ^2.4.0
-        version: 2.5.0
+        specifier: ^3.0.0
+        version: 3.0.0
       '@fastify/rate-limit':
         specifier: ^9.1.0
         version: 9.1.0
@@ -628,8 +628,8 @@ packages:
   '@fastify/fast-json-stringify-compiler@4.3.0':
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
 
-  '@fastify/flash@5.2.0':
-    resolution: {integrity: sha512-mVPXZmX8PgNHWhqasN5He/Cz68YSxXuZ732Uqd8HZ8Rjtkhk8aqNU6v54NFmxzACNI4dLtXP4yj1BogdaySyRw==}
+  '@fastify/flash@6.0.0':
+    resolution: {integrity: sha512-NtO44Vg3V+FMSy7833arA5SFR/SsES67YrM91RpKPQBotec6akSvXK56ExklHhC8Frk+PozHuv2KIgIDZIABjA==}
 
   '@fastify/merge-json-schemas@0.1.1':
     resolution: {integrity: sha512-fERDVz7topgNjtXsJTTW1JKLy0rhuLRcquYqNR9rF7OcVpCa2OVW49ZPDIhaRRCaUuvVxI+N416xUoF76HNSXA==}
@@ -637,8 +637,8 @@ packages:
   '@fastify/middie@9.0.1':
     resolution: {integrity: sha512-NCOu4sTSuON0n3iFPhvDbpQoi9RPHHF1GEbKF3vFlYNIgKUu/OY2jzPIdtVZmx9itqbg1h2FrvsP495uN4xxpg==}
 
-  '@fastify/passport@2.5.0':
-    resolution: {integrity: sha512-C7FFT4XMjjDFQDDDNZYfciDpCC/BcEy+PBI0RgSJTrRtrDhvDxbQXCiFV6ls5wnGFfz+fIkUYfYzRP2HPv+pBw==}
+  '@fastify/passport@3.0.0':
+    resolution: {integrity: sha512-t9dfrVfmfgD87s8OtyAWhyb2DJM1955qNhiq76O/109uwJzWoE5NYfY3SbIv4U35oWsSvsx1H2JXfr3PJbucoQ==}
 
   '@fastify/rate-limit@9.1.0':
     resolution: {integrity: sha512-h5dZWCkuZXN0PxwqaFQLxeln8/LNwQwH9popywmDCFdKfgpi4b/HoMH1lluy6P+30CG9yzzpSpwTCIPNB9T1JA==}
@@ -5982,9 +5982,9 @@ snapshots:
     dependencies:
       fast-json-stringify: 5.16.1
 
-  '@fastify/flash@5.2.0':
+  '@fastify/flash@6.0.0':
     dependencies:
-      fastify-plugin: 4.5.1
+      fastify-plugin: 5.0.0
 
   '@fastify/merge-json-schemas@0.1.1':
     dependencies:
@@ -5997,10 +5997,10 @@ snapshots:
       path-to-regexp: 8.1.0
       reusify: 1.0.4
 
-  '@fastify/passport@2.5.0':
+  '@fastify/passport@3.0.0':
     dependencies:
-      '@fastify/flash': 5.2.0
-      fastify-plugin: 4.5.1
+      '@fastify/flash': 6.0.0
+      fastify-plugin: 5.0.0
 
   '@fastify/rate-limit@9.1.0':
     dependencies:
