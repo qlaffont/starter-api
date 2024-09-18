@@ -18,8 +18,8 @@ importers:
         specifier: ^2.4.0
         version: 2.5.0
       '@fastify/rate-limit':
-        specifier: ^9.1.0
-        version: 9.1.0
+        specifier: ^10.0.0
+        version: 10.0.0
       '@fastify/secure-session':
         specifier: ^7.1.0
         version: 7.5.1
@@ -640,8 +640,8 @@ packages:
   '@fastify/passport@2.5.0':
     resolution: {integrity: sha512-C7FFT4XMjjDFQDDDNZYfciDpCC/BcEy+PBI0RgSJTrRtrDhvDxbQXCiFV6ls5wnGFfz+fIkUYfYzRP2HPv+pBw==}
 
-  '@fastify/rate-limit@9.1.0':
-    resolution: {integrity: sha512-h5dZWCkuZXN0PxwqaFQLxeln8/LNwQwH9popywmDCFdKfgpi4b/HoMH1lluy6P+30CG9yzzpSpwTCIPNB9T1JA==}
+  '@fastify/rate-limit@10.0.0':
+    resolution: {integrity: sha512-tgWgUw/Zvs0GfV5odyr4g/CMiNamWYi0eMrmidPTIJyr1Ea3W42YqvM/jpbVjuKC6HONRVUq+IZbAy+GtixVGg==}
 
   '@fastify/secure-session@7.5.1':
     resolution: {integrity: sha512-3xnTmlI4rhboyLtXtGDnrAXz8MLbrkwn9Owo4CZ2/GC9H3Eux0D5QWwKowxmn4VaFadj2wC67RoycFFi/46xaw==}
@@ -6002,10 +6002,10 @@ snapshots:
       '@fastify/flash': 5.2.0
       fastify-plugin: 4.5.1
 
-  '@fastify/rate-limit@9.1.0':
+  '@fastify/rate-limit@10.0.0':
     dependencies:
       '@lukeed/ms': 2.0.2
-      fastify-plugin: 4.5.1
+      fastify-plugin: 5.0.0
       toad-cache: 3.7.0
 
   '@fastify/secure-session@7.5.1':
