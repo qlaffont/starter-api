@@ -21,8 +21,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0
       '@fastify/secure-session':
-        specifier: ^7.1.0
-        version: 7.5.1
+        specifier: ^8.0.0
+        version: 8.0.0
       '@forestadmin/agent':
         specifier: ^1.37.2
         version: 1.43.0
@@ -609,8 +609,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fastify/cookie@9.3.1':
-    resolution: {integrity: sha512-h1NAEhB266+ZbZ0e9qUE6NnNR07i7DnNXWG9VbbZ8uC6O/hxHpl+Zoe5sw1yfdZ2U6XhToUGDnzQtWJdCaPwfg==}
+  '@fastify/cookie@10.0.0':
+    resolution: {integrity: sha512-S43spazwAfzm5nKlqq/spAGW+O6r+WQzg5vXXI1ArCXXFa8KBA/tiU3XRVQUehSNtbN5PA6+g183hzh5/dZ6Iw==}
 
   '@fastify/cors@9.0.1':
     resolution: {integrity: sha512-YY9Ho3ovI+QHIL2hW+9X4XqQjXLjJqsU+sMV/xFsxZkE8p3GNnYVFpoOxF7SsP5ZL76gwvbo3V9L+FIekBGU4Q==}
@@ -643,8 +643,8 @@ packages:
   '@fastify/rate-limit@9.1.0':
     resolution: {integrity: sha512-h5dZWCkuZXN0PxwqaFQLxeln8/LNwQwH9popywmDCFdKfgpi4b/HoMH1lluy6P+30CG9yzzpSpwTCIPNB9T1JA==}
 
-  '@fastify/secure-session@7.5.1':
-    resolution: {integrity: sha512-3xnTmlI4rhboyLtXtGDnrAXz8MLbrkwn9Owo4CZ2/GC9H3Eux0D5QWwKowxmn4VaFadj2wC67RoycFFi/46xaw==}
+  '@fastify/secure-session@8.0.0':
+    resolution: {integrity: sha512-SbPuvc5JGimUNH0jH0oBwJQJJ1Ae3vJ3vzBphEyVyGtoNarb3dBn8YdFnjIc305EWZbwn4fHqzs7tT5GBim3lQ==}
     hasBin: true
 
   '@fastify/send@2.1.0':
@@ -5957,10 +5957,10 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fastify/cookie@9.3.1':
+  '@fastify/cookie@10.0.0':
     dependencies:
       cookie-signature: 1.2.1
-      fastify-plugin: 4.5.1
+      fastify-plugin: 5.0.0
 
   '@fastify/cors@9.0.1':
     dependencies:
@@ -6008,10 +6008,10 @@ snapshots:
       fastify-plugin: 4.5.1
       toad-cache: 3.7.0
 
-  '@fastify/secure-session@7.5.1':
+  '@fastify/secure-session@8.0.0':
     dependencies:
-      '@fastify/cookie': 9.3.1
-      fastify-plugin: 4.5.1
+      '@fastify/cookie': 10.0.0
+      fastify-plugin: 5.0.0
       sodium-native: 4.1.1
 
   '@fastify/send@2.1.0':
